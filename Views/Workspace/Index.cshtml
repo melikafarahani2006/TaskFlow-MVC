@@ -1,0 +1,27 @@
+﻿@model List<TaskFlowMvc.Models.Workspace.Workspace>
+
+<h2>Workspace List</h2>
+<a asp-action="Create" class="btn btn-success mb-3">
+    Create Workspace
+</a>
+<table class="table">
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Created At</th>
+        </tr>
+    </thead>
+
+    <tbody>
+
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>@item.Name</td>
+                <td>@item.CreatedAt</td>
+            </tr>
+        }
+
+    </tbody>
+
+</table>
