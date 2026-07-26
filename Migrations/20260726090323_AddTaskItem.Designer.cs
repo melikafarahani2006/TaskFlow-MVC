@@ -3,6 +3,7 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using TaskFlowMvc.Data;
 
@@ -11,9 +12,11 @@ using TaskFlowMvc.Data;
 namespace TaskFlowMvc.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    partial class ApplicationDbContextModelSnapshot : ModelSnapshot
+    [Migration("20260726090323_AddTaskItem")]
+    partial class AddTaskItem
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -45,25 +48,7 @@ namespace TaskFlowMvc.Migrations
 
                     b.HasIndex("WorkspaceId");
 
-                    b.ToTable("Project");
-                });
-
-            modelBuilder.Entity("TaskFlowMvc.Models.Tag", b =>
-                {
-                    b.Property<Guid>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("uniqueidentifier");
-
-                    b.Property<string>("Color")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("Name")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.HasKey("Id");
-
-                    b.ToTable("Tag");
+                    b.ToTable("Projects");
                 });
 
             modelBuilder.Entity("TaskFlowMvc.Models.TaskItem", b =>
@@ -87,10 +72,7 @@ namespace TaskFlowMvc.Migrations
                     b.Property<int>("Order")
                         .HasColumnType("int");
 
-                    b.Property<Guid>("ProjectId")
-                        .HasColumnType("uniqueidentifier");
-
-                    b.Property<Guid>("TaskStateId")
+                    b.Property<Guid>("TaskListId")
                         .HasColumnType("uniqueidentifier");
 
                     b.Property<string>("Title")
@@ -99,29 +81,12 @@ namespace TaskFlowMvc.Migrations
 
                     b.HasKey("Id");
 
-                    b.HasIndex("ProjectId");
+                    b.HasIndex("TaskListId");
 
-                    b.HasIndex("TaskStateId");
-
-                    b.ToTable("TaskItem");
+                    b.ToTable("TaskItems");
                 });
 
-            modelBuilder.Entity("TaskFlowMvc.Models.TaskItemTag", b =>
-                {
-                    b.Property<Guid>("TaskItemId")
-                        .HasColumnType("uniqueidentifier");
-
-                    b.Property<Guid>("TagId")
-                        .HasColumnType("uniqueidentifier");
-
-                    b.HasKey("TaskItemId", "TagId");
-
-                    b.HasIndex("TagId");
-
-                    b.ToTable("TaskItemTag");
-                });
-
-            modelBuilder.Entity("TaskFlowMvc.Models.TaskState", b =>
+            modelBuilder.Entity("TaskFlowMvc.Models.TaskList", b =>
                 {
                     b.Property<Guid>("Id")
                         .ValueGeneratedOnAdd()
@@ -137,39 +102,14 @@ namespace TaskFlowMvc.Migrations
                     b.Property<int>("Order")
                         .HasColumnType("int");
 
+                    b.Property<Guid>("ProjectId")
+                        .HasColumnType("uniqueidentifier");
+
                     b.HasKey("Id");
 
-                    b.ToTable("TaskState");
+                    b.HasIndex("ProjectId");
 
-                    b.HasData(
-                        new
-                        {
-                            Id = new Guid("11111111-1111-1111-1111-111111111111"),
-                            CreatedAt = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            Name = "Todo",
-                            Order = 0
-                        },
-                        new
-                        {
-                            Id = new Guid("22222222-2222-2222-2222-222222222222"),
-                            CreatedAt = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            Name = "In Progress",
-                            Order = 0
-                        },
-                        new
-                        {
-                            Id = new Guid("33333333-3333-3333-3333-333333333333"),
-                            CreatedAt = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            Name = "Review",
-                            Order = 0
-                        },
-                        new
-                        {
-                            Id = new Guid("44444444-4444-4444-4444-444444444444"),
-                            CreatedAt = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            Name = "Done",
-                            Order = 0
-                        });
+                    b.ToTable("TaskLists");
                 });
 
             modelBuilder.Entity("TaskFlowMvc.Models.Workspace", b =>
@@ -190,7 +130,7 @@ namespace TaskFlowMvc.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("Workspace");
+                    b.ToTable("Workspaces");
                 });
 
             modelBuilder.Entity("TaskFlowMvc.Models.Project", b =>
@@ -206,53 +146,27 @@ namespace TaskFlowMvc.Migrations
 
             modelBuilder.Entity("TaskFlowMvc.Models.TaskItem", b =>
                 {
+                    b.HasOne("TaskFlowMvc.Models.TaskList", "TaskList")
+                        .WithMany("TaskItems")
+                        .HasForeignKey("TaskListId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("TaskList");
+                });
+
+            modelBuilder.Entity("TaskFlowMvc.Models.TaskList", b =>
+                {
                     b.HasOne("TaskFlowMvc.Models.Project", "Project")
                         .WithMany()
                         .HasForeignKey("ProjectId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
-                    b.HasOne("TaskFlowMvc.Models.TaskState", "TaskState")
-                        .WithMany("TaskItems")
-                        .HasForeignKey("TaskStateId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
                     b.Navigation("Project");
-
-                    b.Navigation("TaskState");
                 });
 
-            modelBuilder.Entity("TaskFlowMvc.Models.TaskItemTag", b =>
-                {
-                    b.HasOne("TaskFlowMvc.Models.Tag", "Tag")
-                        .WithMany("TaskItemTags")
-                        .HasForeignKey("TagId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.HasOne("TaskFlowMvc.Models.TaskItem", "TaskItem")
-                        .WithMany("TaskItemTags")
-                        .HasForeignKey("TaskItemId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.Navigation("Tag");
-
-                    b.Navigation("TaskItem");
-                });
-
-            modelBuilder.Entity("TaskFlowMvc.Models.Tag", b =>
-                {
-                    b.Navigation("TaskItemTags");
-                });
-
-            modelBuilder.Entity("TaskFlowMvc.Models.TaskItem", b =>
-                {
-                    b.Navigation("TaskItemTags");
-                });
-
-            modelBuilder.Entity("TaskFlowMvc.Models.TaskState", b =>
+            modelBuilder.Entity("TaskFlowMvc.Models.TaskList", b =>
                 {
                     b.Navigation("TaskItems");
                 });

@@ -1,0 +1,41 @@
+﻿@{
+    ViewData["Title"] = "Dashboard";
+}
+
+<div class="text-center mt-5">
+    @* <h1 class="display-4 mb-4">Task Flow System</h1> *@
+
+    <div class="d-grid gap-3 col-4 mx-auto">
+
+        <a asp-controller="Workspace"
+           asp-action="Index"
+           class="btn btn-primary btn-lg">
+            Workspaces
+        </a>
+
+        <a asp-controller="Project"
+           asp-action="Index"
+           class="btn btn-success btn-lg">
+            Projects
+        </a>
+
+        <a asp-controller="TaskState"
+           asp-action="Index"
+           class="btn btn-warning btn-lg">
+            Task States
+        </a>
+
+        <a asp-controller="TaskItem"
+           asp-action="Index"
+           class="btn btn-info btn-lg">
+            Tasks
+        </a>
+
+        <a asp-controller="Tag"
+           asp-action="Index"
+           class="btn btn-secondary btn-lg">
+            Tags
+        </a>
+
+    </div>
+</div>

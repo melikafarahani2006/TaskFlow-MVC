@@ -1,0 +1,35 @@
+﻿@model TaskFlowMvc.Models.DTOs.UpdateProjectRequest
+<h2>Edit Project</h2>
+
+<form method="post">
+
+    <div asp-validation-summary="All"
+         class="text-danger"></div>
+
+    <div class="mb-3">
+
+        <label>Name</label>
+
+        <input asp-for="Name"
+               class="form-control"/>
+
+    </div>
+
+    <div class="mb-3">
+
+        <label>Description</label>
+
+        <textarea asp-for="Description"
+                  class="form-control"></textarea>
+
+    </div>
+
+    <button class="btn btn-primary">
+        Update
+    </button>
+
+</form>
+
+@section Scripts{
+    <partial name="_ValidationScriptsPartial"/>
+}

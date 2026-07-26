@@ -1,5 +1,5 @@
-﻿@model TaskFlowMvc.Models.Workspace.Workspace
-
+﻿@model TaskFlowMvc.Models.DTOs.CreateProjectRequest
+<div asp-validation-summary="All" class="text-danger"></div>
 <h2>Create Workspace</h2>
 
 <form asp-action="Create" method="post">
@@ -7,11 +7,15 @@
     <div class="mb-3">
         <label asp-for="Name"></label>
         <input asp-for="Name" class="form-control" />
+
+        <span asp-validation-for="Name" class="text-danger"></span>
     </div>
 
     <div class="mb-3">
         <label asp-for="Description"></label>
         <textarea asp-for="Description" class="form-control"></textarea>
+
+        <span asp-validation-for="Description" class="text-danger"></span>
     </div>
 
     <button type="submit" class="btn btn-primary">
@@ -19,3 +23,7 @@
     </button>
 
 </form>
+
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+}

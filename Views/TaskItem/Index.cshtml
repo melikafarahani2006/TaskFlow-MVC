@@ -1,39 +1,60 @@
-﻿@model IEnumerable<TaskFlowMvc.Models.Workspace>
-<h2>Workspace List</h2>
-<a asp-action="Create" class="btn btn-success mb-3">
-    Create Workspace
-</a>
-<table class="table">
-    <thead>
-        <tr>
-            <th>Name</th>
-            <th>Description</th>
-            <th>Created At</th>
-        </tr>
-    </thead>
+﻿@model IEnumerable<TaskFlowMvc.Models.TaskItem>
 
+<h2>Tasks</h2>
+
+<p>
+    <a asp-action="Create"
+       class="btn btn-primary">
+        Create
+    </a>
+</p>
+
+<table class="table table-bordered">
+
+    <thead>
+
+        <tr>
+
+            <th>Title</th>
+            <th>Project</th>
+            <th>Status</th>
+            <th>Completed</th>
+            <th></th>
+
+        </tr>
+
+    </thead>
 
     <tbody>
 
         @foreach (var item in Model)
         {
             <tr>
-                <td>@item.Name</td>
-                <td>@item.Description</td>
-                <td>@item.CreatedAt</td>
+
+                <td>@item.Title</td>
+
+                <td>@item.Project.Name</td>
+
+                <td>@item.TaskState.Name</td>
+
+                <td>@item.IsCompleted</td>
 
                 <td>
+
                     <a asp-action="Edit"
                        asp-route-id="@item.Id"
                        class="btn btn-warning btn-sm">
                         Edit
                     </a>
+
                     <a asp-action="Delete"
                        asp-route-id="@item.Id"
                        class="btn btn-danger btn-sm">
                         Delete
                     </a>
+
                 </td>
+
             </tr>
         }
 
