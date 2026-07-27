@@ -190,7 +190,7 @@ public class ProjectController : Controller
             if (project == null)
                 return NotFound();
 
-            _context.Project.Remove(project);
+             project.IsDeleted = true;
             _context.SaveChanges();
 
             return RedirectToAction(nameof(Index));

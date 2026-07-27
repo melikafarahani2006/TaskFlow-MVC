@@ -52,6 +52,22 @@ public class ApplicationDbContext : DbContext
     {
         base.OnModelCreating(modelBuilder);
 
+        modelBuilder.Entity<Workspace>()
+             .HasQueryFilter(x => !x.IsDeleted);
+
+        modelBuilder.Entity<Project>()
+            .HasQueryFilter(x => !x.IsDeleted);
+
+        modelBuilder.Entity<TaskItem>()
+            .HasQueryFilter(x => !x.IsDeleted);
+
+        modelBuilder.Entity<TaskState>()
+            .HasQueryFilter(x => !x.IsDeleted);
+
+        modelBuilder.Entity<Tag>()
+            .HasQueryFilter(x => !x.IsDeleted);
+
+
         modelBuilder.Entity<TaskState>().HasData(
             new TaskState
             {

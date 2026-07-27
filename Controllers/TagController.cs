@@ -142,7 +142,7 @@ public class TagController : Controller
             if (tag == null)
                 return NotFound();
 
-            _context.Tag.Remove(tag);
+            tag.IsDeleted = true;
             _context.SaveChanges();
 
             return RedirectToAction(nameof(Index));

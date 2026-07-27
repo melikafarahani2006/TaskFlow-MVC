@@ -235,7 +235,7 @@ public class TaskItemController : Controller
             if (task == null)
                 return NotFound();
 
-            _context.TaskItem.Remove(task);
+            task.IsDeleted = true;
             _context.SaveChanges();
 
             return RedirectToAction(nameof(Index));

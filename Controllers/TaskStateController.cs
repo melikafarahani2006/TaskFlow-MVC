@@ -142,7 +142,7 @@ public class TaskStateController : Controller
             if (taskState == null)
                 return NotFound();
 
-            _context.TaskState.Remove(taskState);
+            taskState.IsDeleted = true;
             _context.SaveChanges();
 
             return RedirectToAction(nameof(Index));

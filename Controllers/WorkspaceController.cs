@@ -145,7 +145,7 @@ public class WorkspaceController : Controller
             if (workspace == null)
                 return NotFound();
 
-            _context.Workspace.Remove(workspace);
+            workspace.IsDeleted = true;
             _context.SaveChanges();
 
             return RedirectToAction(nameof(Index));
