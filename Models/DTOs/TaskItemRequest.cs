@@ -5,9 +5,11 @@ namespace TaskFlowMvc.Models.DTOs;
 public class CreateTaskItemRequest
 {
     [Required]
+    [Display(Name = "Project Name")]
     public Guid ProjectId { get; set; }
 
     [Required]
+    [Display(Name = "Task State")]
     public Guid TaskStateId { get; set; }
 
     public List<Guid> TagIds { get; set; } = new();
@@ -23,9 +25,11 @@ public class CreateTaskItemRequest
 public class UpdateTaskItemRequest
 {
     [Required]
+    [Display(Name = "Project Name")]
     public Guid ProjectId { get; set; }
 
     [Required]
+    [Display(Name = "Task State")]
     public Guid TaskStateId { get; set; }
 
     public List<Guid> TagIds { get; set; } = new();

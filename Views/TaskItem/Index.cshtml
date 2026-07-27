@@ -18,6 +18,7 @@
             <th>Title</th>
             <th>Project</th>
             <th>Status</th>
+            <th>Tags</th>
             <th></th>
 
         </tr>
@@ -36,8 +37,6 @@
 
                 <td>@item.TaskState.Name</td>
 
-                <th>Tags</th>
-
                 <td>
                    @foreach (var itemTag in item.TaskItemTags)
                      {
@@ -45,8 +44,7 @@
                                   @itemTag.Tag.Name
                          </span>
                      }
-</td>
-
+                </td>
                 <td>
 
                     <a asp-action="Edit"

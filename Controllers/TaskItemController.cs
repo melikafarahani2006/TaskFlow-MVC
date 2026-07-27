@@ -26,6 +26,8 @@ public class TaskItemController : Controller
             var tasks = _context.TaskItem
                 .Include(x => x.Project)
                 .Include(x => x.TaskState)
+                 .Include(x => x.TaskItemTags)
+                .ThenInclude(x => x.Tag)
                 .ToList();
 
             return View(tasks);
