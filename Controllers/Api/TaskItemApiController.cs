@@ -53,8 +53,6 @@ public class TaskItemApiController : ControllerBase
             TaskStateId = request.TaskStateId,
             Title = request.Title,
             Description = request.Description,
-            Order = request.Order,
-            IsCompleted = false,
             CreatedAt = DateTime.UtcNow
         };
 
@@ -79,8 +77,6 @@ public class TaskItemApiController : ControllerBase
         task.TaskStateId = request.TaskStateId;
         task.Title = request.Title;
         task.Description = request.Description;
-        task.IsCompleted = request.IsCompleted;
-        task.Order = request.Order;
 
         _context.SaveChanges();
 

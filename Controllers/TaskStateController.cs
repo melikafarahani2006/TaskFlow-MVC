@@ -14,12 +14,21 @@ public class TaskStateController : Controller
         _context = context;
     }
 
+
     public IActionResult Index()
     {
-        var taskStates = _context.TaskState.ToList();
-
-        return View(taskStates);
+        try
+        {
+            var taskStates = _context.TaskState.ToList();
+            return View(taskStates);
+        }
+        catch
+        {
+            TempData["Error"] = "Unable to load task states.";
+            return View(new List<TaskState>());
+        }
     }
+
 
     [HttpGet]
     public IActionResult Create()
@@ -33,31 +42,48 @@ public class TaskStateController : Controller
         if (!ModelState.IsValid)
             return View(request);
 
-        var taskState = new TaskState
+        try
         {
-            Name = request.Name
-        };
+            var taskState = new TaskState
+            {
+                Name = request.Name
+            };
 
-        _context.TaskState.Add(taskState);
-        _context.SaveChanges();
+            _context.TaskState.Add(taskState);
+            _context.SaveChanges();
 
-        return RedirectToAction(nameof(Index));
+            return RedirectToAction(nameof(Index));
+        }
+        catch
+        {
+            ModelState.AddModelError("", "Failed to create task state.");
+            return View(request);
+        }
     }
+
 
     [HttpGet]
     public IActionResult Edit(Guid id)
     {
-        var taskState = _context.TaskState.Find(id);
-
-        if (taskState == null)
-            return NotFound();
-
-        var request = new UpdateTaskStateRequest
+        try
         {
-            Name = taskState.Name
-        };
+            var taskState = _context.TaskState.Find(id);
 
-        return View(request);
+            if (taskState == null)
+                return NotFound();
+
+            var request = new UpdateTaskStateRequest
+            {
+                Name = taskState.Name
+            };
+
+            return View(request);
+        }
+        catch
+        {
+            TempData["Error"] = "Unable to load task state.";
+            return RedirectToAction(nameof(Index));
+        }
     }
 
     [HttpPost]
@@ -66,40 +92,65 @@ public class TaskStateController : Controller
         if (!ModelState.IsValid)
             return View(request);
 
-        var taskState = _context.TaskState.Find(id);
+        try
+        {
+            var taskState = _context.TaskState.Find(id);
 
-        if (taskState == null)
-            return NotFound();
+            if (taskState == null)
+                return NotFound();
 
-        taskState.Name = request.Name;
+            taskState.Name = request.Name;
 
-        _context.SaveChanges();
+            _context.SaveChanges();
 
-        return RedirectToAction(nameof(Index));
+            return RedirectToAction(nameof(Index));
+        }
+        catch
+        {
+            ModelState.AddModelError("", "Failed to update task state.");
+            return View(request);
+        }
     }
+
 
     [HttpGet]
     public IActionResult Delete(Guid id)
     {
-        var taskState = _context.TaskState.Find(id);
+        try
+        {
+            var taskState = _context.TaskState.Find(id);
 
-        if (taskState == null)
-            return NotFound();
+            if (taskState == null)
+                return NotFound();
 
-        return View(taskState);
+            return View(taskState);
+        }
+        catch
+        {
+            TempData["Error"] = "Unable to load task state.";
+            return RedirectToAction(nameof(Index));
+        }
     }
 
-    [HttpPost, ActionName("Delete")]
+    [HttpPost]
     public IActionResult DeleteConfirmed(Guid id)
     {
-        var taskState = _context.TaskState.Find(id);
+        try
+        {
+            var taskState = _context.TaskState.Find(id);
 
-        if (taskState == null)
-            return NotFound();
+            if (taskState == null)
+                return NotFound();
 
-        _context.TaskState.Remove(taskState);
-        _context.SaveChanges();
+            _context.TaskState.Remove(taskState);
+            _context.SaveChanges();
 
-        return RedirectToAction(nameof(Index));
+            return RedirectToAction(nameof(Index));
+        }
+        catch
+        {
+            TempData["Error"] = "Failed to delete task state.";
+            return RedirectToAction(nameof(Index));
+        }
     }
 }

@@ -14,10 +14,20 @@ public class TagController : Controller
         _context = context;
     }
 
+
     public IActionResult Index()
     {
-        return View(_context.Tag.ToList());
+        try
+        {
+            return View(_context.Tag.ToList());
+        }
+        catch
+        {
+            TempData["Error"] = "Unable to load tags.";
+            return View(new List<Tag>());
+        }
     }
+
 
     [HttpGet]
     public IActionResult Create()
@@ -31,31 +41,48 @@ public class TagController : Controller
         if (!ModelState.IsValid)
             return View(request);
 
-        var tag = new Tag
+        try
         {
-            Name = request.Name,
-            Color = request.Color
-        };
+            var tag = new Tag
+            {
+                Name = request.Name,
+                Color = request.Color
+            };
 
-        _context.Tag.Add(tag);
-        _context.SaveChanges();
+            _context.Tag.Add(tag);
+            _context.SaveChanges();
 
-        return RedirectToAction(nameof(Index));
+            return RedirectToAction(nameof(Index));
+        }
+        catch
+        {
+            ModelState.AddModelError("", "Failed to create tag.");
+            return View(request);
+        }
     }
+
 
     [HttpGet]
     public IActionResult Edit(Guid id)
     {
-        var tag = _context.Tag.Find(id);
-
-        if (tag == null)
-            return NotFound();
-
-        return View(new UpdateTagRequest
+        try
         {
-            Name = tag.Name,
-            Color = tag.Color
-        });
+            var tag = _context.Tag.Find(id);
+
+            if (tag == null)
+                return NotFound();
+
+            return View(new UpdateTagRequest
+            {
+                Name = tag.Name,
+                Color = tag.Color
+            });
+        }
+        catch
+        {
+            TempData["Error"] = "Unable to load tag.";
+            return RedirectToAction(nameof(Index));
+        }
     }
 
     [HttpPost]
@@ -64,41 +91,66 @@ public class TagController : Controller
         if (!ModelState.IsValid)
             return View(request);
 
-        var tag = _context.Tag.Find(id);
+        try
+        {
+            var tag = _context.Tag.Find(id);
 
-        if (tag == null)
-            return NotFound();
+            if (tag == null)
+                return NotFound();
 
-        tag.Name = request.Name;
-        tag.Color = request.Color;
+            tag.Name = request.Name;
+            tag.Color = request.Color;
 
-        _context.SaveChanges();
+            _context.SaveChanges();
 
-        return RedirectToAction(nameof(Index));
+            return RedirectToAction(nameof(Index));
+        }
+        catch
+        {
+            ModelState.AddModelError("", "Failed to update tag.");
+            return View(request);
+        }
     }
+
 
     [HttpGet]
     public IActionResult Delete(Guid id)
     {
-        var tag = _context.Tag.Find(id);
+        try
+        {
+            var tag = _context.Tag.Find(id);
 
-        if (tag == null)
-            return NotFound();
+            if (tag == null)
+                return NotFound();
 
-        return View(tag);
+            return View(tag);
+        }
+        catch
+        {
+            TempData["Error"] = "Unable to load tag.";
+            return RedirectToAction(nameof(Index));
+        }
     }
 
-    [HttpPost, ActionName("Delete")]
+    [HttpPost]
     public IActionResult DeleteConfirmed(Guid id)
     {
-        var tag = _context.Tag.Find(id);
+        try
+        {
+            var tag = _context.Tag.Find(id);
 
-        if (tag == null)
-            return NotFound();
+            if (tag == null)
+                return NotFound();
 
-        _context.Tag.Remove(tag);
-        _context.SaveChanges();
+            _context.Tag.Remove(tag);
+            _context.SaveChanges();
 
-        return RedirectToAction(nameof(Index));
+            return RedirectToAction(nameof(Index));
+        }
+        catch
+        {
+            TempData["Error"] = "Failed to delete tag.";
+            return RedirectToAction(nameof(Index));
+        }
     }
 }

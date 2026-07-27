@@ -7,12 +7,12 @@
 <h2>Create Project</h2>
 
 <form asp-action="Create" method="post">
-
+    <div asp-validation-summary="ModelOnly" class="text-danger"></div>
     <div class="mb-3">
         <label asp-for="WorkspaceId" class="form-label"></label>
 
         <select asp-for="WorkspaceId"
-                asp-items="ViewBag.Workspaces"
+                asp-items="ViewBag.Workspace"
                 class="form-control">
 
             <option value="">-- Select Workspace --</option>

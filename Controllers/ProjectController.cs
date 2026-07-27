@@ -6,6 +6,7 @@ using TaskFlowMvc.Models;
 using TaskFlowMvc.Models.DTOs;
 
 namespace TaskFlowMvc.Controllers;
+
 public class ProjectController : Controller
 {
     private readonly ApplicationDbContext _context;
@@ -15,14 +16,24 @@ public class ProjectController : Controller
         _context = context;
     }
 
+
     public IActionResult Index()
     {
-        var projects = _context.Project
-                       .Include(x => x.Workspace)
-                       .ToList();
+        try
+        {
+            var projects = _context.Project
+                .Include(x => x.Workspace)
+                .ToList();
 
-        return View(projects);
+            return View(projects);
+        }
+        catch
+        {
+            TempData["Error"] = "Unable to load projects.";
+            return View(new List<Project>());
+        }
     }
+
 
     [HttpGet]
     public IActionResult Create()
@@ -48,42 +59,65 @@ public class ProjectController : Controller
             return View(request);
         }
 
-        var project = new Project
+        try
         {
-            WorkspaceId = workspaceId,
-            Name = request.Name,
-            Description = request.Description,
-            CreatedAt = DateTime.UtcNow
-        };
+            var project = new Project
+            {
+                WorkspaceId = workspaceId,
+                Name = request.Name,
+                Description = request.Description,
+                CreatedAt = DateTime.UtcNow
+            };
 
-        _context.Project.Add(project);
+            _context.Project.Add(project);
 
-        _context.SaveChanges();
+            _context.SaveChanges();
 
-        return RedirectToAction(nameof(Index));
+            return RedirectToAction(nameof(Index));
+        }
+        catch
+        {
+            ModelState.AddModelError("", "Failed to create project.");
+
+            ViewBag.Workspace = new SelectList(
+                _context.Workspace,
+                "Id",
+                "Name");
+
+            return View(request);
+        }
     }
+
 
     [HttpGet]
     public IActionResult Edit(Guid id)
     {
-        var project = _context.Project.Find(id);
-
-        if (project == null)
-            return NotFound();
-
-        ViewBag.Workspace = new SelectList(
-            _context.Workspace,
-            "Id",
-            "Name",
-            project.WorkspaceId);
-
-        var request = new UpdateProjectRequest
+        try
         {
-            Name = project.Name,
-            Description = project.Description
-        };
+            var project = _context.Project.Find(id);
 
-        return View(request);
+            if (project == null)
+                return NotFound();
+
+            ViewBag.Workspace = new SelectList(
+                _context.Workspace,
+                "Id",
+                "Name",
+                project.WorkspaceId);
+
+            var request = new UpdateProjectRequest
+            {
+                Name = project.Name,
+                Description = project.Description
+            };
+
+            return View(request);
+        }
+        catch
+        {
+            TempData["Error"] = "Unable to load project.";
+            return RedirectToAction(nameof(Index));
+        }
     }
 
     [HttpPost]
@@ -99,44 +133,73 @@ public class ProjectController : Controller
             return View(request);
         }
 
-        var project = _context.Project.Find(id);
+        try
+        {
+            var project = _context.Project.Find(id);
 
-        if (project == null)
-            return NotFound();
+            if (project == null)
+                return NotFound();
 
-        project.Name = request.Name;
-        project.Description = request.Description;
+            project.Name = request.Name;
+            project.Description = request.Description;
+            _context.SaveChanges();
 
-        _context.SaveChanges();
+            return RedirectToAction(nameof(Index));
+        }
+        catch
+        {
+            ModelState.AddModelError("", "Failed to update project.");
 
-        return RedirectToAction(nameof(Index));
+            ViewBag.Workspace = new SelectList(
+                _context.Workspace,
+                "Id",
+                "Name");
+
+            return View(request);
+        }
     }
+
 
     [HttpGet]
     public IActionResult Delete(Guid id)
     {
-        var project = _context.Project
-            .Include(x => x.Workspace)
-            .FirstOrDefault(x => x.Id == id);
+        try
+        {
+            var project = _context.Project
+                .Include(x => x.Workspace)
+                .FirstOrDefault(x => x.Id == id);
 
-        if (project == null)
-            return NotFound();
+            if (project == null)
+                return NotFound();
 
-        return View(project);
+            return View(project);
+        }
+        catch
+        {
+            TempData["Error"] = "Unable to load project.";
+            return RedirectToAction(nameof(Index));
+        }
     }
 
     [HttpPost]
     public IActionResult DeleteConfirmed(Guid id)
     {
-        var project = _context.Project.Find(id);
+        try
+        {
+            var project = _context.Project.Find(id);
 
-        if (project == null)
-            return NotFound();
+            if (project == null)
+                return NotFound();
 
-        _context.Project.Remove(project);
+            _context.Project.Remove(project);
+            _context.SaveChanges();
 
-        _context.SaveChanges();
-
-        return RedirectToAction(nameof(Index));
+            return RedirectToAction(nameof(Index));
+        }
+        catch
+        {
+            TempData["Error"] = "Failed to delete project.";
+            return RedirectToAction(nameof(Index));
+        }
     }
 }

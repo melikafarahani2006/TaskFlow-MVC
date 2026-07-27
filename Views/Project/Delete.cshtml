@@ -27,6 +27,7 @@
 
 <form asp-action="DeleteConfirmed"
       method="post">
+           <div asp-validation-summary="ModelOnly" class="text-danger"></div>
 
     <input asp-for="Id"
            type="hidden" />

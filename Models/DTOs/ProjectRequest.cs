@@ -4,7 +4,7 @@ namespace TaskFlowMvc.Models.DTOs;
 
 public class CreateProjectRequest
 {
-    [Required]
+    [Required(ErrorMessage = "Workspace is required.")]
     public Guid WorkspaceId { get; set; }
 
     [Required(ErrorMessage = "Name is required.")]

@@ -18,7 +18,6 @@ public class CreateTaskItemRequest
 
     [MaxLength(1000)]
     public string? Description { get; set; }
-    public int Order { get; set; }
 }
 
 public class UpdateTaskItemRequest
@@ -37,6 +36,4 @@ public class UpdateTaskItemRequest
 
     [MaxLength(1000)]
     public string? Description { get; set; }
-    public bool IsCompleted { get; set; }
-    public int Order { get; set; }
 }
