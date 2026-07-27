@@ -1,4 +1,5 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 using TaskFlowMvc.Data;
 using TaskFlowMvc.Models;
 using TaskFlowMvc.Models.DTOs;
@@ -145,14 +146,30 @@ public class WorkspaceController : Controller
             if (workspace == null)
                 return NotFound();
 
+
+            var hasProjects = _context.Project
+                .Any(x => x.WorkspaceId == id);
+
+            if (hasProjects)
+            {
+                TempData["Error"] =
+                    "Workspace cannot be deleted. Move the projects to another workspace or delete them first.";
+
+                return RedirectToAction(nameof(Index));
+            }
+
             workspace.IsDeleted = true;
+
             _context.SaveChanges();
+
+            TempData["Success"] = "Workspace deleted successfully.";
 
             return RedirectToAction(nameof(Index));
         }
-        catch
+        catch (DbUpdateException)
         {
             TempData["Error"] = "Failed to delete workspace.";
+
             return RedirectToAction(nameof(Index));
         }
     }

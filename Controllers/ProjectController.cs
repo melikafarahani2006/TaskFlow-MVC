@@ -190,8 +190,21 @@ public class ProjectController : Controller
             if (project == null)
                 return NotFound();
 
-             project.IsDeleted = true;
+            var hasTasks = _context.TaskItem.Any(x => x.ProjectId == id);
+
+            if (hasTasks)
+            {
+                TempData["Error"] =
+                    "Project cannot be deleted. Move the tasks to another project or delete them first.";
+
+                return RedirectToAction(nameof(Index));
+            }
+
+            project.IsDeleted = true;
+
             _context.SaveChanges();
+
+            TempData["Success"] = "Project deleted successfully.";
 
             return RedirectToAction(nameof(Index));
         }

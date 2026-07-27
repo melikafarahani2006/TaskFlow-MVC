@@ -142,8 +142,21 @@ public class TaskStateController : Controller
             if (taskState == null)
                 return NotFound();
 
+            var hasTasks = _context.TaskItem.Any(x => x.TaskStateId == id);
+
+            if (hasTasks)
+            {
+                TempData["Error"] =
+                    "Task state cannot be deleted. Move the tasks to another state or delete them first.";
+
+                return RedirectToAction(nameof(Index));
+            }
+
             taskState.IsDeleted = true;
+
             _context.SaveChanges();
+
+            TempData["Success"] = "Task state deleted successfully.";
 
             return RedirectToAction(nameof(Index));
         }

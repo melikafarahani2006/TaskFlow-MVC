@@ -1,12 +1,10 @@
-﻿@model IEnumerable<TaskFlowMvc.Models.TaskState>
+﻿@model IEnumerable<TaskFlowMvc.Models.Tag>
 
-<h2>Task States</h2>
+@{
+    ViewData["Title"] = "Tags";
+}
 
-<p>
-    <a asp-action="Create" class="btn btn-primary">
-        Create
-    </a>
-</p>
+<h2>Tags</h2>
 
 @if (TempData["Success"] != null)
 {
@@ -22,11 +20,18 @@
     </div>
 }
 
+<p>
+    <a asp-action="Create" class="btn btn-primary">
+        Create Tag
+    </a>
+</p>
+
 <table class="table table-bordered table-striped">
 
     <thead>
         <tr>
             <th>Name</th>
+            <th>Color</th>
             <th>Created At</th>
             <th>Updated At</th>
             <th width="180">Actions</th>
@@ -40,6 +45,13 @@
             <tr>
 
                 <td>@item.Name</td>
+
+                <td>
+                    <span class="badge"
+                          style="background-color:@item.Color">
+                        @item.Color
+                    </span>
+                </td>
 
                 <td>
                     @item.CreatedAt.ToString("yyyy/MM/dd HH:mm")

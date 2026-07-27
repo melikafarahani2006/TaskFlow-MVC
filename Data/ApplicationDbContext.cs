@@ -68,6 +68,37 @@ public class ApplicationDbContext : DbContext
             .HasQueryFilter(x => !x.IsDeleted);
 
 
+                modelBuilder.Entity<Project>()
+            .HasOne(x => x.Workspace)
+            .WithMany(x => x.Projects)
+            .HasForeignKey(x => x.WorkspaceId)
+            .OnDelete(DeleteBehavior.Restrict);
+
+                modelBuilder.Entity<TaskItem>()
+            .HasOne(x => x.Project)
+            .WithMany(x => x.TaskItems)
+            .HasForeignKey(x => x.ProjectId)
+            .OnDelete(DeleteBehavior.Restrict);
+
+                modelBuilder.Entity<TaskItem>()
+            .HasOne(x => x.TaskState)
+            .WithMany(x => x.TaskItems)
+            .HasForeignKey(x => x.TaskStateId)
+            .OnDelete(DeleteBehavior.Restrict);
+
+                modelBuilder.Entity<TaskItemTag>()
+            .HasOne(x => x.TaskItem)
+            .WithMany(x => x.TaskItemTags)
+            .HasForeignKey(x => x.TaskItemId)
+            .OnDelete(DeleteBehavior.Restrict);
+
+                modelBuilder.Entity<TaskItemTag>()
+            .HasOne(x => x.Tag)
+            .WithMany(x => x.TaskItemTags)
+            .HasForeignKey(x => x.TagId)
+            .OnDelete(DeleteBehavior.Restrict);
+
+
         modelBuilder.Entity<TaskState>().HasData(
             new TaskState
             {

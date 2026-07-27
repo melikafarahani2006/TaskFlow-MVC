@@ -142,8 +142,21 @@ public class TagController : Controller
             if (tag == null)
                 return NotFound();
 
+            var isUsed = _context.TaskItemTag.Any(x => x.TagId == id);
+
+            if (isUsed)
+            {
+                TempData["Error"] =
+                    "Tag cannot be deleted. Remove it from all tasks first.";
+
+                return RedirectToAction(nameof(Index));
+            }
+
             tag.IsDeleted = true;
+
             _context.SaveChanges();
+
+            TempData["Success"] = "Tag deleted successfully.";
 
             return RedirectToAction(nameof(Index));
         }
