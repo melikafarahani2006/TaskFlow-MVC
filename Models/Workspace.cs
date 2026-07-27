@@ -2,7 +2,7 @@
 
 namespace TaskFlowMvc.Models;
 
-public class Workspace
+public class Workspace :BaseEntity
 {
     public Guid Id { get; set; }
 
@@ -11,7 +11,5 @@ public class Workspace
 
     [MaxLength(100)]
     public string? Description { get; set; }
-    public DateTime CreatedAt { get; set; }
-
     public ICollection<Project> Projects { get; set; } = [];
 }

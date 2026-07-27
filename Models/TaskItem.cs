@@ -3,7 +3,7 @@ using TaskFlowMvc.Models;
 
 namespace TaskFlowMvc.Models;
 
-public class TaskItem
+public class TaskItem : BaseEntity
 {
     public Guid Id { get; set; }
     public Guid TaskStateId { get; set; }
@@ -17,8 +17,6 @@ public class TaskItem
     public DateTime? DueDate { get; set; }
     public int Order { get; set; }
     public ICollection<TaskItemTag> TaskItemTags { get; set; } = new List<TaskItemTag>();
-    public DateTime CreatedAt { get; set; }
-
     public Project Project { get; set; } = null!;
     public TaskState TaskState { get; set; } = null!;
 }

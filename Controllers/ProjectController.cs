@@ -66,7 +66,6 @@ public class ProjectController : Controller
                 WorkspaceId = workspaceId,
                 Name = request.Name,
                 Description = request.Description,
-                CreatedAt = DateTime.UtcNow
             };
 
             _context.Project.Add(project);

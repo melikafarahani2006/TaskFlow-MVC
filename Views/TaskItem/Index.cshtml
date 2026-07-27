@@ -3,26 +3,23 @@
 <h2>Tasks</h2>
 
 <p>
-    <a asp-action="Create"
-       class="btn btn-primary">
+    <a asp-action="Create" class="btn btn-primary">
         Create
     </a>
 </p>
 
-<table class="table table-bordered">
+<table class="table table-bordered table-striped">
 
     <thead>
-
         <tr>
-
             <th>Title</th>
             <th>Project</th>
             <th>Status</th>
             <th>Tags</th>
-            <th></th>
-
+            <th>Created At</th>
+            <th>Updated At</th>
+            <th width="180">Actions</th>
         </tr>
-
     </thead>
 
     <tbody>
@@ -38,13 +35,24 @@
                 <td>@item.TaskState.Name</td>
 
                 <td>
-                   @foreach (var itemTag in item.TaskItemTags)
-                     {
-                        <span class="badge bg-secondary">
-                                  @itemTag.Tag.Name
-                         </span>
-                     }
+                    @foreach (var itemTag in item.TaskItemTags)
+                    {
+                        <span class="badge bg-secondary me-1">
+                            @itemTag.Tag.Name
+                        </span>
+                    }
                 </td>
+
+                <td>
+                    @item.CreatedAt.ToString("yyyy/MM/dd HH:mm")
+                </td>
+
+                <td>
+                    @(item.UpdatedAt.HasValue
+                        ? item.UpdatedAt.Value.ToString("yyyy/MM/dd HH:mm")
+                        : "-")
+                </td>
+
                 <td>
 
                     <a asp-action="Edit"

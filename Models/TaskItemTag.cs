@@ -2,6 +2,7 @@
 
 public class TaskItemTag
 {
+    public Guid Id { get; set; }
     public Guid TaskItemId { get; set; }
     public Guid TagId { get; set; }
     public TaskItem TaskItem { get; set; } = null!;

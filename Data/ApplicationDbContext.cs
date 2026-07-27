@@ -17,6 +17,36 @@ public class ApplicationDbContext : DbContext
     public DbSet<Tag> Tag => Set<Tag>();
     public DbSet<TaskItemTag> TaskItemTag => Set<TaskItemTag>();
 
+    private void SetAuditFields()
+    {
+        var entries = ChangeTracker.Entries<BaseEntity>();
+
+        foreach (var entry in entries)
+        {
+
+            if (entry.State == EntityState.Added)
+            {
+                entry.Entity.CreatedAt = DateTime.UtcNow;
+            }
+
+            if (entry.State == EntityState.Modified)
+            {
+                entry.Entity.UpdatedAt = DateTime.UtcNow;
+            }
+        }
+    }
+
+    public override int SaveChanges()
+    {
+        SetAuditFields();
+        return base.SaveChanges();
+    }
+
+    public override Task<int> SaveChangesAsync(CancellationToken cancellationToken = default)
+    {
+        SetAuditFields();
+        return base.SaveChangesAsync(cancellationToken);
+    }
 
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
@@ -45,6 +75,14 @@ public class ApplicationDbContext : DbContext
             }
         );
 
-        modelBuilder.Entity<TaskItemTag>().HasKey(x => new { x.TaskItemId, x.TagId });
+        modelBuilder.Entity<TaskItemTag>()
+            .HasOne(x => x.TaskItem)
+            .WithMany(x => x.TaskItemTags)
+            .HasForeignKey(x => x.TaskItemId);
+
+        modelBuilder.Entity<TaskItemTag>()
+            .HasOne(x => x.Tag)
+            .WithMany(x => x.TaskItemTags)
+            .HasForeignKey(x => x.TagId);
     }
 }

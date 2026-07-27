@@ -76,7 +76,6 @@ public class TaskItemController : Controller
                 Title = request.Title,
                 Description = request.Description,
                 Order = maxOrder + 1,
-                CreatedAt = DateTime.UtcNow
             };
 
             _context.TaskItem.Add(task);

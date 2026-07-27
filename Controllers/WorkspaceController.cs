@@ -48,7 +48,6 @@ public class WorkspaceController : Controller
             {
                 Name = request.Name,
                 Description = request.Description,
-                CreatedAt = DateTime.UtcNow
             };
 
             _context.Workspace.Add(workspace);
@@ -104,6 +103,7 @@ public class WorkspaceController : Controller
 
             current.Name = request.Name;
             current.Description = request.Description;
+            Console.WriteLine(_context.GetType().FullName);
             _context.SaveChanges();
 
             return RedirectToAction(nameof(Index));
