@@ -13,9 +13,9 @@ public class ApplicationDbContext : DbContext
     public DbSet<Workspace> Workspace => Set<Workspace>();
     public DbSet<Project> Project => Set<Project>();
     public DbSet<TaskState> TaskState => Set<TaskState>();
-    public DbSet<TaskItem> TaskItem => Set<TaskItem>();
+    public DbSet<Models.Task> Task => base.Set<Models.Task>();
     public DbSet<Tag> Tag => Set<Tag>();
-    public DbSet<TaskItemTag> TaskItemTag => Set<TaskItemTag>();
+    public DbSet<TaskTag> TaskTag => Set<TaskTag>();
 
     private void SetAuditFields()
     {
@@ -58,7 +58,7 @@ public class ApplicationDbContext : DbContext
         modelBuilder.Entity<Project>()
             .HasQueryFilter(x => !x.IsDeleted);
 
-        modelBuilder.Entity<TaskItem>()
+        modelBuilder.Entity<Models.Task>()
             .HasQueryFilter(x => !x.IsDeleted);
 
         modelBuilder.Entity<TaskState>()
@@ -74,27 +74,27 @@ public class ApplicationDbContext : DbContext
             .HasForeignKey(x => x.WorkspaceId)
             .OnDelete(DeleteBehavior.Restrict);
 
-                modelBuilder.Entity<TaskItem>()
+                modelBuilder.Entity<Models.Task>()
             .HasOne(x => x.Project)
-            .WithMany(x => x.TaskItems)
+            .WithMany(x => x.Tasks)
             .HasForeignKey(x => x.ProjectId)
             .OnDelete(DeleteBehavior.Restrict);
 
-                modelBuilder.Entity<TaskItem>()
+                modelBuilder.Entity<Models.Task>()
             .HasOne(x => x.TaskState)
-            .WithMany(x => x.TaskItems)
+            .WithMany(x => x.Tasks)
             .HasForeignKey(x => x.TaskStateId)
             .OnDelete(DeleteBehavior.Restrict);
 
-                modelBuilder.Entity<TaskItemTag>()
-            .HasOne(x => x.TaskItem)
-            .WithMany(x => x.TaskItemTags)
-            .HasForeignKey(x => x.TaskItemId)
+                modelBuilder.Entity<TaskTag>()
+            .HasOne(x => x.Task)
+            .WithMany(x => x.TaskTags)
+            .HasForeignKey(x => x.TaskId)
             .OnDelete(DeleteBehavior.Restrict);
 
-                modelBuilder.Entity<TaskItemTag>()
+                modelBuilder.Entity<TaskTag>()
             .HasOne(x => x.Tag)
-            .WithMany(x => x.TaskItemTags)
+            .WithMany(x => x.TaskTags)
             .HasForeignKey(x => x.TagId)
             .OnDelete(DeleteBehavior.Restrict);
 
@@ -122,14 +122,14 @@ public class ApplicationDbContext : DbContext
             }
         );
 
-        modelBuilder.Entity<TaskItemTag>()
-            .HasOne(x => x.TaskItem)
-            .WithMany(x => x.TaskItemTags)
-            .HasForeignKey(x => x.TaskItemId);
+        modelBuilder.Entity<TaskTag>()
+            .HasOne(x => x.Task)
+            .WithMany(x => x.TaskTags)
+            .HasForeignKey(x => x.TaskId);
 
-        modelBuilder.Entity<TaskItemTag>()
+        modelBuilder.Entity<TaskTag>()
             .HasOne(x => x.Tag)
-            .WithMany(x => x.TaskItemTags)
+            .WithMany(x => x.TaskTags)
             .HasForeignKey(x => x.TagId);
     }
 }

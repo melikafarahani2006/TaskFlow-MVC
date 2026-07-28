@@ -17,20 +17,20 @@ public class TaskItemApiController : ControllerBase
         _context = context;
     }
 
-    [HttpGet("taskItems")]
+    [HttpGet("tasks")]
     public IActionResult GetAll()
     {
         return Ok(
-            _context.TaskItem
+            _context.Task
                 //.Include(x => x.Project)
                 //.Include(x => x.TaskState)
                 .ToList());
     }
 
-    [HttpGet("taskItem/{id}")]
+    [HttpGet("task/{id}")]
     public IActionResult Get(Guid id)
     {
-        var task = _context.TaskItem
+        var task = _context.Task
             //.Include(x => x.Project)
             //.Include(x => x.TaskState)
             .FirstOrDefault(x => x.Id == id);
@@ -41,13 +41,13 @@ public class TaskItemApiController : ControllerBase
         return Ok(task);
     }
 
-    [HttpPost("taskItem")]
-    public IActionResult Create(CreateTaskItemRequest request)
+    [HttpPost("task")]
+    public IActionResult Create(CreateTaskRequest request)
     {
         if (!ModelState.IsValid)
             return BadRequest(ModelState);
 
-        var task = new TaskItem
+        var task = new Models.Task
         {
             ProjectId = request.ProjectId,
             TaskStateId = request.TaskStateId,
@@ -56,19 +56,19 @@ public class TaskItemApiController : ControllerBase
             CreatedAt = DateTime.UtcNow
         };
 
-        _context.TaskItem.Add(task);
+        _context.Task.Add(task);
         _context.SaveChanges();
 
         return CreatedAtAction(nameof(Get), new { id = task.Id }, task);
     }
 
-    [HttpPut("taskItem/{id}")]
-    public IActionResult Update(Guid id, UpdateTaskItemRequest request)
+    [HttpPut("task/{id}")]
+    public IActionResult Update(Guid id, UpdateTaskRequest request)
     {
         if (!ModelState.IsValid)
             return BadRequest(ModelState);
 
-        var task = _context.TaskItem.Find(id);
+        var task = _context.Task.Find(id);
 
         if (task == null)
             return NotFound();
@@ -83,15 +83,15 @@ public class TaskItemApiController : ControllerBase
         return NoContent();
     }
 
-    [HttpDelete("taskItem/{id}")]
+    [HttpDelete("task/{id}")]
     public IActionResult Delete(Guid id)
     {
-        var task = _context.TaskItem.Find(id);
+        var task = _context.Task.Find(id);
 
         if (task == null)
             return NotFound();
 
-        _context.TaskItem.Remove(task);
+        _context.Task.Remove(task);
         _context.SaveChanges();
 
         return NoContent();

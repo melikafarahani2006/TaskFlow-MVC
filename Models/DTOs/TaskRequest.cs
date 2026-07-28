@@ -2,7 +2,7 @@
 
 namespace TaskFlowMvc.Models.DTOs;
 
-public class CreateTaskItemRequest
+public class CreateTaskRequest
 {
     [Required]
     [Display(Name = "Project Name")]
@@ -22,7 +22,7 @@ public class CreateTaskItemRequest
     public string? Description { get; set; }
 }
 
-public class UpdateTaskItemRequest
+public class UpdateTaskRequest
 {
     [Required]
     [Display(Name = "Project Name")]

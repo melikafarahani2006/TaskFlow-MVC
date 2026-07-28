@@ -11,5 +11,5 @@ public class Tag : BaseEntity
 
     [MaxLength(20)]
     public string? Color { get; set; }
-    public ICollection<TaskItemTag> TaskItemTags { get; set; } = new List<TaskItemTag>();
+    public ICollection<TaskTag> TaskTags { get; set; } = new List<TaskTag>();
 }

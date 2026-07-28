@@ -3,6 +3,7 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using TaskFlowMvc.Data;
 
@@ -11,9 +12,11 @@ using TaskFlowMvc.Data;
 namespace TaskFlowMvc.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    partial class ApplicationDbContextModelSnapshot : ModelSnapshot
+    [Migration("20260728060250_RenameTaskItemAndTaskItemTag")]
+    partial class RenameTaskItemAndTaskItemTag
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -127,7 +130,7 @@ namespace TaskFlowMvc.Migrations
 
                     b.HasIndex("TaskStateId");
 
-                    b.ToTable("Task");
+                    b.ToTable("TaskItem");
                 });
 
             modelBuilder.Entity("TaskFlowMvc.Models.TaskState", b =>
@@ -210,7 +213,7 @@ namespace TaskFlowMvc.Migrations
 
                     b.HasIndex("TaskId");
 
-                    b.ToTable("TaskTag");
+                    b.ToTable("TaskItemTag");
                 });
 
             modelBuilder.Entity("TaskFlowMvc.Models.Workspace", b =>

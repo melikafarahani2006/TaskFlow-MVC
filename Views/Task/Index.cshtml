@@ -1,4 +1,4 @@
-﻿@model IEnumerable<TaskFlowMvc.Models.TaskItem>
+﻿@model IEnumerable<TaskFlowMvc.Models.Task>
 
 <h2>Tasks</h2>
 
@@ -35,7 +35,7 @@
                 <td>@item.TaskState.Name</td>
 
                 <td>
-                    @foreach (var itemTag in item.TaskItemTags)
+                    @foreach (var itemTag in item.TaskTags)
                     {
                         <span class="badge bg-secondary me-1">
                             @itemTag.Tag.Name

@@ -190,7 +190,7 @@ public class ProjectController : Controller
             if (project == null)
                 return NotFound();
 
-            var hasTasks = _context.TaskItem.Any(x => x.ProjectId == id);
+            var hasTasks = _context.Task.Any(x => x.ProjectId == id);
 
             if (hasTasks)
             {

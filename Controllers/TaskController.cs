@@ -7,12 +7,12 @@ using TaskFlowMvc.Models.DTOs;
 
 namespace TaskFlowMvc.Controllers;
 
-public class TaskItemController : Controller
+public class TaskController : Controller
 {
     private readonly ApplicationDbContext _context;
-    private readonly ILogger<TaskItemController> _logger;
+    private readonly ILogger<TaskController> _logger;
 
-    public TaskItemController(ApplicationDbContext context, ILogger<TaskItemController> logger)
+    public TaskController(ApplicationDbContext context, ILogger<TaskController> logger)
     {
         _context = context;
         _logger = logger;
@@ -23,10 +23,10 @@ public class TaskItemController : Controller
     {
         try
         {
-            var tasks = _context.TaskItem
+            var tasks = _context.Task
                 .Include(x => x.Project)
                 .Include(x => x.TaskState)
-                 .Include(x => x.TaskItemTags)
+                 .Include(x => x.TaskTags)
                 .ThenInclude(x => x.Tag)
                 .ToList();
 
@@ -35,7 +35,7 @@ public class TaskItemController : Controller
         catch
         {
             TempData["Error"] = "Unable to load tasks.";
-            return View(new List<TaskItem>());
+            return base.View(new List<Models.Task>());
         }
     }
 
@@ -51,7 +51,7 @@ public class TaskItemController : Controller
     }
 
     [HttpPost]
-    public IActionResult Create(CreateTaskItemRequest request)
+    public IActionResult Create(CreateTaskRequest request)
     {
         if (!ModelState.IsValid)
         {
@@ -64,12 +64,12 @@ public class TaskItemController : Controller
 
         try
         {
-            var maxOrder = _context.TaskItem
+            var maxOrder = _context.Task
                  .Where(x => x.ProjectId == request.ProjectId)
                  .Select(x => (int?)x.Order)
                  .Max() ?? 0;
 
-            var task = new TaskItem
+            var task = new Models.Task
             {
                 ProjectId = request.ProjectId,
                 TaskStateId = request.TaskStateId,
@@ -78,14 +78,14 @@ public class TaskItemController : Controller
                 Order = maxOrder + 1,
             };
 
-            _context.TaskItem.Add(task);
+            _context.Task.Add(task);
             _context.SaveChanges();
 
             foreach (var tagId in request.TagIds)
             {
-                _context.TaskItemTag.Add(new TaskItemTag
+                _context.TaskTag.Add(new TaskTag
                 {
-                    TaskItemId = task.Id,
+                    TaskId = task.Id,
                     TagId = tagId
                 });
             }
@@ -116,7 +116,7 @@ public class TaskItemController : Controller
     {
         try
         {
-            var task = _context.TaskItem.Find(id);
+            var task = _context.Task.Find(id);
 
             if (task == null)
                 return NotFound();
@@ -125,12 +125,12 @@ public class TaskItemController : Controller
             ViewBag.TaskState = new SelectList(_context.TaskState, "Id", "Name", task.TaskStateId);
             ViewBag.Tag = _context.Tag.ToList();
 
-            var selectedTags = _context.TaskItemTag
-                .Where(x => x.TaskItemId == id)
+            var selectedTags = _context.TaskTag
+                .Where(x => x.TaskId == id)
                 .Select(x => x.TagId)
                 .ToList();
 
-            return View(new UpdateTaskItemRequest
+            return View(new UpdateTaskRequest
             {
                 ProjectId = task.ProjectId,
                 TaskStateId = task.TaskStateId,
@@ -147,7 +147,7 @@ public class TaskItemController : Controller
     }
 
     [HttpPost]
-    public IActionResult Edit(Guid id, UpdateTaskItemRequest request)
+    public IActionResult Edit(Guid id, UpdateTaskRequest request)
     {
         if (!ModelState.IsValid)
         {
@@ -160,7 +160,7 @@ public class TaskItemController : Controller
 
         try
         {
-            var task = _context.TaskItem.Find(id);
+            var task = _context.Task.Find(id);
 
             if (task == null)
                 return NotFound();
@@ -170,16 +170,16 @@ public class TaskItemController : Controller
             task.Title = request.Title;
             task.Description = request.Description;
 
-            var oldTags = _context.TaskItemTag
-                .Where(x => x.TaskItemId == id);
+            var oldTags = _context.TaskTag
+                .Where(x => x.TaskId == id);
 
-            _context.TaskItemTag.RemoveRange(oldTags);
+            _context.TaskTag.RemoveRange(oldTags);
 
             foreach (var tagId in request.TagIds)
             {
-                _context.TaskItemTag.Add(new TaskItemTag
+                _context.TaskTag.Add(new TaskTag
                 {
-                    TaskItemId = id,
+                    TaskId = id,
                     TagId = tagId
                 });
             }
@@ -206,10 +206,10 @@ public class TaskItemController : Controller
     {
         try
         {
-            var task = _context.TaskItem
+            var task = _context.Task
                 .Include(x => x.Project)
                 .Include(x => x.TaskState)
-                .Include(x => x.TaskItemTags)
+                .Include(x => x.TaskTags)
                 .ThenInclude(x => x.Tag).ToList()
                 .FirstOrDefault(x => x.Id == id);
 
@@ -230,7 +230,7 @@ public class TaskItemController : Controller
     {
         try
         {
-            var task = _context.TaskItem.Find(id);
+            var task = _context.Task.Find(id);
 
             if (task == null)
                 return NotFound();

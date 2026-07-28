@@ -142,7 +142,7 @@ public class TaskStateController : Controller
             if (taskState == null)
                 return NotFound();
 
-            var hasTasks = _context.TaskItem.Any(x => x.TaskStateId == id);
+            var hasTasks = _context.Task.Any(x => x.TaskStateId == id);
 
             if (hasTasks)
             {

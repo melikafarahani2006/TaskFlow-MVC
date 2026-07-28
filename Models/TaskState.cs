@@ -10,5 +10,5 @@ public class TaskState : BaseEntity
     [MaxLength(100)]
     public string Name { get; set; } = string.Empty;
     public int Order { get; set; }
-    public ICollection<TaskItem> TaskItems { get; set; } = new List<TaskItem>();
+    public ICollection<Task> Tasks { get; set; } = new List<Task>();
 }

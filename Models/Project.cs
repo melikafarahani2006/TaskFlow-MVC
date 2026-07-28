@@ -13,5 +13,5 @@ public class Project : BaseEntity
     [MaxLength(100)]
     public string? Description { get; set; }
     public Workspace? Workspace { get; set; }
-    public ICollection<TaskItem> TaskItems { get; set; } = new List<TaskItem>();
+    public ICollection<Task> Tasks { get; set; } = new List<Task>();
 }

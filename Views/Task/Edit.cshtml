@@ -1,12 +1,14 @@
-﻿@model TaskFlowMvc.Models.DTOs.CreateTaskItemRequest
+﻿@model TaskFlowMvc.Models.DTOs.UpdateTaskRequest
 
 @{
-    ViewData["Title"] = "Create Task";
+    ViewData["Title"] = "Edit Task";
 }
 
-<h2>Create Task</h2>
+<h2>Edit Task</h2>
 
-<form asp-action="Create" method="post">
+<form asp-action="Edit"
+      asp-route-id="@Context.Request.RouteValues["id"]"
+      method="post">
 
     <div asp-validation-summary="ModelOnly" class="text-danger"></div>
 
@@ -66,9 +68,11 @@
                        type="checkbox"
                        name="TagIds"
                        value="@tag.Id"
-                       id="@tag.Id" />
+                       id="@tag.Id"
+                       @(Model.TagIds.Contains(tag.Id) ? "checked" : "") />
 
-                <label class="form-check-label" for="@tag.Id">
+                <label class="form-check-label"
+                       for="@tag.Id">
                     @tag.Name
                 </label>
 
@@ -78,7 +82,7 @@
     </div>
 
     <button type="submit" class="btn btn-primary">
-        Create
+        Save
     </button>
 
     <a asp-action="Index" class="btn btn-secondary">

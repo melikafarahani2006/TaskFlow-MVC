@@ -142,7 +142,7 @@ public class TagController : Controller
             if (tag == null)
                 return NotFound();
 
-            var isUsed = _context.TaskItemTag.Any(x => x.TagId == id);
+            var isUsed = _context.TaskTag.Any(x => x.TagId == id);
 
             if (isUsed)
             {
