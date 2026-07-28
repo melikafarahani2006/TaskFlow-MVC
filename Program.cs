@@ -1,6 +1,7 @@
 using Microsoft.EntityFrameworkCore;
-using TaskFlowMvc.Data;
 using Serilog;
+using TaskFlowMvc.Data;
+using TaskFlowMvc.Models;
 
 Log.Logger = new LoggerConfiguration()
     .MinimumLevel.Information()
@@ -8,6 +9,7 @@ Log.Logger = new LoggerConfiguration()
         "Logs/log-.txt",
         rollingInterval: RollingInterval.Day)
     .CreateLogger();
+
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -26,6 +28,26 @@ builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
 var app = builder.Build();
+
+using (var scope = app.Services.CreateScope())
+{
+    var context = scope.ServiceProvider.GetRequiredService<ApplicationDbContext>();
+
+    context.Database.Migrate();
+
+    if (!context.TaskState.Any())
+    {
+        context.TaskState.AddRange(
+            new TaskState { Name = "Todo" },
+            new TaskState { Name = "In Progress" },
+            new TaskState { Name = "Review" },
+            new TaskState { Name = "Done" }
+        );
+
+        context.SaveChanges();
+    }
+}
+
 
 if (app.Environment.IsDevelopment())
 {
