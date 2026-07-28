@@ -1,6 +1,6 @@
 ﻿namespace TaskFlowMvc.Models.DTOs;
 
-public class TaskResponse
+public class TaskResponse :BaseEntity
 {
     public Guid Id { get; set; }
     public string Title { get; set; } = string.Empty;
@@ -12,6 +12,4 @@ public class TaskResponse
     public Guid TaskStateId { get; set; }
     public string TaskStateName { get; set; } = string.Empty;
     public List<Tag> Tags { get; set; } = [];
-    public DateTime CreatedAt { get; set; }
-    public DateTime? UpdatedAt { get; set; }
 }

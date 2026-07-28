@@ -8,12 +8,12 @@ namespace TaskFlowMvc.Controllers.Api;
 
 [ApiController]
 [Route("api/")]
-public class TaskController : ControllerBase
+public class TaskApiController : ControllerBase
 {
     private readonly ApplicationDbContext _context;
     private readonly ILogger<TaskController> _logger;
 
-    public TaskController(ApplicationDbContext context, ILogger<TaskController> logger)
+    public TaskApiController(ApplicationDbContext context, ILogger<TaskController> logger)
     {
         _context = context;
         _logger = logger;
@@ -44,17 +44,12 @@ public class TaskController : ControllerBase
                     TaskStateId = x.TaskStateId,
                     TaskStateName = x.TaskState.Name,
 
-                    CreatedAt = x.CreatedAt,
-                    UpdatedAt = x.UpdatedAt,
-
                     Tags = x.TaskTags
                         .Select(t => new Tag
                         {
                             Id = t.Tag.Id,
                             Name = t.Tag.Name,
                             Color = t.Tag.Color,
-                            CreatedAt = t.Tag.CreatedAt,
-                            UpdatedAt = t.Tag.UpdatedAt
                         })
                         .ToList()
                 })
@@ -94,17 +89,12 @@ public class TaskController : ControllerBase
                     TaskStateId = x.TaskStateId,
                     TaskStateName = x.TaskState.Name,
 
-                    CreatedAt = x.CreatedAt,
-                    UpdatedAt = x.UpdatedAt,
-
                     Tags = x.TaskTags
                         .Select(t => new Tag
                         {
                             Id = t.Tag.Id,
                             Name = t.Tag.Name,
                             Color = t.Tag.Color,
-                            CreatedAt = t.Tag.CreatedAt,
-                            UpdatedAt = t.Tag.UpdatedAt
                         })
                         .ToList()
                 })
@@ -158,10 +148,36 @@ public class TaskController : ControllerBase
 
             _context.SaveChanges();
 
+            var response = _context.Task
+                .Include(x => x.Project)
+                .Include(x => x.TaskState)
+                .Include(x => x.TaskTags)
+                    .ThenInclude(x => x.Tag)
+                .Where(x => x.Id == task.Id)
+                .Select(x => new TaskResponse
+                {
+                    Id = x.Id,
+                    Title = x.Title,
+                    Description = x.Description,
+                    DueDate = x.DueDate,
+                    Order = x.Order,
+
+                    ProjectId = x.ProjectId,
+                    ProjectName = x.Project.Name,
+
+                    TaskStateId = x.TaskStateId,
+                    TaskStateName = x.TaskState.Name,
+
+                    Tags = x.TaskTags
+                        .Select(t => t.Tag)
+                        .ToList(),
+                })
+                .FirstOrDefault();
+
             return CreatedAtAction(
                 nameof(GetById),
-                new { id = task.Id },
-                task);
+                new { id = response!.Id },
+                response);
         }
         catch (Exception ex)
         {
@@ -206,7 +222,39 @@ public class TaskController : ControllerBase
 
             _context.SaveChanges();
 
-            return Ok(task);
+            var response = _context.Task
+                .Include(x => x.Project)
+                .Include(x => x.TaskState)
+                .Include(x => x.TaskTags)
+                    .ThenInclude(x => x.Tag)
+                .Where(x => x.Id == id)
+                .Select(x => new TaskResponse
+                {
+                    Id = x.Id,
+                    Title = x.Title,
+                    Description = x.Description,
+                    DueDate = x.DueDate,
+                    Order = x.Order,
+
+                    ProjectId = x.ProjectId,
+                    ProjectName = x.Project.Name,
+
+                    TaskStateId = x.TaskStateId,
+                    TaskStateName = x.TaskState.Name,
+
+                    Tags = x.TaskTags
+                        .Select(t => new Tag
+                        {
+                            Id = t.Tag.Id,
+                            Name = t.Tag.Name,
+                            Color = t.Tag.Color,
+                        })
+                        .ToList()
+                })
+                .FirstOrDefault();
+
+            return Ok(response);
+
         }
         catch (Exception ex)
         {

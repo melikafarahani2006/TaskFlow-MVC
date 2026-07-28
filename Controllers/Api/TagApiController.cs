@@ -1,4 +1,5 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 using TaskFlowMvc.Data;
 using TaskFlowMvc.Models;
 using TaskFlowMvc.Models.DTOs;
@@ -7,11 +8,11 @@ namespace TaskFlowMvc.Controllers.Api;
 
 [ApiController]
 [Route("api/")]
-public class TagController : ControllerBase
+public class TagApiController : ControllerBase
 {
     private readonly ApplicationDbContext _context;
 
-    public TagController(ApplicationDbContext context)
+    public TagApiController(ApplicationDbContext context)
     {
         _context = context;
     }
@@ -22,7 +23,38 @@ public class TagController : ControllerBase
     {
         try
         {
-            var tags = _context.Tag.ToList();
+            var tags = _context.Tag
+                .Include(x => x.TaskTags)
+                    .ThenInclude(x => x.Task)
+                        .ThenInclude(x => x.Project)
+                .Include(x => x.TaskTags)
+                    .ThenInclude(x => x.Task)
+                        .ThenInclude(x => x.TaskState)
+                .Select(x => new TagResponse
+                {
+                    Id = x.Id,
+                    Name = x.Name,
+                    Color = x.Color,
+
+                    Tasks = x.TaskTags
+                        .Where(tt => !tt.Task.IsDeleted)
+                        .Select(tt => new TaskResponse
+                        {
+                            Id = tt.Task.Id,
+                            Title = tt.Task.Title,
+                            Description = tt.Task.Description,
+                            Order = tt.Task.Order,
+
+                            ProjectId = tt.Task.ProjectId,
+                            ProjectName = tt.Task.Project.Name,
+
+                            TaskStateId = tt.Task.TaskStateId,
+                            TaskStateName = tt.Task.TaskState.Name,
+                        })
+                        .ToList()
+                })
+                .ToList();
+
             return Ok(tags);
         }
         catch
@@ -37,7 +69,39 @@ public class TagController : ControllerBase
     {
         try
         {
-            var tag = _context.Tag.Find(id);
+            var tag = _context.Tag
+                .Include(x => x.TaskTags)
+                    .ThenInclude(x => x.Task)
+                        .ThenInclude(x => x.Project)
+                .Include(x => x.TaskTags)
+                    .ThenInclude(x => x.Task)
+                        .ThenInclude(x => x.TaskState)
+                .Where(x => x.Id == id)
+                .Select(x => new TagResponse
+                {
+                    Id = x.Id,
+                    Name = x.Name,
+                    Color = x.Color,
+
+                    Tasks = x.TaskTags
+                        .Where(tt => !tt.Task.IsDeleted)
+                        .Select(tt => new TaskResponse
+                        {
+                            Id = tt.Task.Id,
+                            Title = tt.Task.Title,
+                            Description = tt.Task.Description,
+                            Order = tt.Task.Order,
+
+                            ProjectId = tt.Task.ProjectId,
+                            ProjectName = tt.Task.Project.Name,
+
+                            TaskStateId = tt.Task.TaskStateId,
+                            TaskStateName = tt.Task.TaskState.Name,
+
+                        })
+                        .ToList()
+                })
+                .FirstOrDefault();
 
             if (tag == null)
                 return NotFound();
@@ -98,7 +162,41 @@ public class TagController : ControllerBase
 
             _context.SaveChanges();
 
-            return Ok(tag);
+            var response = _context.Tag
+                .Include(x => x.TaskTags)
+                    .ThenInclude(x => x.Task)
+                        .ThenInclude(x => x.Project)
+                .Include(x => x.TaskTags)
+                    .ThenInclude(x => x.Task)
+                        .ThenInclude(x => x.TaskState)
+                .Where(x => x.Id == id)
+                .Select(x => new TagResponse
+                {
+                    Id = x.Id,
+                    Name = x.Name,
+                    Color = x.Color,
+
+                    Tasks = x.TaskTags
+                        .Where(tt => !tt.Task.IsDeleted)
+                        .Select(tt => new TaskResponse
+                        {
+                            Id = tt.Task.Id,
+                            Title = tt.Task.Title,
+                            Description = tt.Task.Description,
+                            Order = tt.Task.Order,
+
+                            ProjectId = tt.Task.ProjectId,
+                            ProjectName = tt.Task.Project.Name,
+
+                            TaskStateId = tt.Task.TaskStateId,
+                            TaskStateName = tt.Task.TaskState.Name,
+
+                        })
+                        .ToList()
+                })
+                .FirstOrDefault();
+
+            return Ok(response);
         }
         catch
         {

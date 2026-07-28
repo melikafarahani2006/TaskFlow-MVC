@@ -8,11 +8,11 @@ namespace TaskFlowMvc.Controllers.Api;
 
 [ApiController]
 [Route("api/")]
-public class ProjectController : ControllerBase
+public class ProjectApiController : ControllerBase
 {
     private readonly ApplicationDbContext _context;
 
-    public ProjectController(ApplicationDbContext context)
+    public ProjectApiController(ApplicationDbContext context)
     {
         _context = context;
     }
@@ -34,8 +34,6 @@ public class ProjectController : ControllerBase
                     Description = x.Description,
                     WorkspaceId = x.WorkspaceId,
                     WorkspaceName = x.Workspace!.Name,
-                    CreatedAt = x.CreatedAt,
-                    UpdatedAt = x.UpdatedAt,
 
                     Tasks = x.Tasks
                         .Where(t => !t.IsDeleted)
@@ -75,8 +73,6 @@ public class ProjectController : ControllerBase
                     Description = x.Description,
                     WorkspaceId = x.WorkspaceId,
                     WorkspaceName = x.Workspace!.Name,
-                    CreatedAt = x.CreatedAt,
-                    UpdatedAt = x.UpdatedAt,
 
                     Tasks = x.Tasks
                         .Where(t => !t.IsDeleted)
@@ -156,7 +152,42 @@ public class ProjectController : ControllerBase
 
             _context.SaveChanges();
 
-            return Ok(project);
+            var response = _context.Project
+                .Include(x => x.Workspace)
+                .Include(x => x.Tasks)
+                    .ThenInclude(x => x.TaskState)
+                .Where(x => x.Id == id)
+                .Select(x => new ProjectResponse
+                {
+                    Id = x.Id,
+                    Name = x.Name,
+                    Description = x.Description,
+
+                    WorkspaceId = x.WorkspaceId,
+                    WorkspaceName = x.Workspace!.Name,
+
+                    Tasks = x.Tasks
+                        .Where(t => !t.IsDeleted)
+                        .Select(t => new TaskResponse
+                        {
+                            Id = t.Id,
+                            Title = t.Title,
+                            Description = t.Description,
+                            DueDate = t.DueDate,
+                            Order = t.Order,
+
+                            ProjectId = t.ProjectId,
+                            ProjectName = x.Name,
+
+                            TaskStateId = t.TaskStateId,
+                            TaskStateName = t.TaskState.Name,
+
+                        })
+                        .ToList()
+                })
+                .FirstOrDefault();
+
+            return Ok(response);
         }
         catch
         {

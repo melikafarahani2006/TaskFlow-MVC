@@ -1,4 +1,5 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 using TaskFlowMvc.Data;
 using TaskFlowMvc.Models;
 using TaskFlowMvc.Models.DTOs;
@@ -7,22 +8,49 @@ namespace TaskFlowMvc.Controllers.Api;
 
 [ApiController]
 [Route("api/")]
-public class TaskStateController : ControllerBase
+public class TaskStateApiController : ControllerBase
 {
     private readonly ApplicationDbContext _context;
 
-    public TaskStateController(ApplicationDbContext context)
+    public TaskStateApiController(ApplicationDbContext context)
     {
         _context = context;
     }
 
-    // GET: api/taskstate
     [HttpGet("taskStates")]
     public IActionResult GetAll()
     {
         try
         {
-            var taskStates = _context.TaskState.ToList();
+            var taskStates = _context.TaskState
+                .Include(x => x.Tasks)
+                    .ThenInclude(x => x.Project)
+                .Select(x => new TaskStateResponse
+                {
+                    Id = x.Id,
+                    Name = x.Name,
+
+                    Tasks = x.Tasks
+                        .Where(t => !t.IsDeleted)
+                        .Select(t => new TaskResponse
+                        {
+                            Id = t.Id,
+                            Title = t.Title,
+                            Description = t.Description,
+                            DueDate = t.DueDate,
+                            Order = t.Order,
+
+                            ProjectId = t.ProjectId,
+                            ProjectName = t.Project.Name,
+
+                            TaskStateId = t.TaskStateId,
+                            TaskStateName = x.Name,
+
+                        })
+                        .ToList()
+                })
+                .ToList();
+
             return Ok(taskStates);
         }
         catch
@@ -31,13 +59,40 @@ public class TaskStateController : ControllerBase
         }
     }
 
-    // GET: api/taskstate/{id}
     [HttpGet("taskState/{id:guid}")]
     public IActionResult GetById(Guid id)
     {
         try
         {
-            var taskState = _context.TaskState.Find(id);
+            var taskState = _context.TaskState
+                .Include(x => x.Tasks)
+                    .ThenInclude(x => x.Project)
+                .Where(x => x.Id == id)
+                .Select(x => new TaskStateResponse
+                {
+                    Id = x.Id,
+                    Name = x.Name,
+
+                    Tasks = x.Tasks
+                        .Where(t => !t.IsDeleted)
+                        .Select(t => new TaskResponse
+                        {
+                            Id = t.Id,
+                            Title = t.Title,
+                            Description = t.Description,
+                            DueDate = t.DueDate,
+                            Order = t.Order,
+
+                            ProjectId = t.ProjectId,
+                            ProjectName = t.Project.Name,
+
+                            TaskStateId = t.TaskStateId,
+                            TaskStateName = x.Name,
+
+                        })
+                        .ToList()
+                })
+                .FirstOrDefault();
 
             if (taskState == null)
                 return NotFound();
@@ -78,7 +133,6 @@ public class TaskStateController : ControllerBase
         }
     }
 
-    // PUT: api/taskstate/{id}
     [HttpPut("taskState/{id:guid}")]
     public IActionResult Update(Guid id, UpdateTaskStateRequest request)
     {
@@ -96,7 +150,37 @@ public class TaskStateController : ControllerBase
 
             _context.SaveChanges();
 
-            return Ok(taskState);
+            var response = _context.TaskState
+                .Include(x => x.Tasks)
+                    .ThenInclude(x => x.Project)
+                .Where(x => x.Id == id)
+                .Select(x => new TaskStateResponse
+                {
+                    Id = x.Id,
+                    Name = x.Name,
+
+                    Tasks = x.Tasks
+                        .Where(t => !t.IsDeleted)
+                        .Select(t => new TaskResponse
+                        {
+                            Id = t.Id,
+                            Title = t.Title,
+                            Description = t.Description,
+                            DueDate = t.DueDate,
+                            Order = t.Order,
+
+                            ProjectId = t.ProjectId,
+                            ProjectName = t.Project.Name,
+
+                            TaskStateId = t.TaskStateId,
+                            TaskStateName = x.Name,
+
+                        })
+                        .ToList()
+                })
+                .FirstOrDefault();
+
+            return Ok(response);
         }
         catch
         {

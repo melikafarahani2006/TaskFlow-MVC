@@ -8,11 +8,11 @@ namespace TaskFlowMvc.Controllers.Api;
 
 [ApiController]
 [Route("api/")]
-public class WorkspaceController : ControllerBase
+public class WorkspaceApiController : ControllerBase
 {
     private readonly ApplicationDbContext _context;
 
-    public WorkspaceController(ApplicationDbContext context)
+    public WorkspaceApiController(ApplicationDbContext context)
     {
         _context = context;
     }
@@ -30,8 +30,6 @@ public class WorkspaceController : ControllerBase
                      x.Id,
                      x.Name,
                      x.Description,
-                     x.CreatedAt,
-                     x.UpdatedAt,
 
                      Projects = x.Projects
                     .Where(p => !p.IsDeleted)
@@ -42,8 +40,6 @@ public class WorkspaceController : ControllerBase
                         Description = p.Description,
                         WorkspaceId = p.WorkspaceId,
                         WorkspaceName = x.Name,
-                        CreatedAt = p.CreatedAt,
-                        UpdatedAt = p.UpdatedAt
                     })
                     .ToList()
             })
@@ -70,8 +66,6 @@ public class WorkspaceController : ControllerBase
                            x.Id,
                            x.Name,
                            x.Description,
-                           x.CreatedAt,
-                           x.UpdatedAt,
 
                            Projects = x.Projects
                                .Where(p => !p.IsDeleted)
@@ -82,8 +76,6 @@ public class WorkspaceController : ControllerBase
                                    Description = p.Description,
                                    WorkspaceId = p.WorkspaceId,
                                    WorkspaceName = x.Name,
-                                   CreatedAt = p.CreatedAt,
-                                   UpdatedAt = p.UpdatedAt
                                })
                                .ToList()
                        })
@@ -147,7 +139,30 @@ public class WorkspaceController : ControllerBase
 
             _context.SaveChanges();
 
-            return Ok(workspace);
+            var response = _context.Workspace
+                .Include(x => x.Projects)
+                .Where(x => x.Id == id)
+                .Select(x => new
+                {
+                    x.Id,
+                    x.Name,
+                    x.Description,
+
+                    Projects = x.Projects
+                        .Where(p => !p.IsDeleted)
+                        .Select(p => new ProjectResponse
+                        {
+                            Id = p.Id,
+                            Name = p.Name,
+                            Description = p.Description,
+                            WorkspaceId = p.WorkspaceId,
+                            WorkspaceName = x.Name,
+                        })
+                        .ToList()
+                })
+                .FirstOrDefault();
+
+            return Ok(response);
         }
         catch
         {
