@@ -1,0 +1,908 @@
+2026-07-28 08:26:50.364 +03:30 [INF] User profile is available. Using 'C:\Users\ASUS\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2026-07-28 08:26:51.126 +03:30 [INF] Now listening on: https://localhost:7108
+2026-07-28 08:26:51.127 +03:30 [INF] Now listening on: http://localhost:5031
+2026-07-28 08:26:51.483 +03:30 [INF] Application started. Press Ctrl+C to shut down.
+2026-07-28 08:26:51.483 +03:30 [INF] Hosting environment: Development
+2026-07-28 08:26:51.483 +03:30 [INF] Content root path: D:\TaskFlowMvc
+2026-07-28 08:26:56.429 +03:30 [INF] Request starting HTTP/2 GET https://localhost:7108/ - null null
+2026-07-28 08:26:57.719 +03:30 [INF] Executing endpoint 'TaskFlowMvc.Controllers.HomeController.Index (TaskFlowMvc)'
+2026-07-28 08:26:57.825 +03:30 [INF] Route matched with {action = "Index", controller = "Home"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller TaskFlowMvc.Controllers.HomeController (TaskFlowMvc).
+2026-07-28 08:26:57.912 +03:30 [INF] Executing ViewResult, running view Index.
+2026-07-28 08:26:58.491 +03:30 [INF] Executed ViewResult - view Index executed in 612.2549ms.
+2026-07-28 08:26:58.498 +03:30 [INF] Executed action TaskFlowMvc.Controllers.HomeController.Index (TaskFlowMvc) in 667.1256ms
+2026-07-28 08:26:58.501 +03:30 [INF] Executed endpoint 'TaskFlowMvc.Controllers.HomeController.Index (TaskFlowMvc)'
+2026-07-28 08:26:58.521 +03:30 [INF] Request finished HTTP/2 GET https://localhost:7108/ - 200 null text/html; charset=utf-8 2139.9334ms
+2026-07-28 08:26:58.620 +03:30 [INF] Request starting HTTP/2 GET https://localhost:7108/_framework/aspnetcore-browser-refresh.js - null null
+2026-07-28 08:26:58.624 +03:30 [INF] Request starting HTTP/2 GET https://localhost:7108/lib/bootstrap/dist/css/bootstrap.min.css - null null
+2026-07-28 08:26:58.624 +03:30 [INF] Request starting HTTP/2 GET https://localhost:7108/TaskFlowMvc.styles.css?v=denkTJS40ZgCb1ryagt5okiypSWbvhenoKvVK6WBfgY - null null
+2026-07-28 08:26:58.624 +03:30 [INF] Request starting HTTP/2 GET https://localhost:7108/css/site.css?v=j6fhJSuuyLpOSLuPJU0TsDV0iNjor5S3rDnvxJrt4bg - null null
+2026-07-28 08:26:58.625 +03:30 [INF] Request starting HTTP/2 GET https://localhost:7108/lib/bootstrap/dist/js/bootstrap.bundle.min.js - null null
+2026-07-28 08:26:58.640 +03:30 [INF] Request starting HTTP/2 GET https://localhost:7108/js/site.js?v=hRQyftXiu1lLX2P9Ly9xa4gHJgLeR1uGN5qegUobtGo - null null
+2026-07-28 08:26:58.685 +03:30 [INF] Request starting HTTP/2 GET https://localhost:7108/lib/jquery/dist/jquery.min.js - null null
+2026-07-28 08:26:58.686 +03:30 [INF] Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2026-07-28 08:26:58.686 +03:30 [INF] Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2026-07-28 08:26:58.686 +03:30 [INF] Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2026-07-28 08:26:58.686 +03:30 [INF] Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2026-07-28 08:26:58.686 +03:30 [INF] Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2026-07-28 08:26:58.687 +03:30 [INF] Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2026-07-28 08:26:58.717 +03:30 [INF] Request starting HTTP/2 GET https://localhost:7108/_vs/browserLink - null null
+2026-07-28 08:26:58.828 +03:30 [INF] Sending file. Request path: 'TaskFlowMvc.styles.css'. Physical path: 'D:\TaskFlowMvc\obj\Debug\net10.0\compressed\pio3utri1p-{0}-5w3zfbn8im-5w3zfbn8im.gz'
+2026-07-28 08:26:58.829 +03:30 [INF] Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2026-07-28 08:26:58.829 +03:30 [INF] Sending file. Request path: 'js/site.js'. Physical path: 'D:\TaskFlowMvc\obj\Debug\net10.0\compressed\lrk0etaown-{0}-xtxxf3hu2r-xtxxf3hu2r.gz'
+2026-07-28 08:26:58.829 +03:30 [INF] Sending file. Request path: 'css/site.css'. Physical path: 'D:\TaskFlowMvc\obj\Debug\net10.0\compressed\4xl5hjd8lv-{0}-b9sayid5wm-b9sayid5wm.gz'
+2026-07-28 08:26:58.829 +03:30 [INF] Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2026-07-28 08:26:58.829 +03:30 [INF] Request finished HTTP/2 GET https://localhost:7108/css/site.css?v=j6fhJSuuyLpOSLuPJU0TsDV0iNjor5S3rDnvxJrt4bg - 200 700 text/css 205.7415ms
+2026-07-28 08:26:58.829 +03:30 [INF] Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2026-07-28 08:26:58.829 +03:30 [INF] Request finished HTTP/2 GET https://localhost:7108/TaskFlowMvc.styles.css?v=denkTJS40ZgCb1ryagt5okiypSWbvhenoKvVK6WBfgY - 200 1142 text/css 205.4085ms
+2026-07-28 08:26:58.832 +03:30 [INF] Request finished HTTP/2 GET https://localhost:7108/js/site.js?v=hRQyftXiu1lLX2P9Ly9xa4gHJgLeR1uGN5qegUobtGo - 200 264 text/javascript 192.9683ms
+2026-07-28 08:26:58.870 +03:30 [INF] Request finished HTTP/2 GET https://localhost:7108/_framework/aspnetcore-browser-refresh.js - 200 14927 application/javascript; charset=utf-8 250.0793ms
+2026-07-28 08:26:58.901 +03:30 [INF] Sending file. Request path: 'lib/jquery/dist/jquery.min.js'. Physical path: 'D:\TaskFlowMvc\obj\Debug\net10.0\compressed\5u0wgstfou-{0}-o1o13a6vjx-o1o13a6vjx.gz'
+2026-07-28 08:26:58.901 +03:30 [INF] Sending file. Request path: 'lib/bootstrap/dist/css/bootstrap.min.css'. Physical path: 'D:\TaskFlowMvc\obj\Debug\net10.0\compressed\cwkq37jqus-{0}-46ein0sx1k-46ein0sx1k.gz'
+2026-07-28 08:26:58.901 +03:30 [INF] Sending file. Request path: 'lib/bootstrap/dist/js/bootstrap.bundle.min.js'. Physical path: 'D:\TaskFlowMvc\obj\Debug\net10.0\compressed\6usytvi6e8-{0}-493y06b0oq-493y06b0oq.gz'
+2026-07-28 08:26:58.904 +03:30 [INF] Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2026-07-28 08:26:58.904 +03:30 [INF] Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2026-07-28 08:26:58.904 +03:30 [INF] Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2026-07-28 08:26:58.915 +03:30 [INF] Request finished HTTP/2 GET https://localhost:7108/lib/jquery/dist/jquery.min.js - 200 87576 text/javascript 228.5125ms
+2026-07-28 08:26:58.915 +03:30 [INF] Request finished HTTP/2 GET https://localhost:7108/lib/bootstrap/dist/js/bootstrap.bundle.min.js - 200 80764 text/javascript 290.4086ms
+2026-07-28 08:26:58.916 +03:30 [INF] Request finished HTTP/2 GET https://localhost:7108/lib/bootstrap/dist/css/bootstrap.min.css - 200 232871 text/css 290.2779ms
+2026-07-28 08:26:59.135 +03:30 [INF] Request finished HTTP/2 GET https://localhost:7108/_vs/browserLink - 200 null text/javascript; charset=UTF-8 418.6321ms
+2026-07-28 08:27:02.055 +03:30 [INF] Request starting HTTP/2 GET https://localhost:7108/TaskItem - null null
+2026-07-28 08:27:02.082 +03:30 [INF] Executing endpoint 'TaskFlowMvc.Controllers.TaskItemController.Index (TaskFlowMvc)'
+2026-07-28 08:27:02.090 +03:30 [INF] Route matched with {action = "Index", controller = "TaskItem"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller TaskFlowMvc.Controllers.TaskItemController (TaskFlowMvc).
+2026-07-28 08:27:04.706 +03:30 [WRN] Entity 'Tag' has a global query filter defined and is the required end of a relationship with the entity 'TaskItemTag'. This may lead to unexpected results when the required entity is filtered out. Either configure the navigation as optional, or define matching query filters for both entities in the navigation. See https://go.microsoft.com/fwlink/?linkid=2131316 for more information.
+2026-07-28 08:27:09.741 +03:30 [INF] Executed DbCommand (118ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[Id], [t].[CreatedAt], [t].[Description], [t].[DueDate], [t].[IsDeleted], [t].[Order], [t].[ProjectId], [t].[TaskStateId], [t].[Title], [t].[UpdatedAt], [p0].[Id], [p0].[CreatedAt], [p0].[Description], [p0].[IsDeleted], [p0].[Name], [p0].[UpdatedAt], [p0].[WorkspaceId], [t1].[Id], [t1].[CreatedAt], [t1].[IsDeleted], [t1].[Name], [t1].[Order], [t1].[UpdatedAt], [s].[Id], [s].[TagId], [s].[TaskItemId], [s].[Id0], [s].[Color], [s].[CreatedAt], [s].[IsDeleted], [s].[Name], [s].[UpdatedAt]
+FROM [TaskItem] AS [t]
+INNER JOIN (
+    SELECT [p].[Id], [p].[CreatedAt], [p].[Description], [p].[IsDeleted], [p].[Name], [p].[UpdatedAt], [p].[WorkspaceId]
+    FROM [Project] AS [p]
+    WHERE [p].[IsDeleted] = CAST(0 AS bit)
+) AS [p0] ON [t].[ProjectId] = [p0].[Id]
+INNER JOIN (
+    SELECT [t0].[Id], [t0].[CreatedAt], [t0].[IsDeleted], [t0].[Name], [t0].[Order], [t0].[UpdatedAt]
+    FROM [TaskState] AS [t0]
+    WHERE [t0].[IsDeleted] = CAST(0 AS bit)
+) AS [t1] ON [t].[TaskStateId] = [t1].[Id]
+LEFT JOIN (
+    SELECT [t2].[Id], [t2].[TagId], [t2].[TaskItemId], [t4].[Id] AS [Id0], [t4].[Color], [t4].[CreatedAt], [t4].[IsDeleted], [t4].[Name], [t4].[UpdatedAt]
+    FROM [TaskItemTag] AS [t2]
+    INNER JOIN (
+        SELECT [t3].[Id], [t3].[Color], [t3].[CreatedAt], [t3].[IsDeleted], [t3].[Name], [t3].[UpdatedAt]
+        FROM [Tag] AS [t3]
+        WHERE [t3].[IsDeleted] = CAST(0 AS bit)
+    ) AS [t4] ON [t2].[TagId] = [t4].[Id]
+) AS [s] ON [t].[Id] = [s].[TaskItemId]
+WHERE [t].[IsDeleted] = CAST(0 AS bit)
+ORDER BY [t].[Id], [p0].[Id], [t1].[Id], [s].[Id]
+2026-07-28 08:27:10.350 +03:30 [INF] Executing ViewResult, running view Index.
+2026-07-28 08:27:10.487 +03:30 [INF] Executed ViewResult - view Index executed in 141.0403ms.
+2026-07-28 08:27:10.490 +03:30 [INF] Executed action TaskFlowMvc.Controllers.TaskItemController.Index (TaskFlowMvc) in 8398.8747ms
+2026-07-28 08:27:10.490 +03:30 [INF] Executed endpoint 'TaskFlowMvc.Controllers.TaskItemController.Index (TaskFlowMvc)'
+2026-07-28 08:27:10.517 +03:30 [INF] Request finished HTTP/2 GET https://localhost:7108/TaskItem - 200 null text/html; charset=utf-8 8461.4066ms
+2026-07-28 08:27:10.537 +03:30 [INF] Request starting HTTP/2 GET https://localhost:7108/lib/bootstrap/dist/css/bootstrap.min.css - null null
+2026-07-28 08:27:10.538 +03:30 [INF] Request starting HTTP/2 GET https://localhost:7108/css/site.css?v=j6fhJSuuyLpOSLuPJU0TsDV0iNjor5S3rDnvxJrt4bg - null null
+2026-07-28 08:27:10.539 +03:30 [INF] Request starting HTTP/2 GET https://localhost:7108/TaskFlowMvc.styles.css?v=denkTJS40ZgCb1ryagt5okiypSWbvhenoKvVK6WBfgY - null null
+2026-07-28 08:27:10.540 +03:30 [INF] Request starting HTTP/2 GET https://localhost:7108/lib/jquery/dist/jquery.min.js - null null
+2026-07-28 08:27:10.540 +03:30 [INF] Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2026-07-28 08:27:10.540 +03:30 [INF] Request starting HTTP/2 GET https://localhost:7108/lib/bootstrap/dist/js/bootstrap.bundle.min.js - null null
+2026-07-28 08:27:10.541 +03:30 [INF] Request starting HTTP/2 GET https://localhost:7108/js/site.js?v=hRQyftXiu1lLX2P9Ly9xa4gHJgLeR1uGN5qegUobtGo - null null
+2026-07-28 08:27:10.542 +03:30 [INF] Request starting HTTP/2 GET https://localhost:7108/_vs/browserLink - null null
+2026-07-28 08:27:10.542 +03:30 [INF] Request starting HTTP/2 GET https://localhost:7108/_framework/aspnetcore-browser-refresh.js - null null
+2026-07-28 08:27:10.549 +03:30 [INF] Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2026-07-28 08:27:10.552 +03:30 [INF] Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2026-07-28 08:27:10.553 +03:30 [INF] Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2026-07-28 08:27:10.575 +03:30 [INF] Sending file. Request path: 'TaskFlowMvc.styles.css'. Physical path: 'D:\TaskFlowMvc\obj\Debug\net10.0\compressed\pio3utri1p-{0}-5w3zfbn8im-5w3zfbn8im.gz'
+2026-07-28 08:27:10.576 +03:30 [INF] Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2026-07-28 08:27:10.576 +03:30 [INF] Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2026-07-28 08:27:10.576 +03:30 [INF] Request finished HTTP/2 GET https://localhost:7108/TaskFlowMvc.styles.css?v=denkTJS40ZgCb1ryagt5okiypSWbvhenoKvVK6WBfgY - 200 1142 text/css 37.6348ms
+2026-07-28 08:27:10.577 +03:30 [INF] Sending file. Request path: 'css/site.css'. Physical path: 'D:\TaskFlowMvc\obj\Debug\net10.0\compressed\4xl5hjd8lv-{0}-b9sayid5wm-b9sayid5wm.gz'
+2026-07-28 08:27:10.577 +03:30 [INF] Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2026-07-28 08:27:10.578 +03:30 [INF] Request finished HTTP/2 GET https://localhost:7108/css/site.css?v=j6fhJSuuyLpOSLuPJU0TsDV0iNjor5S3rDnvxJrt4bg - 200 700 text/css 39.9126ms
+2026-07-28 08:27:10.579 +03:30 [INF] Sending file. Request path: 'js/site.js'. Physical path: 'D:\TaskFlowMvc\obj\Debug\net10.0\compressed\lrk0etaown-{0}-xtxxf3hu2r-xtxxf3hu2r.gz'
+2026-07-28 08:27:10.579 +03:30 [INF] Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2026-07-28 08:27:10.580 +03:30 [INF] Request finished HTTP/2 GET https://localhost:7108/js/site.js?v=hRQyftXiu1lLX2P9Ly9xa4gHJgLeR1uGN5qegUobtGo - 200 264 text/javascript 38.5888ms
+2026-07-28 08:27:10.580 +03:30 [INF] Request finished HTTP/2 GET https://localhost:7108/_framework/aspnetcore-browser-refresh.js - 200 14927 application/javascript; charset=utf-8 37.65ms
+2026-07-28 08:27:10.585 +03:30 [INF] Sending file. Request path: 'lib/jquery/dist/jquery.min.js'. Physical path: 'D:\TaskFlowMvc\obj\Debug\net10.0\compressed\5u0wgstfou-{0}-o1o13a6vjx-o1o13a6vjx.gz'
+2026-07-28 08:27:10.586 +03:30 [INF] Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2026-07-28 08:27:10.586 +03:30 [INF] Request finished HTTP/2 GET https://localhost:7108/lib/jquery/dist/jquery.min.js - 200 87576 text/javascript 46.3311ms
+2026-07-28 08:27:10.586 +03:30 [INF] Sending file. Request path: 'lib/bootstrap/dist/css/bootstrap.min.css'. Physical path: 'D:\TaskFlowMvc\obj\Debug\net10.0\compressed\cwkq37jqus-{0}-46ein0sx1k-46ein0sx1k.gz'
+2026-07-28 08:27:10.586 +03:30 [INF] Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2026-07-28 08:27:10.586 +03:30 [INF] Request finished HTTP/2 GET https://localhost:7108/lib/bootstrap/dist/css/bootstrap.min.css - 200 232871 text/css 49.8692ms
+2026-07-28 08:27:10.594 +03:30 [INF] Request finished HTTP/2 GET https://localhost:7108/_vs/browserLink - 200 null text/javascript; charset=UTF-8 51.9265ms
+2026-07-28 08:27:10.664 +03:30 [INF] Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2026-07-28 08:27:10.668 +03:30 [INF] Sending file. Request path: 'lib/bootstrap/dist/js/bootstrap.bundle.min.js'. Physical path: 'D:\TaskFlowMvc\obj\Debug\net10.0\compressed\6usytvi6e8-{0}-493y06b0oq-493y06b0oq.gz'
+2026-07-28 08:27:10.668 +03:30 [INF] Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2026-07-28 08:27:10.669 +03:30 [INF] Request finished HTTP/2 GET https://localhost:7108/lib/bootstrap/dist/js/bootstrap.bundle.min.js - 200 80764 text/javascript 128.5878ms
+2026-07-28 08:27:14.172 +03:30 [INF] Request starting HTTP/2 GET https://localhost:7108/ - null null
+2026-07-28 08:27:14.178 +03:30 [INF] Executing endpoint 'TaskFlowMvc.Controllers.HomeController.Index (TaskFlowMvc)'
+2026-07-28 08:27:14.179 +03:30 [INF] Route matched with {action = "Index", controller = "Home"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller TaskFlowMvc.Controllers.HomeController (TaskFlowMvc).
+2026-07-28 08:27:14.180 +03:30 [INF] Executing ViewResult, running view Index.
+2026-07-28 08:27:14.183 +03:30 [INF] Executed ViewResult - view Index executed in 3.4565ms.
+2026-07-28 08:27:14.183 +03:30 [INF] Executed action TaskFlowMvc.Controllers.HomeController.Index (TaskFlowMvc) in 3.9245ms
+2026-07-28 08:27:14.183 +03:30 [INF] Executed endpoint 'TaskFlowMvc.Controllers.HomeController.Index (TaskFlowMvc)'
+2026-07-28 08:27:14.183 +03:30 [INF] Request finished HTTP/2 GET https://localhost:7108/ - 200 null text/html; charset=utf-8 11.3146ms
+2026-07-28 08:27:14.220 +03:30 [INF] Request starting HTTP/2 GET https://localhost:7108/lib/bootstrap/dist/css/bootstrap.min.css - null null
+2026-07-28 08:27:14.221 +03:30 [INF] Request starting HTTP/2 GET https://localhost:7108/css/site.css?v=j6fhJSuuyLpOSLuPJU0TsDV0iNjor5S3rDnvxJrt4bg - null null
+2026-07-28 08:27:14.221 +03:30 [INF] Request starting HTTP/2 GET https://localhost:7108/TaskFlowMvc.styles.css?v=denkTJS40ZgCb1ryagt5okiypSWbvhenoKvVK6WBfgY - null null
+2026-07-28 08:27:14.222 +03:30 [INF] Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2026-07-28 08:27:14.222 +03:30 [INF] Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2026-07-28 08:27:14.222 +03:30 [INF] Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2026-07-28 08:27:14.222 +03:30 [INF] Request starting HTTP/2 GET https://localhost:7108/lib/jquery/dist/jquery.min.js - null null
+2026-07-28 08:27:14.222 +03:30 [INF] Request starting HTTP/2 GET https://localhost:7108/lib/bootstrap/dist/js/bootstrap.bundle.min.js - null null
+2026-07-28 08:27:14.222 +03:30 [INF] Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2026-07-28 08:27:14.223 +03:30 [INF] Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2026-07-28 08:27:14.223 +03:30 [INF] Sending file. Request path: 'TaskFlowMvc.styles.css'. Physical path: 'D:\TaskFlowMvc\obj\Debug\net10.0\compressed\pio3utri1p-{0}-5w3zfbn8im-5w3zfbn8im.gz'
+2026-07-28 08:27:14.224 +03:30 [INF] Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2026-07-28 08:27:14.224 +03:30 [INF] Request finished HTTP/2 GET https://localhost:7108/TaskFlowMvc.styles.css?v=denkTJS40ZgCb1ryagt5okiypSWbvhenoKvVK6WBfgY - 200 1142 text/css 2.5335ms
+2026-07-28 08:27:14.224 +03:30 [INF] Request starting HTTP/2 GET https://localhost:7108/js/site.js?v=hRQyftXiu1lLX2P9Ly9xa4gHJgLeR1uGN5qegUobtGo - null null
+2026-07-28 08:27:14.225 +03:30 [INF] Sending file. Request path: 'css/site.css'. Physical path: 'D:\TaskFlowMvc\obj\Debug\net10.0\compressed\4xl5hjd8lv-{0}-b9sayid5wm-b9sayid5wm.gz'
+2026-07-28 08:27:14.225 +03:30 [INF] Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2026-07-28 08:27:14.225 +03:30 [INF] Request finished HTTP/2 GET https://localhost:7108/css/site.css?v=j6fhJSuuyLpOSLuPJU0TsDV0iNjor5S3rDnvxJrt4bg - 200 700 text/css 4.2673ms
+2026-07-28 08:27:14.226 +03:30 [INF] Request starting HTTP/2 GET https://localhost:7108/_framework/aspnetcore-browser-refresh.js - null null
+2026-07-28 08:27:14.226 +03:30 [INF] Request starting HTTP/2 GET https://localhost:7108/_vs/browserLink - null null
+2026-07-28 08:27:14.226 +03:30 [INF] Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2026-07-28 08:27:14.227 +03:30 [INF] Request finished HTTP/2 GET https://localhost:7108/_framework/aspnetcore-browser-refresh.js - 200 14927 application/javascript; charset=utf-8 1.7689ms
+2026-07-28 08:27:14.227 +03:30 [INF] Sending file. Request path: 'lib/jquery/dist/jquery.min.js'. Physical path: 'D:\TaskFlowMvc\obj\Debug\net10.0\compressed\5u0wgstfou-{0}-o1o13a6vjx-o1o13a6vjx.gz'
+2026-07-28 08:27:14.227 +03:30 [INF] Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2026-07-28 08:27:14.228 +03:30 [INF] Request finished HTTP/2 GET https://localhost:7108/lib/jquery/dist/jquery.min.js - 200 87576 text/javascript 5.5799ms
+2026-07-28 08:27:14.236 +03:30 [INF] Sending file. Request path: 'js/site.js'. Physical path: 'D:\TaskFlowMvc\obj\Debug\net10.0\compressed\lrk0etaown-{0}-xtxxf3hu2r-xtxxf3hu2r.gz'
+2026-07-28 08:27:14.239 +03:30 [INF] Sending file. Request path: 'lib/bootstrap/dist/js/bootstrap.bundle.min.js'. Physical path: 'D:\TaskFlowMvc\obj\Debug\net10.0\compressed\6usytvi6e8-{0}-493y06b0oq-493y06b0oq.gz'
+2026-07-28 08:27:14.239 +03:30 [INF] Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2026-07-28 08:27:14.239 +03:30 [INF] Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2026-07-28 08:27:14.239 +03:30 [INF] Request finished HTTP/2 GET https://localhost:7108/js/site.js?v=hRQyftXiu1lLX2P9Ly9xa4gHJgLeR1uGN5qegUobtGo - 200 264 text/javascript 15.418ms
+2026-07-28 08:27:14.241 +03:30 [INF] Request finished HTTP/2 GET https://localhost:7108/lib/bootstrap/dist/js/bootstrap.bundle.min.js - 200 80764 text/javascript 17.5601ms
+2026-07-28 08:27:14.242 +03:30 [INF] Sending file. Request path: 'lib/bootstrap/dist/css/bootstrap.min.css'. Physical path: 'D:\TaskFlowMvc\obj\Debug\net10.0\compressed\cwkq37jqus-{0}-46ein0sx1k-46ein0sx1k.gz'
+2026-07-28 08:27:14.242 +03:30 [INF] Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2026-07-28 08:27:14.243 +03:30 [INF] Request finished HTTP/2 GET https://localhost:7108/lib/bootstrap/dist/css/bootstrap.min.css - 200 232871 text/css 22.965ms
+2026-07-28 08:27:14.257 +03:30 [INF] Request finished HTTP/2 GET https://localhost:7108/_vs/browserLink - 200 null text/javascript; charset=UTF-8 31.7027ms
+2026-07-28 08:27:15.321 +03:30 [INF] Request starting HTTP/2 GET https://localhost:7108/Tag - null null
+2026-07-28 08:27:15.326 +03:30 [INF] Executing endpoint 'TaskFlowMvc.Controllers.TagController.Index (TaskFlowMvc)'
+2026-07-28 08:27:15.337 +03:30 [INF] Route matched with {action = "Index", controller = "Tag"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller TaskFlowMvc.Controllers.TagController (TaskFlowMvc).
+2026-07-28 08:27:15.705 +03:30 [INF] Executed DbCommand (14ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[Id], [t].[Color], [t].[CreatedAt], [t].[IsDeleted], [t].[Name], [t].[UpdatedAt]
+FROM [Tag] AS [t]
+WHERE [t].[IsDeleted] = CAST(0 AS bit)
+2026-07-28 08:27:15.712 +03:30 [INF] Executing ViewResult, running view Index.
+2026-07-28 08:27:15.785 +03:30 [INF] Executed ViewResult - view Index executed in 76.265ms.
+2026-07-28 08:27:15.785 +03:30 [INF] Executed action TaskFlowMvc.Controllers.TagController.Index (TaskFlowMvc) in 448.3854ms
+2026-07-28 08:27:15.785 +03:30 [INF] Executed endpoint 'TaskFlowMvc.Controllers.TagController.Index (TaskFlowMvc)'
+2026-07-28 08:27:15.786 +03:30 [INF] Request finished HTTP/2 GET https://localhost:7108/Tag - 200 null text/html; charset=utf-8 465.0252ms
+2026-07-28 08:27:15.855 +03:30 [INF] Request starting HTTP/2 GET https://localhost:7108/lib/bootstrap/dist/css/bootstrap.min.css - null null
+2026-07-28 08:27:15.855 +03:30 [INF] Request starting HTTP/2 GET https://localhost:7108/css/site.css?v=j6fhJSuuyLpOSLuPJU0TsDV0iNjor5S3rDnvxJrt4bg - null null
+2026-07-28 08:27:15.855 +03:30 [INF] Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2026-07-28 08:27:15.855 +03:30 [INF] Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2026-07-28 08:27:15.856 +03:30 [INF] Request starting HTTP/2 GET https://localhost:7108/TaskFlowMvc.styles.css?v=denkTJS40ZgCb1ryagt5okiypSWbvhenoKvVK6WBfgY - null null
+2026-07-28 08:27:15.856 +03:30 [INF] Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2026-07-28 08:27:15.856 +03:30 [INF] Sending file. Request path: 'css/site.css'. Physical path: 'D:\TaskFlowMvc\obj\Debug\net10.0\compressed\4xl5hjd8lv-{0}-b9sayid5wm-b9sayid5wm.gz'
+2026-07-28 08:27:15.856 +03:30 [INF] Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2026-07-28 08:27:15.897 +03:30 [INF] Request finished HTTP/2 GET https://localhost:7108/css/site.css?v=j6fhJSuuyLpOSLuPJU0TsDV0iNjor5S3rDnvxJrt4bg - 200 700 text/css 1.9277ms
+2026-07-28 08:27:15.897 +03:30 [INF] Request starting HTTP/2 GET https://localhost:7108/lib/jquery/dist/jquery.min.js - null null
+2026-07-28 08:27:15.898 +03:30 [INF] Request starting HTTP/2 GET https://localhost:7108/lib/bootstrap/dist/js/bootstrap.bundle.min.js - null null
+2026-07-28 08:27:15.898 +03:30 [INF] Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2026-07-28 08:27:15.898 +03:30 [INF] Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2026-07-28 08:27:15.898 +03:30 [INF] Request starting HTTP/2 GET https://localhost:7108/_vs/browserLink - null null
+2026-07-28 08:27:15.898 +03:30 [INF] Sending file. Request path: 'TaskFlowMvc.styles.css'. Physical path: 'D:\TaskFlowMvc\obj\Debug\net10.0\compressed\pio3utri1p-{0}-5w3zfbn8im-5w3zfbn8im.gz'
+2026-07-28 08:27:15.898 +03:30 [INF] Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2026-07-28 08:27:15.898 +03:30 [INF] Request finished HTTP/2 GET https://localhost:7108/TaskFlowMvc.styles.css?v=denkTJS40ZgCb1ryagt5okiypSWbvhenoKvVK6WBfgY - 200 1142 text/css 42.4559ms
+2026-07-28 08:27:15.899 +03:30 [INF] Request starting HTTP/2 GET https://localhost:7108/js/site.js?v=hRQyftXiu1lLX2P9Ly9xa4gHJgLeR1uGN5qegUobtGo - null null
+2026-07-28 08:27:15.899 +03:30 [INF] Request starting HTTP/2 GET https://localhost:7108/_framework/aspnetcore-browser-refresh.js - null null
+2026-07-28 08:27:15.899 +03:30 [INF] Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2026-07-28 08:27:15.900 +03:30 [INF] Sending file. Request path: 'lib/bootstrap/dist/css/bootstrap.min.css'. Physical path: 'D:\TaskFlowMvc\obj\Debug\net10.0\compressed\cwkq37jqus-{0}-46ein0sx1k-46ein0sx1k.gz'
+2026-07-28 08:27:15.900 +03:30 [INF] Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2026-07-28 08:27:15.936 +03:30 [INF] Request finished HTTP/2 GET https://localhost:7108/_framework/aspnetcore-browser-refresh.js - 200 14927 application/javascript; charset=utf-8 37.0088ms
+2026-07-28 08:27:15.936 +03:30 [INF] Request finished HTTP/2 GET https://localhost:7108/lib/bootstrap/dist/css/bootstrap.min.css - 200 232871 text/css 81.1162ms
+2026-07-28 08:27:15.937 +03:30 [INF] Sending file. Request path: 'js/site.js'. Physical path: 'D:\TaskFlowMvc\obj\Debug\net10.0\compressed\lrk0etaown-{0}-xtxxf3hu2r-xtxxf3hu2r.gz'
+2026-07-28 08:27:15.937 +03:30 [INF] Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2026-07-28 08:27:15.937 +03:30 [INF] Request finished HTTP/2 GET https://localhost:7108/js/site.js?v=hRQyftXiu1lLX2P9Ly9xa4gHJgLeR1uGN5qegUobtGo - 200 264 text/javascript 38.707ms
+2026-07-28 08:27:15.939 +03:30 [INF] Sending file. Request path: 'lib/jquery/dist/jquery.min.js'. Physical path: 'D:\TaskFlowMvc\obj\Debug\net10.0\compressed\5u0wgstfou-{0}-o1o13a6vjx-o1o13a6vjx.gz'
+2026-07-28 08:27:15.939 +03:30 [INF] Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2026-07-28 08:27:15.940 +03:30 [INF] Request finished HTTP/2 GET https://localhost:7108/lib/jquery/dist/jquery.min.js - 200 87576 text/javascript 42.7062ms
+2026-07-28 08:27:15.941 +03:30 [INF] Sending file. Request path: 'lib/bootstrap/dist/js/bootstrap.bundle.min.js'. Physical path: 'D:\TaskFlowMvc\obj\Debug\net10.0\compressed\6usytvi6e8-{0}-493y06b0oq-493y06b0oq.gz'
+2026-07-28 08:27:15.941 +03:30 [INF] Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2026-07-28 08:27:15.941 +03:30 [INF] Request finished HTTP/2 GET https://localhost:7108/lib/bootstrap/dist/js/bootstrap.bundle.min.js - 200 80764 text/javascript 43.7915ms
+2026-07-28 08:27:15.948 +03:30 [INF] Request finished HTTP/2 GET https://localhost:7108/_vs/browserLink - 200 null text/javascript; charset=UTF-8 50.2316ms
+2026-07-28 08:29:27.681 +03:30 [INF] User profile is available. Using 'C:\Users\ASUS\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2026-07-28 08:29:28.106 +03:30 [INF] Now listening on: https://localhost:7108
+2026-07-28 08:29:28.107 +03:30 [INF] Now listening on: http://localhost:5031
+2026-07-28 08:29:28.712 +03:30 [INF] Application started. Press Ctrl+C to shut down.
+2026-07-28 08:29:28.713 +03:30 [INF] Hosting environment: Development
+2026-07-28 08:29:28.713 +03:30 [INF] Content root path: D:\TaskFlowMvc
+2026-07-28 08:29:30.856 +03:30 [INF] Request starting HTTP/2 GET https://localhost:7108/ - null null
+2026-07-28 08:29:31.795 +03:30 [INF] Executing endpoint 'TaskFlowMvc.Controllers.HomeController.Index (TaskFlowMvc)'
+2026-07-28 08:29:31.940 +03:30 [INF] Route matched with {action = "Index", controller = "Home"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller TaskFlowMvc.Controllers.HomeController (TaskFlowMvc).
+2026-07-28 08:29:32.013 +03:30 [INF] Executing ViewResult, running view Index.
+2026-07-28 08:29:32.825 +03:30 [INF] Executed ViewResult - view Index executed in 838.2645ms.
+2026-07-28 08:29:32.834 +03:30 [INF] Executed action TaskFlowMvc.Controllers.HomeController.Index (TaskFlowMvc) in 889.4786ms
+2026-07-28 08:29:32.836 +03:30 [INF] Executed endpoint 'TaskFlowMvc.Controllers.HomeController.Index (TaskFlowMvc)'
+2026-07-28 08:29:32.857 +03:30 [INF] Request finished HTTP/2 GET https://localhost:7108/ - 200 null text/html; charset=utf-8 2049.2953ms
+2026-07-28 08:29:32.935 +03:30 [INF] Request starting HTTP/2 GET https://localhost:7108/lib/bootstrap/dist/css/bootstrap.min.css - null null
+2026-07-28 08:29:32.936 +03:30 [INF] Request starting HTTP/2 GET https://localhost:7108/css/site.css?v=j6fhJSuuyLpOSLuPJU0TsDV0iNjor5S3rDnvxJrt4bg - null null
+2026-07-28 08:29:32.936 +03:30 [INF] Request starting HTTP/2 GET https://localhost:7108/TaskFlowMvc.styles.css?v=denkTJS40ZgCb1ryagt5okiypSWbvhenoKvVK6WBfgY - null null
+2026-07-28 08:29:32.937 +03:30 [INF] Request starting HTTP/2 GET https://localhost:7108/lib/jquery/dist/jquery.min.js - null null
+2026-07-28 08:29:32.944 +03:30 [INF] Request starting HTTP/2 GET https://localhost:7108/lib/bootstrap/dist/js/bootstrap.bundle.min.js - null null
+2026-07-28 08:29:32.994 +03:30 [INF] Request starting HTTP/2 GET https://localhost:7108/js/site.js?v=hRQyftXiu1lLX2P9Ly9xa4gHJgLeR1uGN5qegUobtGo - null null
+2026-07-28 08:29:33.011 +03:30 [INF] Request starting HTTP/2 GET https://localhost:7108/_vs/browserLink - null null
+2026-07-28 08:29:33.012 +03:30 [INF] Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2026-07-28 08:29:33.013 +03:30 [INF] Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2026-07-28 08:29:33.013 +03:30 [INF] Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2026-07-28 08:29:33.041 +03:30 [INF] Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2026-07-28 08:29:33.043 +03:30 [INF] Request starting HTTP/2 GET https://localhost:7108/_framework/aspnetcore-browser-refresh.js - null null
+2026-07-28 08:29:33.041 +03:30 [INF] Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2026-07-28 08:29:33.043 +03:30 [INF] Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2026-07-28 08:29:33.106 +03:30 [INF] Sending file. Request path: 'TaskFlowMvc.styles.css'. Physical path: 'D:\TaskFlowMvc\obj\Debug\net10.0\compressed\pio3utri1p-{0}-5w3zfbn8im-5w3zfbn8im.gz'
+2026-07-28 08:29:33.106 +03:30 [INF] Sending file. Request path: 'js/site.js'. Physical path: 'D:\TaskFlowMvc\obj\Debug\net10.0\compressed\lrk0etaown-{0}-xtxxf3hu2r-xtxxf3hu2r.gz'
+2026-07-28 08:29:33.106 +03:30 [INF] Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2026-07-28 08:29:33.107 +03:30 [INF] Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2026-07-28 08:29:33.107 +03:30 [INF] Request finished HTTP/2 GET https://localhost:7108/TaskFlowMvc.styles.css?v=denkTJS40ZgCb1ryagt5okiypSWbvhenoKvVK6WBfgY - 200 1142 text/css 170.9159ms
+2026-07-28 08:29:33.109 +03:30 [INF] Sending file. Request path: 'css/site.css'. Physical path: 'D:\TaskFlowMvc\obj\Debug\net10.0\compressed\4xl5hjd8lv-{0}-b9sayid5wm-b9sayid5wm.gz'
+2026-07-28 08:29:33.109 +03:30 [INF] Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2026-07-28 08:29:33.107 +03:30 [INF] Request finished HTTP/2 GET https://localhost:7108/js/site.js?v=hRQyftXiu1lLX2P9Ly9xa4gHJgLeR1uGN5qegUobtGo - 200 264 text/javascript 113.0794ms
+2026-07-28 08:29:33.112 +03:30 [INF] Request finished HTTP/2 GET https://localhost:7108/css/site.css?v=j6fhJSuuyLpOSLuPJU0TsDV0iNjor5S3rDnvxJrt4bg - 200 700 text/css 176.1995ms
+2026-07-28 08:29:33.156 +03:30 [INF] Request finished HTTP/2 GET https://localhost:7108/_framework/aspnetcore-browser-refresh.js - 200 14927 application/javascript; charset=utf-8 112.9642ms
+2026-07-28 08:29:33.198 +03:30 [INF] Sending file. Request path: 'lib/bootstrap/dist/css/bootstrap.min.css'. Physical path: 'D:\TaskFlowMvc\obj\Debug\net10.0\compressed\cwkq37jqus-{0}-46ein0sx1k-46ein0sx1k.gz'
+2026-07-28 08:29:33.199 +03:30 [INF] Sending file. Request path: 'lib/bootstrap/dist/js/bootstrap.bundle.min.js'. Physical path: 'D:\TaskFlowMvc\obj\Debug\net10.0\compressed\6usytvi6e8-{0}-493y06b0oq-493y06b0oq.gz'
+2026-07-28 08:29:33.204 +03:30 [INF] Sending file. Request path: 'lib/jquery/dist/jquery.min.js'. Physical path: 'D:\TaskFlowMvc\obj\Debug\net10.0\compressed\5u0wgstfou-{0}-o1o13a6vjx-o1o13a6vjx.gz'
+2026-07-28 08:29:33.205 +03:30 [INF] Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2026-07-28 08:29:33.205 +03:30 [INF] Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2026-07-28 08:29:33.205 +03:30 [INF] Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2026-07-28 08:29:33.223 +03:30 [INF] Request finished HTTP/2 GET https://localhost:7108/lib/bootstrap/dist/css/bootstrap.min.css - 200 232871 text/css 288.0001ms
+2026-07-28 08:29:33.227 +03:30 [INF] Request finished HTTP/2 GET https://localhost:7108/lib/bootstrap/dist/js/bootstrap.bundle.min.js - 200 80764 text/javascript 281.992ms
+2026-07-28 08:29:33.234 +03:30 [INF] Request finished HTTP/2 GET https://localhost:7108/lib/jquery/dist/jquery.min.js - 200 87576 text/javascript 297.3355ms
+2026-07-28 08:29:33.235 +03:30 [INF] Request finished HTTP/2 GET https://localhost:7108/_vs/browserLink - 200 null text/javascript; charset=UTF-8 224.1524ms
+2026-07-28 08:29:34.473 +03:30 [INF] Request starting HTTP/2 GET https://localhost:7108/Tag - null null
+2026-07-28 08:29:34.537 +03:30 [INF] Executing endpoint 'TaskFlowMvc.Controllers.TagController.Index (TaskFlowMvc)'
+2026-07-28 08:29:34.551 +03:30 [INF] Route matched with {action = "Index", controller = "Tag"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller TaskFlowMvc.Controllers.TagController (TaskFlowMvc).
+2026-07-28 08:29:37.487 +03:30 [WRN] Entity 'Tag' has a global query filter defined and is the required end of a relationship with the entity 'TaskItemTag'. This may lead to unexpected results when the required entity is filtered out. Either configure the navigation as optional, or define matching query filters for both entities in the navigation. See https://go.microsoft.com/fwlink/?linkid=2131316 for more information.
+2026-07-28 08:29:40.165 +03:30 [INF] Executed DbCommand (112ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[Id], [t].[Color], [t].[CreatedAt], [t].[IsDeleted], [t].[Name], [t].[UpdatedAt]
+FROM [Tag] AS [t]
+WHERE [t].[IsDeleted] = CAST(0 AS bit)
+2026-07-28 08:29:40.370 +03:30 [INF] Executing ViewResult, running view Index.
+2026-07-28 08:29:40.485 +03:30 [INF] Executed ViewResult - view Index executed in 119.5884ms.
+2026-07-28 08:29:40.488 +03:30 [INF] Executed action TaskFlowMvc.Controllers.TagController.Index (TaskFlowMvc) in 5936.9684ms
+2026-07-28 08:29:40.488 +03:30 [INF] Executed endpoint 'TaskFlowMvc.Controllers.TagController.Index (TaskFlowMvc)'
+2026-07-28 08:29:40.516 +03:30 [INF] Request starting HTTP/2 GET https://localhost:7108/lib/bootstrap/dist/css/bootstrap.min.css - null null
+2026-07-28 08:29:40.517 +03:30 [INF] Request starting HTTP/2 GET https://localhost:7108/css/site.css?v=j6fhJSuuyLpOSLuPJU0TsDV0iNjor5S3rDnvxJrt4bg - null null
+2026-07-28 08:29:40.517 +03:30 [INF] Request starting HTTP/2 GET https://localhost:7108/TaskFlowMvc.styles.css?v=denkTJS40ZgCb1ryagt5okiypSWbvhenoKvVK6WBfgY - null null
+2026-07-28 08:29:40.518 +03:30 [INF] Request starting HTTP/2 GET https://localhost:7108/lib/jquery/dist/jquery.min.js - null null
+2026-07-28 08:29:40.518 +03:30 [INF] Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2026-07-28 08:29:40.518 +03:30 [INF] Request starting HTTP/2 GET https://localhost:7108/lib/bootstrap/dist/js/bootstrap.bundle.min.js - null null
+2026-07-28 08:29:40.518 +03:30 [INF] Request finished HTTP/2 GET https://localhost:7108/Tag - 200 null text/html; charset=utf-8 6045.3582ms
+2026-07-28 08:29:40.519 +03:30 [INF] Sending file. Request path: 'TaskFlowMvc.styles.css'. Physical path: 'D:\TaskFlowMvc\obj\Debug\net10.0\compressed\pio3utri1p-{0}-5w3zfbn8im-5w3zfbn8im.gz'
+2026-07-28 08:29:40.519 +03:30 [INF] Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2026-07-28 08:29:40.519 +03:30 [INF] Request starting HTTP/2 GET https://localhost:7108/js/site.js?v=hRQyftXiu1lLX2P9Ly9xa4gHJgLeR1uGN5qegUobtGo - null null
+2026-07-28 08:29:40.519 +03:30 [INF] Request finished HTTP/2 GET https://localhost:7108/TaskFlowMvc.styles.css?v=denkTJS40ZgCb1ryagt5okiypSWbvhenoKvVK6WBfgY - 200 1142 text/css 1.8876ms
+2026-07-28 08:29:40.520 +03:30 [INF] Request starting HTTP/2 GET https://localhost:7108/_vs/browserLink - null null
+2026-07-28 08:29:40.520 +03:30 [INF] Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2026-07-28 08:29:40.520 +03:30 [INF] Request starting HTTP/2 GET https://localhost:7108/_framework/aspnetcore-browser-refresh.js - null null
+2026-07-28 08:29:40.520 +03:30 [INF] Sending file. Request path: 'css/site.css'. Physical path: 'D:\TaskFlowMvc\obj\Debug\net10.0\compressed\4xl5hjd8lv-{0}-b9sayid5wm-b9sayid5wm.gz'
+2026-07-28 08:29:40.521 +03:30 [INF] Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2026-07-28 08:29:40.521 +03:30 [INF] Request finished HTTP/2 GET https://localhost:7108/css/site.css?v=j6fhJSuuyLpOSLuPJU0TsDV0iNjor5S3rDnvxJrt4bg - 200 700 text/css 3.6669ms
+2026-07-28 08:29:40.522 +03:30 [INF] Request finished HTTP/2 GET https://localhost:7108/_framework/aspnetcore-browser-refresh.js - 200 14927 application/javascript; charset=utf-8 0.6087ms
+2026-07-28 08:29:40.558 +03:30 [INF] Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2026-07-28 08:29:40.558 +03:30 [INF] Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2026-07-28 08:29:40.559 +03:30 [INF] Sending file. Request path: 'js/site.js'. Physical path: 'D:\TaskFlowMvc\obj\Debug\net10.0\compressed\lrk0etaown-{0}-xtxxf3hu2r-xtxxf3hu2r.gz'
+2026-07-28 08:29:40.560 +03:30 [INF] Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2026-07-28 08:29:40.560 +03:30 [INF] Request finished HTTP/2 GET https://localhost:7108/js/site.js?v=hRQyftXiu1lLX2P9Ly9xa4gHJgLeR1uGN5qegUobtGo - 200 264 text/javascript 41.2532ms
+2026-07-28 08:29:40.568 +03:30 [INF] Sending file. Request path: 'lib/bootstrap/dist/css/bootstrap.min.css'. Physical path: 'D:\TaskFlowMvc\obj\Debug\net10.0\compressed\cwkq37jqus-{0}-46ein0sx1k-46ein0sx1k.gz'
+2026-07-28 08:29:40.568 +03:30 [INF] Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2026-07-28 08:29:40.569 +03:30 [INF] Request finished HTTP/2 GET https://localhost:7108/lib/bootstrap/dist/css/bootstrap.min.css - 200 232871 text/css 52.4899ms
+2026-07-28 08:29:40.582 +03:30 [INF] Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2026-07-28 08:29:40.586 +03:30 [INF] Sending file. Request path: 'lib/jquery/dist/jquery.min.js'. Physical path: 'D:\TaskFlowMvc\obj\Debug\net10.0\compressed\5u0wgstfou-{0}-o1o13a6vjx-o1o13a6vjx.gz'
+2026-07-28 08:29:40.586 +03:30 [INF] Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2026-07-28 08:29:40.587 +03:30 [INF] Request finished HTTP/2 GET https://localhost:7108/lib/jquery/dist/jquery.min.js - 200 87576 text/javascript 68.7331ms
+2026-07-28 08:29:40.590 +03:30 [INF] Request finished HTTP/2 GET https://localhost:7108/_vs/browserLink - 200 null text/javascript; charset=UTF-8 70.0679ms
+2026-07-28 08:29:40.681 +03:30 [INF] Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2026-07-28 08:29:40.685 +03:30 [INF] Sending file. Request path: 'lib/bootstrap/dist/js/bootstrap.bundle.min.js'. Physical path: 'D:\TaskFlowMvc\obj\Debug\net10.0\compressed\6usytvi6e8-{0}-493y06b0oq-493y06b0oq.gz'
+2026-07-28 08:29:40.685 +03:30 [INF] Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2026-07-28 08:29:40.686 +03:30 [INF] Request finished HTTP/2 GET https://localhost:7108/lib/bootstrap/dist/js/bootstrap.bundle.min.js - 200 80764 text/javascript 167.3556ms
+2026-07-28 08:29:53.675 +03:30 [INF] Request starting HTTP/2 GET https://localhost:7108/Tag/Create - null null
+2026-07-28 08:29:53.687 +03:30 [INF] Executing endpoint 'TaskFlowMvc.Controllers.TagController.Create (TaskFlowMvc)'
+2026-07-28 08:29:53.693 +03:30 [INF] Route matched with {action = "Create", controller = "Tag"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Create() on controller TaskFlowMvc.Controllers.TagController (TaskFlowMvc).
+2026-07-28 08:29:53.701 +03:30 [INF] Executing ViewResult, running view Create.
+2026-07-28 08:29:53.864 +03:30 [INF] Executed ViewResult - view Create executed in 164.4892ms.
+2026-07-28 08:29:53.878 +03:30 [INF] Executed action TaskFlowMvc.Controllers.TagController.Create (TaskFlowMvc) in 183.8988ms
+2026-07-28 08:29:53.880 +03:30 [INF] Executed endpoint 'TaskFlowMvc.Controllers.TagController.Create (TaskFlowMvc)'
+2026-07-28 08:29:53.880 +03:30 [INF] Request finished HTTP/2 GET https://localhost:7108/Tag/Create - 200 null text/html; charset=utf-8 205.8523ms
+2026-07-28 08:29:53.903 +03:30 [INF] Request starting HTTP/2 GET https://localhost:7108/lib/bootstrap/dist/css/bootstrap.min.css - null null
+2026-07-28 08:29:53.903 +03:30 [INF] Request starting HTTP/2 GET https://localhost:7108/css/site.css?v=j6fhJSuuyLpOSLuPJU0TsDV0iNjor5S3rDnvxJrt4bg - null null
+2026-07-28 08:29:53.903 +03:30 [INF] Request starting HTTP/2 GET https://localhost:7108/TaskFlowMvc.styles.css?v=denkTJS40ZgCb1ryagt5okiypSWbvhenoKvVK6WBfgY - null null
+2026-07-28 08:29:53.903 +03:30 [INF] Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2026-07-28 08:29:53.903 +03:30 [INF] Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2026-07-28 08:29:53.903 +03:30 [INF] Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2026-07-28 08:29:53.903 +03:30 [INF] Request starting HTTP/2 GET https://localhost:7108/lib/jquery/dist/jquery.min.js - null null
+2026-07-28 08:29:53.904 +03:30 [INF] Request starting HTTP/2 GET https://localhost:7108/lib/bootstrap/dist/js/bootstrap.bundle.min.js - null null
+2026-07-28 08:29:53.904 +03:30 [INF] Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2026-07-28 08:29:53.904 +03:30 [INF] Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2026-07-28 08:29:53.904 +03:30 [INF] Sending file. Request path: 'css/site.css'. Physical path: 'D:\TaskFlowMvc\obj\Debug\net10.0\compressed\4xl5hjd8lv-{0}-b9sayid5wm-b9sayid5wm.gz'
+2026-07-28 08:29:53.904 +03:30 [INF] Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2026-07-28 08:29:53.904 +03:30 [INF] Request finished HTTP/2 GET https://localhost:7108/css/site.css?v=j6fhJSuuyLpOSLuPJU0TsDV0iNjor5S3rDnvxJrt4bg - 200 700 text/css 1.7513ms
+2026-07-28 08:29:53.904 +03:30 [INF] Sending file. Request path: 'TaskFlowMvc.styles.css'. Physical path: 'D:\TaskFlowMvc\obj\Debug\net10.0\compressed\pio3utri1p-{0}-5w3zfbn8im-5w3zfbn8im.gz'
+2026-07-28 08:29:53.904 +03:30 [INF] Request starting HTTP/2 GET https://localhost:7108/js/site.js?v=hRQyftXiu1lLX2P9Ly9xa4gHJgLeR1uGN5qegUobtGo - null null
+2026-07-28 08:29:53.904 +03:30 [INF] Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2026-07-28 08:29:53.905 +03:30 [INF] Request finished HTTP/2 GET https://localhost:7108/TaskFlowMvc.styles.css?v=denkTJS40ZgCb1ryagt5okiypSWbvhenoKvVK6WBfgY - 200 1142 text/css 1.7556ms
+2026-07-28 08:29:53.905 +03:30 [INF] Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2026-07-28 08:29:53.906 +03:30 [INF] Sending file. Request path: 'js/site.js'. Physical path: 'D:\TaskFlowMvc\obj\Debug\net10.0\compressed\lrk0etaown-{0}-xtxxf3hu2r-xtxxf3hu2r.gz'
+2026-07-28 08:29:53.906 +03:30 [INF] Sending file. Request path: 'lib/jquery/dist/jquery.min.js'. Physical path: 'D:\TaskFlowMvc\obj\Debug\net10.0\compressed\5u0wgstfou-{0}-o1o13a6vjx-o1o13a6vjx.gz'
+2026-07-28 08:29:53.906 +03:30 [INF] Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2026-07-28 08:29:53.906 +03:30 [INF] Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2026-07-28 08:29:53.906 +03:30 [INF] Request starting HTTP/2 GET https://localhost:7108/_vs/browserLink - null null
+2026-07-28 08:29:53.906 +03:30 [INF] Request finished HTTP/2 GET https://localhost:7108/js/site.js?v=hRQyftXiu1lLX2P9Ly9xa4gHJgLeR1uGN5qegUobtGo - 200 264 text/javascript 1.4995ms
+2026-07-28 08:29:53.906 +03:30 [INF] Request finished HTTP/2 GET https://localhost:7108/lib/jquery/dist/jquery.min.js - 200 87576 text/javascript 3.1478ms
+2026-07-28 08:29:53.907 +03:30 [INF] Request starting HTTP/2 GET https://localhost:7108/_framework/aspnetcore-browser-refresh.js - null null
+2026-07-28 08:29:53.908 +03:30 [INF] Sending file. Request path: 'lib/bootstrap/dist/css/bootstrap.min.css'. Physical path: 'D:\TaskFlowMvc\obj\Debug\net10.0\compressed\cwkq37jqus-{0}-46ein0sx1k-46ein0sx1k.gz'
+2026-07-28 08:29:53.908 +03:30 [INF] Sending file. Request path: 'lib/bootstrap/dist/js/bootstrap.bundle.min.js'. Physical path: 'D:\TaskFlowMvc\obj\Debug\net10.0\compressed\6usytvi6e8-{0}-493y06b0oq-493y06b0oq.gz'
+2026-07-28 08:29:53.909 +03:30 [INF] Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2026-07-28 08:29:53.909 +03:30 [INF] Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2026-07-28 08:29:53.940 +03:30 [INF] Request finished HTTP/2 GET https://localhost:7108/lib/bootstrap/dist/js/bootstrap.bundle.min.js - 200 80764 text/javascript 35.6176ms
+2026-07-28 08:29:53.940 +03:30 [INF] Request finished HTTP/2 GET https://localhost:7108/_framework/aspnetcore-browser-refresh.js - 200 14927 application/javascript; charset=utf-8 32.0797ms
+2026-07-28 08:29:53.940 +03:30 [INF] Request finished HTTP/2 GET https://localhost:7108/lib/bootstrap/dist/css/bootstrap.min.css - 200 232871 text/css 37.0423ms
+2026-07-28 08:29:53.940 +03:30 [INF] Request starting HTTP/2 GET https://localhost:7108/lib/jquery-validation/dist/jquery.validate.min.js - null null
+2026-07-28 08:29:53.941 +03:30 [INF] Request starting HTTP/2 GET https://localhost:7108/lib/jquery-validation-unobtrusive/dist/jquery.validate.unobtrusive.min.js - null null
+2026-07-28 08:29:53.941 +03:30 [INF] Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2026-07-28 08:29:53.942 +03:30 [INF] Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2026-07-28 08:29:53.946 +03:30 [INF] Sending file. Request path: 'lib/jquery-validation-unobtrusive/dist/jquery.validate.unobtrusive.min.js'. Physical path: 'D:\TaskFlowMvc\obj\Debug\net10.0\compressed\ifjvg1eqea-{0}-4v8eqarkd7-4v8eqarkd7.gz'
+2026-07-28 08:29:53.946 +03:30 [INF] Sending file. Request path: 'lib/jquery-validation/dist/jquery.validate.min.js'. Physical path: 'D:\TaskFlowMvc\obj\Debug\net10.0\compressed\wwbqs1h0uj-{0}-ag7o75518u-ag7o75518u.gz'
+2026-07-28 08:29:53.946 +03:30 [INF] Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2026-07-28 08:29:53.946 +03:30 [INF] Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2026-07-28 08:29:53.946 +03:30 [INF] Request finished HTTP/2 GET https://localhost:7108/lib/jquery-validation/dist/jquery.validate.min.js - 200 25341 text/javascript 5.7541ms
+2026-07-28 08:29:53.946 +03:30 [INF] Request finished HTTP/2 GET https://localhost:7108/lib/jquery-validation-unobtrusive/dist/jquery.validate.unobtrusive.min.js - 200 5857 text/javascript 5.8508ms
+2026-07-28 08:29:53.950 +03:30 [INF] Request finished HTTP/2 GET https://localhost:7108/_vs/browserLink - 200 null text/javascript; charset=UTF-8 44.1624ms
+2026-07-28 08:30:04.765 +03:30 [INF] Request starting HTTP/2 POST https://localhost:7108/Tag/Create - application/x-www-form-urlencoded 212
+2026-07-28 08:30:04.775 +03:30 [INF] Executing endpoint 'TaskFlowMvc.Controllers.TagController.Create (TaskFlowMvc)'
+2026-07-28 08:30:04.807 +03:30 [INF] Route matched with {action = "Create", controller = "Tag"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Create(TaskFlowMvc.Models.DTOs.CreateTagRequest) on controller TaskFlowMvc.Controllers.TagController (TaskFlowMvc).
+2026-07-28 08:30:05.639 +03:30 [INF] Executed DbCommand (118ms) [Parameters=[@p0='?' (DbType = Guid), @p1='?' (Size = 20), @p2='?' (DbType = DateTime2), @p3='?' (DbType = Boolean), @p4='?' (Size = 100), @p5='?' (DbType = DateTime2)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [Tag] ([Id], [Color], [CreatedAt], [IsDeleted], [Name], [UpdatedAt])
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5);
+2026-07-28 08:30:05.661 +03:30 [INF] Executing RedirectResult, redirecting to /Tag.
+2026-07-28 08:30:05.663 +03:30 [INF] Executed action TaskFlowMvc.Controllers.TagController.Create (TaskFlowMvc) in 854.9506ms
+2026-07-28 08:30:05.663 +03:30 [INF] Executed endpoint 'TaskFlowMvc.Controllers.TagController.Create (TaskFlowMvc)'
+2026-07-28 08:30:05.664 +03:30 [INF] Request finished HTTP/2 POST https://localhost:7108/Tag/Create - 302 null null 898.3793ms
+2026-07-28 08:30:05.669 +03:30 [INF] Request starting HTTP/2 GET https://localhost:7108/Tag - null null
+2026-07-28 08:30:05.672 +03:30 [INF] Executing endpoint 'TaskFlowMvc.Controllers.TagController.Index (TaskFlowMvc)'
+2026-07-28 08:30:05.672 +03:30 [INF] Route matched with {action = "Index", controller = "Tag"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller TaskFlowMvc.Controllers.TagController (TaskFlowMvc).
+2026-07-28 08:30:05.713 +03:30 [INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[Id], [t].[Color], [t].[CreatedAt], [t].[IsDeleted], [t].[Name], [t].[UpdatedAt]
+FROM [Tag] AS [t]
+WHERE [t].[IsDeleted] = CAST(0 AS bit)
+2026-07-28 08:30:05.716 +03:30 [INF] Executing ViewResult, running view Index.
+2026-07-28 08:30:05.719 +03:30 [INF] Executed ViewResult - view Index executed in 3.6572ms.
+2026-07-28 08:30:05.719 +03:30 [INF] Executed action TaskFlowMvc.Controllers.TagController.Index (TaskFlowMvc) in 46.8896ms
+2026-07-28 08:30:05.719 +03:30 [INF] Executed endpoint 'TaskFlowMvc.Controllers.TagController.Index (TaskFlowMvc)'
+2026-07-28 08:30:05.720 +03:30 [INF] Request finished HTTP/2 GET https://localhost:7108/Tag - 200 null text/html; charset=utf-8 51.2828ms
+2026-07-28 08:30:05.750 +03:30 [INF] Request starting HTTP/2 GET https://localhost:7108/lib/bootstrap/dist/css/bootstrap.min.css - null null
+2026-07-28 08:30:05.750 +03:30 [INF] Request starting HTTP/2 GET https://localhost:7108/css/site.css?v=j6fhJSuuyLpOSLuPJU0TsDV0iNjor5S3rDnvxJrt4bg - null null
+2026-07-28 08:30:05.751 +03:30 [INF] Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2026-07-28 08:30:05.751 +03:30 [INF] Request starting HTTP/2 GET https://localhost:7108/TaskFlowMvc.styles.css?v=denkTJS40ZgCb1ryagt5okiypSWbvhenoKvVK6WBfgY - null null
+2026-07-28 08:30:05.751 +03:30 [INF] Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2026-07-28 08:30:05.751 +03:30 [INF] Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2026-07-28 08:30:05.751 +03:30 [INF] Request starting HTTP/2 GET https://localhost:7108/lib/jquery/dist/jquery.min.js - null null
+2026-07-28 08:30:05.751 +03:30 [INF] Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2026-07-28 08:30:05.752 +03:30 [INF] Sending file. Request path: 'TaskFlowMvc.styles.css'. Physical path: 'D:\TaskFlowMvc\obj\Debug\net10.0\compressed\pio3utri1p-{0}-5w3zfbn8im-5w3zfbn8im.gz'
+2026-07-28 08:30:05.752 +03:30 [INF] Sending file. Request path: 'css/site.css'. Physical path: 'D:\TaskFlowMvc\obj\Debug\net10.0\compressed\4xl5hjd8lv-{0}-b9sayid5wm-b9sayid5wm.gz'
+2026-07-28 08:30:05.752 +03:30 [INF] Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2026-07-28 08:30:05.752 +03:30 [INF] Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2026-07-28 08:30:05.752 +03:30 [INF] Request finished HTTP/2 GET https://localhost:7108/TaskFlowMvc.styles.css?v=denkTJS40ZgCb1ryagt5okiypSWbvhenoKvVK6WBfgY - 200 1142 text/css 1.1454ms
+2026-07-28 08:30:05.752 +03:30 [INF] Request finished HTTP/2 GET https://localhost:7108/css/site.css?v=j6fhJSuuyLpOSLuPJU0TsDV0iNjor5S3rDnvxJrt4bg - 200 700 text/css 1.443ms
+2026-07-28 08:30:05.752 +03:30 [INF] Request starting HTTP/2 GET https://localhost:7108/lib/bootstrap/dist/js/bootstrap.bundle.min.js - null null
+2026-07-28 08:30:05.752 +03:30 [INF] Request starting HTTP/2 GET https://localhost:7108/js/site.js?v=hRQyftXiu1lLX2P9Ly9xa4gHJgLeR1uGN5qegUobtGo - null null
+2026-07-28 08:30:05.753 +03:30 [INF] Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2026-07-28 08:30:05.753 +03:30 [INF] Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2026-07-28 08:30:05.753 +03:30 [INF] Request starting HTTP/2 GET https://localhost:7108/_vs/browserLink - null null
+2026-07-28 08:30:05.753 +03:30 [INF] Request starting HTTP/2 GET https://localhost:7108/_framework/aspnetcore-browser-refresh.js - null null
+2026-07-28 08:30:05.754 +03:30 [INF] Sending file. Request path: 'lib/jquery/dist/jquery.min.js'. Physical path: 'D:\TaskFlowMvc\obj\Debug\net10.0\compressed\5u0wgstfou-{0}-o1o13a6vjx-o1o13a6vjx.gz'
+2026-07-28 08:30:05.754 +03:30 [INF] Sending file. Request path: 'js/site.js'. Physical path: 'D:\TaskFlowMvc\obj\Debug\net10.0\compressed\lrk0etaown-{0}-xtxxf3hu2r-xtxxf3hu2r.gz'
+2026-07-28 08:30:05.754 +03:30 [INF] Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2026-07-28 08:30:05.754 +03:30 [INF] Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2026-07-28 08:30:05.754 +03:30 [INF] Request finished HTTP/2 GET https://localhost:7108/lib/jquery/dist/jquery.min.js - 200 87576 text/javascript 2.5606ms
+2026-07-28 08:30:05.754 +03:30 [INF] Request finished HTTP/2 GET https://localhost:7108/js/site.js?v=hRQyftXiu1lLX2P9Ly9xa4gHJgLeR1uGN5qegUobtGo - 200 264 text/javascript 1.3469ms
+2026-07-28 08:30:05.755 +03:30 [INF] Sending file. Request path: 'lib/bootstrap/dist/css/bootstrap.min.css'. Physical path: 'D:\TaskFlowMvc\obj\Debug\net10.0\compressed\cwkq37jqus-{0}-46ein0sx1k-46ein0sx1k.gz'
+2026-07-28 08:30:05.755 +03:30 [INF] Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2026-07-28 08:30:05.755 +03:30 [INF] Request finished HTTP/2 GET https://localhost:7108/lib/bootstrap/dist/css/bootstrap.min.css - 200 232871 text/css 5.3864ms
+2026-07-28 08:30:05.789 +03:30 [INF] Sending file. Request path: 'lib/bootstrap/dist/js/bootstrap.bundle.min.js'. Physical path: 'D:\TaskFlowMvc\obj\Debug\net10.0\compressed\6usytvi6e8-{0}-493y06b0oq-493y06b0oq.gz'
+2026-07-28 08:30:05.790 +03:30 [INF] Request finished HTTP/2 GET https://localhost:7108/_framework/aspnetcore-browser-refresh.js - 200 14927 application/javascript; charset=utf-8 36.2953ms
+2026-07-28 08:30:05.790 +03:30 [INF] Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2026-07-28 08:30:05.790 +03:30 [INF] Request finished HTTP/2 GET https://localhost:7108/lib/bootstrap/dist/js/bootstrap.bundle.min.js - 200 80764 text/javascript 37.7322ms
+2026-07-28 08:30:05.798 +03:30 [INF] Request finished HTTP/2 GET https://localhost:7108/_vs/browserLink - 200 null text/javascript; charset=UTF-8 44.7563ms
+2026-07-28 08:30:09.969 +03:30 [INF] Request starting HTTP/2 GET https://localhost:7108/Tag/Create - null null
+2026-07-28 08:30:09.971 +03:30 [INF] Executing endpoint 'TaskFlowMvc.Controllers.TagController.Create (TaskFlowMvc)'
+2026-07-28 08:30:09.972 +03:30 [INF] Route matched with {action = "Create", controller = "Tag"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Create() on controller TaskFlowMvc.Controllers.TagController (TaskFlowMvc).
+2026-07-28 08:30:09.973 +03:30 [INF] Executing ViewResult, running view Create.
+2026-07-28 08:30:09.993 +03:30 [INF] Executed ViewResult - view Create executed in 19.947ms.
+2026-07-28 08:30:09.993 +03:30 [INF] Executed action TaskFlowMvc.Controllers.TagController.Create (TaskFlowMvc) in 20.996ms
+2026-07-28 08:30:09.993 +03:30 [INF] Executed endpoint 'TaskFlowMvc.Controllers.TagController.Create (TaskFlowMvc)'
+2026-07-28 08:30:09.993 +03:30 [INF] Request finished HTTP/2 GET https://localhost:7108/Tag/Create - 200 null text/html; charset=utf-8 24.4796ms
+2026-07-28 08:30:10.021 +03:30 [INF] Request starting HTTP/2 GET https://localhost:7108/lib/bootstrap/dist/css/bootstrap.min.css - null null
+2026-07-28 08:30:10.021 +03:30 [INF] Request starting HTTP/2 GET https://localhost:7108/css/site.css?v=j6fhJSuuyLpOSLuPJU0TsDV0iNjor5S3rDnvxJrt4bg - null null
+2026-07-28 08:30:10.021 +03:30 [INF] Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2026-07-28 08:30:10.021 +03:30 [INF] Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2026-07-28 08:30:10.022 +03:30 [INF] Request starting HTTP/2 GET https://localhost:7108/TaskFlowMvc.styles.css?v=denkTJS40ZgCb1ryagt5okiypSWbvhenoKvVK6WBfgY - null null
+2026-07-28 08:30:10.022 +03:30 [INF] Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2026-07-28 08:30:10.022 +03:30 [INF] Sending file. Request path: 'css/site.css'. Physical path: 'D:\TaskFlowMvc\obj\Debug\net10.0\compressed\4xl5hjd8lv-{0}-b9sayid5wm-b9sayid5wm.gz'
+2026-07-28 08:30:10.022 +03:30 [INF] Request starting HTTP/2 GET https://localhost:7108/lib/jquery/dist/jquery.min.js - null null
+2026-07-28 08:30:10.022 +03:30 [INF] Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2026-07-28 08:30:10.025 +03:30 [INF] Request finished HTTP/2 GET https://localhost:7108/css/site.css?v=j6fhJSuuyLpOSLuPJU0TsDV0iNjor5S3rDnvxJrt4bg - 200 700 text/css 3.3023ms
+2026-07-28 08:30:10.025 +03:30 [INF] Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2026-07-28 08:30:10.025 +03:30 [INF] Sending file. Request path: 'TaskFlowMvc.styles.css'. Physical path: 'D:\TaskFlowMvc\obj\Debug\net10.0\compressed\pio3utri1p-{0}-5w3zfbn8im-5w3zfbn8im.gz'
+2026-07-28 08:30:10.025 +03:30 [INF] Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2026-07-28 08:30:10.025 +03:30 [INF] Request finished HTTP/2 GET https://localhost:7108/TaskFlowMvc.styles.css?v=denkTJS40ZgCb1ryagt5okiypSWbvhenoKvVK6WBfgY - 200 1142 text/css 3.4692ms
+2026-07-28 08:30:10.025 +03:30 [INF] Request starting HTTP/2 GET https://localhost:7108/js/site.js?v=hRQyftXiu1lLX2P9Ly9xa4gHJgLeR1uGN5qegUobtGo - null null
+2026-07-28 08:30:10.025 +03:30 [INF] Request starting HTTP/2 GET https://localhost:7108/lib/jquery-validation/dist/jquery.validate.min.js - null null
+2026-07-28 08:30:10.025 +03:30 [INF] Request starting HTTP/2 GET https://localhost:7108/lib/bootstrap/dist/js/bootstrap.bundle.min.js - null null
+2026-07-28 08:30:10.025 +03:30 [INF] Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2026-07-28 08:30:10.025 +03:30 [INF] Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2026-07-28 08:30:10.026 +03:30 [INF] Request starting HTTP/2 GET https://localhost:7108/lib/jquery-validation-unobtrusive/dist/jquery.validate.unobtrusive.min.js - null null
+2026-07-28 08:30:10.027 +03:30 [INF] Sending file. Request path: 'js/site.js'. Physical path: 'D:\TaskFlowMvc\obj\Debug\net10.0\compressed\lrk0etaown-{0}-xtxxf3hu2r-xtxxf3hu2r.gz'
+2026-07-28 08:30:10.027 +03:30 [INF] Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2026-07-28 08:30:10.028 +03:30 [INF] Request finished HTTP/2 GET https://localhost:7108/js/site.js?v=hRQyftXiu1lLX2P9Ly9xa4gHJgLeR1uGN5qegUobtGo - 200 264 text/javascript 2.5032ms
+2026-07-28 08:30:10.071 +03:30 [INF] Sending file. Request path: 'lib/jquery/dist/jquery.min.js'. Physical path: 'D:\TaskFlowMvc\obj\Debug\net10.0\compressed\5u0wgstfou-{0}-o1o13a6vjx-o1o13a6vjx.gz'
+2026-07-28 08:30:10.071 +03:30 [INF] Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2026-07-28 08:30:10.071 +03:30 [INF] Request starting HTTP/2 GET https://localhost:7108/_vs/browserLink - null null
+2026-07-28 08:30:10.072 +03:30 [INF] Sending file. Request path: 'lib/bootstrap/dist/js/bootstrap.bundle.min.js'. Physical path: 'D:\TaskFlowMvc\obj\Debug\net10.0\compressed\6usytvi6e8-{0}-493y06b0oq-493y06b0oq.gz'
+2026-07-28 08:30:10.072 +03:30 [INF] Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2026-07-28 08:30:10.080 +03:30 [INF] Request finished HTTP/2 GET https://localhost:7108/lib/jquery/dist/jquery.min.js - 200 87576 text/javascript 49.6191ms
+2026-07-28 08:30:10.080 +03:30 [INF] Request finished HTTP/2 GET https://localhost:7108/lib/bootstrap/dist/js/bootstrap.bundle.min.js - 200 80764 text/javascript 55.2483ms
+2026-07-28 08:30:10.080 +03:30 [INF] Request starting HTTP/2 GET https://localhost:7108/_framework/aspnetcore-browser-refresh.js - null null
+2026-07-28 08:30:10.082 +03:30 [INF] Sending file. Request path: 'lib/bootstrap/dist/css/bootstrap.min.css'. Physical path: 'D:\TaskFlowMvc\obj\Debug\net10.0\compressed\cwkq37jqus-{0}-46ein0sx1k-46ein0sx1k.gz'
+2026-07-28 08:30:10.082 +03:30 [INF] Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2026-07-28 08:30:10.083 +03:30 [INF] Request finished HTTP/2 GET https://localhost:7108/_framework/aspnetcore-browser-refresh.js - 200 14927 application/javascript; charset=utf-8 2.2718ms
+2026-07-28 08:30:10.083 +03:30 [INF] Request finished HTTP/2 GET https://localhost:7108/lib/bootstrap/dist/css/bootstrap.min.css - 200 232871 text/css 62.4037ms
+2026-07-28 08:30:10.100 +03:30 [INF] Request finished HTTP/2 GET https://localhost:7108/_vs/browserLink - 200 null text/javascript; charset=UTF-8 65.1336ms
+2026-07-28 08:30:10.100 +03:30 [INF] Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2026-07-28 08:30:10.103 +03:30 [INF] Sending file. Request path: 'lib/jquery-validation-unobtrusive/dist/jquery.validate.unobtrusive.min.js'. Physical path: 'D:\TaskFlowMvc\obj\Debug\net10.0\compressed\ifjvg1eqea-{0}-4v8eqarkd7-4v8eqarkd7.gz'
+2026-07-28 08:30:10.103 +03:30 [INF] Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2026-07-28 08:30:10.103 +03:30 [INF] Request finished HTTP/2 GET https://localhost:7108/lib/jquery-validation-unobtrusive/dist/jquery.validate.unobtrusive.min.js - 200 5857 text/javascript 76.6845ms
+2026-07-28 08:30:10.106 +03:30 [INF] Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2026-07-28 08:30:10.108 +03:30 [INF] Sending file. Request path: 'lib/jquery-validation/dist/jquery.validate.min.js'. Physical path: 'D:\TaskFlowMvc\obj\Debug\net10.0\compressed\wwbqs1h0uj-{0}-ag7o75518u-ag7o75518u.gz'
+2026-07-28 08:30:10.109 +03:30 [INF] Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2026-07-28 08:30:10.109 +03:30 [INF] Request finished HTTP/2 GET https://localhost:7108/lib/jquery-validation/dist/jquery.validate.min.js - 200 25341 text/javascript 83.7104ms
+2026-07-28 08:30:22.272 +03:30 [INF] Request starting HTTP/2 POST https://localhost:7108/Tag/Create - application/x-www-form-urlencoded 211
+2026-07-28 08:30:22.283 +03:30 [INF] Executing endpoint 'TaskFlowMvc.Controllers.TagController.Create (TaskFlowMvc)'
+2026-07-28 08:30:22.283 +03:30 [INF] Route matched with {action = "Create", controller = "Tag"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Create(TaskFlowMvc.Models.DTOs.CreateTagRequest) on controller TaskFlowMvc.Controllers.TagController (TaskFlowMvc).
+2026-07-28 08:30:22.302 +03:30 [INF] Executed DbCommand (9ms) [Parameters=[@p0='?' (DbType = Guid), @p1='?' (Size = 20), @p2='?' (DbType = DateTime2), @p3='?' (DbType = Boolean), @p4='?' (Size = 100), @p5='?' (DbType = DateTime2)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [Tag] ([Id], [Color], [CreatedAt], [IsDeleted], [Name], [UpdatedAt])
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5);
+2026-07-28 08:30:22.303 +03:30 [INF] Executing RedirectResult, redirecting to /Tag.
+2026-07-28 08:30:22.303 +03:30 [INF] Executed action TaskFlowMvc.Controllers.TagController.Create (TaskFlowMvc) in 20.3281ms
+2026-07-28 08:30:22.303 +03:30 [INF] Executed endpoint 'TaskFlowMvc.Controllers.TagController.Create (TaskFlowMvc)'
+2026-07-28 08:30:22.304 +03:30 [INF] Request finished HTTP/2 POST https://localhost:7108/Tag/Create - 302 null null 31.2193ms
+2026-07-28 08:30:22.306 +03:30 [INF] Request starting HTTP/2 GET https://localhost:7108/Tag - null null
+2026-07-28 08:30:22.309 +03:30 [INF] Executing endpoint 'TaskFlowMvc.Controllers.TagController.Index (TaskFlowMvc)'
+2026-07-28 08:30:22.309 +03:30 [INF] Route matched with {action = "Index", controller = "Tag"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller TaskFlowMvc.Controllers.TagController (TaskFlowMvc).
+2026-07-28 08:30:22.319 +03:30 [INF] Executed DbCommand (6ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[Id], [t].[Color], [t].[CreatedAt], [t].[IsDeleted], [t].[Name], [t].[UpdatedAt]
+FROM [Tag] AS [t]
+WHERE [t].[IsDeleted] = CAST(0 AS bit)
+2026-07-28 08:30:22.320 +03:30 [INF] Executing ViewResult, running view Index.
+2026-07-28 08:30:22.324 +03:30 [INF] Executed ViewResult - view Index executed in 4.6457ms.
+2026-07-28 08:30:22.324 +03:30 [INF] Executed action TaskFlowMvc.Controllers.TagController.Index (TaskFlowMvc) in 15.4193ms
+2026-07-28 08:30:22.325 +03:30 [INF] Executed endpoint 'TaskFlowMvc.Controllers.TagController.Index (TaskFlowMvc)'
+2026-07-28 08:30:22.325 +03:30 [INF] Request finished HTTP/2 GET https://localhost:7108/Tag - 200 null text/html; charset=utf-8 19.1569ms
+2026-07-28 08:30:22.357 +03:30 [INF] Request starting HTTP/2 GET https://localhost:7108/lib/bootstrap/dist/css/bootstrap.min.css - null null
+2026-07-28 08:30:22.357 +03:30 [INF] Request starting HTTP/2 GET https://localhost:7108/css/site.css?v=j6fhJSuuyLpOSLuPJU0TsDV0iNjor5S3rDnvxJrt4bg - null null
+2026-07-28 08:30:22.357 +03:30 [INF] Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2026-07-28 08:30:22.357 +03:30 [INF] Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2026-07-28 08:30:22.357 +03:30 [INF] Request starting HTTP/2 GET https://localhost:7108/TaskFlowMvc.styles.css?v=denkTJS40ZgCb1ryagt5okiypSWbvhenoKvVK6WBfgY - null null
+2026-07-28 08:30:22.358 +03:30 [INF] Request starting HTTP/2 GET https://localhost:7108/lib/jquery/dist/jquery.min.js - null null
+2026-07-28 08:30:22.358 +03:30 [INF] Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2026-07-28 08:30:22.359 +03:30 [INF] Sending file. Request path: 'css/site.css'. Physical path: 'D:\TaskFlowMvc\obj\Debug\net10.0\compressed\4xl5hjd8lv-{0}-b9sayid5wm-b9sayid5wm.gz'
+2026-07-28 08:30:22.359 +03:30 [INF] Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2026-07-28 08:30:22.359 +03:30 [INF] Request finished HTTP/2 GET https://localhost:7108/css/site.css?v=j6fhJSuuyLpOSLuPJU0TsDV0iNjor5S3rDnvxJrt4bg - 200 700 text/css 2.1477ms
+2026-07-28 08:30:22.360 +03:30 [INF] Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2026-07-28 08:30:22.361 +03:30 [INF] Sending file. Request path: 'TaskFlowMvc.styles.css'. Physical path: 'D:\TaskFlowMvc\obj\Debug\net10.0\compressed\pio3utri1p-{0}-5w3zfbn8im-5w3zfbn8im.gz'
+2026-07-28 08:30:22.362 +03:30 [INF] Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2026-07-28 08:30:22.362 +03:30 [INF] Request finished HTTP/2 GET https://localhost:7108/TaskFlowMvc.styles.css?v=denkTJS40ZgCb1ryagt5okiypSWbvhenoKvVK6WBfgY - 200 1142 text/css 4.4305ms
+2026-07-28 08:30:22.364 +03:30 [INF] Sending file. Request path: 'lib/bootstrap/dist/css/bootstrap.min.css'. Physical path: 'D:\TaskFlowMvc\obj\Debug\net10.0\compressed\cwkq37jqus-{0}-46ein0sx1k-46ein0sx1k.gz'
+2026-07-28 08:30:22.364 +03:30 [INF] Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2026-07-28 08:30:22.364 +03:30 [INF] Request finished HTTP/2 GET https://localhost:7108/lib/bootstrap/dist/css/bootstrap.min.css - 200 232871 text/css 7.4941ms
+2026-07-28 08:30:22.364 +03:30 [INF] Sending file. Request path: 'lib/jquery/dist/jquery.min.js'. Physical path: 'D:\TaskFlowMvc\obj\Debug\net10.0\compressed\5u0wgstfou-{0}-o1o13a6vjx-o1o13a6vjx.gz'
+2026-07-28 08:30:22.365 +03:30 [INF] Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2026-07-28 08:30:22.365 +03:30 [INF] Request finished HTTP/2 GET https://localhost:7108/lib/jquery/dist/jquery.min.js - 200 87576 text/javascript 6.6693ms
+2026-07-28 08:30:22.366 +03:30 [INF] Request starting HTTP/2 GET https://localhost:7108/lib/bootstrap/dist/js/bootstrap.bundle.min.js - null null
+2026-07-28 08:30:22.366 +03:30 [INF] Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2026-07-28 08:30:22.366 +03:30 [INF] Request starting HTTP/2 GET https://localhost:7108/js/site.js?v=hRQyftXiu1lLX2P9Ly9xa4gHJgLeR1uGN5qegUobtGo - null null
+2026-07-28 08:30:22.367 +03:30 [INF] Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2026-07-28 08:30:22.367 +03:30 [INF] Sending file. Request path: 'js/site.js'. Physical path: 'D:\TaskFlowMvc\obj\Debug\net10.0\compressed\lrk0etaown-{0}-xtxxf3hu2r-xtxxf3hu2r.gz'
+2026-07-28 08:30:22.367 +03:30 [INF] Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2026-07-28 08:30:22.367 +03:30 [INF] Request starting HTTP/2 GET https://localhost:7108/_framework/aspnetcore-browser-refresh.js - null null
+2026-07-28 08:30:22.367 +03:30 [INF] Request finished HTTP/2 GET https://localhost:7108/js/site.js?v=hRQyftXiu1lLX2P9Ly9xa4gHJgLeR1uGN5qegUobtGo - 200 264 text/javascript 0.9671ms
+2026-07-28 08:30:22.368 +03:30 [INF] Sending file. Request path: 'lib/bootstrap/dist/js/bootstrap.bundle.min.js'. Physical path: 'D:\TaskFlowMvc\obj\Debug\net10.0\compressed\6usytvi6e8-{0}-493y06b0oq-493y06b0oq.gz'
+2026-07-28 08:30:22.368 +03:30 [INF] Request finished HTTP/2 GET https://localhost:7108/_framework/aspnetcore-browser-refresh.js - 200 14927 application/javascript; charset=utf-8 0.5072ms
+2026-07-28 08:30:22.368 +03:30 [INF] Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2026-07-28 08:30:22.368 +03:30 [INF] Request finished HTTP/2 GET https://localhost:7108/lib/bootstrap/dist/js/bootstrap.bundle.min.js - 200 80764 text/javascript 2.273ms
+2026-07-28 08:30:22.385 +03:30 [INF] Request starting HTTP/2 GET https://localhost:7108/_vs/browserLink - null null
+2026-07-28 08:30:22.399 +03:30 [INF] Request finished HTTP/2 GET https://localhost:7108/_vs/browserLink - 200 null text/javascript; charset=UTF-8 13.8716ms
+2026-07-28 08:30:28.970 +03:30 [INF] Request starting HTTP/2 GET https://localhost:7108/Tag/Create - null null
+2026-07-28 08:30:28.973 +03:30 [INF] Executing endpoint 'TaskFlowMvc.Controllers.TagController.Create (TaskFlowMvc)'
+2026-07-28 08:30:28.974 +03:30 [INF] Route matched with {action = "Create", controller = "Tag"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Create() on controller TaskFlowMvc.Controllers.TagController (TaskFlowMvc).
+2026-07-28 08:30:28.975 +03:30 [INF] Executing ViewResult, running view Create.
+2026-07-28 08:30:28.984 +03:30 [INF] Executed ViewResult - view Create executed in 9.7159ms.
+2026-07-28 08:30:28.985 +03:30 [INF] Executed action TaskFlowMvc.Controllers.TagController.Create (TaskFlowMvc) in 10.6675ms
+2026-07-28 08:30:28.985 +03:30 [INF] Executed endpoint 'TaskFlowMvc.Controllers.TagController.Create (TaskFlowMvc)'
+2026-07-28 08:30:28.985 +03:30 [INF] Request finished HTTP/2 GET https://localhost:7108/Tag/Create - 200 null text/html; charset=utf-8 15.0977ms
+2026-07-28 08:30:29.017 +03:30 [INF] Request starting HTTP/2 GET https://localhost:7108/lib/bootstrap/dist/css/bootstrap.min.css - null null
+2026-07-28 08:30:29.017 +03:30 [INF] Request starting HTTP/2 GET https://localhost:7108/css/site.css?v=j6fhJSuuyLpOSLuPJU0TsDV0iNjor5S3rDnvxJrt4bg - null null
+2026-07-28 08:30:29.017 +03:30 [INF] Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2026-07-28 08:30:29.017 +03:30 [INF] Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2026-07-28 08:30:29.018 +03:30 [INF] Request starting HTTP/2 GET https://localhost:7108/TaskFlowMvc.styles.css?v=denkTJS40ZgCb1ryagt5okiypSWbvhenoKvVK6WBfgY - null null
+2026-07-28 08:30:29.018 +03:30 [INF] Request starting HTTP/2 GET https://localhost:7108/lib/jquery/dist/jquery.min.js - null null
+2026-07-28 08:30:29.018 +03:30 [INF] Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2026-07-28 08:30:29.018 +03:30 [INF] Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2026-07-28 08:30:29.019 +03:30 [INF] Request starting HTTP/2 GET https://localhost:7108/lib/bootstrap/dist/js/bootstrap.bundle.min.js - null null
+2026-07-28 08:30:29.019 +03:30 [INF] Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2026-07-28 08:30:29.019 +03:30 [INF] Request starting HTTP/2 GET https://localhost:7108/js/site.js?v=hRQyftXiu1lLX2P9Ly9xa4gHJgLeR1uGN5qegUobtGo - null null
+2026-07-28 08:30:29.019 +03:30 [INF] Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2026-07-28 08:30:29.020 +03:30 [INF] Sending file. Request path: 'css/site.css'. Physical path: 'D:\TaskFlowMvc\obj\Debug\net10.0\compressed\4xl5hjd8lv-{0}-b9sayid5wm-b9sayid5wm.gz'
+2026-07-28 08:30:29.020 +03:30 [INF] Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2026-07-28 08:30:29.020 +03:30 [INF] Sending file. Request path: 'js/site.js'. Physical path: 'D:\TaskFlowMvc\obj\Debug\net10.0\compressed\lrk0etaown-{0}-xtxxf3hu2r-xtxxf3hu2r.gz'
+2026-07-28 08:30:29.020 +03:30 [INF] Request finished HTTP/2 GET https://localhost:7108/css/site.css?v=j6fhJSuuyLpOSLuPJU0TsDV0iNjor5S3rDnvxJrt4bg - 200 700 text/css 2.7578ms
+2026-07-28 08:30:29.020 +03:30 [INF] Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2026-07-28 08:30:29.020 +03:30 [INF] Request starting HTTP/2 GET https://localhost:7108/lib/jquery-validation/dist/jquery.validate.min.js - null null
+2026-07-28 08:30:29.020 +03:30 [INF] Request finished HTTP/2 GET https://localhost:7108/js/site.js?v=hRQyftXiu1lLX2P9Ly9xa4gHJgLeR1uGN5qegUobtGo - 200 264 text/javascript 1.0012ms
+2026-07-28 08:30:29.020 +03:30 [INF] Sending file. Request path: 'TaskFlowMvc.styles.css'. Physical path: 'D:\TaskFlowMvc\obj\Debug\net10.0\compressed\pio3utri1p-{0}-5w3zfbn8im-5w3zfbn8im.gz'
+2026-07-28 08:30:29.020 +03:30 [INF] Request starting HTTP/2 GET https://localhost:7108/lib/jquery-validation-unobtrusive/dist/jquery.validate.unobtrusive.min.js - null null
+2026-07-28 08:30:29.020 +03:30 [INF] Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2026-07-28 08:30:29.020 +03:30 [INF] Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2026-07-28 08:30:29.020 +03:30 [INF] Request finished HTTP/2 GET https://localhost:7108/TaskFlowMvc.styles.css?v=denkTJS40ZgCb1ryagt5okiypSWbvhenoKvVK6WBfgY - 200 1142 text/css 2.3868ms
+2026-07-28 08:30:29.020 +03:30 [INF] Sending file. Request path: 'lib/jquery/dist/jquery.min.js'. Physical path: 'D:\TaskFlowMvc\obj\Debug\net10.0\compressed\5u0wgstfou-{0}-o1o13a6vjx-o1o13a6vjx.gz'
+2026-07-28 08:30:29.020 +03:30 [INF] Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2026-07-28 08:30:29.020 +03:30 [INF] Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2026-07-28 08:30:29.021 +03:30 [INF] Request finished HTTP/2 GET https://localhost:7108/lib/jquery/dist/jquery.min.js - 200 87576 text/javascript 2.3994ms
+2026-07-28 08:30:29.021 +03:30 [INF] Request starting HTTP/2 GET https://localhost:7108/_vs/browserLink - null null
+2026-07-28 08:30:29.021 +03:30 [INF] Sending file. Request path: 'lib/bootstrap/dist/css/bootstrap.min.css'. Physical path: 'D:\TaskFlowMvc\obj\Debug\net10.0\compressed\cwkq37jqus-{0}-46ein0sx1k-46ein0sx1k.gz'
+2026-07-28 08:30:29.021 +03:30 [INF] Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2026-07-28 08:30:29.021 +03:30 [INF] Request finished HTTP/2 GET https://localhost:7108/lib/bootstrap/dist/css/bootstrap.min.css - 200 232871 text/css 4.1688ms
+2026-07-28 08:30:29.021 +03:30 [INF] Sending file. Request path: 'lib/bootstrap/dist/js/bootstrap.bundle.min.js'. Physical path: 'D:\TaskFlowMvc\obj\Debug\net10.0\compressed\6usytvi6e8-{0}-493y06b0oq-493y06b0oq.gz'
+2026-07-28 08:30:29.021 +03:30 [INF] Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2026-07-28 08:30:29.022 +03:30 [INF] Sending file. Request path: 'lib/jquery-validation/dist/jquery.validate.min.js'. Physical path: 'D:\TaskFlowMvc\obj\Debug\net10.0\compressed\wwbqs1h0uj-{0}-ag7o75518u-ag7o75518u.gz'
+2026-07-28 08:30:29.022 +03:30 [INF] Sending file. Request path: 'lib/jquery-validation-unobtrusive/dist/jquery.validate.unobtrusive.min.js'. Physical path: 'D:\TaskFlowMvc\obj\Debug\net10.0\compressed\ifjvg1eqea-{0}-4v8eqarkd7-4v8eqarkd7.gz'
+2026-07-28 08:30:29.022 +03:30 [INF] Request finished HTTP/2 GET https://localhost:7108/lib/bootstrap/dist/js/bootstrap.bundle.min.js - 200 80764 text/javascript 3.0165ms
+2026-07-28 08:30:29.022 +03:30 [INF] Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2026-07-28 08:30:29.022 +03:30 [INF] Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2026-07-28 08:30:29.022 +03:30 [INF] Request finished HTTP/2 GET https://localhost:7108/lib/jquery-validation-unobtrusive/dist/jquery.validate.unobtrusive.min.js - 200 5857 text/javascript 1.5921ms
+2026-07-28 08:30:29.022 +03:30 [INF] Request finished HTTP/2 GET https://localhost:7108/lib/jquery-validation/dist/jquery.validate.min.js - 200 25341 text/javascript 1.7531ms
+2026-07-28 08:30:29.022 +03:30 [INF] Request starting HTTP/2 GET https://localhost:7108/_framework/aspnetcore-browser-refresh.js - null null
+2026-07-28 08:30:29.023 +03:30 [INF] Request finished HTTP/2 GET https://localhost:7108/_framework/aspnetcore-browser-refresh.js - 200 14927 application/javascript; charset=utf-8 0.658ms
+2026-07-28 08:30:29.038 +03:30 [INF] Request finished HTTP/2 GET https://localhost:7108/_vs/browserLink - 200 null text/javascript; charset=UTF-8 17.6694ms
+2026-07-28 08:30:38.008 +03:30 [INF] Request starting HTTP/2 POST https://localhost:7108/Tag/Create - application/x-www-form-urlencoded 206
+2026-07-28 08:30:38.012 +03:30 [INF] Executing endpoint 'TaskFlowMvc.Controllers.TagController.Create (TaskFlowMvc)'
+2026-07-28 08:30:38.013 +03:30 [INF] Route matched with {action = "Create", controller = "Tag"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Create(TaskFlowMvc.Models.DTOs.CreateTagRequest) on controller TaskFlowMvc.Controllers.TagController (TaskFlowMvc).
+2026-07-28 08:30:38.027 +03:30 [INF] Executed DbCommand (8ms) [Parameters=[@p0='?' (DbType = Guid), @p1='?' (Size = 20), @p2='?' (DbType = DateTime2), @p3='?' (DbType = Boolean), @p4='?' (Size = 100), @p5='?' (DbType = DateTime2)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [Tag] ([Id], [Color], [CreatedAt], [IsDeleted], [Name], [UpdatedAt])
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5);
+2026-07-28 08:30:38.027 +03:30 [INF] Executing RedirectResult, redirecting to /Tag.
+2026-07-28 08:30:38.028 +03:30 [INF] Executed action TaskFlowMvc.Controllers.TagController.Create (TaskFlowMvc) in 14.3257ms
+2026-07-28 08:30:38.028 +03:30 [INF] Executed endpoint 'TaskFlowMvc.Controllers.TagController.Create (TaskFlowMvc)'
+2026-07-28 08:30:38.029 +03:30 [INF] Request finished HTTP/2 POST https://localhost:7108/Tag/Create - 302 null null 21.5403ms
+2026-07-28 08:30:38.033 +03:30 [INF] Request starting HTTP/2 GET https://localhost:7108/Tag - null null
+2026-07-28 08:30:38.036 +03:30 [INF] Executing endpoint 'TaskFlowMvc.Controllers.TagController.Index (TaskFlowMvc)'
+2026-07-28 08:30:38.036 +03:30 [INF] Route matched with {action = "Index", controller = "Tag"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller TaskFlowMvc.Controllers.TagController (TaskFlowMvc).
+2026-07-28 08:30:38.043 +03:30 [INF] Executed DbCommand (5ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[Id], [t].[Color], [t].[CreatedAt], [t].[IsDeleted], [t].[Name], [t].[UpdatedAt]
+FROM [Tag] AS [t]
+WHERE [t].[IsDeleted] = CAST(0 AS bit)
+2026-07-28 08:30:38.045 +03:30 [INF] Executing ViewResult, running view Index.
+2026-07-28 08:30:38.050 +03:30 [INF] Executed ViewResult - view Index executed in 4.6747ms.
+2026-07-28 08:30:38.050 +03:30 [INF] Executed action TaskFlowMvc.Controllers.TagController.Index (TaskFlowMvc) in 14.2323ms
+2026-07-28 08:30:38.050 +03:30 [INF] Executed endpoint 'TaskFlowMvc.Controllers.TagController.Index (TaskFlowMvc)'
+2026-07-28 08:30:38.051 +03:30 [INF] Request finished HTTP/2 GET https://localhost:7108/Tag - 200 null text/html; charset=utf-8 17.441ms
+2026-07-28 08:30:38.085 +03:30 [INF] Request starting HTTP/2 GET https://localhost:7108/lib/bootstrap/dist/css/bootstrap.min.css - null null
+2026-07-28 08:30:38.085 +03:30 [INF] Request starting HTTP/2 GET https://localhost:7108/css/site.css?v=j6fhJSuuyLpOSLuPJU0TsDV0iNjor5S3rDnvxJrt4bg - null null
+2026-07-28 08:30:38.085 +03:30 [INF] Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2026-07-28 08:30:38.086 +03:30 [INF] Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2026-07-28 08:30:38.086 +03:30 [INF] Request starting HTTP/2 GET https://localhost:7108/TaskFlowMvc.styles.css?v=denkTJS40ZgCb1ryagt5okiypSWbvhenoKvVK6WBfgY - null null
+2026-07-28 08:30:38.086 +03:30 [INF] Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2026-07-28 08:30:38.087 +03:30 [INF] Request starting HTTP/2 GET https://localhost:7108/lib/jquery/dist/jquery.min.js - null null
+2026-07-28 08:30:38.087 +03:30 [INF] Sending file. Request path: 'css/site.css'. Physical path: 'D:\TaskFlowMvc\obj\Debug\net10.0\compressed\4xl5hjd8lv-{0}-b9sayid5wm-b9sayid5wm.gz'
+2026-07-28 08:30:38.087 +03:30 [INF] Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2026-07-28 08:30:38.087 +03:30 [INF] Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2026-07-28 08:30:38.087 +03:30 [INF] Sending file. Request path: 'TaskFlowMvc.styles.css'. Physical path: 'D:\TaskFlowMvc\obj\Debug\net10.0\compressed\pio3utri1p-{0}-5w3zfbn8im-5w3zfbn8im.gz'
+2026-07-28 08:30:38.087 +03:30 [INF] Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2026-07-28 08:30:38.087 +03:30 [INF] Request finished HTTP/2 GET https://localhost:7108/css/site.css?v=j6fhJSuuyLpOSLuPJU0TsDV0iNjor5S3rDnvxJrt4bg - 200 700 text/css 1.515ms
+2026-07-28 08:30:38.087 +03:30 [INF] Request finished HTTP/2 GET https://localhost:7108/TaskFlowMvc.styles.css?v=denkTJS40ZgCb1ryagt5okiypSWbvhenoKvVK6WBfgY - 200 1142 text/css 1.3173ms
+2026-07-28 08:30:38.087 +03:30 [INF] Request starting HTTP/2 GET https://localhost:7108/lib/bootstrap/dist/js/bootstrap.bundle.min.js - null null
+2026-07-28 08:30:38.087 +03:30 [INF] Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2026-07-28 08:30:38.088 +03:30 [INF] Request starting HTTP/2 GET https://localhost:7108/js/site.js?v=hRQyftXiu1lLX2P9Ly9xa4gHJgLeR1uGN5qegUobtGo - null null
+2026-07-28 08:30:38.088 +03:30 [INF] Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2026-07-28 08:30:38.089 +03:30 [INF] Sending file. Request path: 'js/site.js'. Physical path: 'D:\TaskFlowMvc\obj\Debug\net10.0\compressed\lrk0etaown-{0}-xtxxf3hu2r-xtxxf3hu2r.gz'
+2026-07-28 08:30:38.089 +03:30 [INF] Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2026-07-28 08:30:38.089 +03:30 [INF] Sending file. Request path: 'lib/bootstrap/dist/js/bootstrap.bundle.min.js'. Physical path: 'D:\TaskFlowMvc\obj\Debug\net10.0\compressed\6usytvi6e8-{0}-493y06b0oq-493y06b0oq.gz'
+2026-07-28 08:30:38.089 +03:30 [INF] Request finished HTTP/2 GET https://localhost:7108/js/site.js?v=hRQyftXiu1lLX2P9Ly9xa4gHJgLeR1uGN5qegUobtGo - 200 264 text/javascript 1.2805ms
+2026-07-28 08:30:38.089 +03:30 [INF] Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2026-07-28 08:30:38.089 +03:30 [INF] Request starting HTTP/2 GET https://localhost:7108/_vs/browserLink - null null
+2026-07-28 08:30:38.089 +03:30 [INF] Request finished HTTP/2 GET https://localhost:7108/lib/bootstrap/dist/js/bootstrap.bundle.min.js - 200 80764 text/javascript 1.9189ms
+2026-07-28 08:30:38.089 +03:30 [INF] Request starting HTTP/2 GET https://localhost:7108/_framework/aspnetcore-browser-refresh.js - null null
+2026-07-28 08:30:38.089 +03:30 [INF] Sending file. Request path: 'lib/jquery/dist/jquery.min.js'. Physical path: 'D:\TaskFlowMvc\obj\Debug\net10.0\compressed\5u0wgstfou-{0}-o1o13a6vjx-o1o13a6vjx.gz'
+2026-07-28 08:30:38.089 +03:30 [INF] Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2026-07-28 08:30:38.089 +03:30 [INF] Request finished HTTP/2 GET https://localhost:7108/lib/jquery/dist/jquery.min.js - 200 87576 text/javascript 2.7951ms
+2026-07-28 08:30:38.090 +03:30 [INF] Sending file. Request path: 'lib/bootstrap/dist/css/bootstrap.min.css'. Physical path: 'D:\TaskFlowMvc\obj\Debug\net10.0\compressed\cwkq37jqus-{0}-46ein0sx1k-46ein0sx1k.gz'
+2026-07-28 08:30:38.091 +03:30 [INF] Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2026-07-28 08:30:38.091 +03:30 [INF] Request finished HTTP/2 GET https://localhost:7108/lib/bootstrap/dist/css/bootstrap.min.css - 200 232871 text/css 5.677ms
+2026-07-28 08:30:38.091 +03:30 [INF] Request finished HTTP/2 GET https://localhost:7108/_framework/aspnetcore-browser-refresh.js - 200 14927 application/javascript; charset=utf-8 2.409ms
+2026-07-28 08:30:38.114 +03:30 [INF] Request finished HTTP/2 GET https://localhost:7108/_vs/browserLink - 200 null text/javascript; charset=UTF-8 24.5933ms
+2026-07-28 08:30:42.250 +03:30 [INF] Request starting HTTP/2 GET https://localhost:7108/ - null null
+2026-07-28 08:30:42.253 +03:30 [INF] Executing endpoint 'TaskFlowMvc.Controllers.HomeController.Index (TaskFlowMvc)'
+2026-07-28 08:30:42.255 +03:30 [INF] Route matched with {action = "Index", controller = "Home"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller TaskFlowMvc.Controllers.HomeController (TaskFlowMvc).
+2026-07-28 08:30:42.256 +03:30 [INF] Executing ViewResult, running view Index.
+2026-07-28 08:30:42.260 +03:30 [INF] Executed ViewResult - view Index executed in 4.1521ms.
+2026-07-28 08:30:42.261 +03:30 [INF] Executed action TaskFlowMvc.Controllers.HomeController.Index (TaskFlowMvc) in 5.5158ms
+2026-07-28 08:30:42.261 +03:30 [INF] Executed endpoint 'TaskFlowMvc.Controllers.HomeController.Index (TaskFlowMvc)'
+2026-07-28 08:30:42.261 +03:30 [INF] Request finished HTTP/2 GET https://localhost:7108/ - 200 null text/html; charset=utf-8 11.1761ms
+2026-07-28 08:30:42.298 +03:30 [INF] Request starting HTTP/2 GET https://localhost:7108/lib/bootstrap/dist/css/bootstrap.min.css - null null
+2026-07-28 08:30:42.299 +03:30 [INF] Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2026-07-28 08:30:42.299 +03:30 [INF] Request starting HTTP/2 GET https://localhost:7108/css/site.css?v=j6fhJSuuyLpOSLuPJU0TsDV0iNjor5S3rDnvxJrt4bg - null null
+2026-07-28 08:30:42.299 +03:30 [INF] Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2026-07-28 08:30:42.299 +03:30 [INF] Request starting HTTP/2 GET https://localhost:7108/TaskFlowMvc.styles.css?v=denkTJS40ZgCb1ryagt5okiypSWbvhenoKvVK6WBfgY - null null
+2026-07-28 08:30:42.300 +03:30 [INF] Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2026-07-28 08:30:42.300 +03:30 [INF] Sending file. Request path: 'css/site.css'. Physical path: 'D:\TaskFlowMvc\obj\Debug\net10.0\compressed\4xl5hjd8lv-{0}-b9sayid5wm-b9sayid5wm.gz'
+2026-07-28 08:30:42.300 +03:30 [INF] Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2026-07-28 08:30:42.300 +03:30 [INF] Request finished HTTP/2 GET https://localhost:7108/css/site.css?v=j6fhJSuuyLpOSLuPJU0TsDV0iNjor5S3rDnvxJrt4bg - 200 700 text/css 1.1578ms
+2026-07-28 08:30:42.300 +03:30 [INF] Sending file. Request path: 'TaskFlowMvc.styles.css'. Physical path: 'D:\TaskFlowMvc\obj\Debug\net10.0\compressed\pio3utri1p-{0}-5w3zfbn8im-5w3zfbn8im.gz'
+2026-07-28 08:30:42.300 +03:30 [INF] Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2026-07-28 08:30:42.300 +03:30 [INF] Request finished HTTP/2 GET https://localhost:7108/TaskFlowMvc.styles.css?v=denkTJS40ZgCb1ryagt5okiypSWbvhenoKvVK6WBfgY - 200 1142 text/css 0.585ms
+2026-07-28 08:30:42.300 +03:30 [INF] Request starting HTTP/2 GET https://localhost:7108/lib/jquery/dist/jquery.min.js - null null
+2026-07-28 08:30:42.300 +03:30 [INF] Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2026-07-28 08:30:42.301 +03:30 [INF] Request starting HTTP/2 GET https://localhost:7108/lib/bootstrap/dist/js/bootstrap.bundle.min.js - null null
+2026-07-28 08:30:42.302 +03:30 [INF] Request starting HTTP/2 GET https://localhost:7108/js/site.js?v=hRQyftXiu1lLX2P9Ly9xa4gHJgLeR1uGN5qegUobtGo - null null
+2026-07-28 08:30:42.302 +03:30 [INF] Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2026-07-28 08:30:42.302 +03:30 [INF] Request starting HTTP/2 GET https://localhost:7108/_vs/browserLink - null null
+2026-07-28 08:30:42.302 +03:30 [INF] Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2026-07-28 08:30:42.303 +03:30 [INF] Sending file. Request path: 'js/site.js'. Physical path: 'D:\TaskFlowMvc\obj\Debug\net10.0\compressed\lrk0etaown-{0}-xtxxf3hu2r-xtxxf3hu2r.gz'
+2026-07-28 08:30:42.303 +03:30 [INF] Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2026-07-28 08:30:42.303 +03:30 [INF] Request finished HTTP/2 GET https://localhost:7108/js/site.js?v=hRQyftXiu1lLX2P9Ly9xa4gHJgLeR1uGN5qegUobtGo - 200 264 text/javascript 0.8192ms
+2026-07-28 08:30:42.303 +03:30 [INF] Request starting HTTP/2 GET https://localhost:7108/_framework/aspnetcore-browser-refresh.js - null null
+2026-07-28 08:30:42.313 +03:30 [INF] Sending file. Request path: 'lib/bootstrap/dist/css/bootstrap.min.css'. Physical path: 'D:\TaskFlowMvc\obj\Debug\net10.0\compressed\cwkq37jqus-{0}-46ein0sx1k-46ein0sx1k.gz'
+2026-07-28 08:30:42.313 +03:30 [INF] Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2026-07-28 08:30:42.313 +03:30 [INF] Request finished HTTP/2 GET https://localhost:7108/lib/bootstrap/dist/css/bootstrap.min.css - 200 232871 text/css 15.205ms
+2026-07-28 08:30:42.315 +03:30 [INF] Sending file. Request path: 'lib/jquery/dist/jquery.min.js'. Physical path: 'D:\TaskFlowMvc\obj\Debug\net10.0\compressed\5u0wgstfou-{0}-o1o13a6vjx-o1o13a6vjx.gz'
+2026-07-28 08:30:42.315 +03:30 [INF] Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2026-07-28 08:30:42.315 +03:30 [INF] Request finished HTTP/2 GET https://localhost:7108/lib/jquery/dist/jquery.min.js - 200 87576 text/javascript 14.6789ms
+2026-07-28 08:30:42.315 +03:30 [INF] Request finished HTTP/2 GET https://localhost:7108/_framework/aspnetcore-browser-refresh.js - 200 14927 application/javascript; charset=utf-8 11.8421ms
+2026-07-28 08:30:42.315 +03:30 [INF] Sending file. Request path: 'lib/bootstrap/dist/js/bootstrap.bundle.min.js'. Physical path: 'D:\TaskFlowMvc\obj\Debug\net10.0\compressed\6usytvi6e8-{0}-493y06b0oq-493y06b0oq.gz'
+2026-07-28 08:30:42.316 +03:30 [INF] Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2026-07-28 08:30:42.316 +03:30 [INF] Request finished HTTP/2 GET https://localhost:7108/lib/bootstrap/dist/js/bootstrap.bundle.min.js - 200 80764 text/javascript 14.5954ms
+2026-07-28 08:30:42.321 +03:30 [INF] Request finished HTTP/2 GET https://localhost:7108/_vs/browserLink - 200 null text/javascript; charset=UTF-8 18.9813ms
+2026-07-28 08:30:43.472 +03:30 [INF] Request starting HTTP/2 GET https://localhost:7108/TaskItem - null null
+2026-07-28 08:30:43.476 +03:30 [INF] Executing endpoint 'TaskFlowMvc.Controllers.TaskItemController.Index (TaskFlowMvc)'
+2026-07-28 08:30:43.483 +03:30 [INF] Route matched with {action = "Index", controller = "TaskItem"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller TaskFlowMvc.Controllers.TaskItemController (TaskFlowMvc).
+2026-07-28 08:30:44.119 +03:30 [INF] Executed DbCommand (122ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[Id], [t].[CreatedAt], [t].[Description], [t].[DueDate], [t].[IsDeleted], [t].[Order], [t].[ProjectId], [t].[TaskStateId], [t].[Title], [t].[UpdatedAt], [p0].[Id], [p0].[CreatedAt], [p0].[Description], [p0].[IsDeleted], [p0].[Name], [p0].[UpdatedAt], [p0].[WorkspaceId], [t1].[Id], [t1].[CreatedAt], [t1].[IsDeleted], [t1].[Name], [t1].[Order], [t1].[UpdatedAt], [s].[Id], [s].[TagId], [s].[TaskItemId], [s].[Id0], [s].[Color], [s].[CreatedAt], [s].[IsDeleted], [s].[Name], [s].[UpdatedAt]
+FROM [TaskItem] AS [t]
+INNER JOIN (
+    SELECT [p].[Id], [p].[CreatedAt], [p].[Description], [p].[IsDeleted], [p].[Name], [p].[UpdatedAt], [p].[WorkspaceId]
+    FROM [Project] AS [p]
+    WHERE [p].[IsDeleted] = CAST(0 AS bit)
+) AS [p0] ON [t].[ProjectId] = [p0].[Id]
+INNER JOIN (
+    SELECT [t0].[Id], [t0].[CreatedAt], [t0].[IsDeleted], [t0].[Name], [t0].[Order], [t0].[UpdatedAt]
+    FROM [TaskState] AS [t0]
+    WHERE [t0].[IsDeleted] = CAST(0 AS bit)
+) AS [t1] ON [t].[TaskStateId] = [t1].[Id]
+LEFT JOIN (
+    SELECT [t2].[Id], [t2].[TagId], [t2].[TaskItemId], [t4].[Id] AS [Id0], [t4].[Color], [t4].[CreatedAt], [t4].[IsDeleted], [t4].[Name], [t4].[UpdatedAt]
+    FROM [TaskItemTag] AS [t2]
+    INNER JOIN (
+        SELECT [t3].[Id], [t3].[Color], [t3].[CreatedAt], [t3].[IsDeleted], [t3].[Name], [t3].[UpdatedAt]
+        FROM [Tag] AS [t3]
+        WHERE [t3].[IsDeleted] = CAST(0 AS bit)
+    ) AS [t4] ON [t2].[TagId] = [t4].[Id]
+) AS [s] ON [t].[Id] = [s].[TaskItemId]
+WHERE [t].[IsDeleted] = CAST(0 AS bit)
+ORDER BY [t].[Id], [p0].[Id], [t1].[Id], [s].[Id]
+2026-07-28 08:30:44.358 +03:30 [INF] Executing ViewResult, running view Index.
+2026-07-28 08:30:44.402 +03:30 [INF] Executed ViewResult - view Index executed in 46.4245ms.
+2026-07-28 08:30:44.402 +03:30 [INF] Executed action TaskFlowMvc.Controllers.TaskItemController.Index (TaskFlowMvc) in 919.5337ms
+2026-07-28 08:30:44.402 +03:30 [INF] Executed endpoint 'TaskFlowMvc.Controllers.TaskItemController.Index (TaskFlowMvc)'
+2026-07-28 08:30:44.403 +03:30 [INF] Request finished HTTP/2 GET https://localhost:7108/TaskItem - 200 null text/html; charset=utf-8 931.0316ms
+2026-07-28 08:30:44.437 +03:30 [INF] Request starting HTTP/2 GET https://localhost:7108/lib/bootstrap/dist/css/bootstrap.min.css - null null
+2026-07-28 08:30:44.437 +03:30 [INF] Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2026-07-28 08:30:44.437 +03:30 [INF] Request starting HTTP/2 GET https://localhost:7108/css/site.css?v=j6fhJSuuyLpOSLuPJU0TsDV0iNjor5S3rDnvxJrt4bg - null null
+2026-07-28 08:30:44.438 +03:30 [INF] Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2026-07-28 08:30:44.438 +03:30 [INF] Request starting HTTP/2 GET https://localhost:7108/TaskFlowMvc.styles.css?v=denkTJS40ZgCb1ryagt5okiypSWbvhenoKvVK6WBfgY - null null
+2026-07-28 08:30:44.438 +03:30 [INF] Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2026-07-28 08:30:44.438 +03:30 [INF] Request starting HTTP/2 GET https://localhost:7108/lib/jquery/dist/jquery.min.js - null null
+2026-07-28 08:30:44.438 +03:30 [INF] Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2026-07-28 08:30:44.438 +03:30 [INF] Request starting HTTP/2 GET https://localhost:7108/lib/bootstrap/dist/js/bootstrap.bundle.min.js - null null
+2026-07-28 08:30:44.438 +03:30 [INF] Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2026-07-28 08:30:44.439 +03:30 [INF] Sending file. Request path: 'css/site.css'. Physical path: 'D:\TaskFlowMvc\obj\Debug\net10.0\compressed\4xl5hjd8lv-{0}-b9sayid5wm-b9sayid5wm.gz'
+2026-07-28 08:30:44.439 +03:30 [INF] Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2026-07-28 08:30:44.439 +03:30 [INF] Request starting HTTP/2 GET https://localhost:7108/js/site.js?v=hRQyftXiu1lLX2P9Ly9xa4gHJgLeR1uGN5qegUobtGo - null null
+2026-07-28 08:30:44.439 +03:30 [INF] Request finished HTTP/2 GET https://localhost:7108/css/site.css?v=j6fhJSuuyLpOSLuPJU0TsDV0iNjor5S3rDnvxJrt4bg - 200 700 text/css 1.4149ms
+2026-07-28 08:30:44.439 +03:30 [INF] Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2026-07-28 08:30:44.439 +03:30 [INF] Sending file. Request path: 'TaskFlowMvc.styles.css'. Physical path: 'D:\TaskFlowMvc\obj\Debug\net10.0\compressed\pio3utri1p-{0}-5w3zfbn8im-5w3zfbn8im.gz'
+2026-07-28 08:30:44.439 +03:30 [INF] Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2026-07-28 08:30:44.439 +03:30 [INF] Request finished HTTP/2 GET https://localhost:7108/TaskFlowMvc.styles.css?v=denkTJS40ZgCb1ryagt5okiypSWbvhenoKvVK6WBfgY - 200 1142 text/css 1.2726ms
+2026-07-28 08:30:44.439 +03:30 [INF] Sending file. Request path: 'js/site.js'. Physical path: 'D:\TaskFlowMvc\obj\Debug\net10.0\compressed\lrk0etaown-{0}-xtxxf3hu2r-xtxxf3hu2r.gz'
+2026-07-28 08:30:44.439 +03:30 [INF] Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2026-07-28 08:30:44.439 +03:30 [INF] Request finished HTTP/2 GET https://localhost:7108/js/site.js?v=hRQyftXiu1lLX2P9Ly9xa4gHJgLeR1uGN5qegUobtGo - 200 264 text/javascript 0.6785ms
+2026-07-28 08:30:44.439 +03:30 [INF] Request starting HTTP/2 GET https://localhost:7108/_vs/browserLink - null null
+2026-07-28 08:30:44.440 +03:30 [INF] Request starting HTTP/2 GET https://localhost:7108/_framework/aspnetcore-browser-refresh.js - null null
+2026-07-28 08:30:44.440 +03:30 [INF] Sending file. Request path: 'lib/bootstrap/dist/css/bootstrap.min.css'. Physical path: 'D:\TaskFlowMvc\obj\Debug\net10.0\compressed\cwkq37jqus-{0}-46ein0sx1k-46ein0sx1k.gz'
+2026-07-28 08:30:44.440 +03:30 [INF] Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2026-07-28 08:30:44.440 +03:30 [INF] Sending file. Request path: 'lib/bootstrap/dist/js/bootstrap.bundle.min.js'. Physical path: 'D:\TaskFlowMvc\obj\Debug\net10.0\compressed\6usytvi6e8-{0}-493y06b0oq-493y06b0oq.gz'
+2026-07-28 08:30:44.440 +03:30 [INF] Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2026-07-28 08:30:44.440 +03:30 [INF] Request finished HTTP/2 GET https://localhost:7108/lib/bootstrap/dist/css/bootstrap.min.css - 200 232871 text/css 3.4604ms
+2026-07-28 08:30:44.440 +03:30 [INF] Request finished HTTP/2 GET https://localhost:7108/lib/bootstrap/dist/js/bootstrap.bundle.min.js - 200 80764 text/javascript 2.2575ms
+2026-07-28 08:30:44.441 +03:30 [INF] Sending file. Request path: 'lib/jquery/dist/jquery.min.js'. Physical path: 'D:\TaskFlowMvc\obj\Debug\net10.0\compressed\5u0wgstfou-{0}-o1o13a6vjx-o1o13a6vjx.gz'
+2026-07-28 08:30:44.441 +03:30 [INF] Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2026-07-28 08:30:44.441 +03:30 [INF] Request finished HTTP/2 GET https://localhost:7108/lib/jquery/dist/jquery.min.js - 200 87576 text/javascript 2.6637ms
+2026-07-28 08:30:44.441 +03:30 [INF] Request finished HTTP/2 GET https://localhost:7108/_framework/aspnetcore-browser-refresh.js - 200 14927 application/javascript; charset=utf-8 1.0453ms
+2026-07-28 08:30:44.451 +03:30 [INF] Request finished HTTP/2 GET https://localhost:7108/_vs/browserLink - 200 null text/javascript; charset=UTF-8 11.8038ms
+2026-07-28 08:30:45.405 +03:30 [INF] Request starting HTTP/2 GET https://localhost:7108/TaskItem/Create - null null
+2026-07-28 08:30:45.407 +03:30 [INF] Executing endpoint 'TaskFlowMvc.Controllers.TaskItemController.Create (TaskFlowMvc)'
+2026-07-28 08:30:45.414 +03:30 [INF] Route matched with {action = "Create", controller = "TaskItem"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Create() on controller TaskFlowMvc.Controllers.TaskItemController (TaskFlowMvc).
+2026-07-28 08:30:45.595 +03:30 [INF] Executed DbCommand (9ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[Id], [t].[Color], [t].[CreatedAt], [t].[IsDeleted], [t].[Name], [t].[UpdatedAt]
+FROM [Tag] AS [t]
+WHERE [t].[IsDeleted] = CAST(0 AS bit)
+2026-07-28 08:30:45.603 +03:30 [INF] Executing ViewResult, running view Create.
+2026-07-28 08:30:45.743 +03:30 [INF] Executed DbCommand (8ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [p].[Id], [p].[CreatedAt], [p].[Description], [p].[IsDeleted], [p].[Name], [p].[UpdatedAt], [p].[WorkspaceId]
+FROM [Project] AS [p]
+WHERE [p].[IsDeleted] = CAST(0 AS bit)
+2026-07-28 08:30:45.785 +03:30 [INF] Executed DbCommand (7ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[Id], [t].[CreatedAt], [t].[IsDeleted], [t].[Name], [t].[Order], [t].[UpdatedAt]
+FROM [TaskState] AS [t]
+WHERE [t].[IsDeleted] = CAST(0 AS bit)
+2026-07-28 08:30:45.819 +03:30 [INF] Executed ViewResult - view Create executed in 216.803ms.
+2026-07-28 08:30:45.819 +03:30 [INF] Executed action TaskFlowMvc.Controllers.TaskItemController.Create (TaskFlowMvc) in 405.1565ms
+2026-07-28 08:30:45.819 +03:30 [INF] Executed endpoint 'TaskFlowMvc.Controllers.TaskItemController.Create (TaskFlowMvc)'
+2026-07-28 08:30:45.819 +03:30 [INF] Request finished HTTP/2 GET https://localhost:7108/TaskItem/Create - 200 null text/html; charset=utf-8 414.6357ms
+2026-07-28 08:30:45.839 +03:30 [INF] Request starting HTTP/2 GET https://localhost:7108/lib/bootstrap/dist/css/bootstrap.min.css - null null
+2026-07-28 08:30:45.840 +03:30 [INF] Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2026-07-28 08:30:45.840 +03:30 [INF] Request starting HTTP/2 GET https://localhost:7108/css/site.css?v=j6fhJSuuyLpOSLuPJU0TsDV0iNjor5S3rDnvxJrt4bg - null null
+2026-07-28 08:30:45.840 +03:30 [INF] Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2026-07-28 08:30:45.840 +03:30 [INF] Sending file. Request path: 'css/site.css'. Physical path: 'D:\TaskFlowMvc\obj\Debug\net10.0\compressed\4xl5hjd8lv-{0}-b9sayid5wm-b9sayid5wm.gz'
+2026-07-28 08:30:45.841 +03:30 [INF] Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2026-07-28 08:30:45.841 +03:30 [INF] Request finished HTTP/2 GET https://localhost:7108/css/site.css?v=j6fhJSuuyLpOSLuPJU0TsDV0iNjor5S3rDnvxJrt4bg - 200 700 text/css 0.9869ms
+2026-07-28 08:30:45.841 +03:30 [INF] Request starting HTTP/2 GET https://localhost:7108/TaskFlowMvc.styles.css?v=denkTJS40ZgCb1ryagt5okiypSWbvhenoKvVK6WBfgY - null null
+2026-07-28 08:30:45.841 +03:30 [INF] Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2026-07-28 08:30:45.841 +03:30 [INF] Request starting HTTP/2 GET https://localhost:7108/lib/jquery/dist/jquery.min.js - null null
+2026-07-28 08:30:45.841 +03:30 [INF] Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2026-07-28 08:30:45.841 +03:30 [INF] Sending file. Request path: 'TaskFlowMvc.styles.css'. Physical path: 'D:\TaskFlowMvc\obj\Debug\net10.0\compressed\pio3utri1p-{0}-5w3zfbn8im-5w3zfbn8im.gz'
+2026-07-28 08:30:45.841 +03:30 [INF] Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2026-07-28 08:30:45.841 +03:30 [INF] Request finished HTTP/2 GET https://localhost:7108/TaskFlowMvc.styles.css?v=denkTJS40ZgCb1ryagt5okiypSWbvhenoKvVK6WBfgY - 200 1142 text/css 0.6783ms
+2026-07-28 08:30:45.843 +03:30 [INF] Sending file. Request path: 'lib/bootstrap/dist/css/bootstrap.min.css'. Physical path: 'D:\TaskFlowMvc\obj\Debug\net10.0\compressed\cwkq37jqus-{0}-46ein0sx1k-46ein0sx1k.gz'
+2026-07-28 08:30:45.843 +03:30 [INF] Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2026-07-28 08:30:45.843 +03:30 [INF] Request finished HTTP/2 GET https://localhost:7108/lib/bootstrap/dist/css/bootstrap.min.css - 200 232871 text/css 3.5667ms
+2026-07-28 08:30:45.844 +03:30 [INF] Sending file. Request path: 'lib/jquery/dist/jquery.min.js'. Physical path: 'D:\TaskFlowMvc\obj\Debug\net10.0\compressed\5u0wgstfou-{0}-o1o13a6vjx-o1o13a6vjx.gz'
+2026-07-28 08:30:45.844 +03:30 [INF] Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2026-07-28 08:30:45.844 +03:30 [INF] Request finished HTTP/2 GET https://localhost:7108/lib/jquery/dist/jquery.min.js - 200 87576 text/javascript 3.2075ms
+2026-07-28 08:30:45.848 +03:30 [INF] Request starting HTTP/2 GET https://localhost:7108/lib/bootstrap/dist/js/bootstrap.bundle.min.js - null null
+2026-07-28 08:30:45.848 +03:30 [INF] Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2026-07-28 08:30:45.848 +03:30 [INF] Request starting HTTP/2 GET https://localhost:7108/js/site.js?v=hRQyftXiu1lLX2P9Ly9xa4gHJgLeR1uGN5qegUobtGo - null null
+2026-07-28 08:30:45.849 +03:30 [INF] Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2026-07-28 08:30:45.849 +03:30 [INF] Request starting HTTP/2 GET https://localhost:7108/lib/jquery-validation/dist/jquery.validate.min.js - null null
+2026-07-28 08:30:45.849 +03:30 [INF] Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2026-07-28 08:30:45.849 +03:30 [INF] Sending file. Request path: 'js/site.js'. Physical path: 'D:\TaskFlowMvc\obj\Debug\net10.0\compressed\lrk0etaown-{0}-xtxxf3hu2r-xtxxf3hu2r.gz'
+2026-07-28 08:30:45.849 +03:30 [INF] Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2026-07-28 08:30:45.849 +03:30 [INF] Request finished HTTP/2 GET https://localhost:7108/js/site.js?v=hRQyftXiu1lLX2P9Ly9xa4gHJgLeR1uGN5qegUobtGo - 200 264 text/javascript 0.6534ms
+2026-07-28 08:30:45.849 +03:30 [INF] Sending file. Request path: 'lib/bootstrap/dist/js/bootstrap.bundle.min.js'. Physical path: 'D:\TaskFlowMvc\obj\Debug\net10.0\compressed\6usytvi6e8-{0}-493y06b0oq-493y06b0oq.gz'
+2026-07-28 08:30:45.849 +03:30 [INF] Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2026-07-28 08:30:45.850 +03:30 [INF] Request starting HTTP/2 GET https://localhost:7108/lib/jquery-validation-unobtrusive/dist/jquery.validate.unobtrusive.min.js - null null
+2026-07-28 08:30:45.850 +03:30 [INF] Sending file. Request path: 'lib/jquery-validation/dist/jquery.validate.min.js'. Physical path: 'D:\TaskFlowMvc\obj\Debug\net10.0\compressed\wwbqs1h0uj-{0}-ag7o75518u-ag7o75518u.gz'
+2026-07-28 08:30:45.850 +03:30 [INF] Request finished HTTP/2 GET https://localhost:7108/lib/bootstrap/dist/js/bootstrap.bundle.min.js - 200 80764 text/javascript 1.8661ms
+2026-07-28 08:30:45.850 +03:30 [INF] Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2026-07-28 08:30:45.850 +03:30 [INF] Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2026-07-28 08:30:45.850 +03:30 [INF] Request starting HTTP/2 GET https://localhost:7108/_vs/browserLink - null null
+2026-07-28 08:30:45.850 +03:30 [INF] Request finished HTTP/2 GET https://localhost:7108/lib/jquery-validation/dist/jquery.validate.min.js - 200 25341 text/javascript 1.1909ms
+2026-07-28 08:30:45.850 +03:30 [INF] Request starting HTTP/2 GET https://localhost:7108/_framework/aspnetcore-browser-refresh.js - null null
+2026-07-28 08:30:45.850 +03:30 [INF] Request finished HTTP/2 GET https://localhost:7108/_framework/aspnetcore-browser-refresh.js - 200 14927 application/javascript; charset=utf-8 0.2062ms
+2026-07-28 08:30:45.851 +03:30 [INF] Sending file. Request path: 'lib/jquery-validation-unobtrusive/dist/jquery.validate.unobtrusive.min.js'. Physical path: 'D:\TaskFlowMvc\obj\Debug\net10.0\compressed\ifjvg1eqea-{0}-4v8eqarkd7-4v8eqarkd7.gz'
+2026-07-28 08:30:45.851 +03:30 [INF] Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2026-07-28 08:30:45.851 +03:30 [INF] Request finished HTTP/2 GET https://localhost:7108/lib/jquery-validation-unobtrusive/dist/jquery.validate.unobtrusive.min.js - 200 5857 text/javascript 1.6097ms
+2026-07-28 08:30:45.856 +03:30 [INF] Request finished HTTP/2 GET https://localhost:7108/_vs/browserLink - 200 null text/javascript; charset=UTF-8 5.9845ms
+2026-07-28 08:30:51.521 +03:30 [INF] Request starting HTTP/2 GET https://localhost:7108/TaskItem - null null
+2026-07-28 08:30:51.523 +03:30 [INF] Executing endpoint 'TaskFlowMvc.Controllers.TaskItemController.Index (TaskFlowMvc)'
+2026-07-28 08:30:51.524 +03:30 [INF] Route matched with {action = "Index", controller = "TaskItem"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller TaskFlowMvc.Controllers.TaskItemController (TaskFlowMvc).
+2026-07-28 08:30:51.569 +03:30 [INF] Executed DbCommand (31ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[Id], [t].[CreatedAt], [t].[Description], [t].[DueDate], [t].[IsDeleted], [t].[Order], [t].[ProjectId], [t].[TaskStateId], [t].[Title], [t].[UpdatedAt], [p0].[Id], [p0].[CreatedAt], [p0].[Description], [p0].[IsDeleted], [p0].[Name], [p0].[UpdatedAt], [p0].[WorkspaceId], [t1].[Id], [t1].[CreatedAt], [t1].[IsDeleted], [t1].[Name], [t1].[Order], [t1].[UpdatedAt], [s].[Id], [s].[TagId], [s].[TaskItemId], [s].[Id0], [s].[Color], [s].[CreatedAt], [s].[IsDeleted], [s].[Name], [s].[UpdatedAt]
+FROM [TaskItem] AS [t]
+INNER JOIN (
+    SELECT [p].[Id], [p].[CreatedAt], [p].[Description], [p].[IsDeleted], [p].[Name], [p].[UpdatedAt], [p].[WorkspaceId]
+    FROM [Project] AS [p]
+    WHERE [p].[IsDeleted] = CAST(0 AS bit)
+) AS [p0] ON [t].[ProjectId] = [p0].[Id]
+INNER JOIN (
+    SELECT [t0].[Id], [t0].[CreatedAt], [t0].[IsDeleted], [t0].[Name], [t0].[Order], [t0].[UpdatedAt]
+    FROM [TaskState] AS [t0]
+    WHERE [t0].[IsDeleted] = CAST(0 AS bit)
+) AS [t1] ON [t].[TaskStateId] = [t1].[Id]
+LEFT JOIN (
+    SELECT [t2].[Id], [t2].[TagId], [t2].[TaskItemId], [t4].[Id] AS [Id0], [t4].[Color], [t4].[CreatedAt], [t4].[IsDeleted], [t4].[Name], [t4].[UpdatedAt]
+    FROM [TaskItemTag] AS [t2]
+    INNER JOIN (
+        SELECT [t3].[Id], [t3].[Color], [t3].[CreatedAt], [t3].[IsDeleted], [t3].[Name], [t3].[UpdatedAt]
+        FROM [Tag] AS [t3]
+        WHERE [t3].[IsDeleted] = CAST(0 AS bit)
+    ) AS [t4] ON [t2].[TagId] = [t4].[Id]
+) AS [s] ON [t].[Id] = [s].[TaskItemId]
+WHERE [t].[IsDeleted] = CAST(0 AS bit)
+ORDER BY [t].[Id], [p0].[Id], [t1].[Id], [s].[Id]
+2026-07-28 08:30:51.571 +03:30 [INF] Executing ViewResult, running view Index.
+2026-07-28 08:30:51.573 +03:30 [INF] Executed ViewResult - view Index executed in 2.2122ms.
+2026-07-28 08:30:51.573 +03:30 [INF] Executed action TaskFlowMvc.Controllers.TaskItemController.Index (TaskFlowMvc) in 48.9601ms
+2026-07-28 08:30:51.573 +03:30 [INF] Executed endpoint 'TaskFlowMvc.Controllers.TaskItemController.Index (TaskFlowMvc)'
+2026-07-28 08:30:51.573 +03:30 [INF] Request finished HTTP/2 GET https://localhost:7108/TaskItem - 200 null text/html; charset=utf-8 52.0227ms
+2026-07-28 08:30:51.623 +03:30 [INF] Request starting HTTP/2 GET https://localhost:7108/lib/bootstrap/dist/css/bootstrap.min.css - null null
+2026-07-28 08:30:51.623 +03:30 [INF] Request starting HTTP/2 GET https://localhost:7108/css/site.css?v=j6fhJSuuyLpOSLuPJU0TsDV0iNjor5S3rDnvxJrt4bg - null null
+2026-07-28 08:30:51.623 +03:30 [INF] Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2026-07-28 08:30:51.624 +03:30 [INF] Request starting HTTP/2 GET https://localhost:7108/TaskFlowMvc.styles.css?v=denkTJS40ZgCb1ryagt5okiypSWbvhenoKvVK6WBfgY - null null
+2026-07-28 08:30:51.624 +03:30 [INF] Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2026-07-28 08:30:51.624 +03:30 [INF] Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2026-07-28 08:30:51.624 +03:30 [INF] Request starting HTTP/2 GET https://localhost:7108/lib/jquery/dist/jquery.min.js - null null
+2026-07-28 08:30:51.624 +03:30 [INF] Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2026-07-28 08:30:51.626 +03:30 [INF] Sending file. Request path: 'TaskFlowMvc.styles.css'. Physical path: 'D:\TaskFlowMvc\obj\Debug\net10.0\compressed\pio3utri1p-{0}-5w3zfbn8im-5w3zfbn8im.gz'
+2026-07-28 08:30:51.626 +03:30 [INF] Sending file. Request path: 'css/site.css'. Physical path: 'D:\TaskFlowMvc\obj\Debug\net10.0\compressed\4xl5hjd8lv-{0}-b9sayid5wm-b9sayid5wm.gz'
+2026-07-28 08:30:51.626 +03:30 [INF] Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2026-07-28 08:30:51.626 +03:30 [INF] Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2026-07-28 08:30:51.626 +03:30 [INF] Request finished HTTP/2 GET https://localhost:7108/TaskFlowMvc.styles.css?v=denkTJS40ZgCb1ryagt5okiypSWbvhenoKvVK6WBfgY - 200 1142 text/css 2.4807ms
+2026-07-28 08:30:51.626 +03:30 [INF] Request finished HTTP/2 GET https://localhost:7108/css/site.css?v=j6fhJSuuyLpOSLuPJU0TsDV0iNjor5S3rDnvxJrt4bg - 200 700 text/css 3.082ms
+2026-07-28 08:30:51.627 +03:30 [INF] Sending file. Request path: 'lib/jquery/dist/jquery.min.js'. Physical path: 'D:\TaskFlowMvc\obj\Debug\net10.0\compressed\5u0wgstfou-{0}-o1o13a6vjx-o1o13a6vjx.gz'
+2026-07-28 08:30:51.627 +03:30 [INF] Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2026-07-28 08:30:51.627 +03:30 [INF] Request finished HTTP/2 GET https://localhost:7108/lib/jquery/dist/jquery.min.js - 200 87576 text/javascript 3.2127ms
+2026-07-28 08:30:51.629 +03:30 [INF] Sending file. Request path: 'lib/bootstrap/dist/css/bootstrap.min.css'. Physical path: 'D:\TaskFlowMvc\obj\Debug\net10.0\compressed\cwkq37jqus-{0}-46ein0sx1k-46ein0sx1k.gz'
+2026-07-28 08:30:51.629 +03:30 [INF] Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2026-07-28 08:30:51.629 +03:30 [INF] Request finished HTTP/2 GET https://localhost:7108/lib/bootstrap/dist/css/bootstrap.min.css - 200 232871 text/css 6.3833ms
+2026-07-28 08:30:51.631 +03:30 [INF] Request starting HTTP/2 GET https://localhost:7108/lib/bootstrap/dist/js/bootstrap.bundle.min.js - null null
+2026-07-28 08:30:51.632 +03:30 [INF] Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2026-07-28 08:30:51.634 +03:30 [INF] Request starting HTTP/2 GET https://localhost:7108/js/site.js?v=hRQyftXiu1lLX2P9Ly9xa4gHJgLeR1uGN5qegUobtGo - null null
+2026-07-28 08:30:51.634 +03:30 [INF] Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2026-07-28 08:30:51.634 +03:30 [INF] Request starting HTTP/2 GET https://localhost:7108/_vs/browserLink - null null
+2026-07-28 08:30:51.635 +03:30 [INF] Sending file. Request path: 'js/site.js'. Physical path: 'D:\TaskFlowMvc\obj\Debug\net10.0\compressed\lrk0etaown-{0}-xtxxf3hu2r-xtxxf3hu2r.gz'
+2026-07-28 08:30:51.635 +03:30 [INF] Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2026-07-28 08:30:51.635 +03:30 [INF] Request finished HTTP/2 GET https://localhost:7108/js/site.js?v=hRQyftXiu1lLX2P9Ly9xa4gHJgLeR1uGN5qegUobtGo - 200 264 text/javascript 1.027ms
+2026-07-28 08:30:51.635 +03:30 [INF] Request starting HTTP/2 GET https://localhost:7108/_framework/aspnetcore-browser-refresh.js - null null
+2026-07-28 08:30:51.635 +03:30 [INF] Sending file. Request path: 'lib/bootstrap/dist/js/bootstrap.bundle.min.js'. Physical path: 'D:\TaskFlowMvc\obj\Debug\net10.0\compressed\6usytvi6e8-{0}-493y06b0oq-493y06b0oq.gz'
+2026-07-28 08:30:51.635 +03:30 [INF] Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2026-07-28 08:30:51.635 +03:30 [INF] Request finished HTTP/2 GET https://localhost:7108/_framework/aspnetcore-browser-refresh.js - 200 14927 application/javascript; charset=utf-8 0.5977ms
+2026-07-28 08:30:51.635 +03:30 [INF] Request finished HTTP/2 GET https://localhost:7108/lib/bootstrap/dist/js/bootstrap.bundle.min.js - 200 80764 text/javascript 4.5445ms
+2026-07-28 08:30:51.655 +03:30 [INF] Request finished HTTP/2 GET https://localhost:7108/_vs/browserLink - 200 null text/javascript; charset=UTF-8 20.6559ms
+2026-07-28 08:30:53.455 +03:30 [INF] Request starting HTTP/2 GET https://localhost:7108/ - null null
+2026-07-28 08:30:53.459 +03:30 [INF] Executing endpoint 'TaskFlowMvc.Controllers.HomeController.Index (TaskFlowMvc)'
+2026-07-28 08:30:53.460 +03:30 [INF] Route matched with {action = "Index", controller = "Home"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller TaskFlowMvc.Controllers.HomeController (TaskFlowMvc).
+2026-07-28 08:30:53.461 +03:30 [INF] Executing ViewResult, running view Index.
+2026-07-28 08:30:53.463 +03:30 [INF] Executed ViewResult - view Index executed in 2.6945ms.
+2026-07-28 08:30:53.464 +03:30 [INF] Executed action TaskFlowMvc.Controllers.HomeController.Index (TaskFlowMvc) in 3.7331ms
+2026-07-28 08:30:53.464 +03:30 [INF] Executed endpoint 'TaskFlowMvc.Controllers.HomeController.Index (TaskFlowMvc)'
+2026-07-28 08:30:53.464 +03:30 [INF] Request finished HTTP/2 GET https://localhost:7108/ - 200 null text/html; charset=utf-8 8.9757ms
+2026-07-28 08:30:53.504 +03:30 [INF] Request starting HTTP/2 GET https://localhost:7108/lib/bootstrap/dist/css/bootstrap.min.css - null null
+2026-07-28 08:30:53.504 +03:30 [INF] Request starting HTTP/2 GET https://localhost:7108/css/site.css?v=j6fhJSuuyLpOSLuPJU0TsDV0iNjor5S3rDnvxJrt4bg - null null
+2026-07-28 08:30:53.505 +03:30 [INF] Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2026-07-28 08:30:53.505 +03:30 [INF] Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2026-07-28 08:30:53.505 +03:30 [INF] Request starting HTTP/2 GET https://localhost:7108/TaskFlowMvc.styles.css?v=denkTJS40ZgCb1ryagt5okiypSWbvhenoKvVK6WBfgY - null null
+2026-07-28 08:30:53.505 +03:30 [INF] Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2026-07-28 08:30:53.505 +03:30 [INF] Sending file. Request path: 'css/site.css'. Physical path: 'D:\TaskFlowMvc\obj\Debug\net10.0\compressed\4xl5hjd8lv-{0}-b9sayid5wm-b9sayid5wm.gz'
+2026-07-28 08:30:53.505 +03:30 [INF] Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2026-07-28 08:30:53.505 +03:30 [INF] Request finished HTTP/2 GET https://localhost:7108/css/site.css?v=j6fhJSuuyLpOSLuPJU0TsDV0iNjor5S3rDnvxJrt4bg - 200 700 text/css 0.8653ms
+2026-07-28 08:30:53.505 +03:30 [INF] Sending file. Request path: 'TaskFlowMvc.styles.css'. Physical path: 'D:\TaskFlowMvc\obj\Debug\net10.0\compressed\pio3utri1p-{0}-5w3zfbn8im-5w3zfbn8im.gz'
+2026-07-28 08:30:53.505 +03:30 [INF] Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2026-07-28 08:30:53.505 +03:30 [INF] Request finished HTTP/2 GET https://localhost:7108/TaskFlowMvc.styles.css?v=denkTJS40ZgCb1ryagt5okiypSWbvhenoKvVK6WBfgY - 200 1142 text/css 0.6365ms
+2026-07-28 08:30:53.506 +03:30 [INF] Request starting HTTP/2 GET https://localhost:7108/lib/jquery/dist/jquery.min.js - null null
+2026-07-28 08:30:53.506 +03:30 [INF] Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2026-07-28 08:30:53.507 +03:30 [INF] Request starting HTTP/2 GET https://localhost:7108/lib/bootstrap/dist/js/bootstrap.bundle.min.js - null null
+2026-07-28 08:30:53.509 +03:30 [INF] Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2026-07-28 08:30:53.509 +03:30 [INF] Request starting HTTP/2 GET https://localhost:7108/js/site.js?v=hRQyftXiu1lLX2P9Ly9xa4gHJgLeR1uGN5qegUobtGo - null null
+2026-07-28 08:30:53.509 +03:30 [INF] Request starting HTTP/2 GET https://localhost:7108/_vs/browserLink - null null
+2026-07-28 08:30:53.510 +03:30 [INF] Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2026-07-28 08:30:53.510 +03:30 [INF] Sending file. Request path: 'js/site.js'. Physical path: 'D:\TaskFlowMvc\obj\Debug\net10.0\compressed\lrk0etaown-{0}-xtxxf3hu2r-xtxxf3hu2r.gz'
+2026-07-28 08:30:53.510 +03:30 [INF] Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2026-07-28 08:30:53.510 +03:30 [INF] Request finished HTTP/2 GET https://localhost:7108/js/site.js?v=hRQyftXiu1lLX2P9Ly9xa4gHJgLeR1uGN5qegUobtGo - 200 264 text/javascript 1.1585ms
+2026-07-28 08:30:53.511 +03:30 [INF] Request starting HTTP/2 GET https://localhost:7108/_framework/aspnetcore-browser-refresh.js - null null
+2026-07-28 08:30:53.512 +03:30 [INF] Sending file. Request path: 'lib/bootstrap/dist/css/bootstrap.min.css'. Physical path: 'D:\TaskFlowMvc\obj\Debug\net10.0\compressed\cwkq37jqus-{0}-46ein0sx1k-46ein0sx1k.gz'
+2026-07-28 08:30:53.512 +03:30 [INF] Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2026-07-28 08:30:53.513 +03:30 [INF] Request finished HTTP/2 GET https://localhost:7108/lib/bootstrap/dist/css/bootstrap.min.css - 200 232871 text/css 8.3171ms
+2026-07-28 08:30:53.514 +03:30 [INF] Sending file. Request path: 'lib/jquery/dist/jquery.min.js'. Physical path: 'D:\TaskFlowMvc\obj\Debug\net10.0\compressed\5u0wgstfou-{0}-o1o13a6vjx-o1o13a6vjx.gz'
+2026-07-28 08:30:53.514 +03:30 [INF] Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2026-07-28 08:30:53.514 +03:30 [INF] Request finished HTTP/2 GET https://localhost:7108/lib/jquery/dist/jquery.min.js - 200 87576 text/javascript 8.223ms
+2026-07-28 08:30:53.514 +03:30 [INF] Sending file. Request path: 'lib/bootstrap/dist/js/bootstrap.bundle.min.js'. Physical path: 'D:\TaskFlowMvc\obj\Debug\net10.0\compressed\6usytvi6e8-{0}-493y06b0oq-493y06b0oq.gz'
+2026-07-28 08:30:53.514 +03:30 [INF] Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2026-07-28 08:30:53.515 +03:30 [INF] Request finished HTTP/2 GET https://localhost:7108/lib/bootstrap/dist/js/bootstrap.bundle.min.js - 200 80764 text/javascript 7.8966ms
+2026-07-28 08:30:53.515 +03:30 [INF] Request finished HTTP/2 GET https://localhost:7108/_framework/aspnetcore-browser-refresh.js - 200 14927 application/javascript; charset=utf-8 4.175ms
+2026-07-28 08:30:53.534 +03:30 [INF] Request finished HTTP/2 GET https://localhost:7108/_vs/browserLink - 200 null text/javascript; charset=UTF-8 25.0563ms
