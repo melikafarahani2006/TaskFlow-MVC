@@ -1,109 +1,197 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using TaskFlowMvc.Data;
-using TaskFlowMvc.Models.DTOs;
 using TaskFlowMvc.Models;
+using TaskFlowMvc.Models.DTOs;
 
 namespace TaskFlowMvc.Controllers.Api;
 
 [ApiController]
 [Route("api/")]
-public class ProjectApiController : ControllerBase
+public class ProjectController : ControllerBase
 {
     private readonly ApplicationDbContext _context;
 
-    public ProjectApiController(ApplicationDbContext context)
+    public ProjectController(ApplicationDbContext context)
     {
         _context = context;
     }
 
     // GET: api/projects
     [HttpGet("projects")]
-    public async Task<IActionResult> GetAll()
+    public IActionResult GetAll()
     {
-        var projects = await _context.Project
-            .ToListAsync();
-
-        return Ok(projects);
-    }
-
-    // GET: api/projects/{id}
-    [HttpGet("project/{id:guid}")]
-    public async Task<IActionResult> GetById(Guid id)
-    {
-        var project = await _context.Project
-            .FirstOrDefaultAsync(x => x.Id == id);
-
-        if (project == null)
-            return NotFound();
-
-        return Ok(project);
-    }
-
-    // POST: api/projects
-    [HttpPost("project/{workspaceId:guid}")]
-    public async Task<IActionResult> Create(Guid workspaceId, CreateProjectRequest request)
-    {
-        if (!ModelState.IsValid)
-            return BadRequest(ModelState);
-
-        var workspaceExists = await _context.Workspace
-            .AnyAsync(x => x.Id == workspaceId);
-
-        if (!workspaceExists)
-            return NotFound("Workspace not found.");
-
-        var project = new Project
+        try
         {
-            WorkspaceId = workspaceId,
-            Name = request.Name,
-            Description = request.Description,
-            CreatedAt = DateTime.UtcNow
-        };
+            var projects = _context.Project
+                .Include(x => x.Workspace)
+                .Include(x => x.Tasks)
+                    .ThenInclude(x => x.TaskState)
+                .Select(x => new ProjectResponse
+                {
+                    Id = x.Id,
+                    Name = x.Name,
+                    Description = x.Description,
+                    WorkspaceId = x.WorkspaceId,
+                    WorkspaceName = x.Workspace!.Name,
+                    CreatedAt = x.CreatedAt,
+                    UpdatedAt = x.UpdatedAt,
 
-        _context.Project.Add(project);
+                    Tasks = x.Tasks
+                        .Where(t => !t.IsDeleted)
+                        .Select(t => new TaskResponse
+                        {
+                            Id = t.Id,
+                            Title = t.Title,
+                            TaskStateName = t.TaskState.Name
+                        })
+                        .ToList()
+                })
+                .ToList();
 
-        await _context.SaveChangesAsync();
-
-        return CreatedAtAction(
-            nameof(GetById),
-            new { id = project.Id },
-            project);
+            return Ok(projects);
+        }
+        catch
+        {
+            return StatusCode(500, "Unable to load projects.");
+        }
     }
 
-    [HttpPatch("project/{id:guid}")]
-    public async Task<IActionResult> Update(
-    Guid id,
-    UpdateProjectRequest request)
+    // GET: api/project/{id}
+    [HttpGet("project/{id:guid}")]
+    public IActionResult GetById(Guid id)
+    {
+        try
+        {
+            var project = _context.Project
+                .Include(x => x.Workspace)
+                .Include(x => x.Tasks)
+                    .ThenInclude(x => x.TaskState)
+                .Where(x => x.Id == id)
+                .Select(x => new ProjectResponse
+                {
+                    Id = x.Id,
+                    Name = x.Name,
+                    Description = x.Description,
+                    WorkspaceId = x.WorkspaceId,
+                    WorkspaceName = x.Workspace!.Name,
+                    CreatedAt = x.CreatedAt,
+                    UpdatedAt = x.UpdatedAt,
+
+                    Tasks = x.Tasks
+                        .Where(t => !t.IsDeleted)
+                        .Select(t => new TaskResponse
+                        {
+                            Id = t.Id,
+                            Title = t.Title,
+                            TaskStateName = t.TaskState.Name
+                        })
+                        .ToList()
+                })
+                .FirstOrDefault();
+
+            if (project == null)
+                return NotFound();
+
+            return Ok(project);
+        }
+        catch
+        {
+            return StatusCode(500, "Unable to load project.");
+        }
+    }
+
+    // POST: api/project
+    [HttpPost("project")]
+    public IActionResult Create(CreateProjectRequest request)
     {
         if (!ModelState.IsValid)
             return BadRequest(ModelState);
 
-        var project = await _context.Project.FindAsync(id);
+        try
+        {
+            var workspaceExists = _context.Workspace
+                .Any(x => x.Id == request.WorkspaceId);
 
-        if (project == null)
-            return NotFound();
+            if (!workspaceExists)
+                return BadRequest("Workspace not found.");
 
-        project.Name = request.Name;
-        project.Description = request.Description;
+            var project = new Project
+            {
+                WorkspaceId = request.WorkspaceId,
+                Name = request.Name,
+                Description = request.Description
+            };
 
-        await _context.SaveChangesAsync();
+            _context.Project.Add(project);
+            _context.SaveChanges();
 
-        return Ok(project);
+            return CreatedAtAction(
+                nameof(GetById),
+                new { id = project.Id },
+                project);
+        }
+        catch
+        {
+            return StatusCode(500, "Failed to create project.");
+        }
     }
 
-    [HttpDelete("project/{id:guid}")]
-    public async Task<IActionResult> Delete(Guid id)
+    // PUT: api/project/{id}
+    [HttpPut("project/{id:guid}")]
+    public IActionResult Update(Guid id, UpdateProjectRequest request)
     {
-        var project = await _context.Project.FindAsync(id);
+        if (!ModelState.IsValid)
+            return BadRequest(ModelState);
 
-        if (project == null)
-            return NotFound();
+        try
+        {
+            var project = _context.Project.Find(id);
 
-        _context.Project.Remove(project);
+            if (project == null)
+                return NotFound();
 
-        await _context.SaveChangesAsync();
+            project.Name = request.Name;
+            project.Description = request.Description;
 
-        return Ok("Deleted successfully");
+            _context.SaveChanges();
+
+            return Ok(project);
+        }
+        catch
+        {
+            return StatusCode(500, "Failed to update project.");
+        }
+    }
+
+    // DELETE: api/project/{id}
+    [HttpDelete("project/{id:guid}")]
+    public IActionResult Delete(Guid id)
+    {
+        try
+        {
+            var project = _context.Project.Find(id);
+
+            if (project == null)
+                return NotFound();
+
+            var hasTasks = _context.Task.Any(x => x.ProjectId == id);
+
+            if (hasTasks)
+            {
+                return BadRequest(
+                    "Project cannot be deleted. Move the tasks to another project or delete them first.");
+            }
+
+            project.IsDeleted = true;
+
+            _context.SaveChanges();
+
+            return Ok("Project deleted successfully.");
+        }
+        catch
+        {
+            return StatusCode(500, "Failed to delete project.");
+        }
     }
 }

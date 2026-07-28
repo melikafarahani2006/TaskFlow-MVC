@@ -1,89 +1,189 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using TaskFlowMvc.Data;
-using TaskFlowMvc.Models.DTOs;
 using TaskFlowMvc.Models;
+using TaskFlowMvc.Models.DTOs;
 
 namespace TaskFlowMvc.Controllers.Api;
 
 [ApiController]
 [Route("api/")]
-public class WorkspaceApiController : ControllerBase
+public class WorkspaceController : ControllerBase
 {
     private readonly ApplicationDbContext _context;
 
-    public WorkspaceApiController(ApplicationDbContext context)
+    public WorkspaceController(ApplicationDbContext context)
     {
         _context = context;
     }
 
-    // GET: api/workspaces
+    // GET: api/workspace
     [HttpGet("workspaces")]
-    public async Task<ActionResult<IEnumerable<Workspace>>> GetAll()
+    public IActionResult GetAll()
     {
-        var workspaces = await _context.Workspace.ToListAsync();
+        try
+        {
+            var workspaces = _context.Workspace
+                 .Include(x => x.Projects)
+                 .Select(x => new
+            {
+                     x.Id,
+                     x.Name,
+                     x.Description,
+                     x.CreatedAt,
+                     x.UpdatedAt,
 
-        return Ok(workspaces);
+                     Projects = x.Projects
+                    .Where(p => !p.IsDeleted)
+                    .Select(p => new ProjectResponse
+                    {
+                        Id = p.Id,
+                        Name = p.Name,
+                        Description = p.Description,
+                        WorkspaceId = p.WorkspaceId,
+                        WorkspaceName = x.Name,
+                        CreatedAt = p.CreatedAt,
+                        UpdatedAt = p.UpdatedAt
+                    })
+                    .ToList()
+            })
+            .ToList();
+            return Ok(workspaces);
+        }
+        catch
+        {
+            return StatusCode(500, "Unable to load workspaces.");
+        }
     }
 
     // GET: api/workspace/{id}
     [HttpGet("workspace/{id:guid}")]
-    public async Task<ActionResult<Workspace>> GetById(Guid id)
+    public IActionResult GetById(Guid id)
     {
-        var workspace = await _context.Workspace.FindAsync(id);
+        try
+        {
+            var workspace = _context.Workspace
+                       .Include(x => x.Projects)
+                       .Where(x => x.Id == id)
+                       .Select(x => new
+                       {
+                           x.Id,
+                           x.Name,
+                           x.Description,
+                           x.CreatedAt,
+                           x.UpdatedAt,
 
-        if (workspace == null)
-            return NotFound();
+                           Projects = x.Projects
+                               .Where(p => !p.IsDeleted)
+                               .Select(p => new ProjectResponse
+                               {
+                                   Id = p.Id,
+                                   Name = p.Name,
+                                   Description = p.Description,
+                                   WorkspaceId = p.WorkspaceId,
+                                   WorkspaceName = x.Name,
+                                   CreatedAt = p.CreatedAt,
+                                   UpdatedAt = p.UpdatedAt
+                               })
+                               .ToList()
+                       })
+                       .FirstOrDefault();
+            if (workspace == null)
+                return NotFound();
 
-        return Ok(workspace);
+            return Ok(workspace);
+        }
+        catch
+        {
+            return StatusCode(500, "Unable to load workspace.");
+        }
     }
 
     // POST: api/workspace
     [HttpPost("workspace")]
-    public async Task<ActionResult> Create(CreateWorkspaceRequest request)
+    public IActionResult Create(CreateWorkspaceRequest request)
     {
-        var workspace = new Workspace
+        if (!ModelState.IsValid)
+            return BadRequest(ModelState);
+
+        try
         {
-            Name = request.Name,
-            Description = request.Description,
-            CreatedAt = DateTime.UtcNow
-        };
+            var workspace = new Workspace
+            {
+                Name = request.Name,
+                Description = request.Description
+            };
 
-        _context.Workspace.Add(workspace);
-        await _context.SaveChangesAsync();
+            _context.Workspace.Add(workspace);
+            _context.SaveChanges();
 
-        return CreatedAtAction(nameof(GetById), new { id = workspace.Id }, workspace);
+            return CreatedAtAction(
+                nameof(GetById),
+                new { id = workspace.Id },
+                workspace);
+        }
+        catch
+        {
+            return StatusCode(500, "Failed to create workspace.");
+        }
     }
 
     // PUT: api/workspace/{id}
-    [HttpPatch("workspace/{id:guid}")]
-    public async Task<IActionResult> Update(Guid id, UpdateWorkspaceRequest request)
+    [HttpPut("workspace/{id:guid}")]
+    public IActionResult Update(Guid id, UpdateWorkspaceRequest request)
     {
-        var workspace = await _context.Workspace.FindAsync(id);
+        if (!ModelState.IsValid)
+            return BadRequest(ModelState);
 
-        if (workspace == null)
-            return NotFound();
+        try
+        {
+            var workspace = _context.Workspace.Find(id);
 
-        workspace.Name = request.Name;
-        workspace.Description = request.Description;
+            if (workspace == null)
+                return NotFound();
 
-        await _context.SaveChangesAsync();
+            workspace.Name = request.Name;
+            workspace.Description = request.Description;
 
-        return Ok(workspace);
+            _context.SaveChanges();
+
+            return Ok(workspace);
+        }
+        catch
+        {
+            return StatusCode(500, "Failed to update workspace.");
+        }
     }
 
     // DELETE: api/workspace/{id}
     [HttpDelete("workspace/{id:guid}")]
-    public async Task<IActionResult> Delete(Guid id)
+    public IActionResult Delete(Guid id)
     {
-        var workspace = await _context.Workspace.FindAsync(id);
+        try
+        {
+            var workspace = _context.Workspace.Find(id);
 
-        if (workspace == null)
-            return NotFound();
+            if (workspace == null)
+                return NotFound();
 
-        _context.Workspace.Remove(workspace);
-        await _context.SaveChangesAsync();
+            var hasProjects = _context.Project
+                .Any(x => x.WorkspaceId == id);
 
-        return Ok("Deleted successfully");
+            if (hasProjects)
+            {
+                return BadRequest(
+                    "Workspace cannot be deleted. Move the projects to another workspace or delete them first.");
+            }
+
+            workspace.IsDeleted = true;
+
+            _context.SaveChanges();
+
+            return Ok("Workspace deleted successfully.");
+        }
+        catch (DbUpdateException)
+        {
+            return StatusCode(500, "Failed to delete workspace.");
+        }
     }
 }

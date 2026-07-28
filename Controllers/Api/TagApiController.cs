@@ -7,80 +7,133 @@ namespace TaskFlowMvc.Controllers.Api;
 
 [ApiController]
 [Route("api/")]
-public class TagApiController : ControllerBase
+public class TagController : ControllerBase
 {
     private readonly ApplicationDbContext _context;
 
-    public TagApiController(ApplicationDbContext context)
+    public TagController(ApplicationDbContext context)
     {
         _context = context;
     }
 
+    // GET: api/tag
     [HttpGet("tags")]
     public IActionResult GetAll()
     {
-        return Ok(_context.Tag.ToList());
+        try
+        {
+            var tags = _context.Tag.ToList();
+            return Ok(tags);
+        }
+        catch
+        {
+            return StatusCode(500, "Unable to load tags.");
+        }
     }
 
-    [HttpGet("tag/{id}")]
-    public IActionResult Get(Guid id)
+    // GET: api/tag/{id}
+    [HttpGet("tag/{id:guid}")]
+    public IActionResult GetById(Guid id)
     {
-        var tag = _context.Tag.Find(id);
+        try
+        {
+            var tag = _context.Tag.Find(id);
 
-        if (tag == null)
-            return NotFound();
+            if (tag == null)
+                return NotFound();
 
-        return Ok(tag);
+            return Ok(tag);
+        }
+        catch
+        {
+            return StatusCode(500, "Unable to load tag.");
+        }
     }
 
+    // POST: api/tag
     [HttpPost("tag")]
     public IActionResult Create(CreateTagRequest request)
     {
         if (!ModelState.IsValid)
             return BadRequest(ModelState);
 
-        var tag = new Tag
+        try
         {
-            Name = request.Name,
-            Color = request.Color
-        };
+            var tag = new Tag
+            {
+                Name = request.Name,
+                Color = request.Color
+            };
 
-        _context.Tag.Add(tag);
-        _context.SaveChanges();
+            _context.Tag.Add(tag);
+            _context.SaveChanges();
 
-        return CreatedAtAction(nameof(Get), new { id = tag.Id }, tag);
+            return CreatedAtAction(
+                nameof(GetById),
+                new { id = tag.Id },
+                tag);
+        }
+        catch
+        {
+            return StatusCode(500, "Failed to create tag.");
+        }
     }
 
-    [HttpPut("tag/{id}")]
+    // PUT: api/tag/{id}
+    [HttpPut("tag/{id:guid}")]
     public IActionResult Update(Guid id, UpdateTagRequest request)
     {
         if (!ModelState.IsValid)
             return BadRequest(ModelState);
 
-        var tag = _context.Tag.Find(id);
+        try
+        {
+            var tag = _context.Tag.Find(id);
 
-        if (tag == null)
-            return NotFound();
+            if (tag == null)
+                return NotFound();
 
-        tag.Name = request.Name;
-        tag.Color = request.Color;
+            tag.Name = request.Name;
+            tag.Color = request.Color;
 
-        _context.SaveChanges();
+            _context.SaveChanges();
 
-        return NoContent();
+            return Ok(tag);
+        }
+        catch
+        {
+            return StatusCode(500, "Failed to update tag.");
+        }
     }
 
-    [HttpDelete("tag/{id}")]
+    // DELETE: api/tag/{id}
+    [HttpDelete("tag/{id:guid}")]
     public IActionResult Delete(Guid id)
     {
-        var tag = _context.Tag.Find(id);
+        try
+        {
+            var tag = _context.Tag.Find(id);
 
-        if (tag == null)
-            return NotFound();
+            if (tag == null)
+                return NotFound();
 
-        _context.Tag.Remove(tag);
-        _context.SaveChanges();
+            var isUsed = _context.TaskTag.Any(x => x.TagId == id);
 
-        return NoContent();
+            if (isUsed)
+            {
+                return BadRequest(
+                    "Tag cannot be deleted. Remove it from all tasks first.");
+            }
+
+            tag.IsDeleted = true;
+
+            _context.SaveChanges();
+
+            return Ok("Tag deleted successfully.");
+        }
+        catch
+        {
+            return StatusCode(500, "Failed to delete tag.");
+        }
     }
 }

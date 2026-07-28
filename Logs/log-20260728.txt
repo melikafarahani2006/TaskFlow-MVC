@@ -4713,3 +4713,1427 @@ WHERE [t].[IsDeleted] = CAST(0 AS bit)
 2026-07-28 09:59:12.652 +03:30 [INF] Request starting HTTP/2 GET https://localhost:7108/_framework/aspnetcore-browser-refresh.js - null null
 2026-07-28 09:59:12.653 +03:30 [INF] Request finished HTTP/2 GET https://localhost:7108/_framework/aspnetcore-browser-refresh.js - 200 14926 application/javascript; charset=utf-8 0.1684ms
 2026-07-28 09:59:12.656 +03:30 [INF] Request finished HTTP/2 GET https://localhost:7108/_vs/browserLink - 200 null text/javascript; charset=UTF-8 3.6385ms
+2026-07-28 10:19:58.946 +03:30 [INF] User profile is available. Using 'C:\Users\ASUS\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2026-07-28 10:19:59.354 +03:30 [INF] Now listening on: https://localhost:7108
+2026-07-28 10:19:59.355 +03:30 [INF] Now listening on: http://localhost:5031
+2026-07-28 10:19:59.555 +03:30 [INF] Application started. Press Ctrl+C to shut down.
+2026-07-28 10:19:59.555 +03:30 [INF] Hosting environment: Development
+2026-07-28 10:19:59.555 +03:30 [INF] Content root path: D:\TaskFlowMvc
+2026-07-28 10:20:01.372 +03:30 [INF] Request starting HTTP/2 GET https://localhost:7108/ - null null
+2026-07-28 10:20:01.934 +03:30 [INF] Executing endpoint 'TaskFlowMvc.Controllers.HomeController.Index (TaskFlowMvc)'
+2026-07-28 10:20:02.093 +03:30 [INF] Route matched with {action = "Index", controller = "Home"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller TaskFlowMvc.Controllers.HomeController (TaskFlowMvc).
+2026-07-28 10:20:02.162 +03:30 [INF] Executing ViewResult, running view Index.
+2026-07-28 10:20:02.796 +03:30 [INF] Executed ViewResult - view Index executed in 644.6657ms.
+2026-07-28 10:20:02.798 +03:30 [INF] Executed action TaskFlowMvc.Controllers.HomeController.Index (TaskFlowMvc) in 703.6985ms
+2026-07-28 10:20:02.799 +03:30 [INF] Executed endpoint 'TaskFlowMvc.Controllers.HomeController.Index (TaskFlowMvc)'
+2026-07-28 10:20:02.831 +03:30 [INF] Request finished HTTP/2 GET https://localhost:7108/ - 200 null text/html; charset=utf-8 1476.1331ms
+2026-07-28 10:20:02.897 +03:30 [INF] Request starting HTTP/2 GET https://localhost:7108/_framework/aspnetcore-browser-refresh.js - null null
+2026-07-28 10:20:02.897 +03:30 [INF] Request starting HTTP/2 GET https://localhost:7108/lib/bootstrap/dist/css/bootstrap.min.css - null null
+2026-07-28 10:20:02.899 +03:30 [INF] Request starting HTTP/2 GET https://localhost:7108/css/site.css?v=j6fhJSuuyLpOSLuPJU0TsDV0iNjor5S3rDnvxJrt4bg - null null
+2026-07-28 10:20:02.900 +03:30 [INF] Request starting HTTP/2 GET https://localhost:7108/TaskFlowMvc.styles.css?v=denkTJS40ZgCb1ryagt5okiypSWbvhenoKvVK6WBfgY - null null
+2026-07-28 10:20:02.904 +03:30 [INF] Request starting HTTP/2 GET https://localhost:7108/lib/jquery/dist/jquery.min.js - null null
+2026-07-28 10:20:02.906 +03:30 [INF] Request starting HTTP/2 GET https://localhost:7108/lib/bootstrap/dist/js/bootstrap.bundle.min.js - null null
+2026-07-28 10:20:02.911 +03:30 [INF] Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2026-07-28 10:20:02.914 +03:30 [INF] Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2026-07-28 10:20:02.915 +03:30 [INF] Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2026-07-28 10:20:02.911 +03:30 [INF] Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2026-07-28 10:20:02.911 +03:30 [INF] Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2026-07-28 10:20:03.007 +03:30 [INF] Request starting HTTP/2 GET https://localhost:7108/js/site.js?v=hRQyftXiu1lLX2P9Ly9xa4gHJgLeR1uGN5qegUobtGo - null null
+2026-07-28 10:20:03.047 +03:30 [INF] Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2026-07-28 10:20:03.048 +03:30 [INF] Sending file. Request path: 'css/site.css'. Physical path: 'D:\TaskFlowMvc\obj\Debug\net10.0\compressed\4xl5hjd8lv-{0}-b9sayid5wm-b9sayid5wm.gz'
+2026-07-28 10:20:03.048 +03:30 [INF] Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2026-07-28 10:20:03.048 +03:30 [INF] Sending file. Request path: 'TaskFlowMvc.styles.css'. Physical path: 'D:\TaskFlowMvc\obj\Debug\net10.0\compressed\pio3utri1p-{0}-5w3zfbn8im-5w3zfbn8im.gz'
+2026-07-28 10:20:03.048 +03:30 [INF] Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2026-07-28 10:20:03.048 +03:30 [INF] Sending file. Request path: 'js/site.js'. Physical path: 'D:\TaskFlowMvc\obj\Debug\net10.0\compressed\lrk0etaown-{0}-xtxxf3hu2r-xtxxf3hu2r.gz'
+2026-07-28 10:20:03.048 +03:30 [INF] Request finished HTTP/2 GET https://localhost:7108/TaskFlowMvc.styles.css?v=denkTJS40ZgCb1ryagt5okiypSWbvhenoKvVK6WBfgY - 200 1142 text/css 148.7857ms
+2026-07-28 10:20:03.052 +03:30 [INF] Request finished HTTP/2 GET https://localhost:7108/css/site.css?v=j6fhJSuuyLpOSLuPJU0TsDV0iNjor5S3rDnvxJrt4bg - 200 700 text/css 152.6607ms
+2026-07-28 10:20:03.048 +03:30 [INF] Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2026-07-28 10:20:03.104 +03:30 [INF] Request finished HTTP/2 GET https://localhost:7108/js/site.js?v=hRQyftXiu1lLX2P9Ly9xa4gHJgLeR1uGN5qegUobtGo - 200 264 text/javascript 51.865ms
+2026-07-28 10:20:03.107 +03:30 [INF] Request starting HTTP/2 GET https://localhost:7108/_vs/browserLink - null null
+2026-07-28 10:20:03.190 +03:30 [INF] Sending file. Request path: 'lib/bootstrap/dist/js/bootstrap.bundle.min.js'. Physical path: 'D:\TaskFlowMvc\obj\Debug\net10.0\compressed\6usytvi6e8-{0}-493y06b0oq-493y06b0oq.gz'
+2026-07-28 10:20:03.193 +03:30 [INF] Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2026-07-28 10:20:03.197 +03:30 [INF] Sending file. Request path: 'lib/bootstrap/dist/css/bootstrap.min.css'. Physical path: 'D:\TaskFlowMvc\obj\Debug\net10.0\compressed\cwkq37jqus-{0}-46ein0sx1k-46ein0sx1k.gz'
+2026-07-28 10:20:03.198 +03:30 [INF] Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2026-07-28 10:20:03.198 +03:30 [INF] Request finished HTTP/2 GET https://localhost:7108/lib/bootstrap/dist/css/bootstrap.min.css - 200 232871 text/css 300.5764ms
+2026-07-28 10:20:03.198 +03:30 [INF] Request finished HTTP/2 GET https://localhost:7108/lib/bootstrap/dist/js/bootstrap.bundle.min.js - 200 80764 text/javascript 291.6476ms
+2026-07-28 10:20:03.218 +03:30 [INF] Sending file. Request path: 'lib/jquery/dist/jquery.min.js'. Physical path: 'D:\TaskFlowMvc\obj\Debug\net10.0\compressed\5u0wgstfou-{0}-o1o13a6vjx-o1o13a6vjx.gz'
+2026-07-28 10:20:03.219 +03:30 [INF] Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2026-07-28 10:20:03.219 +03:30 [INF] Request finished HTTP/2 GET https://localhost:7108/lib/jquery/dist/jquery.min.js - 200 87576 text/javascript 314.8216ms
+2026-07-28 10:20:03.225 +03:30 [INF] Request finished HTTP/2 GET https://localhost:7108/_framework/aspnetcore-browser-refresh.js - 200 14926 application/javascript; charset=utf-8 327.4928ms
+2026-07-28 10:20:03.362 +03:30 [INF] Request finished HTTP/2 GET https://localhost:7108/_vs/browserLink - 200 null text/javascript; charset=UTF-8 258.1355ms
+2026-07-28 10:20:07.506 +03:30 [INF] Request starting HTTP/2 GET https://localhost:7108/swagger/ - null null
+2026-07-28 10:20:07.512 +03:30 [INF] Request finished HTTP/2 GET https://localhost:7108/swagger/ - 301 null null 6.6045ms
+2026-07-28 10:20:07.518 +03:30 [INF] Request starting HTTP/2 GET https://localhost:7108/swagger/index.html - null null
+2026-07-28 10:20:07.593 +03:30 [INF] Request finished HTTP/2 GET https://localhost:7108/swagger/index.html - 304 null null 75.63ms
+2026-07-28 10:20:07.616 +03:30 [INF] Request starting HTTP/2 GET https://localhost:7108/_vs/browserLink - null null
+2026-07-28 10:20:07.616 +03:30 [INF] Request starting HTTP/2 GET https://localhost:7108/_framework/aspnetcore-browser-refresh.js - null null
+2026-07-28 10:20:07.618 +03:30 [INF] Request starting HTTP/2 GET https://localhost:7108/swagger/swagger-ui.css - null null
+2026-07-28 10:20:07.618 +03:30 [INF] Request starting HTTP/2 GET https://localhost:7108/swagger/index.css - null null
+2026-07-28 10:20:07.620 +03:30 [INF] Request starting HTTP/2 GET https://localhost:7108/swagger/swagger-ui-bundle.js - null null
+2026-07-28 10:20:07.621 +03:30 [INF] Request finished HTTP/2 GET https://localhost:7108/_framework/aspnetcore-browser-refresh.js - 200 14926 application/javascript; charset=utf-8 4.1181ms
+2026-07-28 10:20:07.626 +03:30 [INF] Request finished HTTP/2 GET https://localhost:7108/_vs/browserLink - 200 null text/javascript; charset=UTF-8 9.9888ms
+2026-07-28 10:20:07.628 +03:30 [INF] Request starting HTTP/2 GET https://localhost:7108/swagger/index.js - null null
+2026-07-28 10:20:07.628 +03:30 [INF] Request starting HTTP/2 GET https://localhost:7108/swagger/swagger-ui-standalone-preset.js - null null
+2026-07-28 10:20:07.629 +03:30 [INF] Request finished HTTP/2 GET https://localhost:7108/swagger/swagger-ui.css - 304 null null 11.082ms
+2026-07-28 10:20:07.666 +03:30 [INF] Request finished HTTP/2 GET https://localhost:7108/swagger/index.css - 304 null null 10.8514ms
+2026-07-28 10:20:07.666 +03:30 [INF] Request finished HTTP/2 GET https://localhost:7108/swagger/index.js - 304 null null 38.506ms
+2026-07-28 10:20:07.672 +03:30 [INF] Request finished HTTP/2 GET https://localhost:7108/swagger/swagger-ui-standalone-preset.js - 304 null null 44.1112ms
+2026-07-28 10:20:07.675 +03:30 [INF] Request finished HTTP/2 GET https://localhost:7108/swagger/swagger-ui-bundle.js - 304 null null 55.0503ms
+2026-07-28 10:20:07.929 +03:30 [INF] Request starting HTTP/2 GET https://localhost:7108/swagger/v1/swagger.json - null null
+2026-07-28 10:20:07.965 +03:30 [INF] Request finished HTTP/2 GET https://localhost:7108/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 35.2717ms
+2026-07-28 10:20:46.413 +03:30 [INF] Request starting HTTP/2 GET https://localhost:7108/api/projects - null null
+2026-07-28 10:20:46.419 +03:30 [INF] Executing endpoint 'TaskFlowMvc.Controllers.Api.ProjectController.GetAll (TaskFlowMvc)'
+2026-07-28 10:20:46.433 +03:30 [INF] Route matched with {action = "GetAll", controller = "Project"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetAll() on controller TaskFlowMvc.Controllers.Api.ProjectController (TaskFlowMvc).
+2026-07-28 10:20:47.930 +03:30 [WRN] Entity 'Tag' has a global query filter defined and is the required end of a relationship with the entity 'TaskTag'. This may lead to unexpected results when the required entity is filtered out. Either configure the navigation as optional, or define matching query filters for both entities in the navigation. See https://go.microsoft.com/fwlink/?linkid=2131316 for more information.
+2026-07-28 10:20:49.833 +03:30 [INF] Executed DbCommand (213ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [p].[Id], [p].[CreatedAt], [p].[Description], [p].[IsDeleted], [p].[Name], [p].[UpdatedAt], [p].[WorkspaceId], [w0].[Id], [w0].[CreatedAt], [w0].[Description], [w0].[IsDeleted], [w0].[Name], [w0].[UpdatedAt]
+FROM [Project] AS [p]
+INNER JOIN (
+    SELECT [w].[Id], [w].[CreatedAt], [w].[Description], [w].[IsDeleted], [w].[Name], [w].[UpdatedAt]
+    FROM [Workspace] AS [w]
+    WHERE [w].[IsDeleted] = CAST(0 AS bit)
+) AS [w0] ON [p].[WorkspaceId] = [w0].[Id]
+WHERE [p].[IsDeleted] = CAST(0 AS bit)
+2026-07-28 10:20:50.024 +03:30 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[TaskFlowMvc.Models.Project, TaskFlowMvc, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-07-28 10:20:50.078 +03:30 [INF] Executed action TaskFlowMvc.Controllers.Api.ProjectController.GetAll (TaskFlowMvc) in 3645.2753ms
+2026-07-28 10:20:50.079 +03:30 [INF] Executed endpoint 'TaskFlowMvc.Controllers.Api.ProjectController.GetAll (TaskFlowMvc)'
+2026-07-28 10:20:50.083 +03:30 [ERR] An unhandled exception has occurred while executing the request.
+System.Text.Json.JsonException: A possible object cycle was detected. This can either be due to a cycle or if the object depth is larger than the maximum allowed depth of 32. Consider using ReferenceHandler.Preserve on JsonSerializerOptions to support cycles. Path: $.Workspace.Projects.Workspace.Projects.Workspace.Projects.Workspace.Projects.Workspace.Projects.Workspace.Projects.Workspace.Projects.Workspace.Projects.Workspace.Projects.Workspace.Projects.Id.
+   at System.Text.Json.ThrowHelper.ThrowJsonException_SerializerCycleDetected(Int32 maxDepth)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWrite(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.Metadata.JsonPropertyInfo`1.GetMemberAndWriteJson(Object obj, WriteStack& state, Utf8JsonWriter writer)
+   at System.Text.Json.Serialization.Converters.ObjectDefaultConverter`1.OnTryWrite(Utf8JsonWriter writer, T value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWrite(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.Converters.IEnumerableDefaultConverter`2.OnWriteResume(Utf8JsonWriter writer, TCollection value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonCollectionConverter`2.OnTryWrite(Utf8JsonWriter writer, TCollection value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWrite(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.Metadata.JsonPropertyInfo`1.GetMemberAndWriteJson(Object obj, WriteStack& state, Utf8JsonWriter writer)
+   at System.Text.Json.Serialization.Converters.ObjectDefaultConverter`1.OnTryWrite(Utf8JsonWriter writer, T value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWrite(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.Metadata.JsonPropertyInfo`1.GetMemberAndWriteJson(Object obj, WriteStack& state, Utf8JsonWriter writer)
+   at System.Text.Json.Serialization.Converters.ObjectDefaultConverter`1.OnTryWrite(Utf8JsonWriter writer, T value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWrite(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.Converters.IEnumerableDefaultConverter`2.OnWriteResume(Utf8JsonWriter writer, TCollection value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonCollectionConverter`2.OnTryWrite(Utf8JsonWriter writer, TCollection value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWrite(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.Metadata.JsonPropertyInfo`1.GetMemberAndWriteJson(Object obj, WriteStack& state, Utf8JsonWriter writer)
+   at System.Text.Json.Serialization.Converters.ObjectDefaultConverter`1.OnTryWrite(Utf8JsonWriter writer, T value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWrite(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.Metadata.JsonPropertyInfo`1.GetMemberAndWriteJson(Object obj, WriteStack& state, Utf8JsonWriter writer)
+   at System.Text.Json.Serialization.Converters.ObjectDefaultConverter`1.OnTryWrite(Utf8JsonWriter writer, T value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWrite(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.Converters.IEnumerableDefaultConverter`2.OnWriteResume(Utf8JsonWriter writer, TCollection value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonCollectionConverter`2.OnTryWrite(Utf8JsonWriter writer, TCollection value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWrite(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.Metadata.JsonPropertyInfo`1.GetMemberAndWriteJson(Object obj, WriteStack& state, Utf8JsonWriter writer)
+   at System.Text.Json.Serialization.Converters.ObjectDefaultConverter`1.OnTryWrite(Utf8JsonWriter writer, T value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWrite(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.Metadata.JsonPropertyInfo`1.GetMemberAndWriteJson(Object obj, WriteStack& state, Utf8JsonWriter writer)
+   at System.Text.Json.Serialization.Converters.ObjectDefaultConverter`1.OnTryWrite(Utf8JsonWriter writer, T value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWrite(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.Converters.IEnumerableDefaultConverter`2.OnWriteResume(Utf8JsonWriter writer, TCollection value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonCollectionConverter`2.OnTryWrite(Utf8JsonWriter writer, TCollection value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWrite(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.Metadata.JsonPropertyInfo`1.GetMemberAndWriteJson(Object obj, WriteStack& state, Utf8JsonWriter writer)
+   at System.Text.Json.Serialization.Converters.ObjectDefaultConverter`1.OnTryWrite(Utf8JsonWriter writer, T value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWrite(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.Metadata.JsonPropertyInfo`1.GetMemberAndWriteJson(Object obj, WriteStack& state, Utf8JsonWriter writer)
+   at System.Text.Json.Serialization.Converters.ObjectDefaultConverter`1.OnTryWrite(Utf8JsonWriter writer, T value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWrite(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.Converters.IEnumerableDefaultConverter`2.OnWriteResume(Utf8JsonWriter writer, TCollection value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonCollectionConverter`2.OnTryWrite(Utf8JsonWriter writer, TCollection value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWrite(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.Metadata.JsonPropertyInfo`1.GetMemberAndWriteJson(Object obj, WriteStack& state, Utf8JsonWriter writer)
+   at System.Text.Json.Serialization.Converters.ObjectDefaultConverter`1.OnTryWrite(Utf8JsonWriter writer, T value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWrite(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.Metadata.JsonPropertyInfo`1.GetMemberAndWriteJson(Object obj, WriteStack& state, Utf8JsonWriter writer)
+   at System.Text.Json.Serialization.Converters.ObjectDefaultConverter`1.OnTryWrite(Utf8JsonWriter writer, T value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWrite(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.Converters.IEnumerableDefaultConverter`2.OnWriteResume(Utf8JsonWriter writer, TCollection value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonCollectionConverter`2.OnTryWrite(Utf8JsonWriter writer, TCollection value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWrite(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.Metadata.JsonPropertyInfo`1.GetMemberAndWriteJson(Object obj, WriteStack& state, Utf8JsonWriter writer)
+   at System.Text.Json.Serialization.Converters.ObjectDefaultConverter`1.OnTryWrite(Utf8JsonWriter writer, T value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWrite(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.Metadata.JsonPropertyInfo`1.GetMemberAndWriteJson(Object obj, WriteStack& state, Utf8JsonWriter writer)
+   at System.Text.Json.Serialization.Converters.ObjectDefaultConverter`1.OnTryWrite(Utf8JsonWriter writer, T value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWrite(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.Converters.IEnumerableDefaultConverter`2.OnWriteResume(Utf8JsonWriter writer, TCollection value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonCollectionConverter`2.OnTryWrite(Utf8JsonWriter writer, TCollection value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWrite(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.Metadata.JsonPropertyInfo`1.GetMemberAndWriteJson(Object obj, WriteStack& state, Utf8JsonWriter writer)
+   at System.Text.Json.Serialization.Converters.ObjectDefaultConverter`1.OnTryWrite(Utf8JsonWriter writer, T value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWrite(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.Metadata.JsonPropertyInfo`1.GetMemberAndWriteJson(Object obj, WriteStack& state, Utf8JsonWriter writer)
+   at System.Text.Json.Serialization.Converters.ObjectDefaultConverter`1.OnTryWrite(Utf8JsonWriter writer, T value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWrite(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.Converters.IEnumerableDefaultConverter`2.OnWriteResume(Utf8JsonWriter writer, TCollection value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonCollectionConverter`2.OnTryWrite(Utf8JsonWriter writer, TCollection value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWrite(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.Metadata.JsonPropertyInfo`1.GetMemberAndWriteJson(Object obj, WriteStack& state, Utf8JsonWriter writer)
+   at System.Text.Json.Serialization.Converters.ObjectDefaultConverter`1.OnTryWrite(Utf8JsonWriter writer, T value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWrite(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.Metadata.JsonPropertyInfo`1.GetMemberAndWriteJson(Object obj, WriteStack& state, Utf8JsonWriter writer)
+   at System.Text.Json.Serialization.Converters.ObjectDefaultConverter`1.OnTryWrite(Utf8JsonWriter writer, T value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWrite(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.Converters.IEnumerableDefaultConverter`2.OnWriteResume(Utf8JsonWriter writer, TCollection value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonCollectionConverter`2.OnTryWrite(Utf8JsonWriter writer, TCollection value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWrite(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.Metadata.JsonPropertyInfo`1.GetMemberAndWriteJson(Object obj, WriteStack& state, Utf8JsonWriter writer)
+   at System.Text.Json.Serialization.Converters.ObjectDefaultConverter`1.OnTryWrite(Utf8JsonWriter writer, T value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWrite(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.Metadata.JsonPropertyInfo`1.GetMemberAndWriteJson(Object obj, WriteStack& state, Utf8JsonWriter writer)
+   at System.Text.Json.Serialization.Converters.ObjectDefaultConverter`1.OnTryWrite(Utf8JsonWriter writer, T value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWrite(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.Converters.IEnumerableDefaultConverter`2.OnWriteResume(Utf8JsonWriter writer, TCollection value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonCollectionConverter`2.OnTryWrite(Utf8JsonWriter writer, TCollection value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWrite(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.Metadata.JsonPropertyInfo`1.GetMemberAndWriteJson(Object obj, WriteStack& state, Utf8JsonWriter writer)
+   at System.Text.Json.Serialization.Converters.ObjectDefaultConverter`1.OnTryWrite(Utf8JsonWriter writer, T value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWrite(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.Metadata.JsonPropertyInfo`1.GetMemberAndWriteJson(Object obj, WriteStack& state, Utf8JsonWriter writer)
+   at System.Text.Json.Serialization.Converters.ObjectDefaultConverter`1.OnTryWrite(Utf8JsonWriter writer, T value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWrite(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.Converters.ListOfTConverter`2.OnWriteResume(Utf8JsonWriter writer, TCollection value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonCollectionConverter`2.OnTryWrite(Utf8JsonWriter writer, TCollection value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWrite(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.WriteCore(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.Metadata.JsonTypeInfo`1.SerializeAsync(PipeWriter pipeWriter, T rootValue, Int32 flushThreshold, CancellationToken cancellationToken, Object rootValueBoxed)
+   at System.Text.Json.Serialization.Metadata.JsonTypeInfo`1.SerializeAsync(PipeWriter pipeWriter, T rootValue, Int32 flushThreshold, CancellationToken cancellationToken, Object rootValueBoxed)
+   at System.Text.Json.Serialization.Metadata.JsonTypeInfo`1.SerializeAsync(PipeWriter pipeWriter, T rootValue, Int32 flushThreshold, CancellationToken cancellationToken, Object rootValueBoxed)
+   at Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter.WriteResponseBodyAsync(OutputFormatterWriteContext context, Encoding selectedEncoding)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResultFilterAsync>g__Awaited|30_0[TFilter,TFilterAsync](ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResultExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.ResultNext[TFilter,TFilterAsync](State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeResultFilters()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|25_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeFilterPipelineAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2026-07-28 10:20:50.206 +03:30 [INF] Request finished HTTP/2 GET https://localhost:7108/api/projects - 500 null text/plain; charset=utf-8 3793.7977ms
+2026-07-28 10:22:36.797 +03:30 [INF] Request starting HTTP/2 GET https://localhost:7108/api/tags - null null
+2026-07-28 10:22:36.798 +03:30 [INF] Executing endpoint 'TaskFlowMvc.Controllers.Api.TagController.GetAll (TaskFlowMvc)'
+2026-07-28 10:22:36.808 +03:30 [INF] Route matched with {action = "GetAll", controller = "Tag"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetAll() on controller TaskFlowMvc.Controllers.Api.TagController (TaskFlowMvc).
+2026-07-28 10:22:36.978 +03:30 [INF] Executed DbCommand (45ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[Id], [t].[Color], [t].[CreatedAt], [t].[IsDeleted], [t].[Name], [t].[UpdatedAt]
+FROM [Tag] AS [t]
+WHERE [t].[IsDeleted] = CAST(0 AS bit)
+2026-07-28 10:22:36.998 +03:30 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[TaskFlowMvc.Models.Tag, TaskFlowMvc, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-07-28 10:22:37.010 +03:30 [INF] Executed action TaskFlowMvc.Controllers.Api.TagController.GetAll (TaskFlowMvc) in 201.9251ms
+2026-07-28 10:22:37.011 +03:30 [INF] Executed endpoint 'TaskFlowMvc.Controllers.Api.TagController.GetAll (TaskFlowMvc)'
+2026-07-28 10:22:37.011 +03:30 [INF] Request finished HTTP/2 GET https://localhost:7108/api/tags - 200 null application/json; charset=utf-8 214.7081ms
+2026-07-28 10:22:59.423 +03:30 [INF] Request starting HTTP/2 GET https://localhost:7108/api/tasks - null null
+2026-07-28 10:22:59.424 +03:30 [INF] Executing endpoint 'TaskFlowMvc.Controllers.Api.TaskController.GetAll (TaskFlowMvc)'
+2026-07-28 10:22:59.427 +03:30 [INF] Route matched with {action = "GetAll", controller = "Task"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetAll() on controller TaskFlowMvc.Controllers.Api.TaskController (TaskFlowMvc).
+2026-07-28 10:22:59.666 +03:30 [INF] Executed DbCommand (76ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[Id], [t].[CreatedAt], [t].[Description], [t].[DueDate], [t].[IsDeleted], [t].[Order], [t].[ProjectId], [t].[TaskStateId], [t].[Title], [t].[UpdatedAt], [p0].[Id], [p0].[CreatedAt], [p0].[Description], [p0].[IsDeleted], [p0].[Name], [p0].[UpdatedAt], [p0].[WorkspaceId], [t1].[Id], [t1].[CreatedAt], [t1].[IsDeleted], [t1].[Name], [t1].[Order], [t1].[UpdatedAt], [s].[Id], [s].[TagId], [s].[TaskId], [s].[Id0], [s].[Color], [s].[CreatedAt], [s].[IsDeleted], [s].[Name], [s].[UpdatedAt]
+FROM [Task] AS [t]
+INNER JOIN (
+    SELECT [p].[Id], [p].[CreatedAt], [p].[Description], [p].[IsDeleted], [p].[Name], [p].[UpdatedAt], [p].[WorkspaceId]
+    FROM [Project] AS [p]
+    WHERE [p].[IsDeleted] = CAST(0 AS bit)
+) AS [p0] ON [t].[ProjectId] = [p0].[Id]
+INNER JOIN (
+    SELECT [t0].[Id], [t0].[CreatedAt], [t0].[IsDeleted], [t0].[Name], [t0].[Order], [t0].[UpdatedAt]
+    FROM [TaskState] AS [t0]
+    WHERE [t0].[IsDeleted] = CAST(0 AS bit)
+) AS [t1] ON [t].[TaskStateId] = [t1].[Id]
+LEFT JOIN (
+    SELECT [t2].[Id], [t2].[TagId], [t2].[TaskId], [t4].[Id] AS [Id0], [t4].[Color], [t4].[CreatedAt], [t4].[IsDeleted], [t4].[Name], [t4].[UpdatedAt]
+    FROM [TaskTag] AS [t2]
+    INNER JOIN (
+        SELECT [t3].[Id], [t3].[Color], [t3].[CreatedAt], [t3].[IsDeleted], [t3].[Name], [t3].[UpdatedAt]
+        FROM [Tag] AS [t3]
+        WHERE [t3].[IsDeleted] = CAST(0 AS bit)
+    ) AS [t4] ON [t2].[TagId] = [t4].[Id]
+) AS [s] ON [t].[Id] = [s].[TaskId]
+WHERE [t].[IsDeleted] = CAST(0 AS bit)
+ORDER BY [t].[Id], [p0].[Id], [t1].[Id], [s].[Id]
+2026-07-28 10:22:59.775 +03:30 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[TaskFlowMvc.Models.Task, TaskFlowMvc, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-07-28 10:22:59.786 +03:30 [INF] Executed action TaskFlowMvc.Controllers.Api.TaskController.GetAll (TaskFlowMvc) in 358.6297ms
+2026-07-28 10:22:59.786 +03:30 [INF] Executed endpoint 'TaskFlowMvc.Controllers.Api.TaskController.GetAll (TaskFlowMvc)'
+2026-07-28 10:22:59.788 +03:30 [ERR] An unhandled exception has occurred while executing the request.
+System.Text.Json.JsonException: A possible object cycle was detected. This can either be due to a cycle or if the object depth is larger than the maximum allowed depth of 32. Consider using ReferenceHandler.Preserve on JsonSerializerOptions to support cycles. Path: $.TaskTags.Task.TaskTags.Task.TaskTags.Task.TaskTags.Task.TaskTags.Task.TaskTags.Task.TaskTags.Task.TaskTags.Task.TaskTags.Task.TaskTags.Task.Id.
+   at System.Text.Json.ThrowHelper.ThrowJsonException_SerializerCycleDetected(Int32 maxDepth)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWrite(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.Metadata.JsonPropertyInfo`1.GetMemberAndWriteJson(Object obj, WriteStack& state, Utf8JsonWriter writer)
+   at System.Text.Json.Serialization.Converters.ObjectDefaultConverter`1.OnTryWrite(Utf8JsonWriter writer, T value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWrite(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.Metadata.JsonPropertyInfo`1.GetMemberAndWriteJson(Object obj, WriteStack& state, Utf8JsonWriter writer)
+   at System.Text.Json.Serialization.Converters.ObjectDefaultConverter`1.OnTryWrite(Utf8JsonWriter writer, T value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWrite(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.Converters.IEnumerableDefaultConverter`2.OnWriteResume(Utf8JsonWriter writer, TCollection value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonCollectionConverter`2.OnTryWrite(Utf8JsonWriter writer, TCollection value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWrite(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.Metadata.JsonPropertyInfo`1.GetMemberAndWriteJson(Object obj, WriteStack& state, Utf8JsonWriter writer)
+   at System.Text.Json.Serialization.Converters.ObjectDefaultConverter`1.OnTryWrite(Utf8JsonWriter writer, T value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWrite(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.Metadata.JsonPropertyInfo`1.GetMemberAndWriteJson(Object obj, WriteStack& state, Utf8JsonWriter writer)
+   at System.Text.Json.Serialization.Converters.ObjectDefaultConverter`1.OnTryWrite(Utf8JsonWriter writer, T value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWrite(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.Converters.IEnumerableDefaultConverter`2.OnWriteResume(Utf8JsonWriter writer, TCollection value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonCollectionConverter`2.OnTryWrite(Utf8JsonWriter writer, TCollection value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWrite(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.Metadata.JsonPropertyInfo`1.GetMemberAndWriteJson(Object obj, WriteStack& state, Utf8JsonWriter writer)
+   at System.Text.Json.Serialization.Converters.ObjectDefaultConverter`1.OnTryWrite(Utf8JsonWriter writer, T value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWrite(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.Metadata.JsonPropertyInfo`1.GetMemberAndWriteJson(Object obj, WriteStack& state, Utf8JsonWriter writer)
+   at System.Text.Json.Serialization.Converters.ObjectDefaultConverter`1.OnTryWrite(Utf8JsonWriter writer, T value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWrite(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.Converters.IEnumerableDefaultConverter`2.OnWriteResume(Utf8JsonWriter writer, TCollection value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonCollectionConverter`2.OnTryWrite(Utf8JsonWriter writer, TCollection value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWrite(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.Metadata.JsonPropertyInfo`1.GetMemberAndWriteJson(Object obj, WriteStack& state, Utf8JsonWriter writer)
+   at System.Text.Json.Serialization.Converters.ObjectDefaultConverter`1.OnTryWrite(Utf8JsonWriter writer, T value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWrite(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.Metadata.JsonPropertyInfo`1.GetMemberAndWriteJson(Object obj, WriteStack& state, Utf8JsonWriter writer)
+   at System.Text.Json.Serialization.Converters.ObjectDefaultConverter`1.OnTryWrite(Utf8JsonWriter writer, T value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWrite(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.Converters.IEnumerableDefaultConverter`2.OnWriteResume(Utf8JsonWriter writer, TCollection value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonCollectionConverter`2.OnTryWrite(Utf8JsonWriter writer, TCollection value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWrite(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.Metadata.JsonPropertyInfo`1.GetMemberAndWriteJson(Object obj, WriteStack& state, Utf8JsonWriter writer)
+   at System.Text.Json.Serialization.Converters.ObjectDefaultConverter`1.OnTryWrite(Utf8JsonWriter writer, T value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWrite(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.Metadata.JsonPropertyInfo`1.GetMemberAndWriteJson(Object obj, WriteStack& state, Utf8JsonWriter writer)
+   at System.Text.Json.Serialization.Converters.ObjectDefaultConverter`1.OnTryWrite(Utf8JsonWriter writer, T value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWrite(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.Converters.IEnumerableDefaultConverter`2.OnWriteResume(Utf8JsonWriter writer, TCollection value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonCollectionConverter`2.OnTryWrite(Utf8JsonWriter writer, TCollection value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWrite(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.Metadata.JsonPropertyInfo`1.GetMemberAndWriteJson(Object obj, WriteStack& state, Utf8JsonWriter writer)
+   at System.Text.Json.Serialization.Converters.ObjectDefaultConverter`1.OnTryWrite(Utf8JsonWriter writer, T value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWrite(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.Metadata.JsonPropertyInfo`1.GetMemberAndWriteJson(Object obj, WriteStack& state, Utf8JsonWriter writer)
+   at System.Text.Json.Serialization.Converters.ObjectDefaultConverter`1.OnTryWrite(Utf8JsonWriter writer, T value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWrite(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.Converters.IEnumerableDefaultConverter`2.OnWriteResume(Utf8JsonWriter writer, TCollection value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonCollectionConverter`2.OnTryWrite(Utf8JsonWriter writer, TCollection value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWrite(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.Metadata.JsonPropertyInfo`1.GetMemberAndWriteJson(Object obj, WriteStack& state, Utf8JsonWriter writer)
+   at System.Text.Json.Serialization.Converters.ObjectDefaultConverter`1.OnTryWrite(Utf8JsonWriter writer, T value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWrite(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.Metadata.JsonPropertyInfo`1.GetMemberAndWriteJson(Object obj, WriteStack& state, Utf8JsonWriter writer)
+   at System.Text.Json.Serialization.Converters.ObjectDefaultConverter`1.OnTryWrite(Utf8JsonWriter writer, T value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWrite(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.Converters.IEnumerableDefaultConverter`2.OnWriteResume(Utf8JsonWriter writer, TCollection value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonCollectionConverter`2.OnTryWrite(Utf8JsonWriter writer, TCollection value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWrite(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.Metadata.JsonPropertyInfo`1.GetMemberAndWriteJson(Object obj, WriteStack& state, Utf8JsonWriter writer)
+   at System.Text.Json.Serialization.Converters.ObjectDefaultConverter`1.OnTryWrite(Utf8JsonWriter writer, T value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWrite(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.Metadata.JsonPropertyInfo`1.GetMemberAndWriteJson(Object obj, WriteStack& state, Utf8JsonWriter writer)
+   at System.Text.Json.Serialization.Converters.ObjectDefaultConverter`1.OnTryWrite(Utf8JsonWriter writer, T value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWrite(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.Converters.IEnumerableDefaultConverter`2.OnWriteResume(Utf8JsonWriter writer, TCollection value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonCollectionConverter`2.OnTryWrite(Utf8JsonWriter writer, TCollection value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWrite(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.Metadata.JsonPropertyInfo`1.GetMemberAndWriteJson(Object obj, WriteStack& state, Utf8JsonWriter writer)
+   at System.Text.Json.Serialization.Converters.ObjectDefaultConverter`1.OnTryWrite(Utf8JsonWriter writer, T value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWrite(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.Metadata.JsonPropertyInfo`1.GetMemberAndWriteJson(Object obj, WriteStack& state, Utf8JsonWriter writer)
+   at System.Text.Json.Serialization.Converters.ObjectDefaultConverter`1.OnTryWrite(Utf8JsonWriter writer, T value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWrite(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.Converters.IEnumerableDefaultConverter`2.OnWriteResume(Utf8JsonWriter writer, TCollection value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonCollectionConverter`2.OnTryWrite(Utf8JsonWriter writer, TCollection value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWrite(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.Metadata.JsonPropertyInfo`1.GetMemberAndWriteJson(Object obj, WriteStack& state, Utf8JsonWriter writer)
+   at System.Text.Json.Serialization.Converters.ObjectDefaultConverter`1.OnTryWrite(Utf8JsonWriter writer, T value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWrite(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.Metadata.JsonPropertyInfo`1.GetMemberAndWriteJson(Object obj, WriteStack& state, Utf8JsonWriter writer)
+   at System.Text.Json.Serialization.Converters.ObjectDefaultConverter`1.OnTryWrite(Utf8JsonWriter writer, T value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWrite(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.Converters.IEnumerableDefaultConverter`2.OnWriteResume(Utf8JsonWriter writer, TCollection value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonCollectionConverter`2.OnTryWrite(Utf8JsonWriter writer, TCollection value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWrite(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.Metadata.JsonPropertyInfo`1.GetMemberAndWriteJson(Object obj, WriteStack& state, Utf8JsonWriter writer)
+   at System.Text.Json.Serialization.Converters.ObjectDefaultConverter`1.OnTryWrite(Utf8JsonWriter writer, T value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWrite(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.Converters.ListOfTConverter`2.OnWriteResume(Utf8JsonWriter writer, TCollection value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonCollectionConverter`2.OnTryWrite(Utf8JsonWriter writer, TCollection value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWrite(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.WriteCore(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.Metadata.JsonTypeInfo`1.SerializeAsync(PipeWriter pipeWriter, T rootValue, Int32 flushThreshold, CancellationToken cancellationToken, Object rootValueBoxed)
+   at System.Text.Json.Serialization.Metadata.JsonTypeInfo`1.SerializeAsync(PipeWriter pipeWriter, T rootValue, Int32 flushThreshold, CancellationToken cancellationToken, Object rootValueBoxed)
+   at System.Text.Json.Serialization.Metadata.JsonTypeInfo`1.SerializeAsync(PipeWriter pipeWriter, T rootValue, Int32 flushThreshold, CancellationToken cancellationToken, Object rootValueBoxed)
+   at Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter.WriteResponseBodyAsync(OutputFormatterWriteContext context, Encoding selectedEncoding)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResultFilterAsync>g__Awaited|30_0[TFilter,TFilterAsync](ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResultExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.ResultNext[TFilter,TFilterAsync](State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeResultFilters()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|25_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeFilterPipelineAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2026-07-28 10:22:59.801 +03:30 [INF] Request finished HTTP/2 GET https://localhost:7108/api/tasks - 500 null text/plain; charset=utf-8 377.5311ms
+2026-07-28 10:23:10.941 +03:30 [INF] Request starting HTTP/2 GET https://localhost:7108/api/taskStates - null null
+2026-07-28 10:23:10.942 +03:30 [INF] Executing endpoint 'TaskFlowMvc.Controllers.Api.TaskStateController.GetAll (TaskFlowMvc)'
+2026-07-28 10:23:10.944 +03:30 [INF] Route matched with {action = "GetAll", controller = "TaskState"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetAll() on controller TaskFlowMvc.Controllers.Api.TaskStateController (TaskFlowMvc).
+2026-07-28 10:23:10.965 +03:30 [INF] Executed DbCommand (10ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[Id], [t].[CreatedAt], [t].[IsDeleted], [t].[Name], [t].[Order], [t].[UpdatedAt]
+FROM [TaskState] AS [t]
+WHERE [t].[IsDeleted] = CAST(0 AS bit)
+2026-07-28 10:23:10.966 +03:30 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[TaskFlowMvc.Models.TaskState, TaskFlowMvc, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-07-28 10:23:10.968 +03:30 [INF] Executed action TaskFlowMvc.Controllers.Api.TaskStateController.GetAll (TaskFlowMvc) in 24.1905ms
+2026-07-28 10:23:10.968 +03:30 [INF] Executed endpoint 'TaskFlowMvc.Controllers.Api.TaskStateController.GetAll (TaskFlowMvc)'
+2026-07-28 10:23:10.968 +03:30 [INF] Request finished HTTP/2 GET https://localhost:7108/api/taskStates - 200 null application/json; charset=utf-8 27.1672ms
+2026-07-28 10:23:25.875 +03:30 [INF] Request starting HTTP/2 GET https://localhost:7108/api/workspaces - null null
+2026-07-28 10:23:25.875 +03:30 [INF] Executing endpoint 'TaskFlowMvc.Controllers.Api.WorkspaceController.GetAll (TaskFlowMvc)'
+2026-07-28 10:23:25.878 +03:30 [INF] Route matched with {action = "GetAll", controller = "Workspace"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetAll() on controller TaskFlowMvc.Controllers.Api.WorkspaceController (TaskFlowMvc).
+2026-07-28 10:23:25.898 +03:30 [INF] Executed DbCommand (5ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [w].[Id], [w].[CreatedAt], [w].[Description], [w].[IsDeleted], [w].[Name], [w].[UpdatedAt]
+FROM [Workspace] AS [w]
+WHERE [w].[IsDeleted] = CAST(0 AS bit)
+2026-07-28 10:23:25.898 +03:30 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[TaskFlowMvc.Models.Workspace, TaskFlowMvc, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-07-28 10:23:25.899 +03:30 [INF] Executed action TaskFlowMvc.Controllers.Api.WorkspaceController.GetAll (TaskFlowMvc) in 20.2687ms
+2026-07-28 10:23:25.899 +03:30 [INF] Executed endpoint 'TaskFlowMvc.Controllers.Api.WorkspaceController.GetAll (TaskFlowMvc)'
+2026-07-28 10:23:25.899 +03:30 [INF] Request finished HTTP/2 GET https://localhost:7108/api/workspaces - 200 null application/json; charset=utf-8 24.1932ms
+2026-07-28 10:23:43.788 +03:30 [INF] Request starting HTTP/2 GET https://localhost:7108/api/projects - null null
+2026-07-28 10:23:43.788 +03:30 [INF] Executing endpoint 'TaskFlowMvc.Controllers.Api.ProjectController.GetAll (TaskFlowMvc)'
+2026-07-28 10:23:43.788 +03:30 [INF] Route matched with {action = "GetAll", controller = "Project"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetAll() on controller TaskFlowMvc.Controllers.Api.ProjectController (TaskFlowMvc).
+2026-07-28 10:23:43.804 +03:30 [INF] Executed DbCommand (9ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [p].[Id], [p].[CreatedAt], [p].[Description], [p].[IsDeleted], [p].[Name], [p].[UpdatedAt], [p].[WorkspaceId], [w0].[Id], [w0].[CreatedAt], [w0].[Description], [w0].[IsDeleted], [w0].[Name], [w0].[UpdatedAt]
+FROM [Project] AS [p]
+INNER JOIN (
+    SELECT [w].[Id], [w].[CreatedAt], [w].[Description], [w].[IsDeleted], [w].[Name], [w].[UpdatedAt]
+    FROM [Workspace] AS [w]
+    WHERE [w].[IsDeleted] = CAST(0 AS bit)
+) AS [w0] ON [p].[WorkspaceId] = [w0].[Id]
+WHERE [p].[IsDeleted] = CAST(0 AS bit)
+2026-07-28 10:23:43.807 +03:30 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[TaskFlowMvc.Models.Project, TaskFlowMvc, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-07-28 10:23:43.811 +03:30 [INF] Executed action TaskFlowMvc.Controllers.Api.ProjectController.GetAll (TaskFlowMvc) in 22.4406ms
+2026-07-28 10:23:43.811 +03:30 [INF] Executed endpoint 'TaskFlowMvc.Controllers.Api.ProjectController.GetAll (TaskFlowMvc)'
+2026-07-28 10:23:43.813 +03:30 [ERR] An unhandled exception has occurred while executing the request.
+System.Text.Json.JsonException: A possible object cycle was detected. This can either be due to a cycle or if the object depth is larger than the maximum allowed depth of 32. Consider using ReferenceHandler.Preserve on JsonSerializerOptions to support cycles. Path: $.Workspace.Projects.Workspace.Projects.Workspace.Projects.Workspace.Projects.Workspace.Projects.Workspace.Projects.Workspace.Projects.Workspace.Projects.Workspace.Projects.Workspace.Projects.Id.
+   at System.Text.Json.ThrowHelper.ThrowJsonException_SerializerCycleDetected(Int32 maxDepth)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWrite(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.Metadata.JsonPropertyInfo`1.GetMemberAndWriteJson(Object obj, WriteStack& state, Utf8JsonWriter writer)
+   at System.Text.Json.Serialization.Converters.ObjectDefaultConverter`1.OnTryWrite(Utf8JsonWriter writer, T value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWrite(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.Converters.IEnumerableDefaultConverter`2.OnWriteResume(Utf8JsonWriter writer, TCollection value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonCollectionConverter`2.OnTryWrite(Utf8JsonWriter writer, TCollection value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.Metadata.JsonPropertyInfo`1.GetMemberAndWriteJson(Object obj, WriteStack& state, Utf8JsonWriter writer)
+   at System.Text.Json.Serialization.Converters.ObjectDefaultConverter`1.OnTryWrite(Utf8JsonWriter writer, T value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.Metadata.JsonPropertyInfo`1.GetMemberAndWriteJson(Object obj, WriteStack& state, Utf8JsonWriter writer)
+   at System.Text.Json.Serialization.Converters.ObjectDefaultConverter`1.OnTryWrite(Utf8JsonWriter writer, T value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWrite(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.Converters.IEnumerableDefaultConverter`2.OnWriteResume(Utf8JsonWriter writer, TCollection value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonCollectionConverter`2.OnTryWrite(Utf8JsonWriter writer, TCollection value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.Metadata.JsonPropertyInfo`1.GetMemberAndWriteJson(Object obj, WriteStack& state, Utf8JsonWriter writer)
+   at System.Text.Json.Serialization.Converters.ObjectDefaultConverter`1.OnTryWrite(Utf8JsonWriter writer, T value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.Metadata.JsonPropertyInfo`1.GetMemberAndWriteJson(Object obj, WriteStack& state, Utf8JsonWriter writer)
+   at System.Text.Json.Serialization.Converters.ObjectDefaultConverter`1.OnTryWrite(Utf8JsonWriter writer, T value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWrite(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.Converters.IEnumerableDefaultConverter`2.OnWriteResume(Utf8JsonWriter writer, TCollection value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonCollectionConverter`2.OnTryWrite(Utf8JsonWriter writer, TCollection value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.Metadata.JsonPropertyInfo`1.GetMemberAndWriteJson(Object obj, WriteStack& state, Utf8JsonWriter writer)
+   at System.Text.Json.Serialization.Converters.ObjectDefaultConverter`1.OnTryWrite(Utf8JsonWriter writer, T value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.Metadata.JsonPropertyInfo`1.GetMemberAndWriteJson(Object obj, WriteStack& state, Utf8JsonWriter writer)
+   at System.Text.Json.Serialization.Converters.ObjectDefaultConverter`1.OnTryWrite(Utf8JsonWriter writer, T value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWrite(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.Converters.IEnumerableDefaultConverter`2.OnWriteResume(Utf8JsonWriter writer, TCollection value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonCollectionConverter`2.OnTryWrite(Utf8JsonWriter writer, TCollection value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.Metadata.JsonPropertyInfo`1.GetMemberAndWriteJson(Object obj, WriteStack& state, Utf8JsonWriter writer)
+   at System.Text.Json.Serialization.Converters.ObjectDefaultConverter`1.OnTryWrite(Utf8JsonWriter writer, T value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.Metadata.JsonPropertyInfo`1.GetMemberAndWriteJson(Object obj, WriteStack& state, Utf8JsonWriter writer)
+   at System.Text.Json.Serialization.Converters.ObjectDefaultConverter`1.OnTryWrite(Utf8JsonWriter writer, T value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWrite(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.Converters.IEnumerableDefaultConverter`2.OnWriteResume(Utf8JsonWriter writer, TCollection value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonCollectionConverter`2.OnTryWrite(Utf8JsonWriter writer, TCollection value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.Metadata.JsonPropertyInfo`1.GetMemberAndWriteJson(Object obj, WriteStack& state, Utf8JsonWriter writer)
+   at System.Text.Json.Serialization.Converters.ObjectDefaultConverter`1.OnTryWrite(Utf8JsonWriter writer, T value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.Metadata.JsonPropertyInfo`1.GetMemberAndWriteJson(Object obj, WriteStack& state, Utf8JsonWriter writer)
+   at System.Text.Json.Serialization.Converters.ObjectDefaultConverter`1.OnTryWrite(Utf8JsonWriter writer, T value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWrite(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.Converters.IEnumerableDefaultConverter`2.OnWriteResume(Utf8JsonWriter writer, TCollection value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonCollectionConverter`2.OnTryWrite(Utf8JsonWriter writer, TCollection value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.Metadata.JsonPropertyInfo`1.GetMemberAndWriteJson(Object obj, WriteStack& state, Utf8JsonWriter writer)
+   at System.Text.Json.Serialization.Converters.ObjectDefaultConverter`1.OnTryWrite(Utf8JsonWriter writer, T value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.Metadata.JsonPropertyInfo`1.GetMemberAndWriteJson(Object obj, WriteStack& state, Utf8JsonWriter writer)
+   at System.Text.Json.Serialization.Converters.ObjectDefaultConverter`1.OnTryWrite(Utf8JsonWriter writer, T value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWrite(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.Converters.IEnumerableDefaultConverter`2.OnWriteResume(Utf8JsonWriter writer, TCollection value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonCollectionConverter`2.OnTryWrite(Utf8JsonWriter writer, TCollection value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.Metadata.JsonPropertyInfo`1.GetMemberAndWriteJson(Object obj, WriteStack& state, Utf8JsonWriter writer)
+   at System.Text.Json.Serialization.Converters.ObjectDefaultConverter`1.OnTryWrite(Utf8JsonWriter writer, T value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.Metadata.JsonPropertyInfo`1.GetMemberAndWriteJson(Object obj, WriteStack& state, Utf8JsonWriter writer)
+   at System.Text.Json.Serialization.Converters.ObjectDefaultConverter`1.OnTryWrite(Utf8JsonWriter writer, T value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWrite(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.Converters.IEnumerableDefaultConverter`2.OnWriteResume(Utf8JsonWriter writer, TCollection value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonCollectionConverter`2.OnTryWrite(Utf8JsonWriter writer, TCollection value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.Metadata.JsonPropertyInfo`1.GetMemberAndWriteJson(Object obj, WriteStack& state, Utf8JsonWriter writer)
+   at System.Text.Json.Serialization.Converters.ObjectDefaultConverter`1.OnTryWrite(Utf8JsonWriter writer, T value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.Metadata.JsonPropertyInfo`1.GetMemberAndWriteJson(Object obj, WriteStack& state, Utf8JsonWriter writer)
+   at System.Text.Json.Serialization.Converters.ObjectDefaultConverter`1.OnTryWrite(Utf8JsonWriter writer, T value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWrite(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.Converters.IEnumerableDefaultConverter`2.OnWriteResume(Utf8JsonWriter writer, TCollection value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonCollectionConverter`2.OnTryWrite(Utf8JsonWriter writer, TCollection value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.Metadata.JsonPropertyInfo`1.GetMemberAndWriteJson(Object obj, WriteStack& state, Utf8JsonWriter writer)
+   at System.Text.Json.Serialization.Converters.ObjectDefaultConverter`1.OnTryWrite(Utf8JsonWriter writer, T value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.Metadata.JsonPropertyInfo`1.GetMemberAndWriteJson(Object obj, WriteStack& state, Utf8JsonWriter writer)
+   at System.Text.Json.Serialization.Converters.ObjectDefaultConverter`1.OnTryWrite(Utf8JsonWriter writer, T value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWrite(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.Converters.IEnumerableDefaultConverter`2.OnWriteResume(Utf8JsonWriter writer, TCollection value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonCollectionConverter`2.OnTryWrite(Utf8JsonWriter writer, TCollection value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.Metadata.JsonPropertyInfo`1.GetMemberAndWriteJson(Object obj, WriteStack& state, Utf8JsonWriter writer)
+   at System.Text.Json.Serialization.Converters.ObjectDefaultConverter`1.OnTryWrite(Utf8JsonWriter writer, T value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.Metadata.JsonPropertyInfo`1.GetMemberAndWriteJson(Object obj, WriteStack& state, Utf8JsonWriter writer)
+   at System.Text.Json.Serialization.Converters.ObjectDefaultConverter`1.OnTryWrite(Utf8JsonWriter writer, T value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWrite(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.Converters.ListOfTConverter`2.OnWriteResume(Utf8JsonWriter writer, TCollection value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonCollectionConverter`2.OnTryWrite(Utf8JsonWriter writer, TCollection value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWrite(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.WriteCore(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.Metadata.JsonTypeInfo`1.SerializeAsync(PipeWriter pipeWriter, T rootValue, Int32 flushThreshold, CancellationToken cancellationToken, Object rootValueBoxed)
+   at System.Text.Json.Serialization.Metadata.JsonTypeInfo`1.SerializeAsync(PipeWriter pipeWriter, T rootValue, Int32 flushThreshold, CancellationToken cancellationToken, Object rootValueBoxed)
+   at System.Text.Json.Serialization.Metadata.JsonTypeInfo`1.SerializeAsync(PipeWriter pipeWriter, T rootValue, Int32 flushThreshold, CancellationToken cancellationToken, Object rootValueBoxed)
+   at Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter.WriteResponseBodyAsync(OutputFormatterWriteContext context, Encoding selectedEncoding)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResultFilterAsync>g__Awaited|30_0[TFilter,TFilterAsync](ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResultExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.ResultNext[TFilter,TFilterAsync](State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeResultFilters()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|25_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeFilterPipelineAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2026-07-28 10:23:43.827 +03:30 [INF] Request finished HTTP/2 GET https://localhost:7108/api/projects - 500 null text/plain; charset=utf-8 39.2089ms
+2026-07-28 10:24:52.854 +03:30 [INF] Request starting HTTP/2 GET https://localhost:7108/api/projects - null null
+2026-07-28 10:24:52.855 +03:30 [INF] Executing endpoint 'TaskFlowMvc.Controllers.Api.ProjectController.GetAll (TaskFlowMvc)'
+2026-07-28 10:24:52.855 +03:30 [INF] Route matched with {action = "GetAll", controller = "Project"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetAll() on controller TaskFlowMvc.Controllers.Api.ProjectController (TaskFlowMvc).
+2026-07-28 10:25:03.756 +03:30 [INF] Executed DbCommand (6ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [p].[Id], [p].[CreatedAt], [p].[Description], [p].[IsDeleted], [p].[Name], [p].[UpdatedAt], [p].[WorkspaceId], [w0].[Id], [w0].[CreatedAt], [w0].[Description], [w0].[IsDeleted], [w0].[Name], [w0].[UpdatedAt]
+FROM [Project] AS [p]
+INNER JOIN (
+    SELECT [w].[Id], [w].[CreatedAt], [w].[Description], [w].[IsDeleted], [w].[Name], [w].[UpdatedAt]
+    FROM [Workspace] AS [w]
+    WHERE [w].[IsDeleted] = CAST(0 AS bit)
+) AS [w0] ON [p].[WorkspaceId] = [w0].[Id]
+WHERE [p].[IsDeleted] = CAST(0 AS bit)
+2026-07-28 10:25:08.087 +03:30 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[TaskFlowMvc.Models.Project, TaskFlowMvc, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-07-28 10:26:25.277 +03:30 [INF] User profile is available. Using 'C:\Users\ASUS\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2026-07-28 10:26:25.517 +03:30 [INF] Now listening on: https://localhost:7108
+2026-07-28 10:26:25.517 +03:30 [INF] Now listening on: http://localhost:5031
+2026-07-28 10:26:25.665 +03:30 [INF] Application started. Press Ctrl+C to shut down.
+2026-07-28 10:26:25.665 +03:30 [INF] Hosting environment: Development
+2026-07-28 10:26:25.665 +03:30 [INF] Content root path: D:\TaskFlowMvc
+2026-07-28 10:26:27.362 +03:30 [INF] Request starting HTTP/2 GET https://localhost:7108/ - null null
+2026-07-28 10:26:27.698 +03:30 [INF] Executing endpoint 'TaskFlowMvc.Controllers.HomeController.Index (TaskFlowMvc)'
+2026-07-28 10:26:27.743 +03:30 [INF] Route matched with {action = "Index", controller = "Home"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller TaskFlowMvc.Controllers.HomeController (TaskFlowMvc).
+2026-07-28 10:26:27.769 +03:30 [INF] Executing ViewResult, running view Index.
+2026-07-28 10:26:28.038 +03:30 [INF] Executed ViewResult - view Index executed in 273.3079ms.
+2026-07-28 10:26:28.040 +03:30 [INF] Executed action TaskFlowMvc.Controllers.HomeController.Index (TaskFlowMvc) in 295.7704ms
+2026-07-28 10:26:28.040 +03:30 [INF] Executed endpoint 'TaskFlowMvc.Controllers.HomeController.Index (TaskFlowMvc)'
+2026-07-28 10:26:28.053 +03:30 [INF] Request finished HTTP/2 GET https://localhost:7108/ - 200 null text/html; charset=utf-8 696.9678ms
+2026-07-28 10:26:28.129 +03:30 [INF] Request starting HTTP/2 GET https://localhost:7108/_framework/aspnetcore-browser-refresh.js - null null
+2026-07-28 10:26:28.142 +03:30 [INF] Request starting HTTP/2 GET https://localhost:7108/lib/bootstrap/dist/css/bootstrap.min.css - null null
+2026-07-28 10:26:28.142 +03:30 [INF] Request starting HTTP/2 GET https://localhost:7108/css/site.css?v=j6fhJSuuyLpOSLuPJU0TsDV0iNjor5S3rDnvxJrt4bg - null null
+2026-07-28 10:26:28.142 +03:30 [INF] Request starting HTTP/2 GET https://localhost:7108/TaskFlowMvc.styles.css?v=denkTJS40ZgCb1ryagt5okiypSWbvhenoKvVK6WBfgY - null null
+2026-07-28 10:26:28.179 +03:30 [INF] Request starting HTTP/2 GET https://localhost:7108/lib/jquery/dist/jquery.min.js - null null
+2026-07-28 10:26:28.180 +03:30 [INF] Request starting HTTP/2 GET https://localhost:7108/lib/bootstrap/dist/js/bootstrap.bundle.min.js - null null
+2026-07-28 10:26:28.183 +03:30 [INF] Request starting HTTP/2 GET https://localhost:7108/js/site.js?v=hRQyftXiu1lLX2P9Ly9xa4gHJgLeR1uGN5qegUobtGo - null null
+2026-07-28 10:26:28.188 +03:30 [INF] Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2026-07-28 10:26:28.188 +03:30 [INF] Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2026-07-28 10:26:28.188 +03:30 [INF] Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2026-07-28 10:26:28.191 +03:30 [INF] Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2026-07-28 10:26:28.192 +03:30 [INF] Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2026-07-28 10:26:28.195 +03:30 [INF] Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2026-07-28 10:26:28.202 +03:30 [INF] Request finished HTTP/2 GET https://localhost:7108/_framework/aspnetcore-browser-refresh.js - 200 14926 application/javascript; charset=utf-8 73.4667ms
+2026-07-28 10:26:28.216 +03:30 [INF] Request starting HTTP/2 GET https://localhost:7108/_vs/browserLink - null null
+2026-07-28 10:26:28.227 +03:30 [INF] Sending file. Request path: 'js/site.js'. Physical path: 'D:\TaskFlowMvc\obj\Debug\net10.0\compressed\lrk0etaown-{0}-xtxxf3hu2r-xtxxf3hu2r.gz'
+2026-07-28 10:26:28.227 +03:30 [INF] Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2026-07-28 10:26:28.227 +03:30 [INF] Sending file. Request path: 'TaskFlowMvc.styles.css'. Physical path: 'D:\TaskFlowMvc\obj\Debug\net10.0\compressed\pio3utri1p-{0}-5w3zfbn8im-5w3zfbn8im.gz'
+2026-07-28 10:26:28.227 +03:30 [INF] Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2026-07-28 10:26:28.227 +03:30 [INF] Request finished HTTP/2 GET https://localhost:7108/TaskFlowMvc.styles.css?v=denkTJS40ZgCb1ryagt5okiypSWbvhenoKvVK6WBfgY - 200 1142 text/css 85.2436ms
+2026-07-28 10:26:28.227 +03:30 [INF] Request finished HTTP/2 GET https://localhost:7108/js/site.js?v=hRQyftXiu1lLX2P9Ly9xa4gHJgLeR1uGN5qegUobtGo - 200 264 text/javascript 44.2065ms
+2026-07-28 10:26:28.228 +03:30 [INF] Sending file. Request path: 'css/site.css'. Physical path: 'D:\TaskFlowMvc\obj\Debug\net10.0\compressed\4xl5hjd8lv-{0}-b9sayid5wm-b9sayid5wm.gz'
+2026-07-28 10:26:28.228 +03:30 [INF] Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2026-07-28 10:26:28.228 +03:30 [INF] Request finished HTTP/2 GET https://localhost:7108/css/site.css?v=j6fhJSuuyLpOSLuPJU0TsDV0iNjor5S3rDnvxJrt4bg - 200 700 text/css 86.1935ms
+2026-07-28 10:26:28.326 +03:30 [INF] Sending file. Request path: 'lib/bootstrap/dist/css/bootstrap.min.css'. Physical path: 'D:\TaskFlowMvc\obj\Debug\net10.0\compressed\cwkq37jqus-{0}-46ein0sx1k-46ein0sx1k.gz'
+2026-07-28 10:26:28.326 +03:30 [INF] Sending file. Request path: 'lib/bootstrap/dist/js/bootstrap.bundle.min.js'. Physical path: 'D:\TaskFlowMvc\obj\Debug\net10.0\compressed\6usytvi6e8-{0}-493y06b0oq-493y06b0oq.gz'
+2026-07-28 10:26:28.327 +03:30 [INF] Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2026-07-28 10:26:28.327 +03:30 [INF] Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2026-07-28 10:26:28.329 +03:30 [INF] Sending file. Request path: 'lib/jquery/dist/jquery.min.js'. Physical path: 'D:\TaskFlowMvc\obj\Debug\net10.0\compressed\5u0wgstfou-{0}-o1o13a6vjx-o1o13a6vjx.gz'
+2026-07-28 10:26:28.332 +03:30 [INF] Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2026-07-28 10:26:28.340 +03:30 [INF] Request finished HTTP/2 GET https://localhost:7108/lib/jquery/dist/jquery.min.js - 200 87576 text/javascript 188.8695ms
+2026-07-28 10:26:28.340 +03:30 [INF] Request finished HTTP/2 GET https://localhost:7108/lib/bootstrap/dist/css/bootstrap.min.css - 200 232871 text/css 197.3386ms
+2026-07-28 10:26:28.343 +03:30 [INF] Request finished HTTP/2 GET https://localhost:7108/lib/bootstrap/dist/js/bootstrap.bundle.min.js - 200 80764 text/javascript 163.3605ms
+2026-07-28 10:26:28.449 +03:30 [INF] Request finished HTTP/2 GET https://localhost:7108/_vs/browserLink - 200 null text/javascript; charset=UTF-8 232.5123ms
+2026-07-28 10:26:34.021 +03:30 [INF] Request starting HTTP/2 GET https://localhost:7108/swagger/ - null null
+2026-07-28 10:26:34.026 +03:30 [INF] Request finished HTTP/2 GET https://localhost:7108/swagger/ - 301 null null 6.0833ms
+2026-07-28 10:26:34.034 +03:30 [INF] Request starting HTTP/2 GET https://localhost:7108/swagger/index.html - null null
+2026-07-28 10:26:34.138 +03:30 [INF] Request finished HTTP/2 GET https://localhost:7108/swagger/index.html - 304 null null 104.7093ms
+2026-07-28 10:26:34.164 +03:30 [INF] Request starting HTTP/2 GET https://localhost:7108/_vs/browserLink - null null
+2026-07-28 10:26:34.164 +03:30 [INF] Request starting HTTP/2 GET https://localhost:7108/_framework/aspnetcore-browser-refresh.js - null null
+2026-07-28 10:26:34.171 +03:30 [INF] Request finished HTTP/2 GET https://localhost:7108/_framework/aspnetcore-browser-refresh.js - 200 14926 application/javascript; charset=utf-8 7.2638ms
+2026-07-28 10:26:34.172 +03:30 [INF] Request starting HTTP/2 GET https://localhost:7108/swagger/swagger-ui.css - null null
+2026-07-28 10:26:34.172 +03:30 [INF] Request starting HTTP/2 GET https://localhost:7108/swagger/index.css - null null
+2026-07-28 10:26:34.172 +03:30 [INF] Request starting HTTP/2 GET https://localhost:7108/swagger/swagger-ui-bundle.js - null null
+2026-07-28 10:26:34.172 +03:30 [INF] Request starting HTTP/2 GET https://localhost:7108/swagger/swagger-ui-standalone-preset.js - null null
+2026-07-28 10:26:34.172 +03:30 [INF] Request starting HTTP/2 GET https://localhost:7108/swagger/index.js - null null
+2026-07-28 10:26:34.173 +03:30 [INF] Request finished HTTP/2 GET https://localhost:7108/swagger/index.js - 304 null null 1.0258ms
+2026-07-28 10:26:34.175 +03:30 [INF] Request finished HTTP/2 GET https://localhost:7108/_vs/browserLink - 200 null text/javascript; charset=UTF-8 11.4989ms
+2026-07-28 10:26:34.182 +03:30 [INF] Request finished HTTP/2 GET https://localhost:7108/swagger/swagger-ui.css - 304 null null 10.1682ms
+2026-07-28 10:26:34.182 +03:30 [INF] Request finished HTTP/2 GET https://localhost:7108/swagger/index.css - 304 null null 10.0876ms
+2026-07-28 10:26:34.196 +03:30 [INF] Request finished HTTP/2 GET https://localhost:7108/swagger/swagger-ui-standalone-preset.js - 304 null null 24.2233ms
+2026-07-28 10:26:34.211 +03:30 [INF] Request finished HTTP/2 GET https://localhost:7108/swagger/swagger-ui-bundle.js - 304 null null 39.5599ms
+2026-07-28 10:26:34.453 +03:30 [INF] Request starting HTTP/2 GET https://localhost:7108/swagger/v1/swagger.json - null null
+2026-07-28 10:26:34.478 +03:30 [INF] Request finished HTTP/2 GET https://localhost:7108/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 25.8196ms
+2026-07-28 10:26:39.134 +03:30 [INF] Request starting HTTP/2 GET https://localhost:7108/api/projects - null null
+2026-07-28 10:26:39.138 +03:30 [INF] Executing endpoint 'TaskFlowMvc.Controllers.Api.ProjectController.GetAll (TaskFlowMvc)'
+2026-07-28 10:26:39.143 +03:30 [INF] Route matched with {action = "GetAll", controller = "Project"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetAll() on controller TaskFlowMvc.Controllers.Api.ProjectController (TaskFlowMvc).
+2026-07-28 10:26:40.178 +03:30 [WRN] Entity 'Tag' has a global query filter defined and is the required end of a relationship with the entity 'TaskTag'. This may lead to unexpected results when the required entity is filtered out. Either configure the navigation as optional, or define matching query filters for both entities in the navigation. See https://go.microsoft.com/fwlink/?linkid=2131316 for more information.
+2026-07-28 10:26:41.677 +03:30 [INF] Executed DbCommand (64ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [p].[Id], [p].[CreatedAt], [p].[Description], [p].[IsDeleted], [p].[Name], [p].[UpdatedAt], [p].[WorkspaceId], [w0].[Id], [w0].[CreatedAt], [w0].[Description], [w0].[IsDeleted], [w0].[Name], [w0].[UpdatedAt]
+FROM [Project] AS [p]
+INNER JOIN (
+    SELECT [w].[Id], [w].[CreatedAt], [w].[Description], [w].[IsDeleted], [w].[Name], [w].[UpdatedAt]
+    FROM [Workspace] AS [w]
+    WHERE [w].[IsDeleted] = CAST(0 AS bit)
+) AS [w0] ON [p].[WorkspaceId] = [w0].[Id]
+WHERE [p].[IsDeleted] = CAST(0 AS bit)
+2026-07-28 10:26:41.863 +03:30 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[TaskFlowMvc.Models.Project, TaskFlowMvc, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-07-28 10:26:41.926 +03:30 [INF] Executed action TaskFlowMvc.Controllers.Api.ProjectController.GetAll (TaskFlowMvc) in 2782.106ms
+2026-07-28 10:26:41.927 +03:30 [INF] Executed endpoint 'TaskFlowMvc.Controllers.Api.ProjectController.GetAll (TaskFlowMvc)'
+2026-07-28 10:26:41.936 +03:30 [ERR] An unhandled exception has occurred while executing the request.
+System.Text.Json.JsonException: A possible object cycle was detected. This can either be due to a cycle or if the object depth is larger than the maximum allowed depth of 32. Consider using ReferenceHandler.Preserve on JsonSerializerOptions to support cycles. Path: $.Workspace.Projects.Workspace.Projects.Workspace.Projects.Workspace.Projects.Workspace.Projects.Workspace.Projects.Workspace.Projects.Workspace.Projects.Workspace.Projects.Workspace.Projects.Id.
+   at System.Text.Json.ThrowHelper.ThrowJsonException_SerializerCycleDetected(Int32 maxDepth)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWrite(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.Metadata.JsonPropertyInfo`1.GetMemberAndWriteJson(Object obj, WriteStack& state, Utf8JsonWriter writer)
+   at System.Text.Json.Serialization.Converters.ObjectDefaultConverter`1.OnTryWrite(Utf8JsonWriter writer, T value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWrite(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.Converters.IEnumerableDefaultConverter`2.OnWriteResume(Utf8JsonWriter writer, TCollection value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonCollectionConverter`2.OnTryWrite(Utf8JsonWriter writer, TCollection value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWrite(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.Metadata.JsonPropertyInfo`1.GetMemberAndWriteJson(Object obj, WriteStack& state, Utf8JsonWriter writer)
+   at System.Text.Json.Serialization.Converters.ObjectDefaultConverter`1.OnTryWrite(Utf8JsonWriter writer, T value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWrite(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.Metadata.JsonPropertyInfo`1.GetMemberAndWriteJson(Object obj, WriteStack& state, Utf8JsonWriter writer)
+   at System.Text.Json.Serialization.Converters.ObjectDefaultConverter`1.OnTryWrite(Utf8JsonWriter writer, T value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWrite(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.Converters.IEnumerableDefaultConverter`2.OnWriteResume(Utf8JsonWriter writer, TCollection value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonCollectionConverter`2.OnTryWrite(Utf8JsonWriter writer, TCollection value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWrite(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.Metadata.JsonPropertyInfo`1.GetMemberAndWriteJson(Object obj, WriteStack& state, Utf8JsonWriter writer)
+   at System.Text.Json.Serialization.Converters.ObjectDefaultConverter`1.OnTryWrite(Utf8JsonWriter writer, T value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWrite(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.Metadata.JsonPropertyInfo`1.GetMemberAndWriteJson(Object obj, WriteStack& state, Utf8JsonWriter writer)
+   at System.Text.Json.Serialization.Converters.ObjectDefaultConverter`1.OnTryWrite(Utf8JsonWriter writer, T value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWrite(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.Converters.IEnumerableDefaultConverter`2.OnWriteResume(Utf8JsonWriter writer, TCollection value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonCollectionConverter`2.OnTryWrite(Utf8JsonWriter writer, TCollection value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWrite(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.Metadata.JsonPropertyInfo`1.GetMemberAndWriteJson(Object obj, WriteStack& state, Utf8JsonWriter writer)
+   at System.Text.Json.Serialization.Converters.ObjectDefaultConverter`1.OnTryWrite(Utf8JsonWriter writer, T value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWrite(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.Metadata.JsonPropertyInfo`1.GetMemberAndWriteJson(Object obj, WriteStack& state, Utf8JsonWriter writer)
+   at System.Text.Json.Serialization.Converters.ObjectDefaultConverter`1.OnTryWrite(Utf8JsonWriter writer, T value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWrite(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.Converters.IEnumerableDefaultConverter`2.OnWriteResume(Utf8JsonWriter writer, TCollection value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonCollectionConverter`2.OnTryWrite(Utf8JsonWriter writer, TCollection value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWrite(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.Metadata.JsonPropertyInfo`1.GetMemberAndWriteJson(Object obj, WriteStack& state, Utf8JsonWriter writer)
+   at System.Text.Json.Serialization.Converters.ObjectDefaultConverter`1.OnTryWrite(Utf8JsonWriter writer, T value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWrite(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.Metadata.JsonPropertyInfo`1.GetMemberAndWriteJson(Object obj, WriteStack& state, Utf8JsonWriter writer)
+   at System.Text.Json.Serialization.Converters.ObjectDefaultConverter`1.OnTryWrite(Utf8JsonWriter writer, T value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWrite(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.Converters.IEnumerableDefaultConverter`2.OnWriteResume(Utf8JsonWriter writer, TCollection value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonCollectionConverter`2.OnTryWrite(Utf8JsonWriter writer, TCollection value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWrite(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.Metadata.JsonPropertyInfo`1.GetMemberAndWriteJson(Object obj, WriteStack& state, Utf8JsonWriter writer)
+   at System.Text.Json.Serialization.Converters.ObjectDefaultConverter`1.OnTryWrite(Utf8JsonWriter writer, T value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWrite(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.Metadata.JsonPropertyInfo`1.GetMemberAndWriteJson(Object obj, WriteStack& state, Utf8JsonWriter writer)
+   at System.Text.Json.Serialization.Converters.ObjectDefaultConverter`1.OnTryWrite(Utf8JsonWriter writer, T value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWrite(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.Converters.IEnumerableDefaultConverter`2.OnWriteResume(Utf8JsonWriter writer, TCollection value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonCollectionConverter`2.OnTryWrite(Utf8JsonWriter writer, TCollection value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWrite(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.Metadata.JsonPropertyInfo`1.GetMemberAndWriteJson(Object obj, WriteStack& state, Utf8JsonWriter writer)
+   at System.Text.Json.Serialization.Converters.ObjectDefaultConverter`1.OnTryWrite(Utf8JsonWriter writer, T value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWrite(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.Metadata.JsonPropertyInfo`1.GetMemberAndWriteJson(Object obj, WriteStack& state, Utf8JsonWriter writer)
+   at System.Text.Json.Serialization.Converters.ObjectDefaultConverter`1.OnTryWrite(Utf8JsonWriter writer, T value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWrite(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.Converters.IEnumerableDefaultConverter`2.OnWriteResume(Utf8JsonWriter writer, TCollection value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonCollectionConverter`2.OnTryWrite(Utf8JsonWriter writer, TCollection value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWrite(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.Metadata.JsonPropertyInfo`1.GetMemberAndWriteJson(Object obj, WriteStack& state, Utf8JsonWriter writer)
+   at System.Text.Json.Serialization.Converters.ObjectDefaultConverter`1.OnTryWrite(Utf8JsonWriter writer, T value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWrite(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.Metadata.JsonPropertyInfo`1.GetMemberAndWriteJson(Object obj, WriteStack& state, Utf8JsonWriter writer)
+   at System.Text.Json.Serialization.Converters.ObjectDefaultConverter`1.OnTryWrite(Utf8JsonWriter writer, T value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWrite(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.Converters.IEnumerableDefaultConverter`2.OnWriteResume(Utf8JsonWriter writer, TCollection value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonCollectionConverter`2.OnTryWrite(Utf8JsonWriter writer, TCollection value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWrite(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.Metadata.JsonPropertyInfo`1.GetMemberAndWriteJson(Object obj, WriteStack& state, Utf8JsonWriter writer)
+   at System.Text.Json.Serialization.Converters.ObjectDefaultConverter`1.OnTryWrite(Utf8JsonWriter writer, T value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWrite(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.Metadata.JsonPropertyInfo`1.GetMemberAndWriteJson(Object obj, WriteStack& state, Utf8JsonWriter writer)
+   at System.Text.Json.Serialization.Converters.ObjectDefaultConverter`1.OnTryWrite(Utf8JsonWriter writer, T value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWrite(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.Converters.IEnumerableDefaultConverter`2.OnWriteResume(Utf8JsonWriter writer, TCollection value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonCollectionConverter`2.OnTryWrite(Utf8JsonWriter writer, TCollection value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWrite(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.Metadata.JsonPropertyInfo`1.GetMemberAndWriteJson(Object obj, WriteStack& state, Utf8JsonWriter writer)
+   at System.Text.Json.Serialization.Converters.ObjectDefaultConverter`1.OnTryWrite(Utf8JsonWriter writer, T value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWrite(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.Metadata.JsonPropertyInfo`1.GetMemberAndWriteJson(Object obj, WriteStack& state, Utf8JsonWriter writer)
+   at System.Text.Json.Serialization.Converters.ObjectDefaultConverter`1.OnTryWrite(Utf8JsonWriter writer, T value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWrite(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.Converters.IEnumerableDefaultConverter`2.OnWriteResume(Utf8JsonWriter writer, TCollection value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonCollectionConverter`2.OnTryWrite(Utf8JsonWriter writer, TCollection value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWrite(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.Metadata.JsonPropertyInfo`1.GetMemberAndWriteJson(Object obj, WriteStack& state, Utf8JsonWriter writer)
+   at System.Text.Json.Serialization.Converters.ObjectDefaultConverter`1.OnTryWrite(Utf8JsonWriter writer, T value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWrite(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.Metadata.JsonPropertyInfo`1.GetMemberAndWriteJson(Object obj, WriteStack& state, Utf8JsonWriter writer)
+   at System.Text.Json.Serialization.Converters.ObjectDefaultConverter`1.OnTryWrite(Utf8JsonWriter writer, T value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWrite(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.Converters.ListOfTConverter`2.OnWriteResume(Utf8JsonWriter writer, TCollection value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonCollectionConverter`2.OnTryWrite(Utf8JsonWriter writer, TCollection value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWrite(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.WriteCore(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.Metadata.JsonTypeInfo`1.SerializeAsync(PipeWriter pipeWriter, T rootValue, Int32 flushThreshold, CancellationToken cancellationToken, Object rootValueBoxed)
+   at System.Text.Json.Serialization.Metadata.JsonTypeInfo`1.SerializeAsync(PipeWriter pipeWriter, T rootValue, Int32 flushThreshold, CancellationToken cancellationToken, Object rootValueBoxed)
+   at System.Text.Json.Serialization.Metadata.JsonTypeInfo`1.SerializeAsync(PipeWriter pipeWriter, T rootValue, Int32 flushThreshold, CancellationToken cancellationToken, Object rootValueBoxed)
+   at Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter.WriteResponseBodyAsync(OutputFormatterWriteContext context, Encoding selectedEncoding)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResultFilterAsync>g__Awaited|30_0[TFilter,TFilterAsync](ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResultExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.ResultNext[TFilter,TFilterAsync](State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeResultFilters()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|25_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeFilterPipelineAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2026-07-28 10:26:42.029 +03:30 [INF] Request finished HTTP/2 GET https://localhost:7108/api/projects - 500 null text/plain; charset=utf-8 2895.1532ms
+2026-07-28 10:43:26.873 +03:30 [INF] Request starting HTTP/2 GET https://localhost:7108/api/project/353897EE-E575-403B-A1B8-08DEEC705AF9 - null null
+2026-07-28 10:43:26.937 +03:30 [INF] Executing endpoint 'TaskFlowMvc.Controllers.Api.ProjectController.GetById (TaskFlowMvc)'
+2026-07-28 10:43:27.125 +03:30 [INF] Route matched with {action = "GetById", controller = "Project"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetById(System.Guid) on controller TaskFlowMvc.Controllers.Api.ProjectController (TaskFlowMvc).
+2026-07-28 10:43:28.304 +03:30 [INF] Executed DbCommand (353ms) [Parameters=[@id='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [p].[Id], [p].[CreatedAt], [p].[Description], [p].[IsDeleted], [p].[Name], [p].[UpdatedAt], [p].[WorkspaceId], [w0].[Id], [w0].[CreatedAt], [w0].[Description], [w0].[IsDeleted], [w0].[Name], [w0].[UpdatedAt]
+FROM [Project] AS [p]
+INNER JOIN (
+    SELECT [w].[Id], [w].[CreatedAt], [w].[Description], [w].[IsDeleted], [w].[Name], [w].[UpdatedAt]
+    FROM [Workspace] AS [w]
+    WHERE [w].[IsDeleted] = CAST(0 AS bit)
+) AS [w0] ON [p].[WorkspaceId] = [w0].[Id]
+WHERE [p].[IsDeleted] = CAST(0 AS bit) AND [p].[Id] = @id
+2026-07-28 10:43:28.322 +03:30 [INF] Executing OkObjectResult, writing value of type 'TaskFlowMvc.Models.Project'.
+2026-07-28 10:43:28.355 +03:30 [INF] Executed action TaskFlowMvc.Controllers.Api.ProjectController.GetById (TaskFlowMvc) in 1229.65ms
+2026-07-28 10:43:28.357 +03:30 [INF] Executed endpoint 'TaskFlowMvc.Controllers.Api.ProjectController.GetById (TaskFlowMvc)'
+2026-07-28 10:43:28.367 +03:30 [ERR] An unhandled exception has occurred while executing the request.
+System.Text.Json.JsonException: A possible object cycle was detected. This can either be due to a cycle or if the object depth is larger than the maximum allowed depth of 32. Consider using ReferenceHandler.Preserve on JsonSerializerOptions to support cycles. Path: $.Workspace.Projects.Workspace.Projects.Workspace.Projects.Workspace.Projects.Workspace.Projects.Workspace.Projects.Workspace.Projects.Workspace.Projects.Workspace.Projects.Workspace.Projects.Workspace.Id.
+   at System.Text.Json.ThrowHelper.ThrowJsonException_SerializerCycleDetected(Int32 maxDepth)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWrite(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.Metadata.JsonPropertyInfo`1.GetMemberAndWriteJson(Object obj, WriteStack& state, Utf8JsonWriter writer)
+   at System.Text.Json.Serialization.Converters.ObjectDefaultConverter`1.OnTryWrite(Utf8JsonWriter writer, T value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWrite(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.Metadata.JsonPropertyInfo`1.GetMemberAndWriteJson(Object obj, WriteStack& state, Utf8JsonWriter writer)
+   at System.Text.Json.Serialization.Converters.ObjectDefaultConverter`1.OnTryWrite(Utf8JsonWriter writer, T value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWrite(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.Converters.IEnumerableDefaultConverter`2.OnWriteResume(Utf8JsonWriter writer, TCollection value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonCollectionConverter`2.OnTryWrite(Utf8JsonWriter writer, TCollection value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWrite(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.Metadata.JsonPropertyInfo`1.GetMemberAndWriteJson(Object obj, WriteStack& state, Utf8JsonWriter writer)
+   at System.Text.Json.Serialization.Converters.ObjectDefaultConverter`1.OnTryWrite(Utf8JsonWriter writer, T value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWrite(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.Metadata.JsonPropertyInfo`1.GetMemberAndWriteJson(Object obj, WriteStack& state, Utf8JsonWriter writer)
+   at System.Text.Json.Serialization.Converters.ObjectDefaultConverter`1.OnTryWrite(Utf8JsonWriter writer, T value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWrite(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.Converters.IEnumerableDefaultConverter`2.OnWriteResume(Utf8JsonWriter writer, TCollection value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonCollectionConverter`2.OnTryWrite(Utf8JsonWriter writer, TCollection value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWrite(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.Metadata.JsonPropertyInfo`1.GetMemberAndWriteJson(Object obj, WriteStack& state, Utf8JsonWriter writer)
+   at System.Text.Json.Serialization.Converters.ObjectDefaultConverter`1.OnTryWrite(Utf8JsonWriter writer, T value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWrite(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.Metadata.JsonPropertyInfo`1.GetMemberAndWriteJson(Object obj, WriteStack& state, Utf8JsonWriter writer)
+   at System.Text.Json.Serialization.Converters.ObjectDefaultConverter`1.OnTryWrite(Utf8JsonWriter writer, T value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWrite(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.Converters.IEnumerableDefaultConverter`2.OnWriteResume(Utf8JsonWriter writer, TCollection value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonCollectionConverter`2.OnTryWrite(Utf8JsonWriter writer, TCollection value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWrite(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.Metadata.JsonPropertyInfo`1.GetMemberAndWriteJson(Object obj, WriteStack& state, Utf8JsonWriter writer)
+   at System.Text.Json.Serialization.Converters.ObjectDefaultConverter`1.OnTryWrite(Utf8JsonWriter writer, T value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWrite(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.Metadata.JsonPropertyInfo`1.GetMemberAndWriteJson(Object obj, WriteStack& state, Utf8JsonWriter writer)
+   at System.Text.Json.Serialization.Converters.ObjectDefaultConverter`1.OnTryWrite(Utf8JsonWriter writer, T value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWrite(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.Converters.IEnumerableDefaultConverter`2.OnWriteResume(Utf8JsonWriter writer, TCollection value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonCollectionConverter`2.OnTryWrite(Utf8JsonWriter writer, TCollection value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWrite(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.Metadata.JsonPropertyInfo`1.GetMemberAndWriteJson(Object obj, WriteStack& state, Utf8JsonWriter writer)
+   at System.Text.Json.Serialization.Converters.ObjectDefaultConverter`1.OnTryWrite(Utf8JsonWriter writer, T value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWrite(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.Metadata.JsonPropertyInfo`1.GetMemberAndWriteJson(Object obj, WriteStack& state, Utf8JsonWriter writer)
+   at System.Text.Json.Serialization.Converters.ObjectDefaultConverter`1.OnTryWrite(Utf8JsonWriter writer, T value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWrite(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.Converters.IEnumerableDefaultConverter`2.OnWriteResume(Utf8JsonWriter writer, TCollection value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonCollectionConverter`2.OnTryWrite(Utf8JsonWriter writer, TCollection value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWrite(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.Metadata.JsonPropertyInfo`1.GetMemberAndWriteJson(Object obj, WriteStack& state, Utf8JsonWriter writer)
+   at System.Text.Json.Serialization.Converters.ObjectDefaultConverter`1.OnTryWrite(Utf8JsonWriter writer, T value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWrite(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.Metadata.JsonPropertyInfo`1.GetMemberAndWriteJson(Object obj, WriteStack& state, Utf8JsonWriter writer)
+   at System.Text.Json.Serialization.Converters.ObjectDefaultConverter`1.OnTryWrite(Utf8JsonWriter writer, T value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWrite(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.Converters.IEnumerableDefaultConverter`2.OnWriteResume(Utf8JsonWriter writer, TCollection value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonCollectionConverter`2.OnTryWrite(Utf8JsonWriter writer, TCollection value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWrite(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.Metadata.JsonPropertyInfo`1.GetMemberAndWriteJson(Object obj, WriteStack& state, Utf8JsonWriter writer)
+   at System.Text.Json.Serialization.Converters.ObjectDefaultConverter`1.OnTryWrite(Utf8JsonWriter writer, T value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWrite(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.Metadata.JsonPropertyInfo`1.GetMemberAndWriteJson(Object obj, WriteStack& state, Utf8JsonWriter writer)
+   at System.Text.Json.Serialization.Converters.ObjectDefaultConverter`1.OnTryWrite(Utf8JsonWriter writer, T value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWrite(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.Converters.IEnumerableDefaultConverter`2.OnWriteResume(Utf8JsonWriter writer, TCollection value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonCollectionConverter`2.OnTryWrite(Utf8JsonWriter writer, TCollection value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWrite(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.Metadata.JsonPropertyInfo`1.GetMemberAndWriteJson(Object obj, WriteStack& state, Utf8JsonWriter writer)
+   at System.Text.Json.Serialization.Converters.ObjectDefaultConverter`1.OnTryWrite(Utf8JsonWriter writer, T value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWrite(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.Metadata.JsonPropertyInfo`1.GetMemberAndWriteJson(Object obj, WriteStack& state, Utf8JsonWriter writer)
+   at System.Text.Json.Serialization.Converters.ObjectDefaultConverter`1.OnTryWrite(Utf8JsonWriter writer, T value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWrite(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.Converters.IEnumerableDefaultConverter`2.OnWriteResume(Utf8JsonWriter writer, TCollection value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonCollectionConverter`2.OnTryWrite(Utf8JsonWriter writer, TCollection value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWrite(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.Metadata.JsonPropertyInfo`1.GetMemberAndWriteJson(Object obj, WriteStack& state, Utf8JsonWriter writer)
+   at System.Text.Json.Serialization.Converters.ObjectDefaultConverter`1.OnTryWrite(Utf8JsonWriter writer, T value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWrite(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.Metadata.JsonPropertyInfo`1.GetMemberAndWriteJson(Object obj, WriteStack& state, Utf8JsonWriter writer)
+   at System.Text.Json.Serialization.Converters.ObjectDefaultConverter`1.OnTryWrite(Utf8JsonWriter writer, T value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWrite(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.Converters.IEnumerableDefaultConverter`2.OnWriteResume(Utf8JsonWriter writer, TCollection value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonCollectionConverter`2.OnTryWrite(Utf8JsonWriter writer, TCollection value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWrite(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.Metadata.JsonPropertyInfo`1.GetMemberAndWriteJson(Object obj, WriteStack& state, Utf8JsonWriter writer)
+   at System.Text.Json.Serialization.Converters.ObjectDefaultConverter`1.OnTryWrite(Utf8JsonWriter writer, T value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWrite(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.Metadata.JsonPropertyInfo`1.GetMemberAndWriteJson(Object obj, WriteStack& state, Utf8JsonWriter writer)
+   at System.Text.Json.Serialization.Converters.ObjectDefaultConverter`1.OnTryWrite(Utf8JsonWriter writer, T value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWrite(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.Converters.IEnumerableDefaultConverter`2.OnWriteResume(Utf8JsonWriter writer, TCollection value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonCollectionConverter`2.OnTryWrite(Utf8JsonWriter writer, TCollection value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWrite(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.Metadata.JsonPropertyInfo`1.GetMemberAndWriteJson(Object obj, WriteStack& state, Utf8JsonWriter writer)
+   at System.Text.Json.Serialization.Converters.ObjectDefaultConverter`1.OnTryWrite(Utf8JsonWriter writer, T value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWrite(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.Metadata.JsonPropertyInfo`1.GetMemberAndWriteJson(Object obj, WriteStack& state, Utf8JsonWriter writer)
+   at System.Text.Json.Serialization.Converters.ObjectDefaultConverter`1.OnTryWrite(Utf8JsonWriter writer, T value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWrite(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.WriteCore(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.Metadata.JsonTypeInfo`1.SerializeAsync(PipeWriter pipeWriter, T rootValue, Int32 flushThreshold, CancellationToken cancellationToken, Object rootValueBoxed)
+   at System.Text.Json.Serialization.Metadata.JsonTypeInfo`1.SerializeAsync(PipeWriter pipeWriter, T rootValue, Int32 flushThreshold, CancellationToken cancellationToken, Object rootValueBoxed)
+   at System.Text.Json.Serialization.Metadata.JsonTypeInfo`1.SerializeAsync(PipeWriter pipeWriter, T rootValue, Int32 flushThreshold, CancellationToken cancellationToken, Object rootValueBoxed)
+   at Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter.WriteResponseBodyAsync(OutputFormatterWriteContext context, Encoding selectedEncoding)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResultFilterAsync>g__Awaited|30_0[TFilter,TFilterAsync](ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResultExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.ResultNext[TFilter,TFilterAsync](State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeResultFilters()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|25_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeFilterPipelineAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2026-07-28 10:43:28.455 +03:30 [INF] Request finished HTTP/2 GET https://localhost:7108/api/project/353897EE-E575-403B-A1B8-08DEEC705AF9 - 500 null text/plain; charset=utf-8 1588.5609ms
+2026-07-28 10:44:12.518 +03:30 [INF] Request starting HTTP/2 GET https://localhost:7108/api/project/353897EE-E575-403B-A1B8-08DEEC705AF9 - null null
+2026-07-28 10:44:12.520 +03:30 [INF] Executing endpoint 'TaskFlowMvc.Controllers.Api.ProjectController.GetById (TaskFlowMvc)'
+2026-07-28 10:44:12.521 +03:30 [INF] Route matched with {action = "GetById", controller = "Project"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetById(System.Guid) on controller TaskFlowMvc.Controllers.Api.ProjectController (TaskFlowMvc).
+2026-07-28 10:44:42.021 +03:30 [INF] Executed DbCommand (12ms) [Parameters=[@id='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [p].[Id], [p].[CreatedAt], [p].[Description], [p].[IsDeleted], [p].[Name], [p].[UpdatedAt], [p].[WorkspaceId], [w0].[Id], [w0].[CreatedAt], [w0].[Description], [w0].[IsDeleted], [w0].[Name], [w0].[UpdatedAt]
+FROM [Project] AS [p]
+INNER JOIN (
+    SELECT [w].[Id], [w].[CreatedAt], [w].[Description], [w].[IsDeleted], [w].[Name], [w].[UpdatedAt]
+    FROM [Workspace] AS [w]
+    WHERE [w].[IsDeleted] = CAST(0 AS bit)
+) AS [w0] ON [p].[WorkspaceId] = [w0].[Id]
+WHERE [p].[IsDeleted] = CAST(0 AS bit) AND [p].[Id] = @id
+2026-07-28 10:51:17.224 +03:30 [INF] User profile is available. Using 'C:\Users\ASUS\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2026-07-28 10:51:17.556 +03:30 [INF] Now listening on: https://localhost:7108
+2026-07-28 10:51:17.557 +03:30 [INF] Now listening on: http://localhost:5031
+2026-07-28 10:51:17.595 +03:30 [INF] Application started. Press Ctrl+C to shut down.
+2026-07-28 10:51:17.596 +03:30 [INF] Hosting environment: Development
+2026-07-28 10:51:17.596 +03:30 [INF] Content root path: D:\TaskFlowMvc
+2026-07-28 10:51:19.946 +03:30 [INF] Request starting HTTP/2 GET https://localhost:7108/ - null null
+2026-07-28 10:51:20.311 +03:30 [INF] Executing endpoint 'TaskFlowMvc.Controllers.HomeController.Index (TaskFlowMvc)'
+2026-07-28 10:51:20.367 +03:30 [INF] Route matched with {action = "Index", controller = "Home"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller TaskFlowMvc.Controllers.HomeController (TaskFlowMvc).
+2026-07-28 10:51:20.443 +03:30 [INF] Executing ViewResult, running view Index.
+2026-07-28 10:51:20.867 +03:30 [INF] Executed ViewResult - view Index executed in 450.0803ms.
+2026-07-28 10:51:20.869 +03:30 [INF] Executed action TaskFlowMvc.Controllers.HomeController.Index (TaskFlowMvc) in 499.2138ms
+2026-07-28 10:51:20.869 +03:30 [INF] Executed endpoint 'TaskFlowMvc.Controllers.HomeController.Index (TaskFlowMvc)'
+2026-07-28 10:51:20.910 +03:30 [INF] Request finished HTTP/2 GET https://localhost:7108/ - 200 null text/html; charset=utf-8 978.0874ms
+2026-07-28 10:51:20.968 +03:30 [INF] Request starting HTTP/2 GET https://localhost:7108/_framework/aspnetcore-browser-refresh.js - null null
+2026-07-28 10:51:20.976 +03:30 [INF] Request starting HTTP/2 GET https://localhost:7108/lib/bootstrap/dist/css/bootstrap.min.css - null null
+2026-07-28 10:51:20.977 +03:30 [INF] Request starting HTTP/2 GET https://localhost:7108/css/site.css?v=j6fhJSuuyLpOSLuPJU0TsDV0iNjor5S3rDnvxJrt4bg - null null
+2026-07-28 10:51:20.977 +03:30 [INF] Request starting HTTP/2 GET https://localhost:7108/TaskFlowMvc.styles.css?v=denkTJS40ZgCb1ryagt5okiypSWbvhenoKvVK6WBfgY - null null
+2026-07-28 10:51:20.978 +03:30 [INF] Request starting HTTP/2 GET https://localhost:7108/lib/jquery/dist/jquery.min.js - null null
+2026-07-28 10:51:20.986 +03:30 [INF] Request starting HTTP/2 GET https://localhost:7108/lib/bootstrap/dist/js/bootstrap.bundle.min.js - null null
+2026-07-28 10:51:20.990 +03:30 [INF] Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2026-07-28 10:51:20.990 +03:30 [INF] Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2026-07-28 10:51:20.990 +03:30 [INF] Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2026-07-28 10:51:20.990 +03:30 [INF] Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2026-07-28 10:51:20.991 +03:30 [INF] Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2026-07-28 10:51:21.028 +03:30 [INF] Request starting HTTP/2 GET https://localhost:7108/js/site.js?v=hRQyftXiu1lLX2P9Ly9xa4gHJgLeR1uGN5qegUobtGo - null null
+2026-07-28 10:51:21.029 +03:30 [INF] Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2026-07-28 10:51:21.071 +03:30 [INF] Request starting HTTP/2 GET https://localhost:7108/_vs/browserLink - null null
+2026-07-28 10:51:21.133 +03:30 [INF] Sending file. Request path: 'TaskFlowMvc.styles.css'. Physical path: 'D:\TaskFlowMvc\obj\Debug\net10.0\compressed\pio3utri1p-{0}-5w3zfbn8im-5w3zfbn8im.gz'
+2026-07-28 10:51:21.134 +03:30 [INF] Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2026-07-28 10:51:21.134 +03:30 [INF] Sending file. Request path: 'js/site.js'. Physical path: 'D:\TaskFlowMvc\obj\Debug\net10.0\compressed\lrk0etaown-{0}-xtxxf3hu2r-xtxxf3hu2r.gz'
+2026-07-28 10:51:21.134 +03:30 [INF] Sending file. Request path: 'css/site.css'. Physical path: 'D:\TaskFlowMvc\obj\Debug\net10.0\compressed\4xl5hjd8lv-{0}-b9sayid5wm-b9sayid5wm.gz'
+2026-07-28 10:51:21.134 +03:30 [INF] Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2026-07-28 10:51:21.134 +03:30 [INF] Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2026-07-28 10:51:21.134 +03:30 [INF] Request finished HTTP/2 GET https://localhost:7108/TaskFlowMvc.styles.css?v=denkTJS40ZgCb1ryagt5okiypSWbvhenoKvVK6WBfgY - 200 1142 text/css 156.5524ms
+2026-07-28 10:51:21.135 +03:30 [INF] Request finished HTTP/2 GET https://localhost:7108/css/site.css?v=j6fhJSuuyLpOSLuPJU0TsDV0iNjor5S3rDnvxJrt4bg - 200 700 text/css 157.4491ms
+2026-07-28 10:51:21.135 +03:30 [INF] Request finished HTTP/2 GET https://localhost:7108/js/site.js?v=hRQyftXiu1lLX2P9Ly9xa4gHJgLeR1uGN5qegUobtGo - 200 264 text/javascript 139.5723ms
+2026-07-28 10:51:21.183 +03:30 [INF] Request finished HTTP/2 GET https://localhost:7108/_framework/aspnetcore-browser-refresh.js - 200 14926 application/javascript; charset=utf-8 215.7393ms
+2026-07-28 10:51:21.240 +03:30 [INF] Sending file. Request path: 'lib/bootstrap/dist/js/bootstrap.bundle.min.js'. Physical path: 'D:\TaskFlowMvc\obj\Debug\net10.0\compressed\6usytvi6e8-{0}-493y06b0oq-493y06b0oq.gz'
+2026-07-28 10:51:21.243 +03:30 [INF] Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2026-07-28 10:51:21.275 +03:30 [INF] Request finished HTTP/2 GET https://localhost:7108/lib/bootstrap/dist/js/bootstrap.bundle.min.js - 200 80764 text/javascript 288.3066ms
+2026-07-28 10:51:21.279 +03:30 [INF] Sending file. Request path: 'lib/jquery/dist/jquery.min.js'. Physical path: 'D:\TaskFlowMvc\obj\Debug\net10.0\compressed\5u0wgstfou-{0}-o1o13a6vjx-o1o13a6vjx.gz'
+2026-07-28 10:51:21.280 +03:30 [INF] Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2026-07-28 10:51:21.280 +03:30 [INF] Request finished HTTP/2 GET https://localhost:7108/lib/jquery/dist/jquery.min.js - 200 87576 text/javascript 301.9233ms
+2026-07-28 10:51:21.285 +03:30 [INF] Sending file. Request path: 'lib/bootstrap/dist/css/bootstrap.min.css'. Physical path: 'D:\TaskFlowMvc\obj\Debug\net10.0\compressed\cwkq37jqus-{0}-46ein0sx1k-46ein0sx1k.gz'
+2026-07-28 10:51:21.285 +03:30 [INF] Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2026-07-28 10:51:21.285 +03:30 [INF] Request finished HTTP/2 GET https://localhost:7108/lib/bootstrap/dist/css/bootstrap.min.css - 200 232871 text/css 309.4111ms
+2026-07-28 10:51:21.519 +03:30 [INF] Request finished HTTP/2 GET https://localhost:7108/_vs/browserLink - 200 null text/javascript; charset=UTF-8 448.5484ms
+2026-07-28 10:51:26.994 +03:30 [INF] Request starting HTTP/2 GET https://localhost:7108/swagger/ - null null
+2026-07-28 10:51:27.000 +03:30 [INF] Request finished HTTP/2 GET https://localhost:7108/swagger/ - 301 null null 5.5041ms
+2026-07-28 10:51:27.010 +03:30 [INF] Request starting HTTP/2 GET https://localhost:7108/swagger/index.html - null null
+2026-07-28 10:51:27.101 +03:30 [INF] Request finished HTTP/2 GET https://localhost:7108/swagger/index.html - 304 null null 90.2032ms
+2026-07-28 10:51:27.131 +03:30 [INF] Request starting HTTP/2 GET https://localhost:7108/_framework/aspnetcore-browser-refresh.js - null null
+2026-07-28 10:51:27.131 +03:30 [INF] Request starting HTTP/2 GET https://localhost:7108/_vs/browserLink - null null
+2026-07-28 10:51:27.132 +03:30 [INF] Request starting HTTP/2 GET https://localhost:7108/swagger/index.css - null null
+2026-07-28 10:51:27.132 +03:30 [INF] Request starting HTTP/2 GET https://localhost:7108/swagger/swagger-ui.css - null null
+2026-07-28 10:51:27.133 +03:30 [INF] Request starting HTTP/2 GET https://localhost:7108/swagger/swagger-ui-bundle.js - null null
+2026-07-28 10:51:27.133 +03:30 [INF] Request starting HTTP/2 GET https://localhost:7108/swagger/index.js - null null
+2026-07-28 10:51:27.133 +03:30 [INF] Request starting HTTP/2 GET https://localhost:7108/swagger/swagger-ui-standalone-preset.js - null null
+2026-07-28 10:51:27.161 +03:30 [INF] Request finished HTTP/2 GET https://localhost:7108/swagger/index.js - 304 null null 28.2074ms
+2026-07-28 10:51:27.163 +03:30 [INF] Request finished HTTP/2 GET https://localhost:7108/_framework/aspnetcore-browser-refresh.js - 200 14926 application/javascript; charset=utf-8 32.4976ms
+2026-07-28 10:51:27.166 +03:30 [INF] Request finished HTTP/2 GET https://localhost:7108/_vs/browserLink - 200 null text/javascript; charset=UTF-8 35.3212ms
+2026-07-28 10:51:27.168 +03:30 [INF] Request finished HTTP/2 GET https://localhost:7108/swagger/index.css - 304 null null 36.4093ms
+2026-07-28 10:51:27.177 +03:30 [INF] Request finished HTTP/2 GET https://localhost:7108/swagger/swagger-ui-standalone-preset.js - 304 null null 44.04ms
+2026-07-28 10:51:27.177 +03:30 [INF] Request finished HTTP/2 GET https://localhost:7108/swagger/swagger-ui.css - 304 null null 44.7662ms
+2026-07-28 10:51:27.183 +03:30 [INF] Request finished HTTP/2 GET https://localhost:7108/swagger/swagger-ui-bundle.js - 304 null null 50.2687ms
+2026-07-28 10:51:27.412 +03:30 [INF] Request starting HTTP/2 GET https://localhost:7108/swagger/v1/swagger.json - null null
+2026-07-28 10:51:27.433 +03:30 [INF] Request finished HTTP/2 GET https://localhost:7108/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 20.7004ms
+2026-07-28 10:51:42.309 +03:30 [INF] Request starting HTTP/2 GET https://localhost:7108/api/project/353897EE-E575-403B-A1B8-08DEEC705AF9 - null null
+2026-07-28 10:51:42.314 +03:30 [INF] Executing endpoint 'TaskFlowMvc.Controllers.Api.ProjectController.GetById (TaskFlowMvc)'
+2026-07-28 10:51:42.341 +03:30 [INF] Route matched with {action = "GetById", controller = "Project"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetById(System.Guid) on controller TaskFlowMvc.Controllers.Api.ProjectController (TaskFlowMvc).
+2026-07-28 10:51:43.815 +03:30 [WRN] Entity 'Tag' has a global query filter defined and is the required end of a relationship with the entity 'TaskTag'. This may lead to unexpected results when the required entity is filtered out. Either configure the navigation as optional, or define matching query filters for both entities in the navigation. See https://go.microsoft.com/fwlink/?linkid=2131316 for more information.
+2026-07-28 10:51:45.582 +03:30 [INF] Executed DbCommand (261ms) [Parameters=[@id='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [p].[Id], [p].[Name], [p].[Description], [p].[WorkspaceId], [w0].[Name] AS [WorkspaceName], [p].[CreatedAt], [p].[UpdatedAt]
+FROM [Project] AS [p]
+INNER JOIN (
+    SELECT [w].[Id], [w].[Name]
+    FROM [Workspace] AS [w]
+    WHERE [w].[IsDeleted] = CAST(0 AS bit)
+) AS [w0] ON [p].[WorkspaceId] = [w0].[Id]
+WHERE [p].[IsDeleted] = CAST(0 AS bit) AND [p].[Id] = @id
+2026-07-28 10:51:45.635 +03:30 [INF] Executing OkObjectResult, writing value of type 'ProjectResponse'.
+2026-07-28 10:51:45.669 +03:30 [INF] Executed action TaskFlowMvc.Controllers.Api.ProjectController.GetById (TaskFlowMvc) in 3328.5478ms
+2026-07-28 10:51:45.670 +03:30 [INF] Executed endpoint 'TaskFlowMvc.Controllers.Api.ProjectController.GetById (TaskFlowMvc)'
+2026-07-28 10:51:45.692 +03:30 [INF] Request finished HTTP/2 GET https://localhost:7108/api/project/353897EE-E575-403B-A1B8-08DEEC705AF9 - 200 null application/json; charset=utf-8 3382.8203ms
+2026-07-28 11:06:45.543 +03:30 [INF] User profile is available. Using 'C:\Users\ASUS\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2026-07-28 11:06:45.909 +03:30 [INF] Now listening on: https://localhost:7108
+2026-07-28 11:06:45.910 +03:30 [INF] Now listening on: http://localhost:5031
+2026-07-28 11:06:45.964 +03:30 [INF] Application started. Press Ctrl+C to shut down.
+2026-07-28 11:06:45.964 +03:30 [INF] Hosting environment: Development
+2026-07-28 11:06:45.964 +03:30 [INF] Content root path: D:\TaskFlowMvc
+2026-07-28 11:06:48.273 +03:30 [INF] Request starting HTTP/2 GET https://localhost:7108/ - null null
+2026-07-28 11:06:48.727 +03:30 [INF] Executing endpoint 'TaskFlowMvc.Controllers.HomeController.Index (TaskFlowMvc)'
+2026-07-28 11:06:48.764 +03:30 [INF] Route matched with {action = "Index", controller = "Home"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller TaskFlowMvc.Controllers.HomeController (TaskFlowMvc).
+2026-07-28 11:06:48.787 +03:30 [INF] Executing ViewResult, running view Index.
+2026-07-28 11:06:49.030 +03:30 [INF] Executed ViewResult - view Index executed in 245.5261ms.
+2026-07-28 11:06:49.031 +03:30 [INF] Executed action TaskFlowMvc.Controllers.HomeController.Index (TaskFlowMvc) in 265.6996ms
+2026-07-28 11:06:49.032 +03:30 [INF] Executed endpoint 'TaskFlowMvc.Controllers.HomeController.Index (TaskFlowMvc)'
+2026-07-28 11:06:49.042 +03:30 [INF] Request finished HTTP/2 GET https://localhost:7108/ - 200 null text/html; charset=utf-8 793.8646ms
+2026-07-28 11:06:49.114 +03:30 [INF] Request starting HTTP/2 GET https://localhost:7108/_framework/aspnetcore-browser-refresh.js - null null
+2026-07-28 11:06:49.116 +03:30 [INF] Request starting HTTP/2 GET https://localhost:7108/css/site.css?v=j6fhJSuuyLpOSLuPJU0TsDV0iNjor5S3rDnvxJrt4bg - null null
+2026-07-28 11:06:49.116 +03:30 [INF] Request starting HTTP/2 GET https://localhost:7108/lib/bootstrap/dist/css/bootstrap.min.css - null null
+2026-07-28 11:06:49.117 +03:30 [INF] Request starting HTTP/2 GET https://localhost:7108/TaskFlowMvc.styles.css?v=denkTJS40ZgCb1ryagt5okiypSWbvhenoKvVK6WBfgY - null null
+2026-07-28 11:06:49.128 +03:30 [INF] Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2026-07-28 11:06:49.128 +03:30 [INF] Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2026-07-28 11:06:49.129 +03:30 [INF] Request starting HTTP/2 GET https://localhost:7108/lib/jquery/dist/jquery.min.js - null null
+2026-07-28 11:06:49.131 +03:30 [INF] Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2026-07-28 11:06:49.131 +03:30 [INF] Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2026-07-28 11:06:49.132 +03:30 [INF] Request finished HTTP/2 GET https://localhost:7108/_framework/aspnetcore-browser-refresh.js - 200 14926 application/javascript; charset=utf-8 17.7295ms
+2026-07-28 11:06:49.155 +03:30 [INF] Request starting HTTP/2 GET https://localhost:7108/js/site.js?v=hRQyftXiu1lLX2P9Ly9xa4gHJgLeR1uGN5qegUobtGo - null null
+2026-07-28 11:06:49.156 +03:30 [INF] Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2026-07-28 11:06:49.158 +03:30 [INF] Request starting HTTP/2 GET https://localhost:7108/_vs/browserLink - null null
+2026-07-28 11:06:49.160 +03:30 [INF] Request starting HTTP/2 GET https://localhost:7108/lib/bootstrap/dist/js/bootstrap.bundle.min.js - null null
+2026-07-28 11:06:49.163 +03:30 [INF] Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2026-07-28 11:06:49.228 +03:30 [INF] Sending file. Request path: 'css/site.css'. Physical path: 'D:\TaskFlowMvc\obj\Debug\net10.0\compressed\4xl5hjd8lv-{0}-b9sayid5wm-b9sayid5wm.gz'
+2026-07-28 11:06:49.228 +03:30 [INF] Sending file. Request path: 'TaskFlowMvc.styles.css'. Physical path: 'D:\TaskFlowMvc\obj\Debug\net10.0\compressed\pio3utri1p-{0}-5w3zfbn8im-5w3zfbn8im.gz'
+2026-07-28 11:06:49.228 +03:30 [INF] Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2026-07-28 11:06:49.229 +03:30 [INF] Request finished HTTP/2 GET https://localhost:7108/TaskFlowMvc.styles.css?v=denkTJS40ZgCb1ryagt5okiypSWbvhenoKvVK6WBfgY - 200 1142 text/css 112.0698ms
+2026-07-28 11:06:49.229 +03:30 [INF] Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2026-07-28 11:06:49.230 +03:30 [INF] Sending file. Request path: 'js/site.js'. Physical path: 'D:\TaskFlowMvc\obj\Debug\net10.0\compressed\lrk0etaown-{0}-xtxxf3hu2r-xtxxf3hu2r.gz'
+2026-07-28 11:06:49.231 +03:30 [INF] Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2026-07-28 11:06:49.231 +03:30 [INF] Request finished HTTP/2 GET https://localhost:7108/css/site.css?v=j6fhJSuuyLpOSLuPJU0TsDV0iNjor5S3rDnvxJrt4bg - 200 700 text/css 114.3895ms
+2026-07-28 11:06:49.231 +03:30 [INF] Request finished HTTP/2 GET https://localhost:7108/js/site.js?v=hRQyftXiu1lLX2P9Ly9xa4gHJgLeR1uGN5qegUobtGo - 200 264 text/javascript 76.3251ms
+2026-07-28 11:06:49.272 +03:30 [INF] Sending file. Request path: 'lib/bootstrap/dist/js/bootstrap.bundle.min.js'. Physical path: 'D:\TaskFlowMvc\obj\Debug\net10.0\compressed\6usytvi6e8-{0}-493y06b0oq-493y06b0oq.gz'
+2026-07-28 11:06:49.272 +03:30 [INF] Sending file. Request path: 'lib/bootstrap/dist/css/bootstrap.min.css'. Physical path: 'D:\TaskFlowMvc\obj\Debug\net10.0\compressed\cwkq37jqus-{0}-46ein0sx1k-46ein0sx1k.gz'
+2026-07-28 11:06:49.273 +03:30 [INF] Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2026-07-28 11:06:49.273 +03:30 [INF] Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2026-07-28 11:06:49.277 +03:30 [INF] Request finished HTTP/2 GET https://localhost:7108/lib/bootstrap/dist/js/bootstrap.bundle.min.js - 200 80764 text/javascript 116.3003ms
+2026-07-28 11:06:49.277 +03:30 [INF] Request finished HTTP/2 GET https://localhost:7108/lib/bootstrap/dist/css/bootstrap.min.css - 200 232871 text/css 160.2676ms
+2026-07-28 11:06:49.285 +03:30 [INF] Sending file. Request path: 'lib/jquery/dist/jquery.min.js'. Physical path: 'D:\TaskFlowMvc\obj\Debug\net10.0\compressed\5u0wgstfou-{0}-o1o13a6vjx-o1o13a6vjx.gz'
+2026-07-28 11:06:49.285 +03:30 [INF] Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2026-07-28 11:06:49.287 +03:30 [INF] Request finished HTTP/2 GET https://localhost:7108/lib/jquery/dist/jquery.min.js - 200 87576 text/javascript 157.2442ms
+2026-07-28 11:06:49.562 +03:30 [INF] Request finished HTTP/2 GET https://localhost:7108/_vs/browserLink - 200 null text/javascript; charset=UTF-8 404.3048ms
+2026-07-28 11:07:01.027 +03:30 [INF] Request starting HTTP/2 GET https://localhost:7108/ - null null
+2026-07-28 11:07:01.032 +03:30 [INF] Executing endpoint 'TaskFlowMvc.Controllers.HomeController.Index (TaskFlowMvc)'
+2026-07-28 11:07:01.032 +03:30 [INF] Route matched with {action = "Index", controller = "Home"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller TaskFlowMvc.Controllers.HomeController (TaskFlowMvc).
+2026-07-28 11:07:01.033 +03:30 [INF] Executing ViewResult, running view Index.
+2026-07-28 11:07:01.037 +03:30 [INF] Executed ViewResult - view Index executed in 4.165ms.
+2026-07-28 11:07:01.037 +03:30 [INF] Executed action TaskFlowMvc.Controllers.HomeController.Index (TaskFlowMvc) in 5.0398ms
+2026-07-28 11:07:01.037 +03:30 [INF] Executed endpoint 'TaskFlowMvc.Controllers.HomeController.Index (TaskFlowMvc)'
+2026-07-28 11:07:01.037 +03:30 [INF] Request finished HTTP/2 GET https://localhost:7108/ - 200 null text/html; charset=utf-8 10.0853ms
+2026-07-28 11:07:01.072 +03:30 [INF] Request starting HTTP/2 GET https://localhost:7108/lib/bootstrap/dist/css/bootstrap.min.css - null null
+2026-07-28 11:07:01.078 +03:30 [INF] Request starting HTTP/2 GET https://localhost:7108/css/site.css?v=j6fhJSuuyLpOSLuPJU0TsDV0iNjor5S3rDnvxJrt4bg - null null
+2026-07-28 11:07:01.079 +03:30 [INF] Request starting HTTP/2 GET https://localhost:7108/TaskFlowMvc.styles.css?v=denkTJS40ZgCb1ryagt5okiypSWbvhenoKvVK6WBfgY - null null
+2026-07-28 11:07:01.079 +03:30 [INF] Request starting HTTP/2 GET https://localhost:7108/lib/jquery/dist/jquery.min.js - null null
+2026-07-28 11:07:01.079 +03:30 [INF] Request starting HTTP/2 GET https://localhost:7108/lib/bootstrap/dist/js/bootstrap.bundle.min.js - null null
+2026-07-28 11:07:01.079 +03:30 [INF] Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2026-07-28 11:07:01.080 +03:30 [INF] Request starting HTTP/2 GET https://localhost:7108/js/site.js?v=hRQyftXiu1lLX2P9Ly9xa4gHJgLeR1uGN5qegUobtGo - null null
+2026-07-28 11:07:01.080 +03:30 [INF] Request starting HTTP/2 GET https://localhost:7108/_vs/browserLink - null null
+2026-07-28 11:07:01.080 +03:30 [INF] Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2026-07-28 11:07:01.080 +03:30 [INF] Sending file. Request path: 'TaskFlowMvc.styles.css'. Physical path: 'D:\TaskFlowMvc\obj\Debug\net10.0\compressed\pio3utri1p-{0}-5w3zfbn8im-5w3zfbn8im.gz'
+2026-07-28 11:07:01.081 +03:30 [INF] Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2026-07-28 11:07:01.081 +03:30 [INF] Request finished HTTP/2 GET https://localhost:7108/TaskFlowMvc.styles.css?v=denkTJS40ZgCb1ryagt5okiypSWbvhenoKvVK6WBfgY - 200 1142 text/css 2.1579ms
+2026-07-28 11:07:01.081 +03:30 [INF] Sending file. Request path: 'css/site.css'. Physical path: 'D:\TaskFlowMvc\obj\Debug\net10.0\compressed\4xl5hjd8lv-{0}-b9sayid5wm-b9sayid5wm.gz'
+2026-07-28 11:07:01.081 +03:30 [INF] Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2026-07-28 11:07:01.081 +03:30 [INF] Request finished HTTP/2 GET https://localhost:7108/css/site.css?v=j6fhJSuuyLpOSLuPJU0TsDV0iNjor5S3rDnvxJrt4bg - 200 700 text/css 2.7089ms
+2026-07-28 11:07:01.081 +03:30 [INF] Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2026-07-28 11:07:01.082 +03:30 [INF] Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2026-07-28 11:07:01.082 +03:30 [INF] Request starting HTTP/2 GET https://localhost:7108/_framework/aspnetcore-browser-refresh.js - null null
+2026-07-28 11:07:01.084 +03:30 [INF] Request finished HTTP/2 GET https://localhost:7108/_framework/aspnetcore-browser-refresh.js - 200 14926 application/javascript; charset=utf-8 2.1325ms
+2026-07-28 11:07:01.084 +03:30 [INF] Sending file. Request path: 'js/site.js'. Physical path: 'D:\TaskFlowMvc\obj\Debug\net10.0\compressed\lrk0etaown-{0}-xtxxf3hu2r-xtxxf3hu2r.gz'
+2026-07-28 11:07:01.115 +03:30 [INF] Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2026-07-28 11:07:01.115 +03:30 [INF] Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2026-07-28 11:07:01.115 +03:30 [INF] Request finished HTTP/2 GET https://localhost:7108/js/site.js?v=hRQyftXiu1lLX2P9Ly9xa4gHJgLeR1uGN5qegUobtGo - 200 264 text/javascript 35.5082ms
+2026-07-28 11:07:01.151 +03:30 [INF] Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2026-07-28 11:07:01.153 +03:30 [INF] Sending file. Request path: 'lib/bootstrap/dist/css/bootstrap.min.css'. Physical path: 'D:\TaskFlowMvc\obj\Debug\net10.0\compressed\cwkq37jqus-{0}-46ein0sx1k-46ein0sx1k.gz'
+2026-07-28 11:07:01.153 +03:30 [INF] Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2026-07-28 11:07:01.153 +03:30 [INF] Sending file. Request path: 'lib/jquery/dist/jquery.min.js'. Physical path: 'D:\TaskFlowMvc\obj\Debug\net10.0\compressed\5u0wgstfou-{0}-o1o13a6vjx-o1o13a6vjx.gz'
+2026-07-28 11:07:01.154 +03:30 [INF] Sending file. Request path: 'lib/bootstrap/dist/js/bootstrap.bundle.min.js'. Physical path: 'D:\TaskFlowMvc\obj\Debug\net10.0\compressed\6usytvi6e8-{0}-493y06b0oq-493y06b0oq.gz'
+2026-07-28 11:07:01.154 +03:30 [INF] Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2026-07-28 11:07:01.154 +03:30 [INF] Request finished HTTP/2 GET https://localhost:7108/lib/bootstrap/dist/js/bootstrap.bundle.min.js - 200 80764 text/javascript 74.685ms
+2026-07-28 11:07:01.154 +03:30 [INF] Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2026-07-28 11:07:01.157 +03:30 [INF] Request finished HTTP/2 GET https://localhost:7108/lib/jquery/dist/jquery.min.js - 200 87576 text/javascript 78.348ms
+2026-07-28 11:07:01.153 +03:30 [INF] Request finished HTTP/2 GET https://localhost:7108/lib/bootstrap/dist/css/bootstrap.min.css - 200 232871 text/css 80.7864ms
+2026-07-28 11:07:01.165 +03:30 [INF] Request finished HTTP/2 GET https://localhost:7108/_vs/browserLink - 200 null text/javascript; charset=UTF-8 84.8716ms
+2026-07-28 11:07:05.510 +03:30 [INF] Request starting HTTP/2 GET https://localhost:7108/swagger/ - null null
+2026-07-28 11:07:05.513 +03:30 [INF] Request finished HTTP/2 GET https://localhost:7108/swagger/ - 301 null null 3.0448ms
+2026-07-28 11:07:05.518 +03:30 [INF] Request starting HTTP/2 GET https://localhost:7108/swagger/index.html - null null
+2026-07-28 11:07:05.598 +03:30 [INF] Request finished HTTP/2 GET https://localhost:7108/swagger/index.html - 304 null null 80.0426ms
+2026-07-28 11:07:05.632 +03:30 [INF] Request starting HTTP/2 GET https://localhost:7108/_framework/aspnetcore-browser-refresh.js - null null
+2026-07-28 11:07:05.632 +03:30 [INF] Request starting HTTP/2 GET https://localhost:7108/_vs/browserLink - null null
+2026-07-28 11:07:05.632 +03:30 [INF] Request finished HTTP/2 GET https://localhost:7108/_framework/aspnetcore-browser-refresh.js - 200 14926 application/javascript; charset=utf-8 0.6138ms
+2026-07-28 11:07:05.633 +03:30 [INF] Request starting HTTP/2 GET https://localhost:7108/swagger/swagger-ui.css - null null
+2026-07-28 11:07:05.633 +03:30 [INF] Request starting HTTP/2 GET https://localhost:7108/swagger/index.css - null null
+2026-07-28 11:07:05.633 +03:30 [INF] Request starting HTTP/2 GET https://localhost:7108/swagger/swagger-ui-bundle.js - null null
+2026-07-28 11:07:05.633 +03:30 [INF] Request starting HTTP/2 GET https://localhost:7108/swagger/swagger-ui-standalone-preset.js - null null
+2026-07-28 11:07:05.634 +03:30 [INF] Request starting HTTP/2 GET https://localhost:7108/swagger/index.js - null null
+2026-07-28 11:07:05.634 +03:30 [INF] Request finished HTTP/2 GET https://localhost:7108/swagger/index.js - 304 null null 0.922ms
+2026-07-28 11:07:05.640 +03:30 [INF] Request finished HTTP/2 GET https://localhost:7108/_vs/browserLink - 200 null text/javascript; charset=UTF-8 7.6968ms
+2026-07-28 11:07:05.640 +03:30 [INF] Request finished HTTP/2 GET https://localhost:7108/swagger/swagger-ui.css - 304 null null 7.2752ms
+2026-07-28 11:07:05.640 +03:30 [INF] Request finished HTTP/2 GET https://localhost:7108/swagger/index.css - 304 null null 7.3609ms
+2026-07-28 11:07:05.643 +03:30 [INF] Request finished HTTP/2 GET https://localhost:7108/swagger/swagger-ui-standalone-preset.js - 304 null null 9.5658ms
+2026-07-28 11:07:05.653 +03:30 [INF] Request finished HTTP/2 GET https://localhost:7108/swagger/swagger-ui-bundle.js - 304 null null 20.0523ms
+2026-07-28 11:07:05.882 +03:30 [INF] Request starting HTTP/2 GET https://localhost:7108/swagger/v1/swagger.json - null null
+2026-07-28 11:07:05.905 +03:30 [INF] Request finished HTTP/2 GET https://localhost:7108/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 23.6339ms
+2026-07-28 11:07:09.691 +03:30 [INF] Request starting HTTP/2 GET https://localhost:7108/api/projects - null null
+2026-07-28 11:07:09.695 +03:30 [INF] Executing endpoint 'TaskFlowMvc.Controllers.Api.ProjectController.GetAll (TaskFlowMvc)'
+2026-07-28 11:07:09.709 +03:30 [INF] Route matched with {action = "GetAll", controller = "Project"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetAll() on controller TaskFlowMvc.Controllers.Api.ProjectController (TaskFlowMvc).
+2026-07-28 11:07:11.133 +03:30 [WRN] Entity 'Tag' has a global query filter defined and is the required end of a relationship with the entity 'TaskTag'. This may lead to unexpected results when the required entity is filtered out. Either configure the navigation as optional, or define matching query filters for both entities in the navigation. See https://go.microsoft.com/fwlink/?linkid=2131316 for more information.
+2026-07-28 11:07:12.787 +03:30 [INF] Executed DbCommand (209ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [p].[Id], [p].[Name], [p].[Description], [p].[WorkspaceId], [w0].[Name] AS [WorkspaceName], [p].[CreatedAt], [p].[UpdatedAt]
+FROM [Project] AS [p]
+INNER JOIN (
+    SELECT [w].[Id], [w].[Name]
+    FROM [Workspace] AS [w]
+    WHERE [w].[IsDeleted] = CAST(0 AS bit)
+) AS [w0] ON [p].[WorkspaceId] = [w0].[Id]
+WHERE [p].[IsDeleted] = CAST(0 AS bit)
+2026-07-28 11:07:12.834 +03:30 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[ProjectResponse, TaskFlowMvc, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-07-28 11:07:12.871 +03:30 [INF] Executed action TaskFlowMvc.Controllers.Api.ProjectController.GetAll (TaskFlowMvc) in 3161.8337ms
+2026-07-28 11:07:12.871 +03:30 [INF] Executed endpoint 'TaskFlowMvc.Controllers.Api.ProjectController.GetAll (TaskFlowMvc)'
+2026-07-28 11:07:12.883 +03:30 [INF] Request finished HTTP/2 GET https://localhost:7108/api/projects - 200 null application/json; charset=utf-8 3192.3018ms
+2026-07-28 11:07:22.931 +03:30 [INF] Request starting HTTP/2 GET https://localhost:7108/api/tags - null null
+2026-07-28 11:07:22.933 +03:30 [INF] Executing endpoint 'TaskFlowMvc.Controllers.Api.TagController.GetAll (TaskFlowMvc)'
+2026-07-28 11:07:22.935 +03:30 [INF] Route matched with {action = "GetAll", controller = "Tag"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetAll() on controller TaskFlowMvc.Controllers.Api.TagController (TaskFlowMvc).
+2026-07-28 11:07:23.131 +03:30 [INF] Executed DbCommand (32ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[Id], [t].[Color], [t].[CreatedAt], [t].[IsDeleted], [t].[Name], [t].[UpdatedAt]
+FROM [Tag] AS [t]
+WHERE [t].[IsDeleted] = CAST(0 AS bit)
+2026-07-28 11:07:23.210 +03:30 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[TaskFlowMvc.Models.Tag, TaskFlowMvc, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-07-28 11:07:23.218 +03:30 [INF] Executed action TaskFlowMvc.Controllers.Api.TagController.GetAll (TaskFlowMvc) in 282.8579ms
+2026-07-28 11:07:23.218 +03:30 [INF] Executed endpoint 'TaskFlowMvc.Controllers.Api.TagController.GetAll (TaskFlowMvc)'
+2026-07-28 11:07:23.218 +03:30 [INF] Request finished HTTP/2 GET https://localhost:7108/api/tags - 200 null application/json; charset=utf-8 287.0769ms
+2026-07-28 11:08:06.184 +03:30 [INF] Request starting HTTP/2 GET https://localhost:7108/api/tasks - null null
+2026-07-28 11:08:06.184 +03:30 [INF] Executing endpoint 'TaskFlowMvc.Controllers.Api.TaskController.GetAll (TaskFlowMvc)'
+2026-07-28 11:08:06.187 +03:30 [INF] Route matched with {action = "GetAll", controller = "Task"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetAll() on controller TaskFlowMvc.Controllers.Api.TaskController (TaskFlowMvc).
+2026-07-28 11:08:06.436 +03:30 [INF] Executed DbCommand (80ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[Id], [t].[Title], [t].[Description], [t].[DueDate], [t].[Order], [t].[ProjectId], [p0].[Name], [t].[TaskStateId], [t1].[Name], [t].[CreatedAt], [t].[UpdatedAt], [p0].[Id], [t1].[Id], [s].[Id], [s].[Name], [s].[Color], [s].[CreatedAt], [s].[UpdatedAt], [s].[Id0]
+FROM [Task] AS [t]
+INNER JOIN (
+    SELECT [p].[Id], [p].[Name]
+    FROM [Project] AS [p]
+    WHERE [p].[IsDeleted] = CAST(0 AS bit)
+) AS [p0] ON [t].[ProjectId] = [p0].[Id]
+INNER JOIN (
+    SELECT [t0].[Id], [t0].[Name]
+    FROM [TaskState] AS [t0]
+    WHERE [t0].[IsDeleted] = CAST(0 AS bit)
+) AS [t1] ON [t].[TaskStateId] = [t1].[Id]
+LEFT JOIN (
+    SELECT [t4].[Id], [t4].[Name], [t4].[Color], [t4].[CreatedAt], [t4].[UpdatedAt], [t2].[Id] AS [Id0], [t2].[TaskId]
+    FROM [TaskTag] AS [t2]
+    INNER JOIN (
+        SELECT [t3].[Id], [t3].[Color], [t3].[CreatedAt], [t3].[Name], [t3].[UpdatedAt]
+        FROM [Tag] AS [t3]
+        WHERE [t3].[IsDeleted] = CAST(0 AS bit)
+    ) AS [t4] ON [t2].[TagId] = [t4].[Id]
+) AS [s] ON [t].[Id] = [s].[TaskId]
+WHERE [t].[IsDeleted] = CAST(0 AS bit)
+ORDER BY [t].[Id], [p0].[Id], [t1].[Id], [s].[Id0]
+2026-07-28 11:08:06.449 +03:30 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[TaskFlowMvc.Models.DTOs.TaskResponse, TaskFlowMvc, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-07-28 11:08:06.454 +03:30 [INF] Executed action TaskFlowMvc.Controllers.Api.TaskController.GetAll (TaskFlowMvc) in 267.0063ms
+2026-07-28 11:08:06.454 +03:30 [INF] Executed endpoint 'TaskFlowMvc.Controllers.Api.TaskController.GetAll (TaskFlowMvc)'
+2026-07-28 11:08:06.454 +03:30 [INF] Request finished HTTP/2 GET https://localhost:7108/api/tasks - 200 null application/json; charset=utf-8 270.2547ms
+2026-07-28 11:23:20.938 +03:30 [INF] User profile is available. Using 'C:\Users\ASUS\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2026-07-28 11:23:21.413 +03:30 [INF] Now listening on: https://localhost:7108
+2026-07-28 11:23:21.414 +03:30 [INF] Now listening on: http://localhost:5031
+2026-07-28 11:23:21.789 +03:30 [INF] Application started. Press Ctrl+C to shut down.
+2026-07-28 11:23:21.789 +03:30 [INF] Hosting environment: Development
+2026-07-28 11:23:21.790 +03:30 [INF] Content root path: D:\TaskFlowMvc
+2026-07-28 11:23:23.843 +03:30 [INF] Request starting HTTP/2 GET https://localhost:7108/ - null null
+2026-07-28 11:23:24.359 +03:30 [INF] Executing endpoint 'TaskFlowMvc.Controllers.HomeController.Index (TaskFlowMvc)'
+2026-07-28 11:23:24.399 +03:30 [INF] Route matched with {action = "Index", controller = "Home"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller TaskFlowMvc.Controllers.HomeController (TaskFlowMvc).
+2026-07-28 11:23:24.432 +03:30 [INF] Executing ViewResult, running view Index.
+2026-07-28 11:23:24.689 +03:30 [INF] Executed ViewResult - view Index executed in 268.2945ms.
+2026-07-28 11:23:24.690 +03:30 [INF] Executed action TaskFlowMvc.Controllers.HomeController.Index (TaskFlowMvc) in 289.3296ms
+2026-07-28 11:23:24.690 +03:30 [INF] Executed endpoint 'TaskFlowMvc.Controllers.HomeController.Index (TaskFlowMvc)'
+2026-07-28 11:23:24.700 +03:30 [INF] Request finished HTTP/2 GET https://localhost:7108/ - 200 null text/html; charset=utf-8 893.6889ms
+2026-07-28 11:23:24.758 +03:30 [INF] Request starting HTTP/2 GET https://localhost:7108/_framework/aspnetcore-browser-refresh.js - null null
+2026-07-28 11:23:24.769 +03:30 [INF] Request starting HTTP/2 GET https://localhost:7108/lib/jquery/dist/jquery.min.js - null null
+2026-07-28 11:23:24.769 +03:30 [INF] Request starting HTTP/2 GET https://localhost:7108/lib/bootstrap/dist/js/bootstrap.bundle.min.js - null null
+2026-07-28 11:23:24.769 +03:30 [INF] Request starting HTTP/2 GET https://localhost:7108/css/site.css?v=j6fhJSuuyLpOSLuPJU0TsDV0iNjor5S3rDnvxJrt4bg - null null
+2026-07-28 11:23:24.769 +03:30 [INF] Request starting HTTP/2 GET https://localhost:7108/lib/bootstrap/dist/css/bootstrap.min.css - null null
+2026-07-28 11:23:24.770 +03:30 [INF] Request starting HTTP/2 GET https://localhost:7108/TaskFlowMvc.styles.css?v=denkTJS40ZgCb1ryagt5okiypSWbvhenoKvVK6WBfgY - null null
+2026-07-28 11:23:24.832 +03:30 [INF] Request starting HTTP/2 GET https://localhost:7108/js/site.js?v=hRQyftXiu1lLX2P9Ly9xa4gHJgLeR1uGN5qegUobtGo - null null
+2026-07-28 11:23:24.833 +03:30 [INF] Request starting HTTP/2 GET https://localhost:7108/_vs/browserLink - null null
+2026-07-28 11:23:24.839 +03:30 [INF] Request finished HTTP/2 GET https://localhost:7108/_framework/aspnetcore-browser-refresh.js - 200 14926 application/javascript; charset=utf-8 81.5377ms
+2026-07-28 11:23:24.839 +03:30 [INF] Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2026-07-28 11:23:24.839 +03:30 [INF] Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2026-07-28 11:23:24.840 +03:30 [INF] Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2026-07-28 11:23:24.839 +03:30 [INF] Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2026-07-28 11:23:24.839 +03:30 [INF] Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2026-07-28 11:23:24.839 +03:30 [INF] Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2026-07-28 11:23:24.874 +03:30 [INF] Sending file. Request path: 'TaskFlowMvc.styles.css'. Physical path: 'D:\TaskFlowMvc\obj\Debug\net10.0\compressed\pio3utri1p-{0}-5w3zfbn8im-5w3zfbn8im.gz'
+2026-07-28 11:23:24.874 +03:30 [INF] Sending file. Request path: 'css/site.css'. Physical path: 'D:\TaskFlowMvc\obj\Debug\net10.0\compressed\4xl5hjd8lv-{0}-b9sayid5wm-b9sayid5wm.gz'
+2026-07-28 11:23:24.874 +03:30 [INF] Sending file. Request path: 'js/site.js'. Physical path: 'D:\TaskFlowMvc\obj\Debug\net10.0\compressed\lrk0etaown-{0}-xtxxf3hu2r-xtxxf3hu2r.gz'
+2026-07-28 11:23:24.874 +03:30 [INF] Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2026-07-28 11:23:24.874 +03:30 [INF] Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2026-07-28 11:23:24.874 +03:30 [INF] Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2026-07-28 11:23:24.874 +03:30 [INF] Request finished HTTP/2 GET https://localhost:7108/TaskFlowMvc.styles.css?v=denkTJS40ZgCb1ryagt5okiypSWbvhenoKvVK6WBfgY - 200 1142 text/css 104.157ms
+2026-07-28 11:23:24.874 +03:30 [INF] Request finished HTTP/2 GET https://localhost:7108/js/site.js?v=hRQyftXiu1lLX2P9Ly9xa4gHJgLeR1uGN5qegUobtGo - 200 264 text/javascript 72.0319ms
+2026-07-28 11:23:24.874 +03:30 [INF] Request finished HTTP/2 GET https://localhost:7108/css/site.css?v=j6fhJSuuyLpOSLuPJU0TsDV0iNjor5S3rDnvxJrt4bg - 200 700 text/css 105.3767ms
+2026-07-28 11:23:24.889 +03:30 [INF] Sending file. Request path: 'lib/jquery/dist/jquery.min.js'. Physical path: 'D:\TaskFlowMvc\obj\Debug\net10.0\compressed\5u0wgstfou-{0}-o1o13a6vjx-o1o13a6vjx.gz'
+2026-07-28 11:23:24.890 +03:30 [INF] Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2026-07-28 11:23:24.891 +03:30 [INF] Sending file. Request path: 'lib/bootstrap/dist/css/bootstrap.min.css'. Physical path: 'D:\TaskFlowMvc\obj\Debug\net10.0\compressed\cwkq37jqus-{0}-46ein0sx1k-46ein0sx1k.gz'
+2026-07-28 11:23:24.891 +03:30 [INF] Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2026-07-28 11:23:24.896 +03:30 [INF] Request finished HTTP/2 GET https://localhost:7108/lib/jquery/dist/jquery.min.js - 200 87576 text/javascript 126.5705ms
+2026-07-28 11:23:24.896 +03:30 [INF] Sending file. Request path: 'lib/bootstrap/dist/js/bootstrap.bundle.min.js'. Physical path: 'D:\TaskFlowMvc\obj\Debug\net10.0\compressed\6usytvi6e8-{0}-493y06b0oq-493y06b0oq.gz'
+2026-07-28 11:23:24.897 +03:30 [INF] Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2026-07-28 11:23:24.897 +03:30 [INF] Request finished HTTP/2 GET https://localhost:7108/lib/bootstrap/dist/js/bootstrap.bundle.min.js - 200 80764 text/javascript 128.4344ms
+2026-07-28 11:23:24.898 +03:30 [INF] Request finished HTTP/2 GET https://localhost:7108/lib/bootstrap/dist/css/bootstrap.min.css - 200 232871 text/css 126.7325ms
+2026-07-28 11:23:24.946 +03:30 [INF] Request finished HTTP/2 GET https://localhost:7108/_vs/browserLink - 200 null text/javascript; charset=UTF-8 112.2842ms
+2026-07-28 11:23:30.849 +03:30 [INF] Request starting HTTP/2 GET https://localhost:7108/swagger/ - null null
+2026-07-28 11:23:30.855 +03:30 [INF] Request finished HTTP/2 GET https://localhost:7108/swagger/ - 301 null null 6.6207ms
+2026-07-28 11:23:30.884 +03:30 [INF] Request starting HTTP/2 GET https://localhost:7108/swagger/index.html - null null
+2026-07-28 11:23:30.984 +03:30 [INF] Request finished HTTP/2 GET https://localhost:7108/swagger/index.html - 304 null null 100.0798ms
+2026-07-28 11:23:31.020 +03:30 [INF] Request starting HTTP/2 GET https://localhost:7108/_framework/aspnetcore-browser-refresh.js - null null
+2026-07-28 11:23:31.020 +03:30 [INF] Request starting HTTP/2 GET https://localhost:7108/_vs/browserLink - null null
+2026-07-28 11:23:31.021 +03:30 [INF] Request finished HTTP/2 GET https://localhost:7108/_framework/aspnetcore-browser-refresh.js - 200 14926 application/javascript; charset=utf-8 0.8368ms
+2026-07-28 11:23:31.022 +03:30 [INF] Request starting HTTP/2 GET https://localhost:7108/swagger/index.css - null null
+2026-07-28 11:23:31.022 +03:30 [INF] Request starting HTTP/2 GET https://localhost:7108/swagger/index.js - null null
+2026-07-28 11:23:31.022 +03:30 [INF] Request starting HTTP/2 GET https://localhost:7108/swagger/swagger-ui-bundle.js - null null
+2026-07-28 11:23:31.022 +03:30 [INF] Request starting HTTP/2 GET https://localhost:7108/swagger/swagger-ui.css - null null
+2026-07-28 11:23:31.022 +03:30 [INF] Request starting HTTP/2 GET https://localhost:7108/swagger/swagger-ui-standalone-preset.js - null null
+2026-07-28 11:23:31.023 +03:30 [INF] Request finished HTTP/2 GET https://localhost:7108/swagger/index.js - 304 null null 0.7616ms
+2026-07-28 11:23:31.037 +03:30 [INF] Request finished HTTP/2 GET https://localhost:7108/swagger/index.css - 304 null null 14.8328ms
+2026-07-28 11:23:31.037 +03:30 [INF] Request finished HTTP/2 GET https://localhost:7108/swagger/swagger-ui.css - 304 null null 15.0055ms
+2026-07-28 11:23:31.037 +03:30 [INF] Request finished HTTP/2 GET https://localhost:7108/swagger/swagger-ui-standalone-preset.js - 304 null null 14.235ms
+2026-07-28 11:23:31.049 +03:30 [INF] Request finished HTTP/2 GET https://localhost:7108/swagger/swagger-ui-bundle.js - 304 null null 26.8024ms
+2026-07-28 11:23:31.055 +03:30 [INF] Request finished HTTP/2 GET https://localhost:7108/_vs/browserLink - 200 null text/javascript; charset=UTF-8 34.6876ms
+2026-07-28 11:23:31.291 +03:30 [INF] Request starting HTTP/2 GET https://localhost:7108/swagger/v1/swagger.json - null null
+2026-07-28 11:23:31.322 +03:30 [INF] Request finished HTTP/2 GET https://localhost:7108/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 31.3446ms
+2026-07-28 11:23:35.752 +03:30 [INF] Request starting HTTP/2 GET https://localhost:7108/api/projects - null null
+2026-07-28 11:23:35.756 +03:30 [INF] Executing endpoint 'TaskFlowMvc.Controllers.Api.ProjectController.GetAll (TaskFlowMvc)'
+2026-07-28 11:23:35.764 +03:30 [INF] Route matched with {action = "GetAll", controller = "Project"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetAll() on controller TaskFlowMvc.Controllers.Api.ProjectController (TaskFlowMvc).
+2026-07-28 11:23:37.218 +03:30 [WRN] Entity 'Tag' has a global query filter defined and is the required end of a relationship with the entity 'TaskTag'. This may lead to unexpected results when the required entity is filtered out. Either configure the navigation as optional, or define matching query filters for both entities in the navigation. See https://go.microsoft.com/fwlink/?linkid=2131316 for more information.
+2026-07-28 11:23:38.946 +03:30 [INF] Executed DbCommand (214ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [p].[Id], [p].[Name], [p].[Description], [p].[WorkspaceId], [w0].[Name], [p].[CreatedAt], [p].[UpdatedAt], [w0].[Id], [s].[Id], [s].[Title], [s].[TaskStateName], [s].[Id0]
+FROM [Project] AS [p]
+INNER JOIN (
+    SELECT [w].[Id], [w].[Name]
+    FROM [Workspace] AS [w]
+    WHERE [w].[IsDeleted] = CAST(0 AS bit)
+) AS [w0] ON [p].[WorkspaceId] = [w0].[Id]
+LEFT JOIN (
+    SELECT [t].[Id], [t].[Title], [t1].[Name] AS [TaskStateName], [t1].[Id] AS [Id0], [t].[ProjectId]
+    FROM [Task] AS [t]
+    INNER JOIN (
+        SELECT [t0].[Id], [t0].[Name]
+        FROM [TaskState] AS [t0]
+        WHERE [t0].[IsDeleted] = CAST(0 AS bit)
+    ) AS [t1] ON [t].[TaskStateId] = [t1].[Id]
+    WHERE [t].[IsDeleted] = CAST(0 AS bit)
+) AS [s] ON [p].[Id] = [s].[ProjectId]
+WHERE [p].[IsDeleted] = CAST(0 AS bit)
+ORDER BY [p].[Id], [w0].[Id], [s].[Id]
+2026-07-28 11:23:38.991 +03:30 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[ProjectResponse, TaskFlowMvc, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-07-28 11:23:39.059 +03:30 [INF] Executed action TaskFlowMvc.Controllers.Api.ProjectController.GetAll (TaskFlowMvc) in 3294.9474ms
+2026-07-28 11:23:39.060 +03:30 [INF] Executed endpoint 'TaskFlowMvc.Controllers.Api.ProjectController.GetAll (TaskFlowMvc)'
+2026-07-28 11:23:39.076 +03:30 [INF] Request finished HTTP/2 GET https://localhost:7108/api/projects - 200 null application/json; charset=utf-8 3323.5759ms
+2026-07-28 11:24:40.415 +03:30 [INF] Request starting HTTP/2 GET https://localhost:7108/api/tasks - null null
+2026-07-28 11:24:40.417 +03:30 [INF] Executing endpoint 'TaskFlowMvc.Controllers.Api.TaskController.GetAll (TaskFlowMvc)'
+2026-07-28 11:24:40.420 +03:30 [INF] Route matched with {action = "GetAll", controller = "Task"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetAll() on controller TaskFlowMvc.Controllers.Api.TaskController (TaskFlowMvc).
+2026-07-28 11:24:40.560 +03:30 [INF] Executed DbCommand (29ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[Id], [t].[Title], [t].[Description], [t].[DueDate], [t].[Order], [t].[ProjectId], [p0].[Name], [t].[TaskStateId], [t1].[Name], [t].[CreatedAt], [t].[UpdatedAt], [p0].[Id], [t1].[Id], [s].[Id], [s].[Name], [s].[Color], [s].[CreatedAt], [s].[UpdatedAt], [s].[Id0]
+FROM [Task] AS [t]
+INNER JOIN (
+    SELECT [p].[Id], [p].[Name]
+    FROM [Project] AS [p]
+    WHERE [p].[IsDeleted] = CAST(0 AS bit)
+) AS [p0] ON [t].[ProjectId] = [p0].[Id]
+INNER JOIN (
+    SELECT [t0].[Id], [t0].[Name]
+    FROM [TaskState] AS [t0]
+    WHERE [t0].[IsDeleted] = CAST(0 AS bit)
+) AS [t1] ON [t].[TaskStateId] = [t1].[Id]
+LEFT JOIN (
+    SELECT [t4].[Id], [t4].[Name], [t4].[Color], [t4].[CreatedAt], [t4].[UpdatedAt], [t2].[Id] AS [Id0], [t2].[TaskId]
+    FROM [TaskTag] AS [t2]
+    INNER JOIN (
+        SELECT [t3].[Id], [t3].[Color], [t3].[CreatedAt], [t3].[Name], [t3].[UpdatedAt]
+        FROM [Tag] AS [t3]
+        WHERE [t3].[IsDeleted] = CAST(0 AS bit)
+    ) AS [t4] ON [t2].[TagId] = [t4].[Id]
+) AS [s] ON [t].[Id] = [s].[TaskId]
+WHERE [t].[IsDeleted] = CAST(0 AS bit)
+ORDER BY [t].[Id], [p0].[Id], [t1].[Id], [s].[Id0]
+2026-07-28 11:24:40.567 +03:30 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[TaskFlowMvc.Models.DTOs.TaskResponse, TaskFlowMvc, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-07-28 11:24:40.569 +03:30 [INF] Executed action TaskFlowMvc.Controllers.Api.TaskController.GetAll (TaskFlowMvc) in 148.8713ms
+2026-07-28 11:24:40.570 +03:30 [INF] Executed endpoint 'TaskFlowMvc.Controllers.Api.TaskController.GetAll (TaskFlowMvc)'
+2026-07-28 11:24:40.570 +03:30 [INF] Request finished HTTP/2 GET https://localhost:7108/api/tasks - 200 null application/json; charset=utf-8 155.1588ms
+2026-07-28 11:24:56.624 +03:30 [INF] Request starting HTTP/2 GET https://localhost:7108/api/workspaces - null null
+2026-07-28 11:24:56.625 +03:30 [INF] Executing endpoint 'TaskFlowMvc.Controllers.Api.WorkspaceController.GetAll (TaskFlowMvc)'
+2026-07-28 11:24:56.627 +03:30 [INF] Route matched with {action = "GetAll", controller = "Workspace"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetAll() on controller TaskFlowMvc.Controllers.Api.WorkspaceController (TaskFlowMvc).
+2026-07-28 11:24:56.738 +03:30 [INF] Executed DbCommand (18ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [w].[Id], [w].[CreatedAt], [w].[Description], [w].[IsDeleted], [w].[Name], [w].[UpdatedAt]
+FROM [Workspace] AS [w]
+WHERE [w].[IsDeleted] = CAST(0 AS bit)
+2026-07-28 11:24:56.808 +03:30 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[TaskFlowMvc.Models.Workspace, TaskFlowMvc, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-07-28 11:24:56.815 +03:30 [INF] Executed action TaskFlowMvc.Controllers.Api.WorkspaceController.GetAll (TaskFlowMvc) in 188.0692ms
+2026-07-28 11:24:56.815 +03:30 [INF] Executed endpoint 'TaskFlowMvc.Controllers.Api.WorkspaceController.GetAll (TaskFlowMvc)'
+2026-07-28 11:24:56.816 +03:30 [INF] Request finished HTTP/2 GET https://localhost:7108/api/workspaces - 200 null application/json; charset=utf-8 191.5429ms
+2026-07-28 11:34:37.020 +03:30 [INF] User profile is available. Using 'C:\Users\ASUS\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2026-07-28 11:34:37.398 +03:30 [INF] Now listening on: https://localhost:7108
+2026-07-28 11:34:37.398 +03:30 [INF] Now listening on: http://localhost:5031
+2026-07-28 11:34:37.587 +03:30 [INF] Application started. Press Ctrl+C to shut down.
+2026-07-28 11:34:37.587 +03:30 [INF] Hosting environment: Development
+2026-07-28 11:34:37.587 +03:30 [INF] Content root path: D:\TaskFlowMvc
+2026-07-28 11:34:39.577 +03:30 [INF] Request starting HTTP/2 GET https://localhost:7108/ - null null
+2026-07-28 11:34:39.907 +03:30 [INF] Executing endpoint 'TaskFlowMvc.Controllers.HomeController.Index (TaskFlowMvc)'
+2026-07-28 11:34:39.944 +03:30 [INF] Route matched with {action = "Index", controller = "Home"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller TaskFlowMvc.Controllers.HomeController (TaskFlowMvc).
+2026-07-28 11:34:39.973 +03:30 [INF] Executing ViewResult, running view Index.
+2026-07-28 11:34:40.223 +03:30 [INF] Executed ViewResult - view Index executed in 256.3713ms.
+2026-07-28 11:34:40.225 +03:30 [INF] Executed action TaskFlowMvc.Controllers.HomeController.Index (TaskFlowMvc) in 279.3178ms
+2026-07-28 11:34:40.226 +03:30 [INF] Executed endpoint 'TaskFlowMvc.Controllers.HomeController.Index (TaskFlowMvc)'
+2026-07-28 11:34:40.238 +03:30 [INF] Request finished HTTP/2 GET https://localhost:7108/ - 200 null text/html; charset=utf-8 695.7262ms
+2026-07-28 11:34:40.330 +03:30 [INF] Request starting HTTP/2 GET https://localhost:7108/css/site.css?v=j6fhJSuuyLpOSLuPJU0TsDV0iNjor5S3rDnvxJrt4bg - null null
+2026-07-28 11:34:40.330 +03:30 [INF] Request starting HTTP/2 GET https://localhost:7108/_framework/aspnetcore-browser-refresh.js - null null
+2026-07-28 11:34:40.330 +03:30 [INF] Request starting HTTP/2 GET https://localhost:7108/lib/bootstrap/dist/css/bootstrap.min.css - null null
+2026-07-28 11:34:40.336 +03:30 [INF] Request starting HTTP/2 GET https://localhost:7108/lib/jquery/dist/jquery.min.js - null null
+2026-07-28 11:34:40.337 +03:30 [INF] Request starting HTTP/2 GET https://localhost:7108/TaskFlowMvc.styles.css?v=denkTJS40ZgCb1ryagt5okiypSWbvhenoKvVK6WBfgY - null null
+2026-07-28 11:34:40.339 +03:30 [INF] Request starting HTTP/2 GET https://localhost:7108/lib/bootstrap/dist/js/bootstrap.bundle.min.js - null null
+2026-07-28 11:34:40.341 +03:30 [INF] Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2026-07-28 11:34:40.341 +03:30 [INF] Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2026-07-28 11:34:40.342 +03:30 [INF] Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2026-07-28 11:34:40.343 +03:30 [INF] Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2026-07-28 11:34:40.346 +03:30 [INF] Request starting HTTP/2 GET https://localhost:7108/_vs/browserLink - null null
+2026-07-28 11:34:40.341 +03:30 [INF] Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2026-07-28 11:34:40.352 +03:30 [INF] Request starting HTTP/2 GET https://localhost:7108/js/site.js?v=hRQyftXiu1lLX2P9Ly9xa4gHJgLeR1uGN5qegUobtGo - null null
+2026-07-28 11:34:40.355 +03:30 [INF] Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2026-07-28 11:34:40.444 +03:30 [INF] Sending file. Request path: 'css/site.css'. Physical path: 'D:\TaskFlowMvc\obj\Debug\net10.0\compressed\4xl5hjd8lv-{0}-b9sayid5wm-b9sayid5wm.gz'
+2026-07-28 11:34:40.444 +03:30 [INF] Sending file. Request path: 'TaskFlowMvc.styles.css'. Physical path: 'D:\TaskFlowMvc\obj\Debug\net10.0\compressed\pio3utri1p-{0}-5w3zfbn8im-5w3zfbn8im.gz'
+2026-07-28 11:34:40.444 +03:30 [INF] Sending file. Request path: 'js/site.js'. Physical path: 'D:\TaskFlowMvc\obj\Debug\net10.0\compressed\lrk0etaown-{0}-xtxxf3hu2r-xtxxf3hu2r.gz'
+2026-07-28 11:34:40.444 +03:30 [INF] Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2026-07-28 11:34:40.444 +03:30 [INF] Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2026-07-28 11:34:40.444 +03:30 [INF] Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2026-07-28 11:34:40.445 +03:30 [INF] Request finished HTTP/2 GET https://localhost:7108/js/site.js?v=hRQyftXiu1lLX2P9Ly9xa4gHJgLeR1uGN5qegUobtGo - 200 264 text/javascript 93.222ms
+2026-07-28 11:34:40.445 +03:30 [INF] Request finished HTTP/2 GET https://localhost:7108/TaskFlowMvc.styles.css?v=denkTJS40ZgCb1ryagt5okiypSWbvhenoKvVK6WBfgY - 200 1142 text/css 108.7962ms
+2026-07-28 11:34:40.445 +03:30 [INF] Request finished HTTP/2 GET https://localhost:7108/css/site.css?v=j6fhJSuuyLpOSLuPJU0TsDV0iNjor5S3rDnvxJrt4bg - 200 700 text/css 114.37ms
+2026-07-28 11:34:40.460 +03:30 [INF] Request finished HTTP/2 GET https://localhost:7108/_framework/aspnetcore-browser-refresh.js - 200 14926 application/javascript; charset=utf-8 129.9853ms
+2026-07-28 11:34:40.480 +03:30 [INF] Sending file. Request path: 'lib/jquery/dist/jquery.min.js'. Physical path: 'D:\TaskFlowMvc\obj\Debug\net10.0\compressed\5u0wgstfou-{0}-o1o13a6vjx-o1o13a6vjx.gz'
+2026-07-28 11:34:40.482 +03:30 [INF] Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2026-07-28 11:34:40.485 +03:30 [INF] Sending file. Request path: 'lib/bootstrap/dist/css/bootstrap.min.css'. Physical path: 'D:\TaskFlowMvc\obj\Debug\net10.0\compressed\cwkq37jqus-{0}-46ein0sx1k-46ein0sx1k.gz'
+2026-07-28 11:34:40.487 +03:30 [INF] Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2026-07-28 11:34:40.491 +03:30 [INF] Sending file. Request path: 'lib/bootstrap/dist/js/bootstrap.bundle.min.js'. Physical path: 'D:\TaskFlowMvc\obj\Debug\net10.0\compressed\6usytvi6e8-{0}-493y06b0oq-493y06b0oq.gz'
+2026-07-28 11:34:40.491 +03:30 [INF] Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2026-07-28 11:34:40.492 +03:30 [INF] Request finished HTTP/2 GET https://localhost:7108/lib/jquery/dist/jquery.min.js - 200 87576 text/javascript 155.9996ms
+2026-07-28 11:34:40.492 +03:30 [INF] Request finished HTTP/2 GET https://localhost:7108/lib/bootstrap/dist/css/bootstrap.min.css - 200 232871 text/css 161.5029ms
+2026-07-28 11:34:40.492 +03:30 [INF] Request finished HTTP/2 GET https://localhost:7108/lib/bootstrap/dist/js/bootstrap.bundle.min.js - 200 80764 text/javascript 152.9554ms
+2026-07-28 11:34:40.534 +03:30 [INF] Request finished HTTP/2 GET https://localhost:7108/_vs/browserLink - 200 null text/javascript; charset=UTF-8 188.2991ms
+2026-07-28 11:34:45.272 +03:30 [INF] Request starting HTTP/2 GET https://localhost:7108/swagger/ - null null
+2026-07-28 11:34:45.278 +03:30 [INF] Request finished HTTP/2 GET https://localhost:7108/swagger/ - 301 null null 5.9617ms
+2026-07-28 11:34:45.292 +03:30 [INF] Request starting HTTP/2 GET https://localhost:7108/swagger/index.html - null null
+2026-07-28 11:34:45.380 +03:30 [INF] Request finished HTTP/2 GET https://localhost:7108/swagger/index.html - 304 null null 88.1463ms
+2026-07-28 11:34:45.423 +03:30 [INF] Request starting HTTP/2 GET https://localhost:7108/_vs/browserLink - null null
+2026-07-28 11:34:45.423 +03:30 [INF] Request starting HTTP/2 GET https://localhost:7108/_framework/aspnetcore-browser-refresh.js - null null
+2026-07-28 11:34:45.424 +03:30 [INF] Request finished HTTP/2 GET https://localhost:7108/_framework/aspnetcore-browser-refresh.js - 200 14926 application/javascript; charset=utf-8 0.9592ms
+2026-07-28 11:34:45.424 +03:30 [INF] Request starting HTTP/2 GET https://localhost:7108/swagger/swagger-ui.css - null null
+2026-07-28 11:34:45.424 +03:30 [INF] Request starting HTTP/2 GET https://localhost:7108/swagger/index.css - null null
+2026-07-28 11:34:45.425 +03:30 [INF] Request starting HTTP/2 GET https://localhost:7108/swagger/swagger-ui-bundle.js - null null
+2026-07-28 11:34:45.425 +03:30 [INF] Request starting HTTP/2 GET https://localhost:7108/swagger/swagger-ui-standalone-preset.js - null null
+2026-07-28 11:34:45.425 +03:30 [INF] Request starting HTTP/2 GET https://localhost:7108/swagger/index.js - null null
+2026-07-28 11:34:45.426 +03:30 [INF] Request finished HTTP/2 GET https://localhost:7108/swagger/index.js - 304 null null 0.6524ms
+2026-07-28 11:34:45.453 +03:30 [INF] Request finished HTTP/2 GET https://localhost:7108/swagger/index.css - 304 null null 8.117ms
+2026-07-28 11:34:45.458 +03:30 [INF] Request finished HTTP/2 GET https://localhost:7108/swagger/swagger-ui.css - 304 null null 33.37ms
+2026-07-28 11:34:45.463 +03:30 [INF] Request finished HTTP/2 GET https://localhost:7108/swagger/swagger-ui-bundle.js - 304 null null 38.1353ms
+2026-07-28 11:34:45.472 +03:30 [INF] Request finished HTTP/2 GET https://localhost:7108/_vs/browserLink - 200 null text/javascript; charset=UTF-8 48.1929ms
+2026-07-28 11:34:45.474 +03:30 [INF] Request finished HTTP/2 GET https://localhost:7108/swagger/swagger-ui-standalone-preset.js - 304 null null 49.1042ms
+2026-07-28 11:34:45.729 +03:30 [INF] Request starting HTTP/2 GET https://localhost:7108/swagger/v1/swagger.json - null null
+2026-07-28 11:34:45.758 +03:30 [INF] Request finished HTTP/2 GET https://localhost:7108/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 28.8568ms
+2026-07-28 11:34:53.887 +03:30 [INF] Request starting HTTP/2 GET https://localhost:7108/api/workspaces - null null
+2026-07-28 11:34:53.892 +03:30 [INF] Executing endpoint 'TaskFlowMvc.Controllers.Api.WorkspaceController.GetAll (TaskFlowMvc)'
+2026-07-28 11:34:53.897 +03:30 [INF] Route matched with {action = "GetAll", controller = "Workspace"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetAll() on controller TaskFlowMvc.Controllers.Api.WorkspaceController (TaskFlowMvc).
+2026-07-28 11:34:55.138 +03:30 [WRN] Entity 'Tag' has a global query filter defined and is the required end of a relationship with the entity 'TaskTag'. This may lead to unexpected results when the required entity is filtered out. Either configure the navigation as optional, or define matching query filters for both entities in the navigation. See https://go.microsoft.com/fwlink/?linkid=2131316 for more information.
+2026-07-28 11:34:56.706 +03:30 [INF] Executed DbCommand (172ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [w].[Id], [p0].[Id], [p0].[Name], [p0].[Description], [p0].[WorkspaceId], [p0].[WorkspaceName], [p0].[CreatedAt], [p0].[UpdatedAt]
+FROM [Workspace] AS [w]
+OUTER APPLY (
+    SELECT [p].[Id], [p].[Name], [p].[Description], [p].[WorkspaceId], [w].[Name] AS [WorkspaceName], [p].[CreatedAt], [p].[UpdatedAt]
+    FROM [Project] AS [p]
+    WHERE [p].[IsDeleted] = CAST(0 AS bit) AND [w].[Id] = [p].[WorkspaceId] AND [p].[IsDeleted] = CAST(0 AS bit)
+) AS [p0]
+WHERE [w].[IsDeleted] = CAST(0 AS bit)
+ORDER BY [w].[Id]
+2026-07-28 11:34:56.763 +03:30 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[<>f__AnonymousType1`1[[System.Collections.Generic.List`1[[ProjectResponse, TaskFlowMvc, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=10.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]], TaskFlowMvc, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-07-28 11:34:56.808 +03:30 [INF] Executed action TaskFlowMvc.Controllers.Api.WorkspaceController.GetAll (TaskFlowMvc) in 2910.7693ms
+2026-07-28 11:34:56.808 +03:30 [INF] Executed endpoint 'TaskFlowMvc.Controllers.Api.WorkspaceController.GetAll (TaskFlowMvc)'
+2026-07-28 11:34:56.821 +03:30 [INF] Request finished HTTP/2 GET https://localhost:7108/api/workspaces - 200 null application/json; charset=utf-8 2934.3819ms
+2026-07-28 11:35:41.680 +03:30 [INF] Request starting HTTP/2 GET https://localhost:7108/api/workspace/21092C4D-7C85-49FC-9533-08DEEC6EC5E1 - null null
+2026-07-28 11:35:41.683 +03:30 [INF] Executing endpoint 'TaskFlowMvc.Controllers.Api.WorkspaceController.GetById (TaskFlowMvc)'
+2026-07-28 11:35:41.696 +03:30 [INF] Route matched with {action = "GetById", controller = "Workspace"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetById(System.Guid) on controller TaskFlowMvc.Controllers.Api.WorkspaceController (TaskFlowMvc).
+2026-07-28 11:35:41.901 +03:30 [INF] Executed DbCommand (50ms) [Parameters=[@id='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT [w0].[Id], [w0].[Name], [w0].[Description], [w0].[CreatedAt], [w0].[UpdatedAt], [p0].[Id], [p0].[Name], [p0].[Description], [p0].[WorkspaceId], [p0].[WorkspaceName], [p0].[CreatedAt], [p0].[UpdatedAt]
+FROM (
+    SELECT TOP(1) [w].[Id], [w].[Name], [w].[Description], [w].[CreatedAt], [w].[UpdatedAt]
+    FROM [Workspace] AS [w]
+    WHERE [w].[IsDeleted] = CAST(0 AS bit) AND [w].[Id] = @id
+) AS [w0]
+OUTER APPLY (
+    SELECT [p].[Id], [p].[Name], [p].[Description], [p].[WorkspaceId], [w0].[Name] AS [WorkspaceName], [p].[CreatedAt], [p].[UpdatedAt]
+    FROM [Project] AS [p]
+    WHERE [p].[IsDeleted] = CAST(0 AS bit) AND [w0].[Id] = [p].[WorkspaceId] AND [p].[IsDeleted] = CAST(0 AS bit)
+) AS [p0]
+ORDER BY [w0].[Id]
+2026-07-28 11:35:41.908 +03:30 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType2`6[[System.Guid, System.Private.CoreLib, Version=10.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=10.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=10.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.DateTime, System.Private.CoreLib, Version=10.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Nullable`1[[System.DateTime, System.Private.CoreLib, Version=10.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]], System.Private.CoreLib, Version=10.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Collections.Generic.List`1[[ProjectResponse, TaskFlowMvc, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=10.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2026-07-28 11:35:41.915 +03:30 [INF] Executed action TaskFlowMvc.Controllers.Api.WorkspaceController.GetById (TaskFlowMvc) in 219.1302ms
+2026-07-28 11:35:41.915 +03:30 [INF] Executed endpoint 'TaskFlowMvc.Controllers.Api.WorkspaceController.GetById (TaskFlowMvc)'
+2026-07-28 11:35:41.916 +03:30 [INF] Request finished HTTP/2 GET https://localhost:7108/api/workspace/21092C4D-7C85-49FC-9533-08DEEC6EC5E1 - 200 null application/json; charset=utf-8 235.4932ms
+2026-07-28 11:35:56.950 +03:30 [INF] Request starting HTTP/2 GET https://localhost:7108/api/workspace/21092C4D-7C85-49FC-9533-08DEEC6EC5E1 - null null
+2026-07-28 11:35:56.950 +03:30 [INF] Executing endpoint 'TaskFlowMvc.Controllers.Api.WorkspaceController.GetById (TaskFlowMvc)'
+2026-07-28 11:35:56.951 +03:30 [INF] Route matched with {action = "GetById", controller = "Workspace"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetById(System.Guid) on controller TaskFlowMvc.Controllers.Api.WorkspaceController (TaskFlowMvc).
+2026-07-28 11:35:57.003 +03:30 [INF] Executed DbCommand (9ms) [Parameters=[@id='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT [w0].[Id], [w0].[Name], [w0].[Description], [w0].[CreatedAt], [w0].[UpdatedAt], [p0].[Id], [p0].[Name], [p0].[Description], [p0].[WorkspaceId], [p0].[WorkspaceName], [p0].[CreatedAt], [p0].[UpdatedAt]
+FROM (
+    SELECT TOP(1) [w].[Id], [w].[Name], [w].[Description], [w].[CreatedAt], [w].[UpdatedAt]
+    FROM [Workspace] AS [w]
+    WHERE [w].[IsDeleted] = CAST(0 AS bit) AND [w].[Id] = @id
+) AS [w0]
+OUTER APPLY (
+    SELECT [p].[Id], [p].[Name], [p].[Description], [p].[WorkspaceId], [w0].[Name] AS [WorkspaceName], [p].[CreatedAt], [p].[UpdatedAt]
+    FROM [Project] AS [p]
+    WHERE [p].[IsDeleted] = CAST(0 AS bit) AND [w0].[Id] = [p].[WorkspaceId] AND [p].[IsDeleted] = CAST(0 AS bit)
+) AS [p0]
+ORDER BY [w0].[Id]
+2026-07-28 11:35:57.003 +03:30 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType2`6[[System.Guid, System.Private.CoreLib, Version=10.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=10.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=10.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.DateTime, System.Private.CoreLib, Version=10.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Nullable`1[[System.DateTime, System.Private.CoreLib, Version=10.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]], System.Private.CoreLib, Version=10.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Collections.Generic.List`1[[ProjectResponse, TaskFlowMvc, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=10.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2026-07-28 11:35:57.003 +03:30 [INF] Executed action TaskFlowMvc.Controllers.Api.WorkspaceController.GetById (TaskFlowMvc) in 52.6134ms
+2026-07-28 11:35:57.004 +03:30 [INF] Executed endpoint 'TaskFlowMvc.Controllers.Api.WorkspaceController.GetById (TaskFlowMvc)'
+2026-07-28 11:35:57.004 +03:30 [INF] Request finished HTTP/2 GET https://localhost:7108/api/workspace/21092C4D-7C85-49FC-9533-08DEEC6EC5E1 - 200 null application/json; charset=utf-8 54.1878ms
+2026-07-28 11:36:07.139 +03:30 [INF] Request starting HTTP/2 GET https://localhost:7108/api/workspace/B5ED01FC-70CD-4F76-6DF2-08DEEBDF60DE - null null
+2026-07-28 11:36:07.139 +03:30 [INF] Executing endpoint 'TaskFlowMvc.Controllers.Api.WorkspaceController.GetById (TaskFlowMvc)'
+2026-07-28 11:36:07.139 +03:30 [INF] Route matched with {action = "GetById", controller = "Workspace"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetById(System.Guid) on controller TaskFlowMvc.Controllers.Api.WorkspaceController (TaskFlowMvc).
+2026-07-28 11:36:07.150 +03:30 [INF] Executed DbCommand (8ms) [Parameters=[@id='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT [w0].[Id], [w0].[Name], [w0].[Description], [w0].[CreatedAt], [w0].[UpdatedAt], [p0].[Id], [p0].[Name], [p0].[Description], [p0].[WorkspaceId], [p0].[WorkspaceName], [p0].[CreatedAt], [p0].[UpdatedAt]
+FROM (
+    SELECT TOP(1) [w].[Id], [w].[Name], [w].[Description], [w].[CreatedAt], [w].[UpdatedAt]
+    FROM [Workspace] AS [w]
+    WHERE [w].[IsDeleted] = CAST(0 AS bit) AND [w].[Id] = @id
+) AS [w0]
+OUTER APPLY (
+    SELECT [p].[Id], [p].[Name], [p].[Description], [p].[WorkspaceId], [w0].[Name] AS [WorkspaceName], [p].[CreatedAt], [p].[UpdatedAt]
+    FROM [Project] AS [p]
+    WHERE [p].[IsDeleted] = CAST(0 AS bit) AND [w0].[Id] = [p].[WorkspaceId] AND [p].[IsDeleted] = CAST(0 AS bit)
+) AS [p0]
+ORDER BY [w0].[Id]
+2026-07-28 11:36:07.150 +03:30 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType2`6[[System.Guid, System.Private.CoreLib, Version=10.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=10.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=10.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.DateTime, System.Private.CoreLib, Version=10.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Nullable`1[[System.DateTime, System.Private.CoreLib, Version=10.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]], System.Private.CoreLib, Version=10.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Collections.Generic.List`1[[ProjectResponse, TaskFlowMvc, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=10.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2026-07-28 11:36:07.151 +03:30 [INF] Executed action TaskFlowMvc.Controllers.Api.WorkspaceController.GetById (TaskFlowMvc) in 11.5736ms
+2026-07-28 11:36:07.151 +03:30 [INF] Executed endpoint 'TaskFlowMvc.Controllers.Api.WorkspaceController.GetById (TaskFlowMvc)'
+2026-07-28 11:36:07.152 +03:30 [INF] Request finished HTTP/2 GET https://localhost:7108/api/workspace/B5ED01FC-70CD-4F76-6DF2-08DEEBDF60DE - 200 null application/json; charset=utf-8 12.9818ms
