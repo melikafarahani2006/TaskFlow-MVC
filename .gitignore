@@ -16,6 +16,8 @@ obj/
 .vscode/
 
 # Logs
+logs/
+Logs/
 *.log
 
 # NuGet
