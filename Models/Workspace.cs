@@ -4,7 +4,7 @@ namespace TaskFlowMvc.Models;
 
 public class Workspace :BaseEntity
 {
-    public Guid Id { get; set; }
+    public Guid Id { get; set; } = Guid.NewGuid();
 
     [MaxLength(100)]
     public string Name { get; set; } = string.Empty;

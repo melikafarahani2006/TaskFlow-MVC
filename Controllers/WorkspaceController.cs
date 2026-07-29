@@ -3,16 +3,19 @@ using Microsoft.EntityFrameworkCore;
 using TaskFlowMvc.Data;
 using TaskFlowMvc.Models;
 using TaskFlowMvc.Models.DTOs;
+using TaskFlowMvc.Services;
 
 namespace TaskFlowMvc.Controllers;
 
 public class WorkspaceController : Controller
 {
     private readonly ApplicationDbContext _context;
+    private readonly WorkspaceService _workspaceService;
 
-    public WorkspaceController(ApplicationDbContext context)
+    public WorkspaceController(ApplicationDbContext context, WorkspaceService workspaceService)
     {
         _context = context;
+        _workspaceService = workspaceService;
     }
 
 
@@ -36,6 +39,29 @@ public class WorkspaceController : Controller
     {
         return View();
     }
+
+    //[HttpPost]
+    //public async Task<IActionResult> Create(CreateWorkspaceRequest request)
+    //{
+    //    if (!ModelState.IsValid)
+    //        return View(request);
+
+    //    try
+    //    {
+
+    //        await _workspaceService.CreateWorkspaceWithDefaultProject(request);
+
+    //        TempData["Success"] = "Workspace created successfully.";
+
+    //        return RedirectToAction(nameof(Index));
+    //    }
+    //    catch(Exception ex)
+    //    {
+    //        ModelState.AddModelError("", "Failed to create workspace.");
+    //        return View(request);
+    //    }
+    //}
+
 
     [HttpPost]
     public IActionResult Create(CreateWorkspaceRequest request)
