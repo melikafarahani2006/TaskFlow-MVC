@@ -6,6 +6,12 @@
     <a asp-action="Create" class="btn btn-primary">
         Create
     </a>
+
+    <a asp-controller="Report"
+       asp-action="TaskReport"
+       class="btn btn-success ms-2">
+        📄 Task Report
+    </a>
 </p>
 
 <table class="table table-bordered table-striped">
@@ -37,7 +43,7 @@
                 <td>
                     @foreach (var itemTag in item.TaskTags)
                     {
-                        <span class="badge bg-secondary me-1">
+                        <span class="badge me-1" style="background-color: @itemTag.Tag.Color; color: #fff;">
                             @itemTag.Tag.Name
                         </span>
                     }

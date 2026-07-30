@@ -12,4 +12,6 @@ public class TaskResponse :BaseEntity
     public Guid TaskStateId { get; set; }
     public string TaskStateName { get; set; } = string.Empty;
     public List<Tag> Tags { get; set; } = [];
+    public string TagsText { get; set; } = "";
+    public string CreatedAtText => CreatedAt.ToString("yyyy/MM/dd HH:mm") ?? "";
 }
