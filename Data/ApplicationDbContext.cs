@@ -1,9 +1,10 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using TaskFlowMvc.Models;
+using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 
 namespace TaskFlowMvc.Data;
 
-public class ApplicationDbContext : DbContext
+public class ApplicationDbContext : IdentityDbContext
 {
     public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options)
         : base(options)
@@ -16,6 +17,7 @@ public class ApplicationDbContext : DbContext
     public DbSet<Models.Task> Task => base.Set<Models.Task>();
     public DbSet<Tag> Tag => Set<Tag>();
     public DbSet<TaskTag> TaskTag => Set<TaskTag>();
+    public DbSet<WorkspaceMember> WorkspaceMember { get; set; }
 
     private void SetAuditFields()
     {

@@ -1,4 +1,6 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Identity;
+using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using TaskFlowMvc.Data;
@@ -7,15 +9,18 @@ using TaskFlowMvc.Models.DTOs;
 
 namespace TaskFlowMvc.Controllers;
 
+[Authorize]
 public class TaskController : Controller
 {
     private readonly ApplicationDbContext _context;
     private readonly ILogger<TaskController> _logger;
+    private readonly UserManager<IdentityUser> _userManager;
 
-    public TaskController(ApplicationDbContext context, ILogger<TaskController> logger)
+    public TaskController(ApplicationDbContext context, ILogger<TaskController> logger, UserManager<IdentityUser> userManager)
     {
         _context = context;
         _logger = logger;
+        _userManager = userManager;
     }
 
 
@@ -23,31 +28,72 @@ public class TaskController : Controller
     {
         try
         {
-            var query = _context.Task
-            .Include(x => x.Project)
-            .Include(x => x.TaskState)
-            .Include(x => x.TaskTags)
-            .ThenInclude(x => x.Tag)
-            .AsQueryable();
+            bool isAdmin = User.IsInRole("Admin");
 
+            IQueryable<Guid> memberWorkspaceIds;
+
+            if (isAdmin)
+            {
+                memberWorkspaceIds = _context.Workspace.Select(w => w.Id);
+            }
+            else
+            {
+                var userId = _userManager.GetUserId(User);
+                memberWorkspaceIds = _context.WorkspaceMember
+                    .Where(m => m.UserId == userId)
+                    .Select(m => m.WorkspaceId);
+            }
+
+            var query = _context.Task
+                .Include(x => x.Project)
+                .Include(x => x.TaskState)
+                .Include(x => x.TaskTags)
+                .ThenInclude(x => x.Tag)
+                .Where(x => memberWorkspaceIds.Contains(x.Project.WorkspaceId))
+                .AsQueryable();
 
             if (projectId.HasValue)
             {
+                if (!isAdmin && !_context.Project.Any(p => p.Id == projectId.Value && memberWorkspaceIds.Contains(p.WorkspaceId)))
+                {
+                    TempData["Error"] = "You don't have access to this project.";
+                    return RedirectToAction("Index", "Project");
+                }
+
                 query = query.Where(x => x.ProjectId == projectId.Value);
             }
 
-
             var tasks = query.ToList();
+
+            ViewBag.ProjectId = projectId;
 
             return View(tasks);
         }
         catch
         {
             TempData["Error"] = "Unable to load tasks.";
-            return base.View(new List<Models.Task>());
+            return View(new List<Models.Task>());
         }
     }
 
+    private List<Guid> GetAccessibleProjectIds()
+    {
+        if (User.IsInRole("Admin"))
+        {
+            return _context.Project.Select(p => p.Id).ToList();
+        }
+
+        var userId = _userManager.GetUserId(User);
+
+        var memberWorkspaceIds = _context.WorkspaceMember
+            .Where(m => m.UserId == userId)
+            .Select(m => m.WorkspaceId);
+
+        return _context.Project
+            .Where(p => memberWorkspaceIds.Contains(p.WorkspaceId))
+            .Select(p => p.Id)
+            .ToList();
+    }
 
     [HttpGet]
     public IActionResult Create()
@@ -62,13 +108,21 @@ public class TaskController : Controller
     [HttpPost]
     public IActionResult Create(CreateTaskRequest request)
     {
+        var accessibleProjectIds = GetAccessibleProjectIds();
+
         if (!ModelState.IsValid)
         {
-            ViewBag.Project = new SelectList(_context.Project, "Id", "Name");
+            ViewBag.Project = new SelectList(_context.Project.Where(p => accessibleProjectIds.Contains(p.Id)), "Id", "Name");
             ViewBag.TaskState = new SelectList(_context.TaskState, "Id", "Name");
             ViewBag.Tag = _context.Tag.ToList();
 
             return View(request);
+        }
+
+        if (!accessibleProjectIds.Contains(request.ProjectId))
+        {
+            TempData["Error"] = "You don't have access to this project.";
+            return RedirectToAction("Index", "Project");
         }
 
         try
@@ -103,15 +157,13 @@ public class TaskController : Controller
 
             return RedirectToAction(nameof(Index));
         }
-        catch(Exception ex)
+        catch (Exception ex)
         {
-            _logger.LogError(ex,
-                   "Error while creating task.");
+            _logger.LogError(ex, "Error while creating task.");
 
-            ModelState.AddModelError("",
-                "Failed to create task.");
+            ModelState.AddModelError("", "Failed to create task.");
 
-            ViewBag.Project = new SelectList(_context.Project, "Id", "Name");
+            ViewBag.Project = new SelectList(_context.Project.Where(p => accessibleProjectIds.Contains(p.Id)), "Id", "Name");
             ViewBag.TaskState = new SelectList(_context.TaskState, "Id", "Name");
             ViewBag.Tag = _context.Tag.ToList();
 

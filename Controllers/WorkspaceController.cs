@@ -1,4 +1,6 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Identity;
+using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using TaskFlowMvc.Data;
 using TaskFlowMvc.Models;
@@ -7,15 +9,20 @@ using TaskFlowMvc.Services;
 
 namespace TaskFlowMvc.Controllers;
 
+[Authorize]
 public class WorkspaceController : Controller
 {
     private readonly ApplicationDbContext _context;
     private readonly WorkspaceService _workspaceService;
+    private readonly UserManager<IdentityUser> _userManager;
 
-    public WorkspaceController(ApplicationDbContext context, WorkspaceService workspaceService)
+
+    public WorkspaceController(ApplicationDbContext context, WorkspaceService workspaceService, UserManager<IdentityUser> userManager)
     {
         _context = context;
         _workspaceService = workspaceService;
+        _userManager = userManager;
+
     }
 
 
@@ -23,7 +30,22 @@ public class WorkspaceController : Controller
     {
         try
         {
-            var workspaces = _context.Workspace.ToList();
+            List<Workspace> workspaces;
+
+            if (User.IsInRole("Admin"))
+            {
+                workspaces = _context.Workspace.ToList();
+            }
+            else
+            {
+                var userId = _userManager.GetUserId(User);
+
+                workspaces = _context.WorkspaceMember
+                    .Where(m => m.UserId == userId)
+                    .Select(m => m.Workspace)
+                    .ToList();
+            }
+
             return View(workspaces);
         }
         catch
@@ -71,6 +93,8 @@ public class WorkspaceController : Controller
 
         try
         {
+            var userId = _userManager.GetUserId(User);
+
             var workspace = new Workspace
             {
                 Name = request.Name,
@@ -78,6 +102,15 @@ public class WorkspaceController : Controller
             };
 
             _context.Workspace.Add(workspace);
+            _context.SaveChanges();
+
+            _context.WorkspaceMember.Add(new WorkspaceMember
+            {
+                WorkspaceId = workspace.Id,
+                UserId = userId!,
+                Role = "Owner"
+            });
+
             _context.SaveChanges();
 
             return RedirectToAction(nameof(Index));

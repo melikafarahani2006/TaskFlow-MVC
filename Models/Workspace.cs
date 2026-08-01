@@ -12,4 +12,5 @@ public class Workspace :BaseEntity
     [MaxLength(100)]
     public string? Description { get; set; }
     public ICollection<Project> Projects { get; set; } = [];
+    public ICollection<WorkspaceMember> Members { get; set; } = new List<WorkspaceMember>();
 }

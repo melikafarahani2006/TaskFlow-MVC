@@ -1,4 +1,6 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Identity;
+using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using Stimulsoft.Blockly.Model;
@@ -8,13 +10,17 @@ using TaskFlowMvc.Models.DTOs;
 
 namespace TaskFlowMvc.Controllers;
 
+[Authorize]
 public class ProjectController : Controller
 {
     private readonly ApplicationDbContext _context;
+    private readonly UserManager<IdentityUser> _userManager;
 
-    public ProjectController(ApplicationDbContext context)
+
+    public ProjectController(ApplicationDbContext context, UserManager<IdentityUser> userManager)
     {
         _context = context;
+        _userManager = userManager;
     }
 
 
@@ -22,11 +28,34 @@ public class ProjectController : Controller
     {
         try
         {
+            bool isAdmin = User.IsInRole("Admin");
+
+            IQueryable<Guid> memberWorkspaceIds;
+
+            if (isAdmin)
+            {
+                memberWorkspaceIds = _context.Workspace.Select(w => w.Id);
+            }
+            else
+            {
+                var userId = _userManager.GetUserId(User);
+                memberWorkspaceIds = _context.WorkspaceMember
+                    .Where(m => m.UserId == userId)
+                    .Select(m => m.WorkspaceId);
+            }
+
             IQueryable<Project> query = _context.Project
-               .Include(p => p.Workspace);
+                .Include(p => p.Workspace)
+                .Where(p => memberWorkspaceIds.Contains(p.WorkspaceId));
 
             if (workspaceId.HasValue)
             {
+                if (!isAdmin && !memberWorkspaceIds.Contains(workspaceId.Value))
+                {
+                    TempData["Error"] = "You don't have access to this workspace.";
+                    return RedirectToAction("Index", "Workspace");
+                }
+
                 query = query.Where(p => p.WorkspaceId == workspaceId.Value);
             }
 
@@ -41,6 +70,24 @@ public class ProjectController : Controller
         }
     }
 
+    private List<Guid> GetAccessibleWorkspaceIds()
+    {
+        if (User.IsInRole("Admin"))
+        {
+            return _context.Workspace.Select(w => w.Id).ToList();
+        }
+
+        var userId = _userManager.GetUserId(User);
+
+        var memberWorkspaceIds = _context.WorkspaceMember
+            .Where(m => m.UserId == userId)
+            .Select(m => m.WorkspaceId);
+
+        return _context.Project
+            .Where(p => memberWorkspaceIds.Contains(p.WorkspaceId))
+            .Select(p => p.Id)
+            .ToList();
+    }
 
     [HttpGet]
     public IActionResult Create()
@@ -56,6 +103,8 @@ public class ProjectController : Controller
     [HttpPost]
     public IActionResult Create(Guid workspaceId, CreateProjectRequest request)
     {
+        var accessibleWorkspaceIds = GetAccessibleWorkspaceIds();
+
         if (!ModelState.IsValid)
         {
             ViewBag.Workspace = new SelectList(
@@ -64,6 +113,11 @@ public class ProjectController : Controller
                 "Name");
 
             return View(request);
+        }
+        if (!accessibleWorkspaceIds.Contains(request.WorkspaceId))
+        {
+            TempData["Error"] = "You don't have access to this workspace.";
+            return RedirectToAction("Index", "Workspace");
         }
 
         try

@@ -2,6 +2,7 @@
 
 @{
     ViewData["Title"] = "Task Report";
+    var projectId = ViewBag.ProjectId as Guid?;
 }
 
 <div style="width:100%; height:900px;">
@@ -9,7 +10,7 @@
     {
         Actions =
         {
-            GetReport = "GetReport",
+            GetReport = projectId.HasValue ? $"GetReport?projectId={projectId}" : "GetReport",
             ViewerEvent = "ViewerEvent"
         }
     })
