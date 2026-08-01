@@ -2,40 +2,151 @@
     ViewData["Title"] = "Dashboard";
 }
 
-<div class="text-center mt-5">
-    @* <h1 class="display-4 mb-4">Task Flow System</h1> *@
+<div class="container-fluid py-4">
 
-    <div class="d-grid gap-3 col-4 mx-auto">
+    <div class="mb-5">
+        <h1 class="fw-bold">Welcome 👋</h1>
+        <p class="text-muted fs-5">
+            Manage your workspaces, projects and tasks in one place.
+        </p>
+    </div>
 
-        <a asp-controller="Workspace"
-           asp-action="Index"
-           class="btn btn-primary btn-lg">
-            Workspaces
-        </a>
+    <div class="row g-4">
 
-        <a asp-controller="Project"
-           asp-action="Index"
-           class="btn btn-success btn-lg">
-            Projects
-        </a>
+        <div class="col-md-6 col-xl-4">
+            <a asp-controller="Workspace"
+               asp-action="Index"
+               class="text-decoration-none">
+                <div class="card shadow-sm border-0 h-100 dashboard-card">
+                    <div class="card-body">
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div>
+                                <h4 class="fw-bold">🏢 Workspaces</h4>
+                                <p class="text-muted mb-0">
+                                    Organize teams and departments.
+                                </p>
+                            </div>
 
-        <a asp-controller="TaskState"
-           asp-action="Index"
-           class="btn btn-warning btn-lg">
-            Task States
-        </a>
+                            <div class="display-5">
+                                📂
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </a>
+        </div>
 
-        <a asp-controller="Task"
-           asp-action="Index"
-           class="btn btn-info btn-lg">
-            Tasks
-        </a>
+        <div class="col-md-6 col-xl-4">
+            <a asp-controller="Project"
+               asp-action="Index"
+               class="text-decoration-none">
+                <div class="card shadow-sm border-0 h-100 dashboard-card">
+                    <div class="card-body">
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div>
+                                <h4 class="fw-bold">📁 Projects</h4>
+                                <p class="text-muted mb-0">
+                                    Track every project.
+                                </p>
+                            </div>
 
-        <a asp-controller="Tag"
-           asp-action="Index"
-           class="btn btn-secondary btn-lg">
-            Tags
-        </a>
+                            <div class="display-5">
+                                🚀
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </a>
+        </div>
+
+        <div class="col-md-6 col-xl-4">
+            <a asp-controller="Task"
+               asp-action="Index"
+               class="text-decoration-none">
+                <div class="card shadow-sm border-0 h-100 dashboard-card">
+                    <div class="card-body">
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div>
+                                <h4 class="fw-bold">✅ Tasks</h4>
+                                <p class="text-muted mb-0">
+                                    Manage daily work.
+                                </p>
+                            </div>
+
+                            <div class="display-5">
+                                ✔️
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </a>
+        </div>
+
+        <div class="col-md-6 col-xl-6">
+            <a asp-controller="TaskState"
+               asp-action="Index"
+               class="text-decoration-none">
+                <div class="card shadow-sm border-0 h-100 dashboard-card">
+                    <div class="card-body">
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div>
+                                <h4 class="fw-bold">📌 Task States</h4>
+                                <p class="text-muted mb-0">
+                                    Todo • In Progress • Review • Done
+                                </p>
+                            </div>
+
+                            <div class="display-5">
+                                📊
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </a>
+        </div>
+
+        <div class="col-md-6 col-xl-6">
+            <a asp-controller="Tag"
+               asp-action="Index"
+               class="text-decoration-none">
+                <div class="card shadow-sm border-0 h-100 dashboard-card">
+                    <div class="card-body">
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div>
+                                <h4 class="fw-bold">🏷️ Tags</h4>
+                                <p class="text-muted mb-0">
+                                    Categorize and organize tasks.
+                                </p>
+                            </div>
+
+                            <div class="display-5">
+                                🎨
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </a>
+        </div>
 
     </div>
+
 </div>
+
+<style>
+
+    .dashboard-card {
+        border-radius: 18px;
+        transition: .25s;
+        cursor: pointer;
+    }
+
+        .dashboard-card:hover {
+            transform: translateY(-6px);
+            box-shadow: 0 12px 28px rgba(0,0,0,.15) !important;
+        }
+
+        .dashboard-card h4 {
+            color: #222;
+        }
+
+</style>

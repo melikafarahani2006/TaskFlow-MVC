@@ -1,6 +1,7 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
+using Stimulsoft.Blockly.Model;
 using TaskFlowMvc.Data;
 using TaskFlowMvc.Models;
 using TaskFlowMvc.Models.DTOs;
@@ -17,13 +18,19 @@ public class ProjectController : Controller
     }
 
 
-    public IActionResult Index()
+    public async Task<IActionResult> Index(Guid? workspaceId)
     {
         try
         {
-            var projects = _context.Project
-                .Include(x => x.Workspace)
-                .ToList();
+            IQueryable<Project> query = _context.Project
+               .Include(p => p.Workspace);
+
+            if (workspaceId.HasValue)
+            {
+                query = query.Where(p => p.WorkspaceId == workspaceId.Value);
+            }
+
+            var projects = await query.ToListAsync();
 
             return View(projects);
         }

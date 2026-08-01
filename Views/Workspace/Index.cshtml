@@ -1,78 +1,167 @@
 ﻿@model IEnumerable<TaskFlowMvc.Models.Workspace>
 
-<h2>Workspace List</h2>
-
-<p>
-    <a asp-action="Create" class="btn btn-success mb-3">
-        Create Workspace
-    </a>
-</p>
-
-@if (TempData["Success"] != null)
-{
-    <div class="alert alert-success">
-        @TempData["Success"]
-    </div>
+@{
+    ViewData["Title"] = "Workspaces";
 }
 
-@if (TempData["Error"] != null)
-{
-    <div class="alert alert-danger">
-        @TempData["Error"]
+<div class="container py-4">
+
+    <div class="d-flex justify-content-between align-items-center mb-4">
+
+        <div>
+            <h2 class="fw-bold mb-1">Workspaces</h2>
+            <p class="text-muted">
+                Organize your teams, projects and tasks.
+            </p>
+        </div>
+
+        <a asp-action="Create"
+           class="btn btn-primary">
+            + New Workspace
+        </a>
+
     </div>
-}
 
-<table class="table table-bordered table-striped">
+    @if (TempData["Success"] != null)
+    {
+        <div class="alert alert-success">
+            @TempData["Success"]
+        </div>
+    }
 
-    <thead>
-        <tr>
-            <th>Name</th>
-            <th>Description</th>
-            <th>Created At</th>
-            <th>Updated At</th>
-            <th width="180">Actions</th>
-        </tr>
-    </thead>
+    @if (TempData["Error"] != null)
+    {
+        <div class="alert alert-danger">
+            @TempData["Error"]
+        </div>
+    }
 
-    <tbody>
+    <div class="row g-4">
 
         @foreach (var item in Model)
         {
-            <tr>
+            <div class="col-md-6 col-xl-4">
 
-                <td>@item.Name</td>
+                <div class="card shadow-sm border-0 workspace-card h-100">
 
-                <td>@item.Description</td>
+                    <div class="card-body">
 
-                <td>
-                    @item.CreatedAt.ToString("yyyy/MM/dd HH:mm")
-                </td>
+                        <div class="d-flex align-items-center mb-3">
 
-                <td>
-                    @(item.UpdatedAt.HasValue
-                        ? item.UpdatedAt.Value.ToString("yyyy/MM/dd HH:mm")
-                        : "-")
-                </td>
+                            <div class="workspace-icon me-3">
+                                🏢
+                            </div>
 
-                <td>
+                            <div>
+                                <h4 class="mb-0 fw-bold">
+                                    @item.Name
+                                </h4>
+                            </div>
 
-                    <a asp-action="Edit"
-                       asp-route-id="@item.Id"
-                       class="btn btn-warning btn-sm">
-                        Edit
-                    </a>
+                        </div>
 
-                    <a asp-action="Delete"
-                       asp-route-id="@item.Id"
-                       class="btn btn-danger btn-sm">
-                        Delete
-                    </a>
+                        <p class="text-muted">
 
-                </td>
+                            @(string.IsNullOrWhiteSpace(item.Description)
+                                ? "No description"
+                                : item.Description)
 
-            </tr>
+                        </p>
+
+                        <hr />
+
+
+                        <div class="d-flex justify-content-between">
+
+                            <small class="text-muted">
+                                Created
+                            </small>
+
+                            <small class="fw-semibold">
+                                @item.CreatedAt.ToString("yyyy/MM/dd")
+                            </small>
+
+                            <small class="text-muted">
+                                Updated
+                            </small>
+
+                            <small class="fw-semibold">
+                                @(item.UpdatedAt.HasValue ? item.UpdatedAt.Value.ToString("dd MMM yyyy") : "-")
+                            </small>
+
+                        </div>
+
+
+
+                    </div>
+
+                    <div class="card-footer bg-white border-0">
+
+                        <div class="d-flex justify-content-between">
+
+                            <a asp-controller="Project"
+                               asp-action="Index"
+                               asp-route-workspaceId="@item.Id"
+                               class="btn btn-outline-primary btn-sm">
+
+                                Open →
+
+                            </a>
+
+                            <div>
+
+                                <a asp-action="Edit"
+                                   asp-route-id="@item.Id"
+                                   class="btn btn-warning btn-sm">
+
+                                    Edit
+
+                                </a>
+
+                                <a asp-action="Delete"
+                                   asp-route-id="@item.Id"
+                                   class="btn btn-danger btn-sm">
+
+                                    Delete
+
+                                </a>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
         }
 
-    </tbody>
+    </div>
 
-</table>
+</div>
+
+<style>
+
+    .workspace-card {
+        border-radius: 18px;
+        transition: .25s;
+    }
+
+        .workspace-card:hover {
+            transform: translateY(-6px);
+            box-shadow: 0 14px 30px rgba(0,0,0,.12) !important;
+        }
+
+    .workspace-icon {
+        width: 60px;
+        height: 60px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: #EEF4FF;
+        border-radius: 15px;
+        font-size: 28px;
+    }
+
+</style>

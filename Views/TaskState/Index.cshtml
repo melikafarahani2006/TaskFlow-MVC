@@ -1,75 +1,124 @@
 ﻿@model IEnumerable<TaskFlowMvc.Models.TaskState>
 
-<h2>Task States</h2>
-
-<p>
-    <a asp-action="Create" class="btn btn-primary">
-        Create
-    </a>
-</p>
-
-@if (TempData["Success"] != null)
-{
-    <div class="alert alert-success">
-        @TempData["Success"]
-    </div>
+@{
+    ViewData["Title"] = "Task States";
 }
 
-@if (TempData["Error"] != null)
-{
-    <div class="alert alert-danger">
-        @TempData["Error"]
+<div class="container py-4">
+
+    <div class="d-flex justify-content-between align-items-center mb-4">
+
+        <div>
+            <h2 class="fw-bold mb-1">Task States</h2>
+            <p class="text-muted">
+                Configure workflow stages used by tasks.
+            </p>
+        </div>
+
+        <a asp-action="Create"
+           class="btn btn-primary">
+            + New State
+        </a>
+
     </div>
-}
 
-<table class="table table-bordered table-striped">
+    @if (TempData["Success"] != null)
+    {
+        <div class="alert alert-success">
+            @TempData["Success"]
+        </div>
+    }
 
-    <thead>
-        <tr>
-            <th>Name</th>
-            <th>Created At</th>
-            <th>Updated At</th>
-            <th width="180">Actions</th>
-        </tr>
-    </thead>
+    @if (TempData["Error"] != null)
+    {
+        <div class="alert alert-danger">
+            @TempData["Error"]
+        </div>
+    }
 
-    <tbody>
+    <div class="card shadow-sm border-0">
 
-        @foreach (var item in Model)
-        {
-            <tr>
+        <div class="card-body">
 
-                <td>@item.Name</td>
+            <table class="table table-hover align-middle">
 
-                <td>
-                    @item.CreatedAt.ToString("yyyy/MM/dd HH:mm")
-                </td>
+                <thead class="table-light">
 
-                <td>
-                    @(item.UpdatedAt.HasValue
-                        ? item.UpdatedAt.Value.ToString("yyyy/MM/dd HH:mm")
-                        : "-")
-                </td>
+                    <tr>
 
-                <td>
+                        <th width="80"></th>
 
-                    <a asp-action="Edit"
-                       asp-route-id="@item.Id"
-                       class="btn btn-warning btn-sm">
-                        Edit
-                    </a>
+                        <th>Name</th>
 
-                    <a asp-action="Delete"
-                       asp-route-id="@item.Id"
-                       class="btn btn-danger btn-sm">
-                        Delete
-                    </a>
+                        <th>Created</th>
 
-                </td>
+                        <th>Updated</th>
 
-            </tr>
-        }
+                        <th width="180">Actions</th>
 
-    </tbody>
+                    </tr>
 
-</table>
+                </thead>
+
+                <tbody>
+
+                    @{
+                        int index = 1;
+                    }
+
+                    @foreach (var item in Model)
+                    {
+                        <tr>
+
+                            <td class="text-muted">
+                                @index
+                            </td>
+
+                            <td>
+
+                                <span class="badge rounded-pill bg-primary px-3 py-2">
+                                    @item.Name
+                                </span>
+
+                            </td>
+
+                            <td>
+                                @item.CreatedAt.ToString("dd MMM yyyy")
+                            </td>
+
+                            <td>
+                                @(item.UpdatedAt.HasValue
+                                    ? item.UpdatedAt.Value.ToString("dd MMM yyyy")
+                                    : "-")
+                            </td>
+
+                            <td>
+
+                                <a asp-action="Edit"
+                                   asp-route-id="@item.Id"
+                                   class="btn btn-outline-warning btn-sm">
+                                    Edit
+                                </a>
+
+                                <a asp-action="Delete"
+                                   asp-route-id="@item.Id"
+                                   class="btn btn-outline-danger btn-sm">
+                                    Delete
+                                </a>
+
+                            </td>
+
+                        </tr>
+
+                        index++;
+                    }
+
+                </tbody>
+
+            </table>
+
+        </div>
+
+    </div>
+
+</div>

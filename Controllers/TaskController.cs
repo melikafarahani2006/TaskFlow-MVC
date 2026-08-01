@@ -19,16 +19,25 @@ public class TaskController : Controller
     }
 
 
-    public IActionResult Index()
+    public IActionResult Index(Guid? projectId)
     {
         try
         {
-            var tasks = _context.Task
-                .Include(x => x.Project)
-                .Include(x => x.TaskState)
-                 .Include(x => x.TaskTags)
-                .ThenInclude(x => x.Tag)
-                .ToList();
+            var query = _context.Task
+            .Include(x => x.Project)
+            .Include(x => x.TaskState)
+            .Include(x => x.TaskTags)
+            .ThenInclude(x => x.Tag)
+            .AsQueryable();
+
+
+            if (projectId.HasValue)
+            {
+                query = query.Where(x => x.ProjectId == projectId.Value);
+            }
+
+
+            var tasks = query.ToList();
 
             return View(tasks);
         }

@@ -26,7 +26,7 @@
     <DataSources isList="true" count="1">
       <Tasks Ref="3" type="Stimulsoft.Report.Dictionary.StiBusinessObjectSource" isKey="true">
         <Alias>Tasks</Alias>
-        <Columns isList="true" count="7">
+        <Columns isList="true" count="8">
           <value>ORIGINAL,Id,Id,Id,System.Guid,add08b859794489a9d80cbf791abf2ca</value>
           <value>ORIGINAL,Title,Title,Title,System.String,_x0032_68a81c142524590b0740eb7c0e212e2</value>
           <value>ORIGINAL,Description,Description,Description,System.String,_x0037_49ccfb300044dd587fc26f2eec59a03</value>
@@ -34,6 +34,7 @@
           <value>ORIGINAL,ProjectName,ProjectName,ProjectName,System.String,_x0038_52239edeca34553af0a02ffd872922a</value>
           <value>ORIGINAL,TaskStateName,TaskStateName,TaskStateName,System.String,d241e31ee9c24b678f3e68dfe2a15369</value>
           <value>ORIGINAL,CreatedAtText,CreatedAtText,CreatedAtText,System.DateTime,_x0031_7811f0f3d3349ecb2804114805d41ec</value>
+          <value>TagsText,System.String</value>
         </Columns>
         <Dictionary isRef="1" />
         <Key>a37dfb45f58242e68d04adc774f0ccad</Key>
@@ -220,6 +221,7 @@
         <DataBand1 Ref="16" type="DataBand" isKey="true">
           <Border>All;Black;1;Solid;False;4;Black</Border>
           <Brush>[219:238:243]</Brush>
+          <BusinessObjectGuid isNull="true" />
           <ClientRectangle>0,2,7.72,0.4</ClientRectangle>
           <Components isList="true" count="5">
             <Text1 Ref="17" type="Text" isKey="true">
@@ -342,10 +344,10 @@
   </ReferencedAssemblies>
   <ReportAlias>Report</ReportAlias>
   <ReportAuthor>melika farahani</ReportAuthor>
-  <ReportChanged>7/31/2026 1:59:52 AM</ReportChanged>
+  <ReportChanged>8/1/2026 8:13:27 AM</ReportChanged>
   <ReportCreated>7/29/2026 4:19:39 PM</ReportCreated>
   <ReportFile>D:\TaskFlowMvc\Reports\TaskReport.mrt</ReportFile>
-  <ReportGuid>ee4c1fcc32e24f7493260cbc5919806b</ReportGuid>
+  <ReportGuid>96b3e20260bf436e9d6dac19deb79f1c</ReportGuid>
   <ReportName>Report</ReportName>
   <ReportUnit>Inches</ReportUnit>
   <ReportVersion>2026.3.1.0</ReportVersion>
