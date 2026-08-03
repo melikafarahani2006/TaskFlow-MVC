@@ -5,9 +5,15 @@ using TaskFlowMvc.Data;
 using TaskFlowMvc.Models;
 using TaskFlowMvc.Services;
 using Microsoft.AspNetCore.Identity;
+using Quartz;
+using TaskFlowMvc.Jobs;
 
 Log.Logger = new LoggerConfiguration()
     .MinimumLevel.Information()
+    .MinimumLevel.Override("Microsoft", Serilog.Events.LogEventLevel.Warning)
+    .MinimumLevel.Override("Microsoft.EntityFrameworkCore", Serilog.Events.LogEventLevel.Warning)
+    .MinimumLevel.Override("System", Serilog.Events.LogEventLevel.Warning)
+    .WriteTo.Console()
     .WriteTo.File(
         "Logs/log-.txt",
         rollingInterval: RollingInterval.Day)
@@ -36,6 +42,23 @@ builder.Services.AddDbContext<ApplicationDbContext>(options =>
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 builder.Services.AddScoped<WorkspaceService>();
+builder.Services.AddQuartz(q =>
+{
+    var jobKey = new JobKey("OverdueTaskCheckJob");
+
+    q.AddJob<OverdueTaskCheckJob>(opts => opts.WithIdentity(jobKey));
+
+    q.AddTrigger(opts => opts
+        .ForJob(jobKey)
+        .WithIdentity("OverdueTaskCheckJob-trigger")
+        //.WithCronSchedule("0 0 9 * * ?")); 
+        .WithCronSchedule("0/30 * * * * ?"));
+});
+
+builder.Services.AddQuartzHostedService(opts =>
+{
+    opts.WaitForJobsToComplete = true;
+});
 
 var app = builder.Build();
 
