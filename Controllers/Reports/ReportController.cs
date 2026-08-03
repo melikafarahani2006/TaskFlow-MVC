@@ -48,16 +48,28 @@ public class ReportController : Controller
     {
         var accessibleWorkspaceIds = GetAccessibleWorkspaceIds();
 
-        var query = _context.TaskReportView
+        // Calling columns from TaskReportView directly👇
+        //var query = _context.TaskReportView
+        //    .Where(x => accessibleWorkspaceIds.Contains(x.WorkspaceId))
+        //    .AsQueryable();
+
+        //if (projectId.HasValue)
+        //{
+        //    query = query.Where(x => x.ProjectId == projectId.Value);
+        //}
+
+        //var tasks = query.ToList();
+
+
+        // Using SP (Stored Procedure)👇
+        var param = new Microsoft.Data.SqlClient.SqlParameter("@ProjectId", (object?)projectId ?? DBNull.Value);
+
+        var tasks = _context.TaskReportView
+            .FromSqlRaw("EXEC GetTaskReport @ProjectId", param)
+            .AsEnumerable()
             .Where(x => accessibleWorkspaceIds.Contains(x.WorkspaceId))
-            .AsQueryable();
+            .ToList();
 
-        if (projectId.HasValue)
-        {
-            query = query.Where(x => x.ProjectId == projectId.Value);
-        }
-
-        var tasks = query.ToList();
 
         foreach (var task in tasks)
         {
@@ -78,7 +90,7 @@ public class ReportController : Controller
 
 
 
-    // Read data from application
+    // Read data from application👇
     //public IActionResult GetReport(Guid? projectId)
     //{
     //    var accessibleWorkspaceIds = GetAccessibleWorkspaceIds();
