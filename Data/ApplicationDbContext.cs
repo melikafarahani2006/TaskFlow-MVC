@@ -18,6 +18,7 @@ public class ApplicationDbContext : IdentityDbContext
     public DbSet<Tag> Tag => Set<Tag>();
     public DbSet<TaskTag> TaskTag => Set<TaskTag>();
     public DbSet<WorkspaceMember> WorkspaceMember { get; set; }
+    public DbSet<TaskReportView> TaskReportView { get; set; }
 
     private void SetAuditFields()
     {
@@ -110,5 +111,12 @@ public class ApplicationDbContext : IdentityDbContext
             .HasOne(x => x.Tag)
             .WithMany(x => x.TaskTags)
             .HasForeignKey(x => x.TagId);
+
+
+        modelBuilder.Entity<TaskReportView>(entity =>
+        {
+            entity.HasNoKey();
+            entity.ToView("vw_TaskReport");
+        });
     }
 }

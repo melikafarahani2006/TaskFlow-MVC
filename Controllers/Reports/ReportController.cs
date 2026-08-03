@@ -32,16 +32,24 @@ public class ReportController : Controller
         return View();
     }
 
+    private static string ToShamsi(DateTime? date)
+    {
+        if (!date.HasValue) return "-";
+
+        var pc = new System.Globalization.PersianCalendar();
+        var d = date.Value;
+
+        return $"{pc.GetYear(d):0000}/{pc.GetMonth(d):00}/{pc.GetDayOfMonth(d):00}";
+    }
+
+
+    // Read data from Views (TaskReportView) in Db
     public IActionResult GetReport(Guid? projectId)
     {
         var accessibleWorkspaceIds = GetAccessibleWorkspaceIds();
 
-        var query = _context.Task
-            .Include(x => x.Project)
-            .Include(x => x.TaskState)
-            .Include(x => x.TaskTags)
-            .ThenInclude(x => x.Tag)
-            .Where(x => accessibleWorkspaceIds.Contains(x.Project.WorkspaceId))
+        var query = _context.TaskReportView
+            .Where(x => accessibleWorkspaceIds.Contains(x.WorkspaceId))
             .AsQueryable();
 
         if (projectId.HasValue)
@@ -49,35 +57,14 @@ public class ReportController : Controller
             query = query.Where(x => x.ProjectId == projectId.Value);
         }
 
-        var tasks = query
-            .Select(x => new TaskResponse
-            {
-                Id = x.Id,
-                Title = x.Title,
-                Description = x.Description,
-                DueDate = x.DueDate,
-                Order = x.Order,
+        var tasks = query.ToList();
 
-                ProjectId = x.ProjectId,
-                ProjectName = x.Project.Name,
-
-                TaskStateId = x.TaskStateId,
-                TaskStateName = x.TaskState.Name,
-
-                CreatedAt = x.CreatedAt,
-                UpdatedAt = x.UpdatedAt,
-
-                Tags = x.TaskTags
-                    .Select(t => new Tag
-                    {
-                        Id = t.Tag.Id,
-                        Name = t.Tag.Name,
-                        Color = t.Tag.Color
-                    })
-                    .ToList(),
-                TagsText = string.Join(", ", x.TaskTags.Select(t => t.Tag.Name))
-            })
-            .ToList();
+        foreach (var task in tasks)
+        {
+            task.CreatedAtShamsi = ToShamsi(task.CreatedAt);
+            task.DueDateShamsi = ToShamsi(task.DueDate);
+            task.UpdatedAtShamsi = ToShamsi(task.UpdatedAt);
+        }
 
         var report = new StiReport();
         var path = Path.Combine(Directory.GetCurrentDirectory(), "Reports", "TaskReport.mrt");
@@ -88,6 +75,66 @@ public class ReportController : Controller
 
         return StiNetCoreViewer.GetReportResult(this, report);
     }
+
+
+
+    // Read data from application
+    //public IActionResult GetReport(Guid? projectId)
+    //{
+    //    var accessibleWorkspaceIds = GetAccessibleWorkspaceIds();
+
+    //    var query = _context.Task
+    //        .Include(x => x.Project)
+    //        .Include(x => x.TaskState)
+    //        .Include(x => x.TaskTags)
+    //        .ThenInclude(x => x.Tag)
+    //        .Where(x => accessibleWorkspaceIds.Contains(x.Project.WorkspaceId))
+    //        .AsQueryable();
+
+    //    if (projectId.HasValue)
+    //    {
+    //        query = query.Where(x => x.ProjectId == projectId.Value);
+    //    }
+
+    //    var tasks = query
+    //        .Select(x => new TaskResponse
+    //        {
+    //            Id = x.Id,
+    //            Title = x.Title,
+    //            Description = x.Description,
+    //            DueDate = x.DueDate,
+    //            Order = x.Order,
+
+    //            ProjectId = x.ProjectId,
+    //            ProjectName = x.Project.Name,
+
+    //            TaskStateId = x.TaskStateId,
+    //            TaskStateName = x.TaskState.Name,
+
+    //            CreatedAt = x.CreatedAt,
+    //            UpdatedAt = x.UpdatedAt,
+
+    //            Tags = x.TaskTags
+    //                .Select(t => new Tag
+    //                {
+    //                    Id = t.Tag.Id,
+    //                    Name = t.Tag.Name,
+    //                    Color = t.Tag.Color
+    //                })
+    //                .ToList(),
+    //            TagsText = string.Join(", ", x.TaskTags.Select(t => t.Tag.Name))
+    //        })
+    //        .ToList();
+
+    //    var report = new StiReport();
+    //    var path = Path.Combine(Directory.GetCurrentDirectory(), "Reports", "TaskReport.mrt");
+    //    report.Load(path);
+
+    //    report.RegData("Tasks", tasks);
+    //    report.Dictionary.Synchronize();
+
+    //    return StiNetCoreViewer.GetReportResult(this, report);
+    //}
 
     public IActionResult ViewerEvent()
     {
